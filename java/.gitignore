@@ -1,6 +1,5 @@
 *.class
 version.java
-WWNDesc.java
 Makefile.in
 Makefile
 *.java.orig
