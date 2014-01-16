@@ -1,4 +1,4 @@
-nodist_pkgdata_JAVA  = WWNDescription.java
+nodist_pkgdata_JAVA  = WWNDesc.java WWNDescription.java
 nodist_pkgdata_JAVA += version.java
 
 nodist_pkgdata_DATA = @PACKAGE@.jar
