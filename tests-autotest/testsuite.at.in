@@ -1,0 +1,164 @@
+AT_INIT()
+
+AT_SETUP(vict Nickname Estimation)
+dnl      ------------------------
+
+dnl example from Jan Reinmuth
+AT_DATA([janreinmuth.txt],[50060e80164c344a
+50060e80164c3467
+50060e80164c342b
+50060e80164c346a
+50060E800544CA02
+50060e8016510a14
+50060e80164c345b
+50060e80164c3414
+50060e80164c3472
+50060e80164c3435
+])
+
+AT_CHECK([cat janreinmuth.txt|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w ], 0, [HDS-VSP-85044-CL5L
+HDS-VSP-85044-CL7H
+HDS-VSP-85044-CL3M
+HDS-VSP-85044-CL7L
+HDS-USPV-17610-CL1C
+HDS-VSP-86282-CL2E
+HDS-VSP-85044-CL6M
+HDS-VSP-85044-CL2E
+HDS-VSP-85044-CL8C
+HDS-VSP-85044-CL4F
+],[])
+
+dnl example from http://pic.dhe.ibm.com/infocenter/storwize/v3700_ic/index.jsp
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 21080020C2078332], 0, [RamSan-G8332-FC-2B
+],[])
+
+dnl example from http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 50060482B82F9654], 0, [Symm-182500953-05bA
+],[])
+
+dnl example from http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 5006048ACCC86A32], 0, [Symm-187900328-03dB
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 500507680140cc82 -w 500507680110c4e1], 0, [SVCcc_Node82_Port4
+SVCc4_NodeE1_Port1
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 5006016b01234567 -w 50000972081349AD], 0, [CL-01234567-SPB3
+VMax-HK192601234-12gB
+],[])
+
+dnl example from http://www.hitachi-storage.com/content/how-decode-usp-v-wwn
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 50060e8005277210 -w 50060e800561c010 -w 50060e8006d18140], 0, [USPV-10098-CL2A
+USPV-25024-CL2A
+VSP-53633-CL5A
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 21:00:00:0b:08:04:3b:c0 -w 22:00:00:0b:08:04:3b:c0 -w 21:00:00:0b:08:04:4d:b0 -w 22:00:00:0b:08:04:4d:b0], 0, [Axiom-043BC-c0p0
+Axiom-043BC-c1p0
+Axiom-044DB-c0p0
+Axiom-044DB-c1p0
+],[])
+
+dnl be aware this conflicts with http://pic.dhe.ibm.com/infocenter/storwize/ic/index.jsp?topic=%2Fcom.ibm.storwize.v7000.641.doc%2Fsvc_hp3parlogicalunitsandtargetport.html
+dnl # show port-wwn
+dnl CTRL CH WWPN
+dnl -------------------------
+dnl A    0  207000C0FFD75198
+dnl A    1  217000C0FFD75198
+dnl B    0  207800C0FFD75198
+dnl B    1  217800C0FFD75198
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 21:70:00:c0:ff:01:23:45 -w 25:70:00:c0:ff:01:23:45], 0, [P2000-012345-A2
+P2000-012345-B2
+], [])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 50:0a:09:81:98:3d:73:3b -w 50:0a:09:82:98:3d:73:3b], 0, [NetApp-3d733b-iGrp1-0a
+NetApp-3d733b-iGrp1-0b
+], [])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 50:0a:09:81:98:3d:73:3b -w 50:0a:09:82:98:3d:73:3b], 0, [NetApp-733b-SP1a
+NetApp-733b-SP1b
+], [])
+
+AT_DATA([missing.txt],[50060482B82F9654
+5006048ACCC86A32
+5005076801234567
+5005076801400110
+500507680110e00E
+500507680130E00e
+5006016801234567
+5006016512345678
+50000972081349AD
+500009730009f924
+50060e8005277210
+50060e800561c010
+217000c0ff012345
+50060e8015123456
+50001442607a3b00
+50001442707a3b13
+50001442707a3b31
+500014428010c100
+500014429010c113
+500014429010c131
+])
+
+AT_CHECK([cat missing.txt|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w ], 0, [Symm-182500953-05bA
+Symm-187900328-03dB
+SVC45_Node67_Port2
+SVC01_Node10_Port4
+SVCe0_Node0E_Port1
+SVCe0_Node0E_Port3
+CL-01234567-SPB0
+CL-12345678-SPA5
+VMax-HK192601234-12gB
+VMax-HK194600638-10eA
+HDS-USPV-10098-CL2A
+HDS-USPV-25024-CL2A
+P2000-012345-A2
+HDS-USPV-70196-CL6G
+VPlex-07a3b-A0-FC00
+VPlex-07a3b-B1-FC03
+VPlex-07a3b-B3-FC01
+VPlex-010c1-A0-FC00
+VPlex-010c1-B1-FC03
+VPlex-010c1-B3-FC01
+],[])
+
+AT_CHECK([cat missing.txt|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w ], 0, [Symm-0953-05bA
+Symm-0328-03dB
+SVC45_N67_P2
+SVC01_N10_P4
+SVCe0_N0E_P1
+SVCe0_N0E_P3
+CL-01234567-SPB0
+CL-12345678-SPA5
+VMax-1234-12gB
+VMax-0638-10eA
+USPV-10098-CL2A
+USPV-25024-CL2A
+P2000-012345-A2
+USPV-70196-CL6G
+VPlex-07a3b-EA-FE00
+VPlex-07a3b-EB-BE13
+VPlex-07a3b-EB-LO31
+VPlex-010c1-EA-FE00
+VPlex-010c1-EB-BE13
+VPlex-010c1-EB-LO31
+],[])
+
+AT_CLEANUP()
+
+
+
+AT_SETUP(Doxygen confirmation of marked-up content)
+dnl      -----------------------------------------
+
+AT_CHECK([if test @DOXYGEN@ = missing ; then exit 77; fi])
+AT_CHECK([make -C $abs_srcdir/.. doc], 0, [ignore],[stderr])
+dnl used to put the errors at the bottom of the output
+AT_CHECK([cat stderr], 0, [],[])
+
+AT_CLEANUP()
+
+

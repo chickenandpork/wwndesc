@@ -1,0 +1,741 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.wwn;
+
+//import com.adventnet.snmp.beans.SnmpTarget;
+import gnu.getopt.Getopt;
+import gnu.getopt.LongOpt;
+import java.io.*;
+import java.math.BigInteger;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.SQLException;
+import java.util.*;
+//import javax.activation.DataSource;
+//import javax.activation.URLDataSource;
+//import org.smallfoot.parser.ParserTee;
+//import org.smallfoot.parser.zone.AliShowZoneParser;
+//import org.smallfoot.parser.zone.Alias4Parser;
+//import org.smallfoot.parser.zone.BNAZoneParser;
+//import org.smallfoot.parser.zone.DeviceAliasParser;
+//import org.smallfoot.parser.zone.NicknameParser;
+//import org.smallfoot.parser.zone.ZPAliasEntry;
+//import org.smallfoot.parser.zone.ZoneParser;
+//import org.smallfoot.filexfer.FileTransferWinch;
+//import org.smallfoot.filexfer.FileTransferWinch.FileTransferAbortedException;
+//import org.smallfoot.filexfer.FileTransferWinch.FileTransferChecksumMismatchException;
+//import org.smallfoot.filexfer.FileTransferWinch.FileTransferDataTransferException;
+//import org.smallfoot.filexfer.FileTransferWinch.FileTransferIllegalFSMReplyException;
+//import org.smallfoot.filexfer.FileTransferWinch.FileTransferWinchException;
+//import org.smallfoot.filexfer.WinchFactory;
+
+/**
+ * @file
+ * In situations where nicknames simply are not present, but we need descriptors in short-order,
+ * the "--wwn=" or "-w" ooption can be used to get a description of what the most likely Nickname
+ * would be.  For example, "java -jar wwndesc.jar -w 5006048ACCC86A32" results in "Symm-182500953-05bA"
+ * matching http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html
+ * Note that --briefestimate and --nobriefestimate configure for more brief estimate/suggested nicknames
+ *
+ * @section Examples
+ *
+ *  java -jar vict.jar --wwn 500610601234567
+ *
+ *  java -jar vict.jar --briefestimate --wwn 500610601234567
+ *
+ *  java -jar vict.jar --nobriefestimate --wwn 5000097301234564
+ *
+ * @section Known Issues
+ */
+
+public class WWNDescription
+{
+    boolean briefWWNEstimate = false;
+
+    public class WWNDesc
+    {
+        BigInteger wwn;
+        boolean brief;
+        public WWNDesc(String wwn)
+        {
+            this(false, wwn);
+        }
+        public WWNDesc(boolean brief, String wwn)
+        {
+            this.wwn = new BigInteger(wwn,16);
+            this.brief = brief;
+        }
+        public String toString()
+        {
+            return null;
+        }
+    }
+
+    public class EMCClariionDesc extends WWNDesc
+    {
+        public EMCClariionDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* for example start with 5006016A12345678 on http://blog.fosketts.net/toolbox/emc-symmetrix-wwn-calculator/ */
+            /* http://goingvirtual.wordpress.com/2011/09/09/how-i-zone-vnx-storage-arrays/ */
+            /* http://www.thesangeek.com/2011/02/09/sangeek-clariion-cx4-wwn-interpretations/ */
+            /* http://clariionblogs.blogspot.com/2007/11/storage-processor-ports-wwns.html */
+            /* http://architecting.it/2013/09/06/what-emc-should-have-done-with-vnx/ */
+
+            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
+
+            /* our example now has A12345678 */
+            BigInteger serPort[] = serDirPort.divideAndRemainder(new BigInteger("100000000",16));
+
+            Character SP;
+            switch (serPort[0].intValue() / 8)
+            {
+            case 0:
+                SP='A';
+                break;
+            case 1:
+                SP='B';
+                break;
+            default:
+                SP='X';
+            }
+            return res + String.format("CL-%08x-SP%c%d",serPort[1].intValue(),SP,serPort[0].intValue() % 8);
+        }
+    }
+
+    public class EMCSymmetrixDesc extends WWNDesc
+    {
+        public EMCSymmetrixDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public EMCSymmetrixDesc(boolean brief, String wwn)
+        {
+            super(brief, wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* for example start with 5006048ACCC86A32 on http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html */
+            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
+
+            /* our example now has ACCC86A32 */
+            BigInteger sDirPort[] = serDirPort.divideAndRemainder(new BigInteger("40",16));
+            BigInteger xDirPort[] = sDirPort[0].divideAndRemainder(new BigInteger("20000000",16));
+
+            if (brief)
+                res += String.format("Symm-%04d",xDirPort[1].mod(new BigInteger("10000",10)));
+            else
+                res += "Symm-"+xDirPort[1];
+
+            BigInteger DirPort[] = sDirPort[1].divideAndRemainder(new BigInteger("10",16));
+            res += String.format("-%02d",DirPort[1].intValue()+1);
+
+            switch (4*xDirPort[0].intValue()+DirPort[0].intValue())
+            {
+            case 0:
+                res += "aA";
+                break;
+            case 1:
+                res += "bA";
+                break;
+            case 2:
+                res += "aB";
+                break;
+            case 3:
+                res += "bB";
+                break;
+            case 4:
+                res += "cA";
+                break;
+            case 5:
+                res += "dA";
+                break;
+            case 6:
+                res += "cB";
+                break;
+            case 7:
+                res += "dB";
+                break;
+            }
+
+            return res;
+        }
+    }
+
+    public class EMCVMAXDesc extends WWNDesc
+    {
+        public EMCVMAXDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public EMCVMAXDesc(boolean brief, String wwn)
+        {
+            super(brief,wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* for example start with 50000972081349AD on https://community.emc.com/thread/118881 */
+            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
+            res += "VMax-";
+
+            /* our example now has 2081349AD */
+            /* get the first four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */
+            BigInteger countDirPort[] = serDirPort.divideAndRemainder(new BigInteger("100000000",16));     /* countDirPort[0] = 2, countDirPort[1] = 081349AD */
+            BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger("8000000",16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */
+            if (!brief)
+            {
+                switch (countDirPort[0].intValue()/2)
+                {
+                case 1: /* 0-01-0 == USA/HK19 seen on 20k VMax? */ /* 0-01-1 == USA/40k VMax? */
+                    res += "HK19";
+                    break;
+                case 2: /* 0-10-0 == Ireland/CK29 */
+                    res += "CK29";
+                    break;
+                default:/* unknown */
+                    res += "Unkn";
+                }
+
+                /* our example now has 081349AD - get the 4-bit model code */
+                //BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger("8000000",16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */
+                switch (modelDirPort[0].intValue())
+                {
+                case 0: /* 00000: 40k V-Max */
+                    res += "46";
+                    break;
+                case 1: /* 00001: 20k V-Max? */
+                    res += "26";
+                    break;
+                case 24: /* 11000: V-Max SE */
+                    res += "49";
+                    break;
+                default:/* unknown */
+                    res += "UN";
+                }
+            }
+
+            /* our example now has 081349AD - get the 5-digit serial number ending */
+            BigInteger serialDirPort[] = modelDirPort[1].divideAndRemainder(new BigInteger("400",16));     /* serialDirPort[0] = 004d2, serialDirPort[1] = 1AD */
+
+            /* our example now has 1AD - get the 4-bit Processor code */
+            BigInteger procDirPort[] = serialDirPort[1].divideAndRemainder(new BigInteger("40",16));     /* procDirPort[0] = 6, procDirPort[1] = 2D */
+
+            /* our example now has 2D - get the 4-bit Director code */
+            BigInteger dirDirPort[] = procDirPort[1].divideAndRemainder(new BigInteger("4",16));     /* dirDirPort[0] = C, dirDirPort[1] = %01 */
+            return res + String.format("%0"+(brief?4:5)+"d-%02d%c%c",serialDirPort[0].intValue(),dirDirPort[0].intValue()+1,procDirPort[0].intValue()+'a',dirDirPort[1].intValue()+'A');
+        }
+    }
+
+    public class EMCVPLEXDesc extends WWNDesc
+    {
+        public EMCVPLEXDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public EMCVPLEXDesc(boolean brief, String wwn)
+        {
+            super(brief,wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* for example start with 50001442607a3b00 on https://community.emc.com/thread/146058 */
+            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(32).shiftLeft(32));
+            res += "VPlex-";
+
+            /* our example now has 607a3b00 */
+            /* get the next digit ("num"): even is A, odd is B. four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */
+            BigInteger numSeedIOPort[] = serDirPort.divideAndRemainder(new BigInteger("10000000",16));		/* numSeedIOPort[0] = 6, numSeedIOPort[1] = 07a3b00 */
+
+            //numSeedIOPort[0] = numSeedIOPort[0].shiftRight(7).shiftLeft(7);					/* numSeedIOPort[0] = 0 --> A Director, numSeedIOPort[1] = 07a3b00 */
+            char director='A';
+            director += (numSeedIOPort[0].intValue() % 2);
+
+            BigInteger seedIOPort[] = numSeedIOPort[1].divideAndRemainder(new BigInteger("100",16));     /* seedIOPort[0] = 07a3b, seedIOPort[1] = 00 */
+
+            /* Assume we're all VS2 architecture @todo fix the assumpiton that VS1 VPLEX no longer exist */
+            String front = "un";
+            switch (seedIOPort[1].intValue() / 16)
+            {
+            case 0:
+                front = "FE";
+                break;
+            case 1:
+                front = "BE";
+                break;
+            case 2:
+                front = "WA";
+                break;
+            case 3:
+                front = "LO";
+                break;
+                /* default: stick with an X, dunno what to do with that value */
+            }
+
+            /* want a result such as VPLEX02_E1B_BE13 */
+            /* can get a brief result such as VPlex-07a3b-EB-BE13 */
+            if (brief)
+                return res + String.format("%05x-E%c-%s%d%d",seedIOPort[0].intValue(),director,front,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);
+            /* can get a result such as VPlex-07a3b-A0-FC00 */
+            else
+                return res + String.format("%05x-%c%d-FC0%d",seedIOPort[0].intValue(),director,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);
+        }
+    }
+
+    public class NetAppDesc extends WWNDesc
+    {
+        public NetAppDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public NetAppDesc(boolean brief, String wwn)
+        {
+            super(brief,wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* for example start with 500a:0983:0000:4060 on http://pic.dhe.ibm.com/infocenter/storwize/ic/index.jsp?topic=%2Fcom.ibm.storwize.v7000.641.doc%2Fsvc_netapplocwwpn_327ams.html */
+            /* http://exchangeengine.wordpress.com/2011/07/25/how-to-find-out-wwpn-for-netapp-storage/ */   /* admin is ssh://naroot@host */
+            /* http://www.datadisk.co.uk/html_docs/netapp/netapp_cs.htm */
+            /* https://communities.netapp.com/thread/31347
+             *
+             * "lun show -v" shows a NetApp "Serial#: 20pa3?DGVO5f"
+             * "igroup show" shows 3 interfaces:
+             *            50:0a:09:81:98:3d:73:3b (virtual?)
+             * 		  50:0a:09:82:98:3d:73:3b (virtual?)
+             * 		  50:0a:09:80:88:3d:73:3b (physical?)
+             * "fcp config" shows 1 WWNN, 2 WWPN:
+             * 0a:   ONLINE <ADAPTER UP>  Loop  No Fabric
+                 *       host address 0000ef
+                 *       portname 50:0a:09:81:98:3d:73:3b  nodename 50:0a:09:80:88:3d:73:3b
+                 *       mediatype auto speed auto
+             *
+             * 0b:   LINK NOT CONNECTED <ADAPTER UP>
+                 *       host address 000000
+                 *       portname 50:0a:09:82:98:3d:73:3b  nodename 50:0a:09:80:88:3d:73:3b
+                 *       mediatype auto speed auto
+             *
+             * It would seem that:
+             *	     5 is of course the type, 00a098 is of course the OUI
+             *	     08 is the primary WWNN; 19, 29 are virtual interfaces that are expressed as WWPN (on Controller 2?) (18,28 on controller 1?)
+             *	     8:3d:73:3b or some subset is a serial
+             *
+             * It may be possible that other igroups have additional controllers -- for example, 98.18.8, 98.28.8, 98.38.8, 98.39.8, 98.48.8, 98.49.8
+             *
+             * This is still only one controller's igroups; there is a separate redundant controller that may own disks.  Maybe more controllers.  Adapter 0c/0d on controller #2?
+             *
+             * http://exchangeengine.wordpress.com/2011/07/25/how-to-find-out-wwpn-for-netapp-storage/ argues: 0b has a ..98.29.8 of WWNN's 98.08.8
+             *
+             * http://www.ebay.com/itm/like/290900844309?lpid=82 implies (FAS2020 controller, WWN=5-00a098-0-00027540) that the -0- is significant, but seems to support that the 00a098-0 is the WWNN, >0 is a WWPN
+             */
+
+            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
+
+            /* our example now has 300004060 */
+            BigInteger serPort[] = serDirPort.divideAndRemainder(new BigInteger("1000000",16));		/* serPort[0] is 300, serPort[1] is 004060 */
+
+            /*
+             * 08 -> WWNN
+             * 18 -> WWPN C0-0a ?
+             * 28 -> WWPN C0-0b ?
+             * 19 -> WWPN C1-0a
+             * 29 -> WWPN C1-0b
+             */
+
+            int controller = (serPort[0].intValue() / 0x010) % 8;
+            int offset = (serPort[0].intValue() / 0x100) % 8;
+            char SP = 'a';
+            if (0 == offset) SP = 'N';
+            else SP += (offset-1);
+
+            if (brief)
+                return res + String.format("NetApp-%04x-SP%d%c",serPort[1].intValue() % 0x10000,controller,SP);
+            else
+                return res + String.format("NetApp-%06x-iGrp%d-0%c",serPort[1].intValue(),controller,SP);
+        }
+    }
+
+    public class HDSVSPDesc extends WWNDesc
+    {
+        public HDSVSPDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public HDSVSPDesc(boolean brief, String wwn)
+        {
+            super(brief, wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+            if (!brief) res += "HDS-";
+
+            /**
+             * @todo 50060e8:
+             *        005: USP-V: http://www.hitachi-storage.com/content/how-decode-usp-v-wwn
+             *        00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOFFSSSSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping "I") note article confuses NAA marker as "50"
+             *        need to check against http://p2v.it/tools/wwndec/index.php?input=50060E8010277210
+             *        need to check http://p2v.it/tools/wwndec/index.php?input=50060e8016624800
+             */
+            /* for example start with 50060e8005123442 on http://www.hitachi-storage.com/content/how-decode-usp-v-wwn */
+            BigInteger serDirPort = wwn.remainder(new BigInteger("1000000000",16));
+
+            /* our example now has 005123442 - get the 3-nibble model code */
+            BigInteger modelDirPort[];
+            modelDirPort = serDirPort.divideAndRemainder(new BigInteger("1000000",16));     /* modelDirPort[0] = 005, modelDirPort[1] = 123442 */
+
+            switch (modelDirPort[0].intValue())
+            {
+            case 0x01: /* 001: 7700E */
+                res += "7700E-";
+                break;
+            case 0x02: /* 002: 9900 */
+                res += "9900-";
+                break;
+            case 0x03: /* 003: 9900V */
+                res += "9900V-";
+                break;
+            case 0x04: /* 004, 014: USP */
+            case 0x14:
+                res += "USP-";
+                break;
+            case 5: /* 005: regular USP-V */
+            case 0x15:
+                res += "USPV-";
+                break;
+            case 6: /* 006: seen and confirmed VSP at Associated Proj-00666 */
+            case 0x16:
+                /* unknown but seen at AdCenter: 50060e8015345800 is serial 78936 port CL1A */
+                /* 016: unknown but seen at ChampionSG Proj-712 */
+                res += "VSP-";
+                break;
+            case 0x13: /* Jan reinmuth: HUS VM */
+                res += "HUSV-";
+                break;
+            default: /* unknown */
+                res += String.format("HDSUnkn%03x-",modelDirPort[0].intValue());
+            }
+
+            /* our example now has 123442 - get the 4-digit serial number */
+            BigInteger serialPort[] = modelDirPort[1].divideAndRemainder(new BigInteger("100",16));     /* serialPort[0] = 1234, serialPort[1] = 42 */
+            serialPort[0] = serialPort[0].add(modelDirPort[0].divide(new BigInteger("10",16)).multiply(new BigInteger("10000",16)));
+            BigInteger clusterPort[] = serialPort[1].divideAndRemainder(new BigInteger("10",16));     /* clusterPort[0] = 4, clusterPort[1] = 2 */
+            char port = 'A';
+            port += clusterPort[1].intValue();
+            if (port > 'H') port ++;
+            return res + String.format("%05d-CL%x%c",serialPort[0].intValue(),clusterPort[0].intValue()+1, port);
+        }
+    }
+
+    public class IBMSVCDesc extends WWNDesc
+    {
+        public IBMSVCDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public IBMSVCDesc(boolean brief, String wwn)
+        {
+            super(brief, wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* convert 5005076801P0xxNN into SVCxx_NodeNN_PortP */
+            /* for example start with 5005076801:30ee81 and produce SVCee_Node81_Port3 */
+            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
+            /* serDirPort[0]=5005076801 ; serDirPort[1]=30ee81 */
+
+            BigInteger portChassisNode[] = serDirPort[1].divideAndRemainder(new BigInteger("10000",16));
+            /* portChassisNode[0]=30 ; portChassisNode[1]=ee81 */
+            BigInteger chassisNode[] = portChassisNode[1].divideAndRemainder(new BigInteger("100",16));
+
+            return res + String.format("SVC%02x_%s%02X_%s%s",chassisNode[0].intValue(), (brief ? "N" : "Node"), chassisNode[1].intValue(), (brief ? "P" : "Port"), portChassisNode[0].intValue()/16);
+        }
+    }
+
+    public class IBM3700_TexasMemory_RamSanDesc extends WWNDesc
+    {
+        public IBM3700_TexasMemory_RamSanDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public IBM3700_TexasMemory_RamSanDesc(boolean brief, String wwn)
+        {
+            super(brief, wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* convert 2P:0N:0020C2:MMMMMM into RamSan-MMMMMM-FC-NP */
+            /* for example start with 21:08:0020c2:078332 and produce RamSan-G8332-FC-2B */
+            BigInteger nodePortOUISer[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
+            /* nodePortOUISer[0]=21080020c2 ; nodePortOUISer[1]=078332 */
+
+            BigInteger nodePortOUI[] = nodePortOUISer[0].divideAndRemainder(new BigInteger("1000000",16));
+            /* nodePortOUI[0]=2108 ; nodePortOUI[1]=0020c2 */
+            BigInteger nodePort[] = nodePortOUI[0].divideAndRemainder(new BigInteger("100",16));
+            /* nodePort[0]=21 ; nodePort[1]=08 */
+            BigInteger serial[] = nodePortOUISer[1].divideAndRemainder(new BigInteger("10000",16));
+            /* serial[0]=07 ; serial[1]=8332 */
+
+            return res + String.format("RamSan-%c%04X-FC-%x%c",serial[0].intValue()-1+'A', serial[1].intValue(), nodePort[1].intValue()/4, nodePort[0].intValue() % 16 +'A');
+        }
+    }
+
+    /**
+     * Descriptor for 3Par Devices (0002ac)
+     *
+     * These descriptors are fairly weak: I'm somewhat sure of the serial, but only two matches for the port-number logic.
+     */
+    public class HP3ParDesc extends WWNDesc
+    {
+        public HP3ParDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public HP3ParDesc(boolean brief, String wwn)
+        {
+            super(brief, wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* convert 2N:SP:00:20:AC:MM:MM:MM to 3Par-Serial:N:S:P */
+            /* ie 20:12:00:02:AC:00:0C:3A is serial number 1303130 */
+            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
+            /* serDirPort[0]=20120002ac ; serDirPort[1]=000c3a */
+
+            BigInteger portChassisNode[] = serDirPort[0].divideAndRemainder(new BigInteger("1000000",16));
+            /* portChassisNode[0]=2012 ; portChassisNode[1]=0002ac */
+            BigInteger chassisNode[] = portChassisNode[0].divideAndRemainder(new BigInteger("100",16));
+            /* chassisNode[0]=20 ; chassisNode[1]=12 */
+
+            return res + String.format("3Par-%04d:%x:%x:%x",serDirPort[1].intValue(), chassisNode[0].intValue() % 16, chassisNode[1].intValue() / 16, chassisNode[1].intValue() % 16);
+        }
+    }
+
+    /**
+     * Descriptor for (Dot Hill Systems Modular Smart Array) HP P2000
+     *
+     * These descriptors are fairly weak: I'm somewhat sure of the serial, but only two matches for the port-number logic.
+     */
+    public class HPDotHillSystemsMSADesc extends WWNDesc
+    {
+        public HPDotHillSystemsMSADesc(String wwn)
+        {
+            super(wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* convert 2170:00c0ff:012345 into P2000-012345-A2 */
+            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
+            /* serDirPort[0]=217000c0ff ; serDirPort[1]=012345 */
+
+            BigInteger portChassisNode[] = serDirPort[0].divideAndRemainder(new BigInteger("100000000",16));
+            /* portChassisNode[0]=21 ; portChassisNode[1]=7000c0ff */
+            BigInteger chassisNode[] = portChassisNode[0].divideAndRemainder(new BigInteger("10",16));
+            /* chassisNode[0]=2 ; chassisNode[1]=1 */
+
+            return res + String.format("P2000-%06x-%c%c",serDirPort[1].intValue(), 'A'+(chassisNode[1].intValue()/4), '1'+(chassisNode[1].intValue()%4));
+        }
+    }
+
+    /**
+     * Descriptor for (Oracle) Pillar Data Systems' Service Lifecycle Management devices
+     */
+    public class OraclePillarDesc extends WWNDesc
+    {
+        public OraclePillarDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            /* convert 2C00:000b08:SSSSSP into Axiom-SSSSS-cCpP */
+            /* for example start with 2100:000b08:123450 and produce Axiom-12345-c0p0 */
+            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
+            /* serDirPort[0]=2100:000b08 ; serDirPort[1]=123450 */
+
+            BigInteger twoContZeroZero[] = serDirPort[0].divideAndRemainder(new BigInteger("100000000",16));
+            /* twoContZeroZero[0]=21; twoContZeroZero[1]=00:000b08 */
+            BigInteger twoCont[] = twoContZeroZero[0].divideAndRemainder(new BigInteger("10",16));
+            /* twoCont[0]=2 ; twoCont[1]=1*/
+
+            BigInteger serialPort[] = serDirPort[1].divideAndRemainder(new BigInteger("10",16));
+            /* serialPort[0]=12345 ; serialPort[1]=0 */
+
+            return res + String.format("Axiom-%05X-c%sp%X",serialPort[0].intValue(), twoCont[1].intValue()-1, serialPort[1].intValue());
+        }
+    }
+
+    /** test case: this matches a single item known to exist in the Demo Database */
+    public class DemoTestDesc extends WWNDesc
+    {
+        public DemoTestDesc(String wwn)
+        {
+            super(wwn);
+        }
+        public String toString()
+        {
+            String res = super.toString();
+            if (null == res) res = "";
+
+            return res + "TestDevice";
+        }
+    }
+
+    public WWNDesc getWWNDescriptor(String val)
+    {
+        val = val.replaceAll(":","");
+
+        if (val.toLowerCase().matches("5006048.*"))
+            return new EMCSymmetrixDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
+            return new IBM3700_TexasMemory_RamSanDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("5005076801.*"))
+            return new IBMSVCDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("500a098.*"))
+            return new NetAppDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("5006016.*"))
+            return new EMCClariionDesc(val);
+        else if (val.toLowerCase().matches("5000097.*"))
+            return new EMCVMAXDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("50001442.*"))
+            return new EMCVPLEXDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("50060e8.*"))
+            return new HDSVSPDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
+            return new OraclePillarDesc(val);
+        else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]00c0ff.*"))
+            return new HPDotHillSystemsMSADesc(val);
+        else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]0002ac.*"))	/* 50002AC000020C3A */
+            return new HP3ParDesc(briefWWNEstimate, val);
+        else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
+            return new DemoTestDesc(val);
+
+        else return new WWNDesc(val);
+    }
+
+
+
+    /** usage messages are useful to those of us with short memories as well (hey, I just need to add swap!) */
+    public void usage(String proc)
+    {
+        System.out.println("Usage: "+proc+" -V|--version|-H|--help");
+
+        System.out.println("     : "+proc+" [--briefestimate] [--wwn|-w <WWN> [--wwn|-w <WWN> [--wwn|-w <WWN>]]]");
+        System.out.println("   ie: "+proc+" -w 2100000b08123450");
+        System.out.println("   ie: "+proc+" --wwn 2100000b08123450");
+        System.out.println("   ie: "+proc+" --briefestimate -w 2100000b08123450");
+        System.out.println("   ie: "+proc+" -w 21:00:00:0b:08:12:34:50");
+        System.out.println("   ie: "+proc+" -w 21:00:000b08:123450");
+    }
+
+
+
+    /**
+     * Main function, as you can tell.
+     *
+     * this function merely parses the command-line to dispatch actions to the meat of the meal above.
+     * I'm using an actual GetOpt because, yes, I'm a UNIX/C hack, re-using 3-decades-old knowledge,
+     * but this also preserves both extensibility and the ability to use longopts in scripts as a
+     * way to self-document what the tool's doing.
+     *
+     * No real intelligence herein except the parse-and-redirect action.
+     */
+    public static void main(String args[])
+    {
+        WWNDescription m = new WWNDescription();
+
+        java.util.Vector<LongOpt> options = new java.util.Vector();
+
+        /* Always always ALWAYS provide a quick reference and a version output */
+        options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
+        options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
+
+        options.add(new LongOpt("wwn", LongOpt.REQUIRED_ARGUMENT, null, 'w'));
+        options.add(new LongOpt("briefestimate", LongOpt.NO_ARGUMENT, null, 0x1000));
+        options.add(new LongOpt("nobriefestimate", LongOpt.NO_ARGUMENT, null, 0x1001));
+
+        org.smallfoot.getopt.GetOpt g = new org.smallfoot.getopt.GetOpt("@PACKAGE@", args, options);
+
+        int c;
+        while ((c = g.getopt()) != -1)
+        {
+            switch(c)
+            {
+            case 0x1000: /* switch to brief WWNDescs */
+                m.briefWWNEstimate = true;
+                break;
+            case 0x1001: /* switch to verbose WWNDescs */
+                m.briefWWNEstimate = false;
+                break;
+            case 'w': /* inspect a WWN */
+            {
+                WWNDesc wwn;
+                if ((null == g.getOptarg()) || (16 != g.getOptarg().replaceAll(":","").length()))
+                    System.out.println("no result: parameter "+g.getOptarg()+" needs to be a 16-digit hexadecimal");
+                else if (null == (wwn = m.getWWNDescriptor(g.getOptarg())))
+                    System.out.println("no result: WWN "+g.getOptarg()+" has no descriptor");
+                else System.out.println(wwn.toString());
+            }
+            break;
+
+                /*
+                 * Follows is the "house-keeping": versions, usage, and the catch-all for bad options.
+                 */
+            case 'V':	// print the version and quit
+            {
+                System.out.println(g.consistentVersion("@VERSION@-$Revision: 631 $")+"\n");
+                return;
+            }
+
+            default:
+            case '?':
+                // during build, this is just a dump of options; in shipping, this falls-thru to usage.
+                //System.out.println("option \""+c+"\" selected");
+                //System.out.println("long index = "+g.getLongind());
+
+            case 'H':
+                m.usage(g.progname());
+                break;
+            }
+        }
+
+        /*
+         * I had to add this since there seems to be a lack of dropping out when the options are done,
+         * or a delay huge enough that my impatience is triggered (ie 2 seconds or more!).  Maybe
+         * invesitgate this further when there's more time, as this is redundant.
+         */
+        java.lang.System.exit(0);
+    }
+}

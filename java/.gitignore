@@ -1,0 +1,14 @@
+*.class
+version.java
+WWNDesc.java
+Makefile.in
+Makefile
+*.java.orig
+*.java.in.orig
+
+# Package Files #
+*.jar
+*.war
+*.ear
+javaroot.stamp
+classnodist_pkgdata.stamp
