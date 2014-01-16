@@ -142,7 +142,7 @@ AC_CONFIG_FILES(Makefile
 
 if test "x$RPMBUILD" != "xmissing rpmbuild"
 then
-  AC_CONFIG_FILES(csvpipe.spec:pkg/rpm/wwndesc.spec.in)
+  AC_CONFIG_FILES(wwndesc.spec:pkg/rpm/wwndesc.spec.in)
 fi
 
 if test "x$DOXYGEN" != "xmissing"
