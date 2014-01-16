@@ -8,7 +8,7 @@ BUILDING
 
 This is a standard AutoTools build, so:
 
-1) ./autoreconf -vfi
+1) autoreconf -vfi
 
 2) make install (or "make check" to include that plus run the tests)
 
