@@ -1,7 +1,7 @@
 AT_INIT()
 
-AT_SETUP(vict Nickname Estimation)
-dnl      ------------------------
+AT_SETUP(@PACKAGE@ Nickname Estimation)
+dnl      ---------------------------
 
 dnl example from Jan Reinmuth
 AT_DATA([janreinmuth.txt],[50060e80164c344a
@@ -146,6 +146,75 @@ VPlex-010c1-EA-FE00
 VPlex-010c1-EB-BE13
 VPlex-010c1-EB-LO31
 ],[])
+
+
+AT_CLEANUP()
+
+
+
+AT_SETUP(@PACKAGE@ Estimation Pure Storage)
+dnl      -------------------------------
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:14:00], 0, [Pure-d74f114-CT0.FC0
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 52:4a:93:7d:74:f1:14:00], 0, [Pure-d74f114:0:0
+],[])
+
+dnl example from Shayne Williams
+AT_DATA([shayne.williams], [52:4a:93:7d:74:f1:14:00
+52:4a:93:7d:74:f1:14:10
+52:4a:93:7d:74:f1:14:01
+52:4a:93:7d:74:f1:14:11
+52:4a:93:7d:74:f1:14:02
+52:4a:93:7d:74:f1:14:12
+52:4a:93:7d:74:f1:14:03
+52:4a:93:7d:74:f1:14:13
+52:4a:93:75:d5:d4:43:00
+52:4a:93:75:d5:d4:43:10
+52:4a:93:75:d5:d4:43:01
+52:4a:93:75:d5:d4:43:11
+52:4a:93:75:d5:d4:43:02
+52:4a:93:75:d5:d4:43:12
+52:4a:93:75:d5:d4:43:03
+52:4a:93:75:d5:d4:43:13
+52:4a:93:74:60:9d:d6:00
+52:4a:93:74:60:9d:d6:10
+52:4a:93:74:60:9d:d6:01
+52:4a:93:74:60:9d:d6:11
+52:4a:93:74:60:9d:d6:02
+52:4a:93:74:60:9d:d6:12
+52:4a:93:74:60:9d:d6:03
+52:4a:93:74:60:9d:d6:13
+])
+
+AT_CHECK([cat shayne.williams|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w ], 0, [Pure-d74f114-CT0.FC0
+Pure-d74f114-CT1.FC0
+Pure-d74f114-CT0.FC1
+Pure-d74f114-CT1.FC1
+Pure-d74f114-CT0.FC2
+Pure-d74f114-CT1.FC2
+Pure-d74f114-CT0.FC3
+Pure-d74f114-CT1.FC3
+Pure-5d5d443-CT0.FC0
+Pure-5d5d443-CT1.FC0
+Pure-5d5d443-CT0.FC1
+Pure-5d5d443-CT1.FC1
+Pure-5d5d443-CT0.FC2
+Pure-5d5d443-CT1.FC2
+Pure-5d5d443-CT0.FC3
+Pure-5d5d443-CT1.FC3
+Pure-4609dd6-CT0.FC0
+Pure-4609dd6-CT1.FC0
+Pure-4609dd6-CT0.FC1
+Pure-4609dd6-CT1.FC1
+Pure-4609dd6-CT0.FC2
+Pure-4609dd6-CT1.FC2
+Pure-4609dd6-CT0.FC3
+Pure-4609dd6-CT1.FC3
+], [])
+
+
 
 AT_CLEANUP()
 

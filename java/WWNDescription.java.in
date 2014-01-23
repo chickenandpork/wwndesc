@@ -620,10 +620,15 @@ public class WWNDescription
             return new HPDotHillSystemsMSADesc(val);
         else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]0002ac.*"))	/* 50002AC000020C3A */
             return new HP3ParDesc(briefWWNEstimate, val);
+
+	else if (val.toLowerCase().matches(PureStorageDescription.pattern))
+            return new PureStorageDescription(briefWWNEstimate, val);
+
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
 
-        else return new WWNDesc(val);
+        else
+	     return new WWNDesc(val);
     }
 
 
