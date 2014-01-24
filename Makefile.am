@@ -41,6 +41,14 @@ endif DO_GITFORMATTING
 
 
 if HAVE_RPMBUILD
+if DO_GITFORMATTING
+re-dist-bzip2: gitdescribe
+	rm -f @PACKAGE@.spec $(PACKAGE)-$(VERSION).tar.bz2
+	touch configure
+	$(MAKE) dist-bzip2
+rpm: re-dist-bzip2
+else
 rpm: dist-bzip2
+endif DO_GITFORMATTING_FALSE
 	@RPMBUILD@ --define 'skipcheck 1' -ta $(PACKAGE)-$(VERSION).tar.bz2
 endif
