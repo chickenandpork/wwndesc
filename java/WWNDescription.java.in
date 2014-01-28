@@ -51,231 +51,6 @@ public class WWNDescription
 {
     public boolean briefWWNEstimate = false;
 
-    public class EMCClariionDesc extends WWNDesc
-    {
-        public EMCClariionDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* for example start with 5006016A12345678 on http://blog.fosketts.net/toolbox/emc-symmetrix-wwn-calculator/ */
-            /* http://goingvirtual.wordpress.com/2011/09/09/how-i-zone-vnx-storage-arrays/ */
-            /* http://www.thesangeek.com/2011/02/09/sangeek-clariion-cx4-wwn-interpretations/ */
-            /* http://clariionblogs.blogspot.com/2007/11/storage-processor-ports-wwns.html */
-            /* http://architecting.it/2013/09/06/what-emc-should-have-done-with-vnx/ */
-
-            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
-
-            /* our example now has A12345678 */
-            BigInteger serPort[] = serDirPort.divideAndRemainder(new BigInteger("100000000",16));
-
-            Character SP;
-            switch (serPort[0].intValue() / 8)
-            {
-            case 0:
-                SP='A';
-                break;
-            case 1:
-                SP='B';
-                break;
-            default:
-                SP='X';
-            }
-            return res + String.format("CL-%08x-SP%c%d",serPort[1].intValue(),SP,serPort[0].intValue() % 8);
-        }
-    }
-
-    public class EMCSymmetrixDesc extends WWNDesc
-    {
-        public EMCSymmetrixDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public EMCSymmetrixDesc(boolean brief, String wwn)
-        {
-            super(brief, wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* for example start with 5006048ACCC86A32 on http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html */
-            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
-
-            /* our example now has ACCC86A32 */
-            BigInteger sDirPort[] = serDirPort.divideAndRemainder(new BigInteger("40",16));
-            BigInteger xDirPort[] = sDirPort[0].divideAndRemainder(new BigInteger("20000000",16));
-
-            if (brief)
-                res += String.format("Symm-%04d",xDirPort[1].mod(new BigInteger("10000",10)));
-            else
-                res += "Symm-"+xDirPort[1];
-
-            BigInteger DirPort[] = sDirPort[1].divideAndRemainder(new BigInteger("10",16));
-            res += String.format("-%02d",DirPort[1].intValue()+1);
-
-            switch (4*xDirPort[0].intValue()+DirPort[0].intValue())
-            {
-            case 0:
-                res += "aA";
-                break;
-            case 1:
-                res += "bA";
-                break;
-            case 2:
-                res += "aB";
-                break;
-            case 3:
-                res += "bB";
-                break;
-            case 4:
-                res += "cA";
-                break;
-            case 5:
-                res += "dA";
-                break;
-            case 6:
-                res += "cB";
-                break;
-            case 7:
-                res += "dB";
-                break;
-            }
-
-            return res;
-        }
-    }
-
-    public class EMCVMAXDesc extends WWNDesc
-    {
-        public EMCVMAXDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public EMCVMAXDesc(boolean brief, String wwn)
-        {
-            super(brief,wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* for example start with 50000972081349AD on https://community.emc.com/thread/118881 */
-            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(36).shiftLeft(36));
-            res += "VMax-";
-
-            /* our example now has 2081349AD */
-            /* get the first four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */
-            BigInteger countDirPort[] = serDirPort.divideAndRemainder(new BigInteger("100000000",16));     /* countDirPort[0] = 2, countDirPort[1] = 081349AD */
-            BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger("8000000",16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */
-            if (!brief)
-            {
-                switch (countDirPort[0].intValue()/2)
-                {
-                case 1: /* 0-01-0 == USA/HK19 seen on 20k VMax? */ /* 0-01-1 == USA/40k VMax? */
-                    res += "HK19";
-                    break;
-                case 2: /* 0-10-0 == Ireland/CK29 */
-                    res += "CK29";
-                    break;
-                default:/* unknown */
-                    res += "Unkn";
-                }
-
-                /* our example now has 081349AD - get the 4-bit model code */
-                //BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger("8000000",16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */
-                switch (modelDirPort[0].intValue())
-                {
-                case 0: /* 00000: 40k V-Max */
-                    res += "46";
-                    break;
-                case 1: /* 00001: 20k V-Max? */
-                    res += "26";
-                    break;
-                case 24: /* 11000: V-Max SE */
-                    res += "49";
-                    break;
-                default:/* unknown */
-                    res += "UN";
-                }
-            }
-
-            /* our example now has 081349AD - get the 5-digit serial number ending */
-            BigInteger serialDirPort[] = modelDirPort[1].divideAndRemainder(new BigInteger("400",16));     /* serialDirPort[0] = 004d2, serialDirPort[1] = 1AD */
-
-            /* our example now has 1AD - get the 4-bit Processor code */
-            BigInteger procDirPort[] = serialDirPort[1].divideAndRemainder(new BigInteger("40",16));     /* procDirPort[0] = 6, procDirPort[1] = 2D */
-
-            /* our example now has 2D - get the 4-bit Director code */
-            BigInteger dirDirPort[] = procDirPort[1].divideAndRemainder(new BigInteger("4",16));     /* dirDirPort[0] = C, dirDirPort[1] = %01 */
-            return res + String.format("%0"+(brief?4:5)+"d-%02d%c%c",serialDirPort[0].intValue(),dirDirPort[0].intValue()+1,procDirPort[0].intValue()+'a',dirDirPort[1].intValue()+'A');
-        }
-    }
-
-    public class EMCVPLEXDesc extends WWNDesc
-    {
-        public EMCVPLEXDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public EMCVPLEXDesc(boolean brief, String wwn)
-        {
-            super(brief,wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* for example start with 50001442607a3b00 on https://community.emc.com/thread/146058 */
-            BigInteger serDirPort = wwn.subtract(wwn.shiftRight(32).shiftLeft(32));
-            res += "VPlex-";
-
-            /* our example now has 607a3b00 */
-            /* get the next digit ("num"): even is A, odd is B. four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */
-            BigInteger numSeedIOPort[] = serDirPort.divideAndRemainder(new BigInteger("10000000",16));		/* numSeedIOPort[0] = 6, numSeedIOPort[1] = 07a3b00 */
-
-            //numSeedIOPort[0] = numSeedIOPort[0].shiftRight(7).shiftLeft(7);					/* numSeedIOPort[0] = 0 --> A Director, numSeedIOPort[1] = 07a3b00 */
-            char director='A';
-            director += (numSeedIOPort[0].intValue() % 2);
-
-            BigInteger seedIOPort[] = numSeedIOPort[1].divideAndRemainder(new BigInteger("100",16));     /* seedIOPort[0] = 07a3b, seedIOPort[1] = 00 */
-
-            /* Assume we're all VS2 architecture @todo fix the assumpiton that VS1 VPLEX no longer exist */
-            String front = "un";
-            switch (seedIOPort[1].intValue() / 16)
-            {
-            case 0:
-                front = "FE";
-                break;
-            case 1:
-                front = "BE";
-                break;
-            case 2:
-                front = "WA";
-                break;
-            case 3:
-                front = "LO";
-                break;
-                /* default: stick with an X, dunno what to do with that value */
-            }
-
-            /* want a result such as VPLEX02_E1B_BE13 */
-            /* can get a brief result such as VPlex-07a3b-EB-BE13 */
-            if (brief)
-                return res + String.format("%05x-E%c-%s%d%d",seedIOPort[0].intValue(),director,front,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);
-            /* can get a result such as VPlex-07a3b-A0-FC00 */
-            else
-                return res + String.format("%05x-%c%d-FC0%d",seedIOPort[0].intValue(),director,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);
-        }
-    }
-
     public class NetAppDesc extends WWNDesc
     {
         public NetAppDesc(String wwn)
@@ -599,7 +374,7 @@ public class WWNDescription
         val = val.replaceAll(":","");
 
         if (val.toLowerCase().matches("5006048.*"))
-            return new EMCSymmetrixDesc(briefWWNEstimate, val);
+            return new EMCSymmetrixDescription(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
             return new IBM3700_TexasMemory_RamSanDesc(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("5005076801.*"))
@@ -607,11 +382,11 @@ public class WWNDescription
         else if (val.toLowerCase().matches("500a098.*"))
             return new NetAppDesc(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("5006016.*"))
-            return new EMCClariionDesc(val);
+            return new EMCClariionDescription(val);
         else if (val.toLowerCase().matches("5000097.*"))
-            return new EMCVMAXDesc(briefWWNEstimate, val);
+            return new EMCVMAXDescription(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("50001442.*"))
-            return new EMCVPLEXDesc(briefWWNEstimate, val);
+            return new EMCVPLEXDescription(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("50060e8.*"))
             return new HDSVSPDesc(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
