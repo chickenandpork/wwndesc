@@ -38,6 +38,14 @@ public class EMCClariionDescription extends WWNDesc
         {
             super(wwn);
         }
+        public static WWNDesc getDesc(boolean /* ignored */ strong, boolean brief, String wwn)
+        {   
+            if (wwn.matches("5006016.*"))
+                return new EMCClariionDescription(wwn);
+            else
+                return null;
+        }   
+
         public String toString()
         {
             String res = super.toString();

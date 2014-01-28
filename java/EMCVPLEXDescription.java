@@ -42,6 +42,15 @@ public class EMCVPLEXDescription extends WWNDesc
         {
             super(brief,wwn);
         }
+
+        public static WWNDesc getDesc(boolean /* ignored */ strong, boolean brief, String wwn)
+        {   
+            if (wwn.matches("50001442.*"))
+                return new EMCVPLEXDescription(brief, wwn);
+            else
+                return null;
+        }   
+
         public String toString()
         {
             String res = super.toString();

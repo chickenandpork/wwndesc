@@ -42,6 +42,15 @@ public class EMCVMAXDescription extends WWNDesc
         {
             super(brief,wwn);
         }
+
+        public static WWNDesc getDesc(boolean /* ignored */ strong, boolean brief, String wwn)
+        {   
+            if (wwn.matches("5000097.*"))
+                return new EMCVMAXDescription(brief, wwn);
+            else
+                return null;
+        }   
+
         public String toString()
         {
             String res = super.toString();

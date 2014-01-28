@@ -371,9 +371,21 @@ public class WWNDescription
 
     public WWNDesc getWWNDescriptor(String val)
     {
-        val = val.replaceAll(":","");
+        val = val.replaceAll(":","").toLowerCase();
+	WWNDesc d = null;
 
-        if (val.toLowerCase().matches("5006048.*"))
+	if (null != (d = EMCSymmetrixDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+	else if (null != (d = EMCClariionDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+	else if (null != (d = EMCVMAXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+	else if (null != (d = EMCVPLEXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+	else if (null != (d = PureStorageDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+
+        else if (val.toLowerCase().matches("5006048.*"))
             return new EMCSymmetrixDescription(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
             return new IBM3700_TexasMemory_RamSanDesc(briefWWNEstimate, val);
@@ -381,12 +393,6 @@ public class WWNDescription
             return new IBMSVCDesc(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("500a098.*"))
             return new NetAppDesc(briefWWNEstimate, val);
-        else if (val.toLowerCase().matches("5006016.*"))
-            return new EMCClariionDescription(val);
-        else if (val.toLowerCase().matches("5000097.*"))
-            return new EMCVMAXDescription(briefWWNEstimate, val);
-        else if (val.toLowerCase().matches("50001442.*"))
-            return new EMCVPLEXDescription(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("50060e8.*"))
             return new HDSVSPDesc(briefWWNEstimate, val);
         else if (val.toLowerCase().matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
@@ -395,9 +401,6 @@ public class WWNDescription
             return new HPDotHillSystemsMSADesc(val);
         else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]0002ac.*"))	/* 50002AC000020C3A */
             return new HP3ParDesc(briefWWNEstimate, val);
-
-	else if (val.toLowerCase().matches(PureStorageDescription.pattern))
-            return new PureStorageDescription(briefWWNEstimate, val);
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);

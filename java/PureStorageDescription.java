@@ -10,8 +10,16 @@ import java.math.BigInteger;
         {
             super(wwn);
         }
-        public static String pattern = "^524a937.*";
-        public static boolean strong = false;
+
+        public static WWNDesc getDesc(boolean strong, boolean brief, String wwn)
+        {
+	    if (strong)
+		return null;
+            else if (wwn.matches("^524a937.*"))
+                return new PureStorageDescription(brief, wwn);
+            else
+                return null;
+        }
 
         public PureStorageDescription(boolean brief, String wwn)
         {

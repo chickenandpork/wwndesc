@@ -42,6 +42,15 @@ public class EMCSymmetrixDescription extends WWNDesc
         {
             super(brief, wwn);
         }
+
+	public static WWNDesc getDesc(boolean /* ignored */ strong, boolean brief, String wwn)
+	{
+	    if (wwn.matches("5006048.*"))
+		return new EMCSymmetrixDescription(brief, wwn);
+	    else
+		return null;
+	}
+	
         public String toString()
         {
             String res = super.toString();
