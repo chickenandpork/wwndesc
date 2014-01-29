@@ -51,65 +51,6 @@ public class WWNDescription
 {
     public boolean briefWWNEstimate = false;
 
-    public class IBMSVCDesc extends WWNDesc
-    {
-        public IBMSVCDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public IBMSVCDesc(boolean brief, String wwn)
-        {
-            super(brief, wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* convert 5005076801P0xxNN into SVCxx_NodeNN_PortP */
-            /* for example start with 5005076801:30ee81 and produce SVCee_Node81_Port3 */
-            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
-            /* serDirPort[0]=5005076801 ; serDirPort[1]=30ee81 */
-
-            BigInteger portChassisNode[] = serDirPort[1].divideAndRemainder(new BigInteger("10000",16));
-            /* portChassisNode[0]=30 ; portChassisNode[1]=ee81 */
-            BigInteger chassisNode[] = portChassisNode[1].divideAndRemainder(new BigInteger("100",16));
-
-            return res + String.format("SVC%02x_%s%02X_%s%s",chassisNode[0].intValue(), (brief ? "N" : "Node"), chassisNode[1].intValue(), (brief ? "P" : "Port"), portChassisNode[0].intValue()/16);
-        }
-    }
-
-    public class IBM3700_TexasMemory_RamSanDesc extends WWNDesc
-    {
-        public IBM3700_TexasMemory_RamSanDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public IBM3700_TexasMemory_RamSanDesc(boolean brief, String wwn)
-        {
-            super(brief, wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* convert 2P:0N:0020C2:MMMMMM into RamSan-MMMMMM-FC-NP */
-            /* for example start with 21:08:0020c2:078332 and produce RamSan-G8332-FC-2B */
-            BigInteger nodePortOUISer[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
-            /* nodePortOUISer[0]=21080020c2 ; nodePortOUISer[1]=078332 */
-
-            BigInteger nodePortOUI[] = nodePortOUISer[0].divideAndRemainder(new BigInteger("1000000",16));
-            /* nodePortOUI[0]=2108 ; nodePortOUI[1]=0020c2 */
-            BigInteger nodePort[] = nodePortOUI[0].divideAndRemainder(new BigInteger("100",16));
-            /* nodePort[0]=21 ; nodePort[1]=08 */
-            BigInteger serial[] = nodePortOUISer[1].divideAndRemainder(new BigInteger("10000",16));
-            /* serial[0]=07 ; serial[1]=8332 */
-
-            return res + String.format("RamSan-%c%04X-FC-%x%c",serial[0].intValue()-1+'A', serial[1].intValue(), nodePort[1].intValue()/4, nodePort[0].intValue() % 16 +'A');
-        }
-    }
-
     /**
      * Descriptor for 3Par Devices (0002ac)
      *
@@ -239,13 +180,14 @@ public class WWNDescription
 	    return d; 
 	else if (null != (d = HDSVSPDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
 	    return d; 
+	else if (null != (d = IBM3700Description.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+	else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
 
         else if (val.toLowerCase().matches("5006048.*"))
             return new EMCSymmetrixDescription(briefWWNEstimate, val);
-        else if (val.toLowerCase().matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
-            return new IBM3700_TexasMemory_RamSanDesc(briefWWNEstimate, val);
-        else if (val.toLowerCase().matches("5005076801.*"))
-            return new IBMSVCDesc(briefWWNEstimate, val);
+
         else if (val.toLowerCase().matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
             return new OraclePillarDesc(val);
         else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]00c0ff.*"))
