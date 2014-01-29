@@ -1,5 +1,6 @@
 nodist_pkgdata_JAVA  = EMCClariionDescription.java EMCSymmetrixDescription.java EMCVMAXDescription.java EMCVPLEXDescription.java
 nodist_pkgdata_JAVA += HDSVSPDescription.java IBM3700Description.java IBMSVCDescription.java
+nodist_pkgdata_JAVA += HP3ParDescription.java HPDotHillDescription.java
 nodist_pkgdata_JAVA += NetAppDescription.java
 nodist_pkgdata_JAVA += PureStorageDescription.java WWNDesc.java WWNDescription.java
 nodist_pkgdata_JAVA += version.java
