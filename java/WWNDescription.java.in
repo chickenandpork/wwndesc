@@ -51,37 +51,6 @@ public class WWNDescription
 {
     public boolean briefWWNEstimate = false;
 
-    /**
-     * Descriptor for (Oracle) Pillar Data Systems' Service Lifecycle Management devices
-     */
-    public class OraclePillarDesc extends WWNDesc
-    {
-        public OraclePillarDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* convert 2C00:000b08:SSSSSP into Axiom-SSSSS-cCpP */
-            /* for example start with 2100:000b08:123450 and produce Axiom-12345-c0p0 */
-            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
-            /* serDirPort[0]=2100:000b08 ; serDirPort[1]=123450 */
-
-            BigInteger twoContZeroZero[] = serDirPort[0].divideAndRemainder(new BigInteger("100000000",16));
-            /* twoContZeroZero[0]=21; twoContZeroZero[1]=00:000b08 */
-            BigInteger twoCont[] = twoContZeroZero[0].divideAndRemainder(new BigInteger("10",16));
-            /* twoCont[0]=2 ; twoCont[1]=1*/
-
-            BigInteger serialPort[] = serDirPort[1].divideAndRemainder(new BigInteger("10",16));
-            /* serialPort[0]=12345 ; serialPort[1]=0 */
-
-            return res + String.format("Axiom-%05X-c%sp%X",serialPort[0].intValue(), twoCont[1].intValue()-1, serialPort[1].intValue());
-        }
-    }
-
     /** test case: this matches a single item known to exist in the Demo Database */
     public class DemoTestDesc extends WWNDesc
     {
@@ -125,12 +94,8 @@ public class WWNDescription
 	    return d; 
 	else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
 	    return d; 
-
-        else if (val.toLowerCase().matches("5006048.*"))
-            return new EMCSymmetrixDescription(briefWWNEstimate, val);
-
-        else if (val.toLowerCase().matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
-            return new OraclePillarDesc(val);
+	else if (null != (d = OraclePillarDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
