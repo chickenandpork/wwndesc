@@ -3,7 +3,6 @@ package org.smallfoot.wwn;
 
 import java.math.BigInteger;
 
-
     public class PureStorageDescription extends WWNDesc
     {
         public PureStorageDescription(String wwn)

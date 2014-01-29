@@ -1,32 +1,8 @@
 /* smallfoot.org is owned by allan.clark */
 package org.smallfoot.wwn;
 
-//import com.adventnet.snmp.beans.SnmpTarget;
 import gnu.getopt.Getopt;
 import gnu.getopt.LongOpt;
-import java.io.*;
-import java.math.BigInteger;
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.SQLException;
-import java.util.*;
-//import javax.activation.DataSource;
-//import javax.activation.URLDataSource;
-//import org.smallfoot.parser.ParserTee;
-//import org.smallfoot.parser.zone.AliShowZoneParser;
-//import org.smallfoot.parser.zone.Alias4Parser;
-//import org.smallfoot.parser.zone.BNAZoneParser;
-//import org.smallfoot.parser.zone.DeviceAliasParser;
-//import org.smallfoot.parser.zone.NicknameParser;
-//import org.smallfoot.parser.zone.ZPAliasEntry;
-//import org.smallfoot.parser.zone.ZoneParser;
-//import org.smallfoot.filexfer.FileTransferWinch;
-//import org.smallfoot.filexfer.FileTransferWinch.FileTransferAbortedException;
-//import org.smallfoot.filexfer.FileTransferWinch.FileTransferChecksumMismatchException;
-//import org.smallfoot.filexfer.FileTransferWinch.FileTransferDataTransferException;
-//import org.smallfoot.filexfer.FileTransferWinch.FileTransferIllegalFSMReplyException;
-//import org.smallfoot.filexfer.FileTransferWinch.FileTransferWinchException;
-//import org.smallfoot.filexfer.WinchFactory;
 
 /**
  * @file
