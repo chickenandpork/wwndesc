@@ -52,69 +52,6 @@ public class WWNDescription
     public boolean briefWWNEstimate = false;
 
     /**
-     * Descriptor for 3Par Devices (0002ac)
-     *
-     * These descriptors are fairly weak: I'm somewhat sure of the serial, but only two matches for the port-number logic.
-     */
-    public class HP3ParDesc extends WWNDesc
-    {
-        public HP3ParDesc(String wwn)
-        {
-            super(wwn);
-        }
-        public HP3ParDesc(boolean brief, String wwn)
-        {
-            super(brief, wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* convert 2N:SP:00:20:AC:MM:MM:MM to 3Par-Serial:N:S:P */
-            /* ie 20:12:00:02:AC:00:0C:3A is serial number 1303130 */
-            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
-            /* serDirPort[0]=20120002ac ; serDirPort[1]=000c3a */
-
-            BigInteger portChassisNode[] = serDirPort[0].divideAndRemainder(new BigInteger("1000000",16));
-            /* portChassisNode[0]=2012 ; portChassisNode[1]=0002ac */
-            BigInteger chassisNode[] = portChassisNode[0].divideAndRemainder(new BigInteger("100",16));
-            /* chassisNode[0]=20 ; chassisNode[1]=12 */
-
-            return res + String.format("3Par-%04d:%x:%x:%x",serDirPort[1].intValue(), chassisNode[0].intValue() % 16, chassisNode[1].intValue() / 16, chassisNode[1].intValue() % 16);
-        }
-    }
-
-    /**
-     * Descriptor for (Dot Hill Systems Modular Smart Array) HP P2000
-     *
-     * These descriptors are fairly weak: I'm somewhat sure of the serial, but only two matches for the port-number logic.
-     */
-    public class HPDotHillSystemsMSADesc extends WWNDesc
-    {
-        public HPDotHillSystemsMSADesc(String wwn)
-        {
-            super(wwn);
-        }
-        public String toString()
-        {
-            String res = super.toString();
-            if (null == res) res = "";
-
-            /* convert 2170:00c0ff:012345 into P2000-012345-A2 */
-            BigInteger serDirPort[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
-            /* serDirPort[0]=217000c0ff ; serDirPort[1]=012345 */
-
-            BigInteger portChassisNode[] = serDirPort[0].divideAndRemainder(new BigInteger("100000000",16));
-            /* portChassisNode[0]=21 ; portChassisNode[1]=7000c0ff */
-            BigInteger chassisNode[] = portChassisNode[0].divideAndRemainder(new BigInteger("10",16));
-            /* chassisNode[0]=2 ; chassisNode[1]=1 */
-
-            return res + String.format("P2000-%06x-%c%c",serDirPort[1].intValue(), 'A'+(chassisNode[1].intValue()/4), '1'+(chassisNode[1].intValue()%4));
-        }
-    }
-
-    /**
      * Descriptor for (Oracle) Pillar Data Systems' Service Lifecycle Management devices
      */
     public class OraclePillarDesc extends WWNDesc
@@ -184,16 +121,16 @@ public class WWNDescription
 	    return d; 
 	else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
 	    return d; 
+	else if (null != (d = HP3ParDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
+	else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+	    return d; 
 
         else if (val.toLowerCase().matches("5006048.*"))
             return new EMCSymmetrixDescription(briefWWNEstimate, val);
 
         else if (val.toLowerCase().matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
             return new OraclePillarDesc(val);
-        else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]00c0ff.*"))
-            return new HPDotHillSystemsMSADesc(val);
-        else if (val.toLowerCase().matches("2[0-9a-f][0-9a-f][0-9a-f]0002ac.*"))	/* 50002AC000020C3A */
-            return new HP3ParDesc(briefWWNEstimate, val);
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
