@@ -46,38 +46,38 @@ public class WWNDescription
     public WWNDesc getWWNDescriptor(String val)
     {
         val = val.replaceAll(":","").toLowerCase();
-	WWNDesc d = null;
+        WWNDesc d = null;
 
-	if (null != (d = EMCSymmetrixDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = EMCClariionDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = EMCVMAXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = EMCVPLEXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = PureStorageDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = NetAppDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = HDSVSPDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = IBM3700Description.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = HP3ParDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
-	else if (null != (d = OraclePillarDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
-	    return d; 
+        if (null != (d = EMCSymmetrixDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = EMCClariionDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = EMCVMAXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = EMCVPLEXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = PureStorageDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = NetAppDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = HDSVSPDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = IBM3700Description.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = HP3ParDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
+        else if (null != (d = OraclePillarDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+            return d;
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
 
         else
-	     return new WWNDesc(val);
+            return new WWNDesc(val);
     }
 
 
@@ -145,9 +145,9 @@ public class WWNDescription
             }
             break;
 
-                /*
-                 * Follows is the "house-keeping": versions, usage, and the catch-all for bad options.
-                 */
+            /*
+             * Follows is the "house-keeping": versions, usage, and the catch-all for bad options.
+             */
             case 'V':	// print the version and quit
             {
                 System.out.println(g.consistentVersion("@VERSION@-$Revision: 631 $")+"\n");
