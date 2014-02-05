@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc" kind="class"><name>org::smallfoot::wwn::WWNDescription::DemoTestDesc</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1a20afdb6486eb08bfa269663b13272327" kind="function"><name>DemoTestDesc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription" kind="class"><name>org::smallfoot::wwn::EMCClariionDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a6bc5999432db0b6ceae07085b17901f2" kind="function"><name>EMCClariionDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" kind="class"><name>org::smallfoot::wwn::EMCSymmetrixDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1aac54d649a6df7c45f2e0424649a6acdd" kind="function"><name>EMCSymmetrixDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a52f4d3c2e88500ffbfc0a611ac75df5b" kind="function"><name>EMCSymmetrixDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" kind="class"><name>org::smallfoot::wwn::EMCVMAXDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1ad764133658fc6c5afec948ebd1873bb0" kind="function"><name>EMCVMAXDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1a348ba3a7bc4a038e1ff8479ac5d43a37" kind="function"><name>EMCVMAXDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" kind="class"><name>org::smallfoot::wwn::EMCVPLEXDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a022d1e6232e295b14d9ec8c05a9472c7" kind="function"><name>EMCVPLEXDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a6803024e3e1d731aa60b5f3b46903349" kind="function"><name>EMCVPLEXDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" kind="class"><name>org::smallfoot::wwn::HDSVSPDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a3c873624b4dd44f373af3dc3e445f02c" kind="function"><name>HDSVSPDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1af2cd2d4fa950688e68f7bcda4b35e9d1" kind="function"><name>HDSVSPDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription" kind="class"><name>org::smallfoot::wwn::HP3ParDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a8113b7e0db585cec11c121463692764e" kind="function"><name>HP3ParDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a06ba9718f7c87d200769170c5b6b3e83" kind="function"><name>HP3ParDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription" kind="class"><name>org::smallfoot::wwn::HPDotHillDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1ad22528e257f239b38e608c80cd4806a6" kind="function"><name>HPDotHillDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description" kind="class"><name>org::smallfoot::wwn::IBM3700Description</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a956b2c06b0e4934236fcb08fba5807dd" kind="function"><name>IBM3700Description</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ae6037d4ae31df18dbdc9a4e09f85e8a8" kind="function"><name>IBM3700Description</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription" kind="class"><name>org::smallfoot::wwn::IBMSVCDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a57a4e0da6d730a8b79fa3deabf6e59dd" kind="function"><name>IBMSVCDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a063df7534db1b95a74bfe2e5e84c1331" kind="function"><name>IBMSVCDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription" kind="class"><name>org::smallfoot::wwn::NetAppDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" kind="function"><name>NetAppDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a11fdde1c8d9837b45468199530c747f4" kind="function"><name>NetAppDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" kind="class"><name>org::smallfoot::wwn::OraclePillarDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a18e4afcfc6772a559d0e3ad342315eaa" kind="function"><name>OraclePillarDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a22e37e33bddb34b1c7506f3f35749eb2" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription" kind="class"><name>org::smallfoot::wwn::PureStorageDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" kind="function"><name>PureStorageDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a2ea6fcaaa1974c68217380fa6667f564" kind="function"><name>PureStorageDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1version" kind="class"><name>org::smallfoot::wwn::version</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1version_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kind="class"><name>org::smallfoot::wwn::WWNDesc</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" kind="variable"><name>wwn</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kind="variable"><name>brief</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" kind="function"><name>WWNDesc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" kind="function"><name>WWNDesc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" kind="class"><name>org::smallfoot::wwn::WWNDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a48cfcc3bfbc4d22cd4ad0fb8c46aeff8" kind="variable"><name>briefWWNEstimate</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" kind="function"><name>getWWNDescriptor</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a65d03ca5cd39f6905d34f7b0aab28f42" kind="function"><name>usage</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespaceorg" kind="namespace"><name>org</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot" kind="namespace"><name>org::smallfoot</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1wwn" kind="namespace"><name>org::smallfoot::wwn</name>
+  </compound>
+  <compound refid="EMCClariionDescription_8java" kind="file"><name>EMCClariionDescription.java</name>
+  </compound>
+  <compound refid="EMCSymmetrixDescription_8java" kind="file"><name>EMCSymmetrixDescription.java</name>
+  </compound>
+  <compound refid="EMCVMAXDescription_8java" kind="file"><name>EMCVMAXDescription.java</name>
+  </compound>
+  <compound refid="EMCVPLEXDescription_8java" kind="file"><name>EMCVPLEXDescription.java</name>
+  </compound>
+  <compound refid="HDSVSPDescription_8java" kind="file"><name>HDSVSPDescription.java</name>
+  </compound>
+  <compound refid="HP3ParDescription_8java" kind="file"><name>HP3ParDescription.java</name>
+  </compound>
+  <compound refid="HPDotHillDescription_8java" kind="file"><name>HPDotHillDescription.java</name>
+  </compound>
+  <compound refid="IBM3700Description_8java" kind="file"><name>IBM3700Description.java</name>
+  </compound>
+  <compound refid="IBMSVCDescription_8java" kind="file"><name>IBMSVCDescription.java</name>
+  </compound>
+  <compound refid="NetAppDescription_8java" kind="file"><name>NetAppDescription.java</name>
+  </compound>
+  <compound refid="OraclePillarDescription_8java" kind="file"><name>OraclePillarDescription.java</name>
+  </compound>
+  <compound refid="PureStorageDescription_8java" kind="file"><name>PureStorageDescription.java</name>
+  </compound>
+  <compound refid="version_8java" kind="file"><name>version.java</name>
+  </compound>
+  <compound refid="WWNDesc_8java" kind="file"><name>WWNDesc.java</name>
+  </compound>
+  <compound refid="WWNDescription_8java" kind="file"><name>WWNDescription.java</name>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="dir_4ca25f58cd2b76268b38c4814addb15e" kind="dir"><name>java/</name>
+  </compound>
+</doxygenindex>

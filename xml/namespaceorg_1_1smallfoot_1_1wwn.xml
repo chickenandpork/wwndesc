@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceorg_1_1smallfoot_1_1wwn" kind="namespace">
+    <compoundname>org::smallfoot::wwn</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription" prot="public">org::smallfoot::wwn::EMCClariionDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" prot="public">org::smallfoot::wwn::EMCSymmetrixDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" prot="public">org::smallfoot::wwn::EMCVMAXDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" prot="public">org::smallfoot::wwn::EMCVPLEXDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" prot="public">org::smallfoot::wwn::HDSVSPDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription" prot="public">org::smallfoot::wwn::HP3ParDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription" prot="public">org::smallfoot::wwn::HPDotHillDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description" prot="public">org::smallfoot::wwn::IBM3700Description</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription" prot="public">org::smallfoot::wwn::IBMSVCDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription" prot="public">org::smallfoot::wwn::NetAppDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" prot="public">org::smallfoot::wwn::OraclePillarDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription" prot="public">org::smallfoot::wwn::PureStorageDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1version" prot="public">org::smallfoot::wwn::version</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public">org::smallfoot::wwn::WWNDesc</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" prot="public">org::smallfoot::wwn::WWNDescription</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="2"/>
+  </compounddef>
+</doxygen>

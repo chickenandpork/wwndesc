@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::WWNDescription::DemoTestDesc</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1a20afdb6486eb08bfa269663b13272327" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DemoTestDesc</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>DemoTestDesc</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="34" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="38" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="37" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>test case: this matches a single item known to exist in the Demo Database </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="86">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="85">
+        <label>WWNDescription.DemoTestDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="89">
+        <label>BigInteger</label>
+      </node>
+      <node id="88">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="89" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>WWNDescription.DemoTestDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="32" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="31" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1a20afdb6486eb08bfa269663b13272327" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>DemoTestDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>WWNDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

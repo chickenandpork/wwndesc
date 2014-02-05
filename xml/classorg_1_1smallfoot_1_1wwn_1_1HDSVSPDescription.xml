@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::HDSVSPDescription</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a3c873624b4dd44f373af3dc3e445f02c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HDSVSPDescription</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>HDSVSPDescription</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="13" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="12" bodyend="15"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a22e37e33bddb34b1c7506f3f35749eb2" compoundref="HDSVSPDescription_8java" startline="20" endline="26">HDSVSPDescription.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1af2cd2d4fa950688e68f7bcda4b35e9d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HDSVSPDescription</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>HDSVSPDescription</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="17" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>50060e8: 005: USP-V: <ulink url="http://www.hitachi-storage.com/content/how-decode-usp-v-wwn">http://www.hitachi-storage.com/content/how-decode-usp-v-wwn</ulink> 00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOFFSSSSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping &quot;I&quot;) note article confuses NAA marker as &quot;50&quot; need to check against <ulink url="http://p2v.it/tools/wwndec/index.php?input=50060E8010277210">http://p2v.it/tools/wwndec/index.php?input=50060E8010277210</ulink> need to check <ulink url="http://p2v.it/tools/wwndec/index.php?input=50060e8016624800">http://p2v.it/tools/wwndec/index.php?input=50060e8016624800</ulink> </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="29" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="28" bodyend="88"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="9">WWNDesc.brief</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="8">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(booleanstrong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>booleanstrong</type>
+          <defname>strong</defname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="21" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="20" bodyend="26"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a3c873624b4dd44f373af3dc3e445f02c" compoundref="HDSVSPDescription_8java" startline="12" endline="15">HDSVSPDescription.HDSVSPDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="46" endline="81">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="111">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="110">
+        <label>HDSVSPDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="114">
+        <label>BigInteger</label>
+      </node>
+      <node id="113">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="114" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>HDSVSPDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="11" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="10" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a3c873624b4dd44f373af3dc3e445f02c" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>HDSVSPDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1af2cd2d4fa950688e68f7bcda4b35e9d1" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>HDSVSPDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>WWNDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

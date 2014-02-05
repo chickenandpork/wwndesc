@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::IBM3700Description</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a956b2c06b0e4934236fcb08fba5807dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IBM3700Description</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>IBM3700Description</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" line="13" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" bodystart="12" bodyend="15"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a22e37e33bddb34b1c7506f3f35749eb2" compoundref="IBM3700Description_8java" startline="20" endline="26">IBM3700Description.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ae6037d4ae31df18dbdc9a4e09f85e8a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IBM3700Description</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>IBM3700Description</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" line="17" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" line="29" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" bodystart="28" bodyend="46"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="8">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(booleanstrong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>booleanstrong</type>
+          <defname>strong</defname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" line="21" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" bodystart="20" bodyend="26"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a956b2c06b0e4934236fcb08fba5807dd" compoundref="IBM3700Description_8java" startline="12" endline="15">IBM3700Description.IBM3700Description</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="46" endline="81">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="125">
+        <label>IBM3700Description</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="129">
+        <label>BigInteger</label>
+      </node>
+      <node id="127">
+        <label>IBM3700Description</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="129" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" line="11" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM3700Description.java" bodystart="10" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a956b2c06b0e4934236fcb08fba5807dd" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>IBM3700Description</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ae6037d4ae31df18dbdc9a4e09f85e8a8" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>IBM3700Description</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM3700Description</scope><name>WWNDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

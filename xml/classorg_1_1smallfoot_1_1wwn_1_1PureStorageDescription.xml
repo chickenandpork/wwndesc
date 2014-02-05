@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::PureStorageDescription</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureStorageDescription</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>PureStorageDescription</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="9" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="8" bodyend="11"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="PureStorageDescription_8java" startline="13" endline="21">PureStorageDescription.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a2ea6fcaaa1974c68217380fa6667f564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureStorageDescription</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>PureStorageDescription</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="24" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="28" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="27" bodyend="43"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="9">WWNDesc.brief</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="8">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(boolean strong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>boolean</type>
+          <declname>strong</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="14" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="13" bodyend="21"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" compoundref="PureStorageDescription_8java" startline="8" endline="11">PureStorageDescription.PureStorageDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="46" endline="81">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="145">
+        <label>PureStorageDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="147">
+        <label>PureStorageDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>BigInteger</label>
+      </node>
+      <node id="148">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="7" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="6" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>PureStorageDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a2ea6fcaaa1974c68217380fa6667f564" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>PureStorageDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>WWNDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

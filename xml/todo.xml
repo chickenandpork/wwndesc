@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Global <ref refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" kindref="member">HDSVSPDescription.toString</ref>  ()</term></varlistentry>
+<listitem><para>50060e8: 005: USP-V: <ulink url="http://www.hitachi-storage.com/content/how-decode-usp-v-wwn">http://www.hitachi-storage.com/content/how-decode-usp-v-wwn</ulink> 00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOFFSSSSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping &quot;I&quot;) note article confuses NAA marker as &quot;50&quot; need to check against <ulink url="http://p2v.it/tools/wwndec/index.php?input=50060E8010277210">http://p2v.it/tools/wwndec/index.php?input=50060E8010277210</ulink> need to check <ulink url="http://p2v.it/tools/wwndec/index.php?input=50060e8016624800">http://p2v.it/tools/wwndec/index.php?input=50060e8016624800</ulink> </para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

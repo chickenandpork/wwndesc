@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::OraclePillarDescription</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a18e4afcfc6772a559d0e3ad342315eaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OraclePillarDescription</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>OraclePillarDescription</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="16" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="15" bodyend="18"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a22e37e33bddb34b1c7506f3f35749eb2" compoundref="OraclePillarDescription_8java" startline="20" endline="26">OraclePillarDescription.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="29" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="28" bodyend="47"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="8">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(booleanstrong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>booleanstrong</type>
+          <defname>strong</defname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="21" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="20" bodyend="26"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a18e4afcfc6772a559d0e3ad342315eaa" compoundref="OraclePillarDescription_8java" startline="15" endline="18">OraclePillarDescription.OraclePillarDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="46" endline="81">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Descriptor for (Oracle) Pillar Data Systems&apos; Service Lifecycle Management devices. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="141">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="140">
+        <label>OraclePillarDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="144">
+        <label>BigInteger</label>
+      </node>
+      <node id="143">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="144" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="142">
+        <label>OraclePillarDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription"/>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="14" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="13" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a18e4afcfc6772a559d0e3ad342315eaa" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>OraclePillarDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>WWNDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

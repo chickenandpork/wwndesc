@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::NetAppDescription</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NetAppDescription</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>NetAppDescription</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="14" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="13" bodyend="16"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a22e37e33bddb34b1c7506f3f35749eb2" compoundref="NetAppDescription_8java" startline="22" endline="28">NetAppDescription.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a11fdde1c8d9837b45468199530c747f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NetAppDescription</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>NetAppDescription</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="18" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="31" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="30" bodyend="93"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="9">WWNDesc.brief</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="8">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(booleanstrong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>booleanstrong</type>
+          <defname>strong</defname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="23" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="22" bodyend="28"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" compoundref="NetAppDescription_8java" startline="13" endline="16">NetAppDescription.NetAppDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="46" endline="81">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="136">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="135">
+        <label>NetAppDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="139">
+        <label>BigInteger</label>
+      </node>
+      <node id="138">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="137">
+        <label>NetAppDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="12" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="11" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a22e37e33bddb34b1c7506f3f35749eb2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>NetAppDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a11fdde1c8d9837b45468199530c747f4" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>NetAppDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>WWNDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
