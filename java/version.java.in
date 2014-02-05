@@ -1,9 +1,0 @@
-package org.smallfoot.wwn;
-
-public class version
-{
-    static public void main (String arg[])
-    {
-        System.out.println("@VERSION@.@BUILDID@");
-    }
-}
