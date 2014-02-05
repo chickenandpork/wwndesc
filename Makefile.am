@@ -16,6 +16,8 @@ EXTRA_DIST = @PACKAGE@.spec gitdescribe
 if DO_DOXYGEN
 doc: Doxyfile
 	$(DOXYGEN)
+	(cd htdocs && git add -A)
+	if -n "$(DOXYMESSAGE)" ; then (cd htdocs && git commit -a -m "$(DOXYMESSAGE)" && git push); fi
 endif
 
 if DO_ASTYLE
