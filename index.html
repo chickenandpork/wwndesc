@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="WWNDesc : WWN Descriptions based on well known WWPN patterns" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>WWNDesc</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/chickenandpork/wwndesc">View on GitHub</a>
+
+          <h1 id="project_title">WWNDesc</h1>
+          <h2 id="project_tagline">WWN Descriptions based on well known WWPN patterns</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chickenandpork/wwndesc/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chickenandpork/wwndesc/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="wwndesc" class="anchor" href="#wwndesc"><span class="octicon octicon-link"></span></a>wwndesc</h1>
+
+<p>WWNDesc is a tool I use to give functional usable nicknames/aliases to devices present on a SAN when a customer may not have them but needs identifiers quickly.  In some cases, these names are used as the canonical names: cases involving very large organizations where the name isn't a huge deal, but having a name is.</p>
+
+<p>BUILDING</p>
+
+<p>This is a standard AutoTools build, so:</p>
+
+<p>1) autoreconf -vfi</p>
+
+<p>2) make install (or "make check" to include that plus run the tests)</p>
+
+<p>3) make rpm (if so inclined)</p>
+
+<p>java/wwndesc.jar is the proper built jar file; convjars is where "convenience jars" are built if 
+you're less concerned with license purity and more concerned with:</p>
+
+<p>1) your tests are bogus.  Let me test exactly what you tested; or</p>
+
+<p>2) I need it working like yesterday.  Holy crap please help me.
+      Gimme something to download immediately to make the pain stop.</p>
+
+<p>We've all been there.  In both cases.  grab convjars/wwndesc.jar, it's not sanitary, but it works.</p>
+
+<p>USAGE</p>
+
+<p>Example usage at:</p>
+
+<pre><code>java -jar wwndesc.jar -H
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">WWNDesc maintained by <a href="https://github.com/chickenandpork">chickenandpork</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47807327-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
