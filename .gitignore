@@ -18,3 +18,4 @@ missing
 *.jar
 *.war
 *.ear
+htdocs/
