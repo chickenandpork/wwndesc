@@ -5,6 +5,7 @@ WWNDesc is a tool I use to give functional usable nicknames/aliases to devices p
 
 
 BUILDING
+========
 
 This is a standard AutoTools build, so:
 
@@ -28,8 +29,36 @@ We've all been there.  In both cases.  grab convjars/wwndesc.jar, it's not sanit
 
 
 USAGE
+=====
 
 Example usage at:
 
     java -jar wwndesc.jar -H
+
+Example Search for an Alias/Description:
+
+    String wwn = "50000972081349ad";
+    WWNDescription desc = new WWNDescription();
+    
+    WWNDesc alias;
+    
+    if (null != (alias = desc.getWWNDescriptor(wwn)))
+        System.out.println(alias.toString());
+    else
+        System.out.println("no alias generated from "+wwn);
+
+
+DEVELOPMENT
+===========
+
+There are a few "housekeeping" items in the codebase, such as pkg/Doxyfile.in, the GITDESCRIPTION stuff in the Makefile.am, etc.
+
+A bit more unusual: java/version.java (http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1version.html) is created from java/version.java.in to include the version in a simple parseable output to ensure that the jar file is read, and the version itself can be read, interpreted, and passed forth in autoconf-generated configure scripts in dependent projects.
+
+The basic structure of this project is where WWNDescription's (http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1WWNDescription.html) getWWNDescriptor(String wwn) searches through a maintained list of WWNDesc descendents for a OUI or pattern that matches; the WWNDesc descendent is instantiated, and returned, or getWWNDescription() returns a null.
+
+@see org.smallfoot.wwn.WWNDescription.getWWNDescriptor
+
+Adding new WWN patterns herein is a case of either extending the existing patterns as manufacturers evolve their usage, or adding new descendent classes of WWNDesc, and adding their classnames to the getWWNDescriptor() class.  You can see that the getWWNDescriptor() function call is relatively simple at this point: the logic for whether a WWNDesc descendent matches a given pattern is moved to static function calls.  For example, if NetAddDescription::getDesc(boolean, boolean, String) decides that the given WWN matches, it'll return an instance of itself; otherwise, it'll return a null.  This was done to allow more than one pattern to be represented in the WWNDesc for later expansion: for example, a HDS super-class that returns configured subclasses, or configures instances of itself for different personalities.
+
 

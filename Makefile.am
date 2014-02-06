@@ -20,7 +20,11 @@ doc: Doxyfile htdocs/README.dox
 	if test -n "$(DOXYMESSAGE)" ; then (cd htdocs && git commit -a -m "$(DOXYMESSAGE)" && git push); fi
 
 htdocs/README.dox: README.md Makefile
+if DO_DOXYGEN_MD
+	awk 'BEGIN { print "@file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } { printf "%s\n",$$0; } END {print "" }' $< > $@
+else
 	awk 'BEGIN { print "/** @file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } /@PACKAGE@$$/ {next} /^=+$$/ {next} { printf " * %s\n",$$0; } END {print " */" }' $< > $@
+endif DO_DOXYGEN_MD_FALSE
 endif
 
 if DO_ASTYLE

@@ -2,6 +2,15 @@ package org.smallfoot.wwn;
 
 public class version
 {
+    /**
+     * returns the version of the class; used to cause the build-time-detected version and buildid to be available by consumers of the generated @PACKAGE@.jar file
+     *
+     * for example:
+     *     java -cp @PACKAGE@.jar org.smallfoot.wwn.version
+     *     @VERSION@.@BUILDID@
+     *
+     * @param arg ignored
+     */
     static public void main (String arg[])
     {
         System.out.println("@VERSION@.@BUILDID@");

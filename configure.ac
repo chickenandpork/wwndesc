@@ -65,10 +65,22 @@ AC_ARG_WITH(doxygen,
 	"no")  DOXYGEN=missing ;;
 	*) DOXYGEN=$withval ;;
     esac
+
+    case "$DOXYGEN" in
+	"missing") HAVE_DOXYGEN_MARKDOWN=no ;;
+	*)
+	    case `$DOXYGEN --version` in
+		1.[0-7]* ) HAVE_DOXYGEN_MARKDOWN=no;;
+		*) HAVE_DOXYGEN_MARKDOWN=yes;;
+	    esac ;;
+    esac
 ],
 [
 	DOXYGEN=missing 
+	HAVE_DOXYGEN_MARKDOWN=no
 ])
+AC_SUBST(HAVE_DOXYGEN_MARKDOWN)
+AM_CONDITIONAL(DO_DOXYGEN_MD, test "x$HAVE_DOXYGEN_MARKDOWN" = "xyes")
 AC_PATH_PROGS(DOT, [dot], missing, $PATH:/usr/local/bin:/usr/local/graph*/bin)
 AC_SUBST(PATHDOT, [`dirname "${DOT}"`])
 AM_CONDITIONAL(DO_DOT, test "x$DOT" != "xmissing")

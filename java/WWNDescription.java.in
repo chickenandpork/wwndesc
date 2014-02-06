@@ -25,15 +25,21 @@ import gnu.getopt.LongOpt;
 
 public class WWNDescription
 {
-    public boolean briefWWNEstimate = false;
+    public boolean briefWWNEstimate = false;	/**< setting to "true" via the "--briefestimate" commandline causes all descriptions later requested in getWWNDescriptor(String) to be "brief" (more concise)  @see WWNDesc#toString() */
 
     /** test case: this matches a single item known to exist in the Demo Database */
     public class DemoTestDesc extends WWNDesc
     {
+	/** @copydoc WWNDesc#WWNDesc(String) */
         public DemoTestDesc(String wwn)
         {
             super(wwn);
         }
+	/**
+         * generates a test description or alias for this test class
+	 *
+	 * @returns "TestDevice" always
+         */
         public String toString()
         {
             String res = super.toString();
@@ -43,6 +49,13 @@ public class WWNDescription
         }
     }
 
+    /**
+     * Iterates WWNDescription decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor
+     *
+     * @return new instance of WWNDesc descendent, or null if no descendents accept responsibility to describe or provide an alias for that WWN
+     *
+     * @param val WWN to check
+     */
     public WWNDesc getWWNDescriptor(String val)
     {
         val = val.replaceAll(":","").toLowerCase();
@@ -82,7 +95,10 @@ public class WWNDescription
 
 
 
-    /** usage messages are useful to those of us with short memories as well (hey, I just need to add swap!) */
+    /** usage messages are useful to those of us with short memories as well (hey, I just need to add swap!)
+     *
+     * @param proc name of the process or program (ie wwndesc)
+     */
     public void usage(String proc)
     {
         System.out.println("Usage: "+proc+" -V|--version|-H|--help");
@@ -106,6 +122,8 @@ public class WWNDescription
      * way to self-document what the tool's doing.
      *
      * No real intelligence herein except the parse-and-redirect action.
+     *
+     * @param args commandline arguments passed in by the JRE
      */
     public static void main(String args[])
     {

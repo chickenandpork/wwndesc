@@ -9,15 +9,26 @@ import java.math.BigInteger;
 
 public class IBM3700Description extends WWNDesc
 {
+    /** @copydoc WWNDesc#WWNDesc(String) */
     public IBM3700Description(String wwn)
     {
         super(wwn);
     }
+    /** @copydoc WWNDesc#WWNDesc(boolean,String) */
     public IBM3700Description(boolean brief, String wwn)
     {
         super(brief, wwn);
     }
-    public static WWNDesc getDesc(boolean /* ignored */ strong, boolean brief, String wwn)
+    
+    /**
+     * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
+     *
+     * @return new instance of this class, or null if the given wwn does not match this class
+     * @param strong is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence
+     * @param brief is ignored: this class has only one representation of the WWN description or alias
+     * @param wwn the WWN (WWPN or WWNN, but typically WWPN) to match
+     */
+    public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
         if (wwn.matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
             return new IBM3700Description(brief, wwn);
@@ -25,6 +36,11 @@ public class IBM3700Description extends WWNDesc
             return null;
     }
 
+    /**
+     * return a description or alias for this WWN
+     *
+     * @return generated alias or nickname for the WWN
+     */
     public String toString()
     {
         String res = super.toString();

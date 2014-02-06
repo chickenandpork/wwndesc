@@ -12,12 +12,21 @@ import java.math.BigInteger;
  */
 public class OraclePillarDescription extends WWNDesc
 {
+    /** @copydoc WWNDesc#WWNDesc(String) */
     public OraclePillarDescription(String wwn)
     {
         super(wwn);
     }
 
-    public static WWNDesc getDesc(boolean /* ignored */ strong, boolean brief, String wwn)
+    /**
+     * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
+     *
+     * @return new instance of this class, or null if the given wwn does not match this class
+     * @param strong is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence
+     * @param brief is ignored: this class has only one representation of the WWN description or alias
+     * @param wwn the WWN (WWPN or WWNN, but typically WWPN) to match
+     */
+    public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
         if (wwn.matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
             return new OraclePillarDescription(wwn);
@@ -25,6 +34,11 @@ public class OraclePillarDescription extends WWNDesc
             return null;
     }
 
+    /**
+     * return a description or alias for this WWN
+     *
+     * @return generated alias or nickname for the WWN
+     */
     public String toString()
     {
         String res = super.toString();
