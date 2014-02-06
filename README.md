@@ -48,6 +48,17 @@ Example Search for an Alias/Description:
         System.out.println("no alias generated from "+wwn);
 
 
+DOCUMENTATION
+=============
+
+The canonical code repository is at https://github.com/chickenandpork/wwndesc/
+
+API documentation is based on JavaDoc-generated cross-referenced pages pushed to http://chickenandpork.github.io/wwndesc/ and pushed using:
+
+    autoreconf -vfi && ./configure --with-doxygen && make doc && cd htdocs && git push
+    autoreconf -vfi && ./configure --with-doxygen && make doc DOXYMESSAGE="a commit message"
+
+
 DEVELOPMENT
 ===========
 
