@@ -95,6 +95,8 @@
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1wwn" kind="namespace"><name>org::smallfoot::wwn</name>
   </compound>
+  <compound refid="README_8dox" kind="file"><name>README.dox</name>
+  </compound>
   <compound refid="EMCClariionDescription_8java" kind="file"><name>EMCClariionDescription.java</name>
   </compound>
   <compound refid="EMCSymmetrixDescription_8java" kind="file"><name>EMCSymmetrixDescription.java</name>
@@ -128,5 +130,7 @@
   <compound refid="todo" kind="page"><name>todo</name>
   </compound>
   <compound refid="dir_4ca25f58cd2b76268b38c4814addb15e" kind="dir"><name>java/</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>

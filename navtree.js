@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "wwndesc", "index.html", [
+    [ "JavaDoc API Markup for wwndesc", "index.html", null ],
     [ "Related Pages", "pages.html", "pages" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]

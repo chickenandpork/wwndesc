@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>JavaDoc API Markup for wwndesc</title>
+    <detaileddescription>
+<para>WWNDesc is a tool I use to give functional usable nicknames/aliases to devices present on a SAN when a customer may not have them but needs identifiers quickly. In some cases, these names are used as the canonical names: cases involving very large organizations where the name isn&apos;t a huge deal, but having a name is.</para><para>BUILDING</para><para>This is a standard AutoTools build, so:</para><para>1) autoreconf -vfi</para><para>2) make install (or &quot;make check&quot; to include that plus run the tests)</para><para>3) make rpm (if so inclined)</para><para>java/wwndesc.jar is the proper built jar file; convjars is where &quot;convenience jars&quot; are built if you&apos;re less concerned with license purity and more concerned with:</para><para>1) your tests are bogus. Let me test exactly what you tested; or</para><para>2) I need it working like yesterday. Holy crap please help me. Gimme something to download immediately to make the pain stop.</para><para>We&apos;ve all been there. In both cases. grab convjars/wwndesc.jar, it&apos;s not sanitary, but it works.</para><para>USAGE</para><para>Example usage at:</para><para>java -jar wwndesc.jar -H </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wwndesc: Main Page</title>
+<title>wwndesc: JavaDoc API Markup for wwndesc</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -29,7 +29,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">wwndesc
-   &#160;<span id="projectnumber">1.0-19</span>
+   &#160;<span id="projectnumber">1.0-20</span>
    </div>
    
   </td>
@@ -67,15 +67,28 @@
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">wwndesc Documentation</div>  </div>
+<div class="title">JavaDoc API Markup for wwndesc </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>WWNDesc is a tool I use to give functional usable nicknames/aliases to devices present on a SAN when a customer may not have them but needs identifiers quickly. In some cases, these names are used as the canonical names: cases involving very large organizations where the name isn't a huge deal, but having a name is.</p>
+<p>BUILDING</p>
+<p>This is a standard AutoTools build, so:</p>
+<p>1) autoreconf -vfi</p>
+<p>2) make install (or "make check" to include that plus run the tests)</p>
+<p>3) make rpm (if so inclined)</p>
+<p>java/wwndesc.jar is the proper built jar file; convjars is where "convenience jars" are built if you're less concerned with license purity and more concerned with:</p>
+<p>1) your tests are bogus. Let me test exactly what you tested; or</p>
+<p>2) I need it working like yesterday. Holy crap please help me. Gimme something to download immediately to make the pain stop.</p>
+<p>We've all been there. In both cases. grab convjars/wwndesc.jar, it's not sanitary, but it works.</p>
+<p>USAGE</p>
+<p>Example usage at:</p>
+<p>java -jar wwndesc.jar -H </p>
+</div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Wed Feb 5 2014 11:12:31 for wwndesc by
+    <li class="footer">Generated on Wed Feb 5 2014 18:19:14 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
