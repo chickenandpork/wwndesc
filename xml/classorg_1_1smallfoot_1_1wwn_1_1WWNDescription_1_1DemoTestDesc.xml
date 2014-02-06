@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc" kind="class" prot="public">
     <compoundname>org::smallfoot::wwn::WWNDescription::DemoTestDesc</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
@@ -14,26 +14,34 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>create an instance with this.brief set to false. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="34" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="33" bodyend="36"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
         <definition>String toString</definition>
         <argsstring>()</argsstring>
         <name>toString</name>
-        <reimplements refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520">toString</reimplements>
         <briefdescription>
-        </briefdescription>
+<para>generates a test description or alias for this test class </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para>&quot;TestDevice&quot; always </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="38" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="37" bodyend="43"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="43" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="43" bodyend="49"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -70,7 +78,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="32" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="31" bodyend="44"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="32" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="31" bodyend="50"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1a20afdb6486eb08bfa269663b13272327" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>DemoTestDesc</name></member>

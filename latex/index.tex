@@ -1,8 +1,10 @@
-\-W\-W\-N\-Desc is a tool \-I use to give functional usable nicknames/aliases to devices present on a \-S\-A\-N when a customer may not have them but needs identifiers quickly. \-In some cases, these names are used as the canonical names\-: cases involving very large organizations where the name isn't a huge deal, but having a name is.
+\section*{wwndesc }
 
-\-B\-U\-I\-L\-D\-I\-N\-G
+W\-W\-N\-Desc is a tool I use to give functional usable nicknames/aliases to devices present on a S\-A\-N when a customer may not have them but needs identifiers quickly. In some cases, these names are used as the canonical names\-: cases involving very large organizations where the name isn't a huge deal, but having a name is.
 
-\-This is a standard \-Auto\-Tools build, so\-:
+\section*{B\-U\-I\-L\-D\-I\-N\-G }
+
+This is a standard Auto\-Tools build, so\-:
 
 1) autoreconf -\/vfi
 
@@ -12,14 +14,39 @@
 
 java/wwndesc.\-jar is the proper built jar file; convjars is where \char`\"{}convenience jars\char`\"{} are built if you're less concerned with license purity and more concerned with\-:
 
-1) your tests are bogus. \-Let me test exactly what you tested; or
+1) your tests are bogus. Let me test exactly what you tested; or
 
-2) \-I need it working like yesterday. \-Holy crap please help me. \-Gimme something to download immediately to make the pain stop.
+2) I need it working like yesterday. Holy crap please help me. Gimme something to download immediately to make the pain stop.
 
-\-We've all been there. \-In both cases. grab convjars/wwndesc.\-jar, it's not sanitary, but it works.
+We've all been there. In both cases. grab convjars/wwndesc.\-jar, it's not sanitary, but it works.
 
-\-U\-S\-A\-G\-E
+\section*{U\-S\-A\-G\-E }
 
-\-Example usage at\-:
+Example usage at\-: \begin{DoxyVerb}java -jar wwndesc.jar -H
+\end{DoxyVerb}
 
-java -\/jar wwndesc.\-jar -\/\-H 
+
+Example Search for an Alias/\-Description\-: \begin{DoxyVerb}String wwn = "50000972081349ad";
+WWNDescription desc = new WWNDescription();
+
+WWNDesc alias;
+
+if (null != (alias = desc.getWWNDescriptor(wwn)))
+    System.out.println(alias.toString());
+else
+    System.out.println("no alias generated from "+wwn);
+\end{DoxyVerb}
+
+
+\section*{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T }
+
+There are a few \char`\"{}housekeeping\char`\"{} items in the codebase, such as pkg/\-Doxyfile.\-in, the G\-I\-T\-D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N stuff in the Makefile.\-am, etc.
+
+A bit more unusual\-: \doxyref{java/version.\-java}{p.}{version_8java_source} ({\tt http\-://chickenandpork.\-github.\-io/wwndesc/classorg\-\_\-1\-\_\-1smallfoot\-\_\-1\-\_\-1wwn\-\_\-1\-\_\-1version.\-html}) is created from java/version.\-java.\-in to include the version in a simple parseable output to ensure that the jar file is read, and the version itself can be read, interpreted, and passed forth in autoconf-\/generated configure scripts in dependent projects.
+
+The basic structure of this project is where W\-W\-N\-Description's ({\tt http\-://chickenandpork.\-github.\-io/wwndesc/classorg\-\_\-1\-\_\-1smallfoot\-\_\-1\-\_\-1wwn\-\_\-1\-\_\-1\-W\-W\-N\-Description.\-html}) get\-W\-W\-N\-Descriptor(\-String wwn) searches through a maintained list of W\-W\-N\-Desc descendents for a O\-U\-I or pattern that matches; the W\-W\-N\-Desc descendent is instantiated, and returned, or get\-W\-W\-N\-Description() returns a null.
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{org.\-smallfoot.\-wwn.\-W\-W\-N\-Description.\-get\-W\-W\-N\-Descriptor}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404}
+\end{DoxySeeAlso}
+Adding new W\-W\-N patterns herein is a case of either extending the existing patterns as manufacturers evolve their usage, or adding new descendent classes of W\-W\-N\-Desc, and adding their classnames to the get\-W\-W\-N\-Descriptor() class. You can see that the get\-W\-W\-N\-Descriptor() function call is relatively simple at this point\-: the logic for whether a W\-W\-N\-Desc descendent matches a given pattern is moved to static function calls. For example, if Net\-Add\-Description\-::get\-Desc(boolean, boolean, String) decides that the given W\-W\-N matches, it'll return an instance of itself; otherwise, it'll return a null. This was done to allow more than one pattern to be represented in the W\-W\-N\-Desc for later expansion\-: for example, a H\-D\-S super-\/class that returns configured subclasses, or configures instances of itself for different personalities. 

@@ -1,8 +1,8 @@
-\section{\-Net\-App\-Description \-Class \-Reference}
-\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription}\index{\-Net\-App\-Description@{\-Net\-App\-Description}}
+\section{Net\-App\-Description Class Reference}
+\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription}\index{Net\-App\-Description@{Net\-App\-Description}}
 
 
-\-Inheritance diagram for \-Net\-App\-Description\-:\nopagebreak
+Inheritance diagram for Net\-App\-Description\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,120 +11,162 @@
 \end{figure}
 
 
-\-Collaboration diagram for \-Net\-App\-Description\-:\nopagebreak
+Collaboration diagram for Net\-App\-Description\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=160pt]{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{\-Public \-Member \-Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf \-Net\-App\-Description} (\-String {\bf wwn})
-\item 
-{\bf \-Net\-App\-Description} (boolean {\bf brief}, \-String {\bf wwn})
-\item 
-\-String {\bf to\-String} ()
-\end{DoxyCompactItemize}
-\subsection*{\-Static \-Public \-Member \-Functions}
+{\bf Net\-App\-Description} (String wwn)
+\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
+{\bf Net\-App\-Description} (boolean brief, String wwn)
+\begin{DoxyCompactList}\small\item\em create an instance with the given W\-W\-N. \end{DoxyCompactList}\item 
+String {\bf to\-String} ()
+\begin{DoxyCompactList}\small\item\em return a description or alias for this W\-W\-N; if brief is set to true during the call to \doxyref{get\-Desc()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a7e34be4d9bd11a9971c007c6231b8c01}, then a shorter description or alias will be returned \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static {\bf \-W\-W\-N\-Desc} {\bf get\-Desc} (booleanstrong, boolean {\bf brief}, \-String {\bf wwn})
-\end{DoxyCompactItemize}
+static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean brief, String wwn)
+\begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{\-Detailed \-Description}
+\subsection{Detailed Description}
 
 
-\-Definition at line 11 of file \-Net\-App\-Description.\-java.
+Definition at line 11 of file Net\-App\-Description.\-java.
 
 
 
-\subsection{\-Constructor \& \-Destructor \-Documentation}
-\index{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}!\-Net\-App\-Description@{\-Net\-App\-Description}}
-\index{\-Net\-App\-Description@{\-Net\-App\-Description}!org::smallfoot::wwn::NetAppDescription@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}}
-\subsubsection[{\-Net\-App\-Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Net\-App\-Description} (
+\subsection{Constructor \& Destructor Documentation}
+\index{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}!Net\-App\-Description@{Net\-App\-Description}}
+\index{Net\-App\-Description@{Net\-App\-Description}!org::smallfoot::wwn::NetAppDescription@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}}
+\subsubsection[{Net\-App\-Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Net\-App\-Description} (
 \begin{DoxyParamCaption}
-\item[{\-String}]{wwn}
+\item[{String}]{wwn}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_ac528ef64391ea541bcb573fa7dd983a0}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_ac528ef64391ea541bcb573fa7dd983a0}
 
 
-\-Definition at line 13 of file \-Net\-App\-Description.\-java.
+create an instance with this.\-brief set to false. 
+
+This is a convenience function to support the older constructor model
+
+
+\begin{DoxyParams}{Parameters}
+{\em wwn} & the W\-W\-N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file Net\-App\-Description.\-java.
 
 
 
-\-Referenced by \-Net\-App\-Description.\-get\-Desc().
+Referenced by Net\-App\-Description.\-get\-Desc().
 
-\index{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}!\-Net\-App\-Description@{\-Net\-App\-Description}}
-\index{\-Net\-App\-Description@{\-Net\-App\-Description}!org::smallfoot::wwn::NetAppDescription@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}}
-\subsubsection[{\-Net\-App\-Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Net\-App\-Description} (
+\index{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}!Net\-App\-Description@{Net\-App\-Description}}
+\index{Net\-App\-Description@{Net\-App\-Description}!org::smallfoot::wwn::NetAppDescription@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}}
+\subsubsection[{Net\-App\-Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Net\-App\-Description} (
 \begin{DoxyParamCaption}
 \item[{boolean}]{brief, }
-\item[{\-String}]{wwn}
+\item[{String}]{wwn}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a11fdde1c8d9837b45468199530c747f4}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a11fdde1c8d9837b45468199530c747f4}
 
 
-\-Definition at line 17 of file \-Net\-App\-Description.\-java.
+create an instance with the given W\-W\-N. 
+
+Values given to the constructor are simply copied to internal variables for later use
+
+
+\begin{DoxyParams}{Parameters}
+{\em brief} & whether an abbreviated description is requested \\
+\hline
+{\em wwn} & the W\-W\-N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Net\-App\-Description.\-java.
 
 
 
-\subsection{\-Member \-Function \-Documentation}
+\subsection{Member Function Documentation}
 \index{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}!get\-Desc@{get\-Desc}}
 \index{get\-Desc@{get\-Desc}!org::smallfoot::wwn::NetAppDescription@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}}
-\subsubsection[{get\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf \-W\-W\-N\-Desc} {\bf get\-Desc} (
+\subsubsection[{get\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf W\-W\-N\-Desc} get\-Desc (
 \begin{DoxyParamCaption}
 \item[{boolean}]{strong, }
 \item[{boolean}]{brief, }
-\item[{\-String}]{wwn}
+\item[{String}]{wwn}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  [inline, static]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a22e37e33bddb34b1c7506f3f35749eb2}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a7e34be4d9bd11a9971c007c6231b8c01}
 
 
-\-Definition at line 22 of file \-Net\-App\-Description.\-java.
+If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. 
+
+\begin{DoxyReturn}{Returns}
+new instance of this class, or null if the given wwn does not match this class 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em strong} & is ignored\-: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence \\
+\hline
+{\em brief} & is used to ask for a shorter description\-: a more concise nickname or alias \\
+\hline
+{\em wwn} & the W\-W\-N (W\-W\-P\-N or W\-W\-N\-N, but typically W\-W\-P\-N) to match \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Net\-App\-Description.\-java.
 
 
 
-\-References \-Net\-App\-Description.\-Net\-App\-Description().
+References Net\-App\-Description.\-Net\-App\-Description().
 
 
 
-\-Referenced by \-W\-W\-N\-Description.\-get\-W\-W\-N\-Descriptor().
+Referenced by W\-W\-N\-Description.\-get\-W\-W\-N\-Descriptor().
 
 
 
-\-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=258pt]{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a22e37e33bddb34b1c7506f3f35749eb2_cgraph}
+\includegraphics[width=258pt]{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a7e34be4d9bd11a9971c007c6231b8c01_cgraph}
 \end{center}
 \end{figure}
 
 
 \index{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}!to\-String@{to\-String}}
 \index{to\-String@{to\-String}!org::smallfoot::wwn::NetAppDescription@{org\-::smallfoot\-::wwn\-::\-Net\-App\-Description}}
-\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}\-String {\bf to\-String} (
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String to\-String (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_ad146fa8579a5f8a876c4688cc5a68520}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_ad146fa8579a5f8a876c4688cc5a68520}
 
 
-\-Reimplemented from {\bf \-W\-W\-N\-Desc} \doxyref{}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_ad146fa8579a5f8a876c4688cc5a68520}.
+return a description or alias for this W\-W\-N; if brief is set to true during the call to \doxyref{get\-Desc()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a7e34be4d9bd11a9971c007c6231b8c01}, then a shorter description or alias will be returned 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{get\-Desc(boolean,boolean,\-String)}{p.}{classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_a7e34be4d9bd11a9971c007c6231b8c01}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+generated alias or nickname for the W\-W\-N 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Net\-App\-Description.\-java.
 
 
 
-\-Definition at line 30 of file \-Net\-App\-Description.\-java.
-
-
-
-\-References \-W\-W\-N\-Desc.\-brief, and \-W\-W\-N\-Desc.\-wwn.
-
-
-
-\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-java/{\bf \-Net\-App\-Description.\-java}\end{DoxyCompactItemize}
+java/{\bf Net\-App\-Description.\-java}\end{DoxyCompactItemize}
