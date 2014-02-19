@@ -1,5 +1,10 @@
 \section{W\-W\-N\-Description Class Reference}
 \label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription}\index{W\-W\-N\-Description@{W\-W\-N\-Description}}
+
+
+In situations where nicknames simply are not present, but we need descriptors in short-\/order, the \char`\"{}-\/-\/wwn=\char`\"{} or \char`\"{}-\/w\char`\"{} ooption can be used to get a description of what the most likely Nickname would be.  
+
+
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,9 +30,17 @@ boolean {\bf brief\-W\-W\-N\-Estimate} = false
 
 
 \subsection{Detailed Description}
+In situations where nicknames simply are not present, but we need descriptors in short-\/order, the \char`\"{}-\/-\/wwn=\char`\"{} or \char`\"{}-\/w\char`\"{} ooption can be used to get a description of what the most likely Nickname would be. 
+
+For example, \char`\"{}java -\/jar wwndesc.\-jar -\/w 5006048\-A\-C\-C\-C86\-A32\char`\"{} results in \char`\"{}\-Symm-\/182500953-\/05b\-A\char`\"{} matching {\tt http\-://www.\-emcstorageinfo.\-com/2007/08/how-\/to-\/decode-\/symmetrix-\/world-\/wide.\-html} Note that --briefestimate and --nobriefestimate configure for more brief estimate/suggested nicknames\subsection{Examples}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_Examples}
+java -\/jar vict.\-jar --wwn 500610601234567
+
+java -\/jar vict.\-jar --briefestimate --wwn 500610601234567
+
+java -\/jar vict.\-jar --nobriefestimate --wwn 5000097301234564\subsection{Issues}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_Known}
 
 
-Definition at line 26 of file W\-W\-N\-Description.\-java.
+Definition at line 29 of file W\-W\-N\-Description.\-java.
 
 
 
@@ -53,11 +66,11 @@ new instance of \doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWND
 \end{DoxyParams}
 
 
-Definition at line 59 of file W\-W\-N\-Description.\-java.
+Definition at line 62 of file W\-W\-N\-Description.\-java.
 
 
 
-References W\-W\-N\-Description.\-brief\-W\-W\-N\-Estimate, Pure\-Storage\-Description.\-get\-Desc(), E\-M\-C\-Clariion\-Description.\-get\-Desc(), Oracle\-Pillar\-Description.\-get\-Desc(), I\-B\-M\-S\-V\-C\-Description.\-get\-Desc(), I\-B\-M3700\-Description.\-get\-Desc(), H\-D\-S\-V\-S\-P\-Description.\-get\-Desc(), E\-M\-C\-Symmetrix\-Description.\-get\-Desc(), H\-P\-Dot\-Hill\-Description.\-get\-Desc(), E\-M\-C\-V\-P\-L\-E\-X\-Description.\-get\-Desc(), E\-M\-C\-V\-M\-A\-X\-Description.\-get\-Desc(), H\-P3\-Par\-Description.\-get\-Desc(), and Net\-App\-Description.\-get\-Desc().
+References W\-W\-N\-Description.\-brief\-W\-W\-N\-Estimate, Pure\-Storage\-Description.\-get\-Desc(), Oracle\-Pillar\-Description.\-get\-Desc(), E\-M\-C\-Clariion\-Description.\-get\-Desc(), H\-P\-Dot\-Hill\-Description.\-get\-Desc(), I\-B\-M3700\-Description.\-get\-Desc(), E\-M\-C\-Symmetrix\-Description.\-get\-Desc(), E\-M\-C\-V\-M\-A\-X\-Description.\-get\-Desc(), H\-P3\-Par\-Description.\-get\-Desc(), E\-M\-C\-V\-P\-L\-E\-X\-Description.\-get\-Desc(), I\-B\-M\-S\-V\-C\-Description.\-get\-Desc(), H\-D\-S\-V\-S\-P\-Description.\-get\-Desc(), and Net\-App\-Description.\-get\-Desc().
 
 
 
@@ -96,7 +109,7 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 \end{DoxyParams}
 
 
-Definition at line 128 of file W\-W\-N\-Description.\-java.
+Definition at line 131 of file W\-W\-N\-Description.\-java.
 
 
 
@@ -131,7 +144,7 @@ usage messages are useful to those of us with short memories as well (hey, I jus
 \end{DoxyParams}
 
 
-Definition at line 102 of file W\-W\-N\-Description.\-java.
+Definition at line 105 of file W\-W\-N\-Description.\-java.
 
 
 
@@ -148,7 +161,7 @@ setting to \char`\"{}true\char`\"{} via the \char`\"{}-\/-\/briefestimate\char`\
 \end{DoxySeeAlso}
 
 
-Definition at line 28 of file W\-W\-N\-Description.\-java.
+Definition at line 31 of file W\-W\-N\-Description.\-java.
 
 
 

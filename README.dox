@@ -5,6 +5,9 @@ wwndesc
 
 WWNDesc is a tool I use to give functional usable nicknames/aliases to devices present on a SAN when a customer may not have them but needs identifiers quickly.  In some cases, these names are used as the canonical names: cases involving very large organizations where the name isn't a huge deal, but having a name is.
 
+For example:
+  you give me: 50000972081349ad
+  I give you:  VMax-HK192601234-12gB (or VMax-1234-12gB)
 
 BUILDING
 ========
@@ -48,6 +51,17 @@ Example Search for an Alias/Description:
         System.out.println(alias.toString());
     else
         System.out.println("no alias generated from "+wwn);
+
+
+DOCUMENTATION
+=============
+
+The canonical code repository is at https://github.com/chickenandpork/wwndesc/
+
+API documentation is based on JavaDoc-generated cross-referenced pages pushed to http://chickenandpork.github.io/wwndesc/ and pushed using:
+
+    autoreconf -vfi && ./configure --with-doxygen && make doc && cd htdocs && git push
+    autoreconf -vfi && ./configure --with-doxygen && make doc DOXYMESSAGE="a commit message"
 
 
 DEVELOPMENT

@@ -2,6 +2,11 @@
 \label{classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription}\index{E\-M\-C\-V\-P\-L\-E\-X\-Description@{E\-M\-C\-V\-P\-L\-E\-X\-Description}}
 
 
+\doxyref{E\-M\-C\-V\-P\-L\-E\-X\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription} (ie V\-Plex-\/07a3b-\/\-A0-\/\-F\-C00) breaks out the serial and F\-E/\-B\-E port from the W\-W\-P\-N.  
+
+
+
+
 Inheritance diagram for E\-M\-C\-V\-P\-L\-E\-X\-Description\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,23 +26,33 @@ Collaboration diagram for E\-M\-C\-V\-P\-L\-E\-X\-Description\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf E\-M\-C\-V\-P\-L\-E\-X\-Description} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
-{\bf E\-M\-C\-V\-P\-L\-E\-X\-Description} (boolean brief, String wwn)
+{\bf E\-M\-C\-V\-P\-L\-E\-X\-Description} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf E\-M\-C\-V\-P\-L\-E\-X\-Description} (boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em create an instance with the given W\-W\-N. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em return a description or alias for this W\-W\-N; if brief is set to true during the call to \doxyref{get\-Desc()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_a7e34be4d9bd11a9971c007c6231b8c01}, then a shorter description or alias will be returned \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean brief, String wwn)
+static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+\doxyref{E\-M\-C\-V\-P\-L\-E\-X\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription} (ie V\-Plex-\/07a3b-\/\-A0-\/\-F\-C00) breaks out the serial and F\-E/\-B\-E port from the W\-W\-P\-N. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{E\-M\-C\-Clariion\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription} 
+
+\doxyref{E\-M\-C\-Symmetrix\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription} 
+
+\doxyref{E\-M\-C\-V\-M\-A\-X\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription} 
+\end{DoxySeeAlso}
 
 
-Definition at line 10 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
+Definition at line 13 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
 
 
 
@@ -51,10 +66,15 @@ Definition at line 10 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_a022d1e6232e295b14d9ec8c05a9472c7}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\
@@ -62,7 +82,7 @@ This is a convenience function to support the older constructor model
 \end{DoxyParams}
 
 
-Definition at line 13 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
+Definition at line 16 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
 
 
 
@@ -83,6 +103,11 @@ create an instance with the given W\-W\-N.
 Values given to the constructor are simply copied to internal variables for later use
 
 
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
 \begin{DoxyParams}{Parameters}
 {\em brief} & whether an abbreviated description is requested \\
 \hline
@@ -91,7 +116,7 @@ Values given to the constructor are simply copied to internal variables for late
 \end{DoxyParams}
 
 
-Definition at line 18 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
+Definition at line 21 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
 
 
 
@@ -123,7 +148,7 @@ new instance of this class, or null if the given wwn does not match this class
 \end{DoxyParams}
 
 
-Definition at line 31 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
+Definition at line 34 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
 
 
 
@@ -163,7 +188,11 @@ generated alias or nickname for the W\-W\-N
 \end{DoxyReturn}
 
 
-Definition at line 46 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
+Definition at line 49 of file E\-M\-C\-V\-P\-L\-E\-X\-Description.\-java.
+
+
+
+References W\-W\-N\-Desc.\-brief.
 
 
 

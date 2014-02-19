@@ -26,15 +26,16 @@ Collaboration diagram for Oracle\-Pillar\-Description\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Oracle\-Pillar\-Description} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
+{\bf Oracle\-Pillar\-Description} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em return a description or alias for this W\-W\-N \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean brief, String wwn)
+static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -54,10 +55,15 @@ Definition at line 13 of file Oracle\-Pillar\-Description.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_a18e4afcfc6772a559d0e3ad342315eaa}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\

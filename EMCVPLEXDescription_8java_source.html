@@ -75,103 +75,108 @@ $(document).ready(function(){initNavTree('EMCVPLEXDescription_8java_source.html'
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * @file</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html">   10</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html">EMCVPLEXDescription</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">WWNDesc</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{<span class="comment"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    /** @copydoc WWNDesc#WWNDesc(String) */</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">   13</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">EMCVPLEXDescription</a>(String wwn)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        super(wwn);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }<span class="comment"></span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    /** @copydoc WWNDesc#WWNDesc(boolean,String) */</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a6803024e3e1d731aa60b5f3b46903349">   18</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a6803024e3e1d731aa60b5f3b46903349">EMCVPLEXDescription</a>(<span class="keywordtype">boolean</span> brief, String wwn)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        super(brief,wwn);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * @return new instance of this class, or null if the given wwn does not match this class</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * @param strong is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     * @param brief is used to ask for a shorter description: a more concise nickname or alias</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     * @param wwn the WWN (WWPN or WWNN, but typically WWPN) to match</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">   31</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">WWNDesc</a> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">getDesc</a>(<span class="comment">/* ignored */</span> <span class="keywordtype">boolean</span> strong, <span class="keywordtype">boolean</span> brief, String wwn)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (wwn.matches(<span class="stringliteral">&quot;50001442.*&quot;</span>))</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">EMCVPLEXDescription</a>(brief, wwn);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> null;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * return a description or alias for this WWN; if brief is set to true during the call to getDesc(), then a shorter description or alias will be returned</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * @see getDesc(boolean,boolean,String)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * @return generated alias or nickname for the WWN</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#ad146fa8579a5f8a876c4688cc5a68520">   46</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a>()</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        String res = super.toString();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (null == res) res = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">/* for example start with 50001442607a3b00 on https://community.emc.com/thread/146058 */</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        BigInteger serDirPort = wwn.subtract(wwn.shiftRight(32).shiftLeft(32));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        res += <span class="stringliteral">&quot;VPlex-&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">/* our example now has 607a3b00 */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">/* get the next digit (&quot;num&quot;): even is A, odd is B. four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        BigInteger numSeedIOPort[] = serDirPort.divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;10000000&quot;</span>,16));              <span class="comment">/* numSeedIOPort[0] = 6, numSeedIOPort[1] = 07a3b00 */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">//numSeedIOPort[0] = numSeedIOPort[0].shiftRight(7).shiftLeft(7);                                       /* numSeedIOPort[0] = 0 --&gt; A Director, numSeedIOPort[1] = 07a3b00 */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">char</span> director=<span class="charliteral">&#39;A&#39;</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        director += (numSeedIOPort[0].intValue() % 2);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        BigInteger seedIOPort[] = numSeedIOPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;100&quot;</span>,16));     <span class="comment">/* seedIOPort[0] = 07a3b, seedIOPort[1] = 00 */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">/* Assume we&#39;re all VS2 architecture @todo fix the assumpiton that VS1 VPLEX no longer exist */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        String front = <span class="stringliteral">&quot;un&quot;</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">switch</span> (seedIOPort[1].intValue() / 16)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            front = <span class="stringliteral">&quot;FE&quot;</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            front = <span class="stringliteral">&quot;BE&quot;</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * EMCVPLEXDescription (ie VPlex-07a3b-A0-FC00) breaks out the serial and FE/BE port from the WWPN. @sa EMCClariionDescription @sa EMCSymmetrixDescription @sa EMCVMAXDescription</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html">   13</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html">EMCVPLEXDescription</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">WWNDesc</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{<span class="comment"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    /** @copydoc WWNDesc#WWNDesc(String) */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">   16</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">EMCVPLEXDescription</a>(String <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea">wwn</a>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        super(wwn);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }<span class="comment"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    /** @copydoc WWNDesc#WWNDesc(boolean,String) */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a6803024e3e1d731aa60b5f3b46903349">   21</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a6803024e3e1d731aa60b5f3b46903349">EMCVPLEXDescription</a>(<span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">brief</a>, String <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea">wwn</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        super(brief,wwn);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     * @return new instance of this class, or null if the given wwn does not match this class</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     * @param strong is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     * @param brief is used to ask for a shorter description: a more concise nickname or alias</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @param wwn the WWN (WWPN or WWNN, but typically WWPN) to match</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">   34</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">WWNDesc</a> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">getDesc</a>(<span class="comment">/* ignored */</span> <span class="keywordtype">boolean</span> strong, <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">brief</a>, String <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea">wwn</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (wwn.matches(<span class="stringliteral">&quot;50001442.*&quot;</span>))</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">EMCVPLEXDescription</a>(brief, wwn);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     * return a description or alias for this WWN; if brief is set to true during the call to getDesc(), then a shorter description or alias will be returned</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     * @see getDesc(boolean,boolean,String)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     * @return generated alias or nickname for the WWN</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#ad146fa8579a5f8a876c4688cc5a68520">   49</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        String res = super.toString();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (null == res) res = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">/* for example start with 50001442607a3b00 on https://community.emc.com/thread/146058 */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        BigInteger serDirPort = wwn.subtract(wwn.shiftRight(32).shiftLeft(32));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        res += <span class="stringliteral">&quot;VPlex-&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* our example now has 607a3b00 */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">/* get the next digit (&quot;num&quot;): even is A, odd is B. four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        BigInteger numSeedIOPort[] = serDirPort.divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;10000000&quot;</span>,16));              <span class="comment">/* numSeedIOPort[0] = 6, numSeedIOPort[1] = 07a3b00 */</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//numSeedIOPort[0] = numSeedIOPort[0].shiftRight(7).shiftLeft(7);                                       /* numSeedIOPort[0] = 0 --&gt; A Director, numSeedIOPort[1] = 07a3b00 */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">char</span> director=<span class="charliteral">&#39;A&#39;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        director += (numSeedIOPort[0].intValue() % 2);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        BigInteger seedIOPort[] = numSeedIOPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;100&quot;</span>,16));     <span class="comment">/* seedIOPort[0] = 07a3b, seedIOPort[1] = 00 */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">/* Assume we&#39;re all VS2 architecture @todo fix the assumpiton that VS1 VPLEX no longer exist */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        String front = <span class="stringliteral">&quot;un&quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">switch</span> (seedIOPort[1].intValue() / 16)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            front = <span class="stringliteral">&quot;FE&quot;</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            front = <span class="stringliteral">&quot;WA&quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            front = <span class="stringliteral">&quot;BE&quot;</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            front = <span class="stringliteral">&quot;LO&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            front = <span class="stringliteral">&quot;WA&quot;</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="comment">/* default: stick with an X, dunno what to do with that value */</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">/* want a result such as VPLEX02_E1B_BE13 */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">/* can get a brief result such as VPlex-07a3b-EB-BE13 */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (brief)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;%05x-E%c-%s%d%d&quot;</span>,seedIOPort[0].intValue(),director,front,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">/* can get a result such as VPlex-07a3b-A0-FC00 */</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;%05x-%c%d-FC0%d&quot;</span>,seedIOPort[0].intValue(),director,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_a022d1e6232e295b14d9ec8c05a9472c7"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">org.smallfoot.wwn.EMCVPLEXDescription.EMCVPLEXDescription</a></div><div class="ttdeci">EMCVPLEXDescription(String wwn)</div><div class="ttdoc">create an instance with this.brief set to false. </div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00013">EMCVPLEXDescription.java:13</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html">org.smallfoot.wwn.EMCVPLEXDescription</a></div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00010">EMCVPLEXDescription.java:10</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">org.smallfoot.wwn.WWNDesc</a></div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00015">WWNDesc.java:15</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_a7e34be4d9bd11a9971c007c6231b8c01"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">org.smallfoot.wwn.EMCVPLEXDescription.getDesc</a></div><div class="ttdeci">static WWNDesc getDesc(boolean strong, boolean brief, String wwn)</div><div class="ttdoc">If this class matches or describes the given WWN, returns a new instance of this class loaded with th...</div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00031">EMCVPLEXDescription.java:31</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_a6803024e3e1d731aa60b5f3b46903349"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a6803024e3e1d731aa60b5f3b46903349">org.smallfoot.wwn.EMCVPLEXDescription.EMCVPLEXDescription</a></div><div class="ttdeci">EMCVPLEXDescription(boolean brief, String wwn)</div><div class="ttdoc">create an instance with the given WWN. </div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00018">EMCVPLEXDescription.java:18</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_ad146fa8579a5f8a876c4688cc5a68520"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#ad146fa8579a5f8a876c4688cc5a68520">org.smallfoot.wwn.EMCVPLEXDescription.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">return a description or alias for this WWN; if brief is set to true during the call to getDesc()...</div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00046">EMCVPLEXDescription.java:46</a></div></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            front = <span class="stringliteral">&quot;LO&quot;</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">/* default: stick with an X, dunno what to do with that value */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">/* want a result such as VPLEX02_E1B_BE13 */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">/* can get a brief result such as VPlex-07a3b-EB-BE13 */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">brief</a>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;%05x-E%c-%s%d%d&quot;</span>,seedIOPort[0].intValue(),director,front,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">/* can get a result such as VPlex-07a3b-A0-FC00 */</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;%05x-%c%d-FC0%d&quot;</span>,seedIOPort[0].intValue(),director,seedIOPort[1].intValue() / 16, seedIOPort[1].intValue() % 16);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_a022d1e6232e295b14d9ec8c05a9472c7"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a022d1e6232e295b14d9ec8c05a9472c7">org.smallfoot.wwn.EMCVPLEXDescription.EMCVPLEXDescription</a></div><div class="ttdeci">EMCVPLEXDescription(String wwn)</div><div class="ttdoc">create an instance with brief set to false. </div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00016">EMCVPLEXDescription.java:16</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_html_adbebed411e8c47d43338efa3edaa13f8"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">org.smallfoot.wwn.WWNDesc.brief</a></div><div class="ttdeci">boolean brief</div><div class="ttdoc">whether a more brief output should be offered in toString() (ie the difference between &quot;VMax-HK192601...</div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00022">WWNDesc.java:22</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html">org.smallfoot.wwn.EMCVPLEXDescription</a></div><div class="ttdoc">EMCVPLEXDescription (ie VPlex-07a3b-A0-FC00) breaks out the serial and FE/BE port from the WWPN...</div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00013">EMCVPLEXDescription.java:13</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">org.smallfoot.wwn.WWNDesc</a></div><div class="ttdoc">WWNDesc is the basic generic class from which each vendor-specific pattern is built upon; similar to ...</div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00019">WWNDesc.java:19</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_a7e34be4d9bd11a9971c007c6231b8c01"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">org.smallfoot.wwn.EMCVPLEXDescription.getDesc</a></div><div class="ttdeci">static WWNDesc getDesc(boolean strong, boolean brief, String wwn)</div><div class="ttdoc">If this class matches or describes the given WWN, returns a new instance of this class loaded with th...</div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00034">EMCVPLEXDescription.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_a6803024e3e1d731aa60b5f3b46903349"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#a6803024e3e1d731aa60b5f3b46903349">org.smallfoot.wwn.EMCVPLEXDescription.EMCVPLEXDescription</a></div><div class="ttdeci">EMCVPLEXDescription(boolean brief, String wwn)</div><div class="ttdoc">create an instance with the given WWN. </div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00021">EMCVPLEXDescription.java:21</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_html_ad146fa8579a5f8a876c4688cc5a68520"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html#ad146fa8579a5f8a876c4688cc5a68520">org.smallfoot.wwn.EMCVPLEXDescription.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">return a description or alias for this WWN; if brief is set to true during the call to getDesc()...</div><div class="ttdef"><b>Definition:</b> <a href="EMCVPLEXDescription_8java_source.html#l00049">EMCVPLEXDescription.java:49</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_html_aa6eeb40b2983b06aec48b79024fdecea"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea">org.smallfoot.wwn.WWNDesc.wwn</a></div><div class="ttdeci">BigInteger wwn</div><div class="ttdoc">the WWN that the instance tried to describe </div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00021">WWNDesc.java:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="EMCVPLEXDescription_8java.html">EMCVPLEXDescription.java</a></li>
-    <li class="footer">Generated on Thu Feb 6 2014 12:03:22 for wwndesc by
+    <li class="footer">Generated on Wed Feb 19 2014 10:40:18 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

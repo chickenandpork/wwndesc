@@ -14,9 +14,17 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create an instance with this.brief set to false. </para>        </briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
         <detaileddescription>
-<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="param"><parameteritem>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>wwn</parametername>
 </parameternamelist>
@@ -27,8 +35,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="9" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="9" bodyend="12"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="PureStorageDescription_8java" startline="22" endline="30">PureStorageDescription.getDesc</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="12" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="12" bodyend="15"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="PureStorageDescription_8java" startline="25" endline="33">PureStorageDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a2ea6fcaaa1974c68217380fa6667f564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -46,7 +54,15 @@
         <briefdescription>
 <para>create an instance with the given WWN. </para>        </briefdescription>
         <detaileddescription>
-<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="param"><parameteritem>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>brief</parametername>
 </parameternamelist>
@@ -64,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="33" bodyend="36"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="36" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="36" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -79,7 +95,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="44" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="44" bodyend="60"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="47" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="47" bodyend="63"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -129,15 +146,15 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="22" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="22" bodyend="30"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" compoundref="PureStorageDescription_8java" startline="9" endline="12">PureStorageDescription.PureStorageDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="59" endline="94">WWNDescription.getWWNDescriptor</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="25" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="25" bodyend="33"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" compoundref="PureStorageDescription_8java" startline="12" endline="15">PureStorageDescription.PureStorageDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription" kindref="compound">PureStorageDescription</ref> (ie Pure-0123456-CT0.FC0) breaks out the serial number and port information from the WWPN. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Although Pure re-purposes Qlogic HBAs, they have the generosity and forethought to rebadge the WWPN with their own OUI. Thanks, Pure! </para>    </detaileddescription>
     <inheritancegraph>
       <node id="145">
         <label>PureStorageDescription</label>
@@ -168,14 +185,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="7" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="6" bodyend="61"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="10" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="9" bodyend="64"/>
     <listofallmembers>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>getDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>PureStorageDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a2ea6fcaaa1974c68217380fa6667f564" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>PureStorageDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>toString</name></member>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>wwn</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>WWNDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::PureStorageDescription</scope><name>WWNDesc</name></member>
     </listofallmembers>

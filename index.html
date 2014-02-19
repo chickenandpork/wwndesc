@@ -64,6 +64,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="contents">
 <div class="textblock"><h1>wwndesc </h1>
 <p>WWNDesc is a tool I use to give functional usable nicknames/aliases to devices present on a SAN when a customer may not have them but needs identifiers quickly. In some cases, these names are used as the canonical names: cases involving very large organizations where the name isn't a huge deal, but having a name is.</p>
+<p>For example: you give me: 50000972081349ad I give you: VMax-HK192601234-12gB (or VMax-1234-12gB)</p>
 <h1>BUILDING </h1>
 <p>This is a standard AutoTools build, so:</p>
 <p>1) autoreconf -vfi</p>
@@ -86,9 +87,14 @@ if (null != (alias = desc.getWWNDescriptor(wwn)))
     System.out.println(alias.toString());
 else
     System.out.println("no alias generated from "+wwn);
+</pre><h1>DOCUMENTATION </h1>
+<p>The canonical code repository is at <a href="https://github.com/chickenandpork/wwndesc/">https://github.com/chickenandpork/wwndesc/</a></p>
+<p>API documentation is based on JavaDoc-generated cross-referenced pages pushed to <a href="http://chickenandpork.github.io/wwndesc/">http://chickenandpork.github.io/wwndesc/</a> and pushed using: </p>
+<pre class="fragment">autoreconf -vfi &amp;&amp; ./configure --with-doxygen &amp;&amp; make doc &amp;&amp; cd htdocs &amp;&amp; git push
+autoreconf -vfi &amp;&amp; ./configure --with-doxygen &amp;&amp; make doc DOXYMESSAGE="a commit message"
 </pre><h1>DEVELOPMENT </h1>
 <p>There are a few "housekeeping" items in the codebase, such as pkg/Doxyfile.in, the GITDESCRIPTION stuff in the Makefile.am, etc.</p>
-<p>A bit more unusual: <a class="el" href="version_8java_source.html">java/version.java</a> (<a href="http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1version.html">http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1version.html</a>) is created from java/version.java.in to include the version in a simple parseable output to ensure that the jar file is read, and the version itself can be read, interpreted, and passed forth in autoconf-generated configure scripts in dependent projects.</p>
+<p>A bit more unusual: <a class="el" href="version_8java.html">java/version.java</a> (<a href="http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1version.html">http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1version.html</a>) is created from java/version.java.in to include the version in a simple parseable output to ensure that the jar file is read, and the version itself can be read, interpreted, and passed forth in autoconf-generated configure scripts in dependent projects.</p>
 <p>The basic structure of this project is where WWNDescription's (<a href="http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1WWNDescription.html">http://chickenandpork.github.io/wwndesc/classorg_1_1smallfoot_1_1wwn_1_1WWNDescription.html</a>) getWWNDescriptor(String wwn) searches through a maintained list of WWNDesc descendents for a OUI or pattern that matches; the WWNDesc descendent is instantiated, and returned, or getWWNDescription() returns a null.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription.html#a44589ea01f3c2e5a8fbe84cb249ec404" title="Iterates WWNDescription decendents looking for which will accept responsibility, and if so...">org.smallfoot.wwn.WWNDescription.getWWNDescriptor</a></dd></dl>
 <p>Adding new WWN patterns herein is a case of either extending the existing patterns as manufacturers evolve their usage, or adding new descendent classes of WWNDesc, and adding their classnames to the getWWNDescriptor() class. You can see that the getWWNDescriptor() function call is relatively simple at this point: the logic for whether a WWNDesc descendent matches a given pattern is moved to static function calls. For example, if NetAddDescription::getDesc(boolean, boolean, String) decides that the given WWN matches, it'll return an instance of itself; otherwise, it'll return a null. This was done to allow more than one pattern to be represented in the WWNDesc for later expansion: for example, a HDS super-class that returns configured subclasses, or configures instances of itself for different personalities. </p>
@@ -97,7 +103,7 @@ else
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 6 2014 12:03:23 for wwndesc by
+    <li class="footer">Generated on Wed Feb 19 2014 10:40:19 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

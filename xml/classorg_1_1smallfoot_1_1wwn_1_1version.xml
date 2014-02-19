@@ -27,14 +27,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/version.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/version.java" bodystart="14" bodyend="17"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/version.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/version.java" bodystart="19" bodyend="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>version is used to allow a package that uses this package to be able to &quot;ask&quot; the jar file what version it is </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/version.java" line="4" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/version.java" bodystart="3" bodyend="18"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/version.java" line="9" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/version.java" bodystart="8" bodyend="23"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1version_1ae4faf7ff4190d227357ef851490d7757" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::version</scope><name>main</name></member>
     </listofallmembers>

@@ -14,9 +14,17 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create an instance with this.brief set to false. </para>        </briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
         <detaileddescription>
-<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="param"><parameteritem>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>wwn</parametername>
 </parameternamelist>
@@ -27,8 +35,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="14" bodyend="17"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="NetAppDescription_8java" startline="32" endline="38">NetAppDescription.getDesc</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="17" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="17" bodyend="20"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="NetAppDescription_8java" startline="35" endline="41">NetAppDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a11fdde1c8d9837b45468199530c747f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -46,7 +54,15 @@
         <briefdescription>
 <para>create an instance with the given WWN. </para>        </briefdescription>
         <detaileddescription>
-<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="param"><parameteritem>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>brief</parametername>
 </parameternamelist>
@@ -64,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="19" bodyend="22"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="22" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="22" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -79,7 +95,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="47" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="47" bodyend="110"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="50" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="50" bodyend="113"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -129,13 +146,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="32" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="32" bodyend="38"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" compoundref="NetAppDescription_8java" startline="14" endline="17">NetAppDescription.NetAppDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="59" endline="94">WWNDescription.getWWNDescriptor</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="35" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="35" bodyend="41"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" compoundref="NetAppDescription_8java" startline="17" endline="20">NetAppDescription.NetAppDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription" kindref="compound">NetAppDescription</ref> (ie NetApp-123456-iGrp1-0a) breaks out the serial, IO Group, and port information from the WWPN. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
@@ -168,14 +185,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="12" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="11" bodyend="111"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" line="15" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/NetAppDescription.java" bodystart="14" bodyend="114"/>
     <listofallmembers>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>getDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ac528ef64391ea541bcb573fa7dd983a0" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>NetAppDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a11fdde1c8d9837b45468199530c747f4" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>NetAppDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>toString</name></member>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>wwn</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>WWNDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::NetAppDescription</scope><name>WWNDesc</name></member>
     </listofallmembers>

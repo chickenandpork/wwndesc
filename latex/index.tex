@@ -2,6 +2,8 @@
 
 W\-W\-N\-Desc is a tool I use to give functional usable nicknames/aliases to devices present on a S\-A\-N when a customer may not have them but needs identifiers quickly. In some cases, these names are used as the canonical names\-: cases involving very large organizations where the name isn't a huge deal, but having a name is.
 
+For example\-: you give me\-: 50000972081349ad I give you\-: V\-Max-\/\-H\-K192601234-\/12g\-B (or V\-Max-\/1234-\/12g\-B)
+
 \section*{B\-U\-I\-L\-D\-I\-N\-G }
 
 This is a standard Auto\-Tools build, so\-:
@@ -38,11 +40,20 @@ else
 \end{DoxyVerb}
 
 
+\section*{D\-O\-C\-U\-M\-E\-N\-T\-A\-T\-I\-O\-N }
+
+The canonical code repository is at {\tt https\-://github.\-com/chickenandpork/wwndesc/}
+
+A\-P\-I documentation is based on Java\-Doc-\/generated cross-\/referenced pages pushed to {\tt http\-://chickenandpork.\-github.\-io/wwndesc/} and pushed using\-: \begin{DoxyVerb}autoreconf -vfi && ./configure --with-doxygen && make doc && cd htdocs && git push
+autoreconf -vfi && ./configure --with-doxygen && make doc DOXYMESSAGE="a commit message"
+\end{DoxyVerb}
+
+
 \section*{D\-E\-V\-E\-L\-O\-P\-M\-E\-N\-T }
 
 There are a few \char`\"{}housekeeping\char`\"{} items in the codebase, such as pkg/\-Doxyfile.\-in, the G\-I\-T\-D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N stuff in the Makefile.\-am, etc.
 
-A bit more unusual\-: \doxyref{java/version.\-java}{p.}{version_8java_source} ({\tt http\-://chickenandpork.\-github.\-io/wwndesc/classorg\-\_\-1\-\_\-1smallfoot\-\_\-1\-\_\-1wwn\-\_\-1\-\_\-1version.\-html}) is created from java/version.\-java.\-in to include the version in a simple parseable output to ensure that the jar file is read, and the version itself can be read, interpreted, and passed forth in autoconf-\/generated configure scripts in dependent projects.
+A bit more unusual\-: \doxyref{java/version.\-java}{p.}{version_8java} ({\tt http\-://chickenandpork.\-github.\-io/wwndesc/classorg\-\_\-1\-\_\-1smallfoot\-\_\-1\-\_\-1wwn\-\_\-1\-\_\-1version.\-html}) is created from java/version.\-java.\-in to include the version in a simple parseable output to ensure that the jar file is read, and the version itself can be read, interpreted, and passed forth in autoconf-\/generated configure scripts in dependent projects.
 
 The basic structure of this project is where W\-W\-N\-Description's ({\tt http\-://chickenandpork.\-github.\-io/wwndesc/classorg\-\_\-1\-\_\-1smallfoot\-\_\-1\-\_\-1wwn\-\_\-1\-\_\-1\-W\-W\-N\-Description.\-html}) get\-W\-W\-N\-Descriptor(\-String wwn) searches through a maintained list of W\-W\-N\-Desc descendents for a O\-U\-I or pattern that matches; the W\-W\-N\-Desc descendent is instantiated, and returned, or get\-W\-W\-N\-Description() returns a null.
 

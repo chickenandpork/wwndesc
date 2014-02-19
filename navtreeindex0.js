@@ -90,7 +90,9 @@ var NAVTREEINDEX0 =
 "classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription.html#ad146fa8579a5f8a876c4688cc5a68520":[3,0,0,0,0,11,3],
 "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html":[3,0,0,0,0,13],
 "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#a2493316b54bd042475e268e01c2d33af":[3,0,0,0,0,13,1],
+"classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea":[3,0,0,0,0,13,4],
 "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#ad146fa8579a5f8a876c4688cc5a68520":[3,0,0,0,0,13,2],
+"classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8":[3,0,0,0,0,13,3],
 "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#ade15e20276ee2abd521abb251e61c297":[3,0,0,0,0,13,0],
 "classorg_1_1smallfoot_1_1wwn_1_1WWNDescription.html":[3,0,0,0,0,14],
 "classorg_1_1smallfoot_1_1wwn_1_1WWNDescription.html#a44589ea01f3c2e5a8fbe84cb249ec404":[3,0,0,0,0,14,1],
@@ -113,5 +115,6 @@ var NAVTREEINDEX0 =
 "md_htdocs_README.html":[1],
 "pages.html":[],
 "todo.html":[2],
+"version_8java.html":[4,0,0,12],
 "version_8java_source.html":[4,0,0,12]
 };

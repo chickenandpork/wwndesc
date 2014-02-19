@@ -34,7 +34,9 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
       [ "OraclePillarDescription", "classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" ]
     ] ],
     [ "PureStorageDescription.java", "PureStorageDescription_8java_source.html", null ],
-    [ "version.java", "version_8java_source.html", null ],
+    [ "version.java", "version_8java.html", [
+      [ "version", "classorg_1_1smallfoot_1_1wwn_1_1version.html", "classorg_1_1smallfoot_1_1wwn_1_1version" ]
+    ] ],
     [ "WWNDesc.java", "WWNDesc_8java.html", [
       [ "WWNDesc", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" ]
     ] ],

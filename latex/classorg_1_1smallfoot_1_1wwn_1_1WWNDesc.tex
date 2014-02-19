@@ -2,6 +2,11 @@
 \label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc}\index{W\-W\-N\-Desc@{W\-W\-N\-Desc}}
 
 
+\doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} is the basic generic class from which each vendor-\/specific pattern is built upon; similar to an abstract parent but populated methods.  
+
+
+
+
 Inheritance diagram for W\-W\-N\-Desc\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,18 +26,26 @@ Collaboration diagram for W\-W\-N\-Desc\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf W\-W\-N\-Desc} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
-{\bf W\-W\-N\-Desc} (boolean brief, String wwn)
+{\bf W\-W\-N\-Desc} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf W\-W\-N\-Desc} (boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em create an instance with the given W\-W\-N. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em describe the W\-W\-N\-: produce a short (shorter if this.\-brief = true) description suitable for use as an alias for this W\-W\-N \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean {\bf brief}
+\begin{DoxyCompactList}\small\item\em whether a more brief output should be offered in \doxyref{to\-String()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_ad146fa8579a5f8a876c4688cc5a68520} (ie the difference between \char`\"{}\-V\-Max-\/\-H\-K192601234-\/12g\-B\char`\"{} and \char`\"{}\-V\-Max-\/1234-\/12g\-B\char`\"{}) . \end{DoxyCompactList}\item 
+Big\-Integer {\bf wwn}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_aa6eeb40b2983b06aec48b79024fdecea}
+
+\begin{DoxyCompactList}\small\item\em the W\-W\-N that the instance tried to describe \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+\doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} is the basic generic class from which each vendor-\/specific pattern is built upon; similar to an abstract parent but populated methods. 
 
-
-Definition at line 15 of file W\-W\-N\-Desc.\-java.
+Definition at line 19 of file W\-W\-N\-Desc.\-java.
 
 
 
@@ -46,10 +59,15 @@ Definition at line 15 of file W\-W\-N\-Desc.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_ade15e20276ee2abd521abb251e61c297}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\
@@ -57,7 +75,11 @@ This is a convenience function to support the older constructor model
 \end{DoxyParams}
 
 
-Definition at line 25 of file W\-W\-N\-Desc.\-java.
+Definition at line 31 of file W\-W\-N\-Desc.\-java.
+
+
+
+References W\-W\-N\-Desc.\-wwn.
 
 \index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Desc@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Desc}!W\-W\-N\-Desc@{W\-W\-N\-Desc}}
 \index{W\-W\-N\-Desc@{W\-W\-N\-Desc}!org::smallfoot::wwn::WWNDesc@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Desc}}
@@ -74,6 +96,11 @@ create an instance with the given W\-W\-N.
 Values given to the constructor are simply copied to internal variables for later use
 
 
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
 \begin{DoxyParams}{Parameters}
 {\em brief} & whether an abbreviated description is requested \\
 \hline
@@ -82,7 +109,11 @@ Values given to the constructor are simply copied to internal variables for late
 \end{DoxyParams}
 
 
-Definition at line 35 of file W\-W\-N\-Desc.\-java.
+Definition at line 43 of file W\-W\-N\-Desc.\-java.
+
+
+
+References W\-W\-N\-Desc.\-brief.
 
 
 
@@ -103,7 +134,25 @@ the alias for the W\-W\-N constructed form the W\-W\-N bit fields
 \end{DoxyReturn}
 
 
-Definition at line 45 of file W\-W\-N\-Desc.\-java.
+Definition at line 55 of file W\-W\-N\-Desc.\-java.
+
+
+
+\subsection{Field Documentation}
+\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Desc@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Desc}!brief@{brief}}
+\index{brief@{brief}!org::smallfoot::wwn::WWNDesc@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Desc}}
+\subsubsection[{brief}]{\setlength{\rightskip}{0pt plus 5cm}boolean brief\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8}
+
+
+whether a more brief output should be offered in \doxyref{to\-String()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_ad146fa8579a5f8a876c4688cc5a68520} (ie the difference between \char`\"{}\-V\-Max-\/\-H\-K192601234-\/12g\-B\char`\"{} and \char`\"{}\-V\-Max-\/1234-\/12g\-B\char`\"{}) . 
+
+. the class may choose to ignore this value 
+
+Definition at line 22 of file W\-W\-N\-Desc.\-java.
+
+
+
+Referenced by Pure\-Storage\-Description.\-to\-String(), E\-M\-C\-V\-M\-A\-X\-Description.\-to\-String(), E\-M\-C\-V\-P\-L\-E\-X\-Description.\-to\-String(), I\-B\-M\-S\-V\-C\-Description.\-to\-String(), E\-M\-C\-Symmetrix\-Description.\-to\-String(), H\-D\-S\-V\-S\-P\-Description.\-to\-String(), Net\-App\-Description.\-to\-String(), and W\-W\-N\-Desc.\-W\-W\-N\-Desc().
 
 
 

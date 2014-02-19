@@ -1,16 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc" alt="" coords="5,309,99,336"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription.html" title="EMCClariionDescription" alt="" coords="179,5,368,32"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription.html" title="EMCSymmetrixDescription" alt="" coords="168,56,379,83"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html" title="EMCVMAXDescription" alt="" coords="187,107,360,133"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html" title="EMCVPLEXDescription" alt="" coords="185,157,361,184"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription.html" title="HDSVSPDescription" alt="" coords="193,208,353,235"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription.html" title="HP3ParDescription" alt="" coords="197,259,349,285"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription.html" title="Descriptor for (Dot Hill Systems Modular Smart Array) HP P2000. " alt="" coords="189,309,357,336"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description.html" title="IBM3700Description" alt="" coords="192,360,355,387"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription.html" title="IBMSVCDescription" alt="" coords="195,411,352,437"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription.html" title="NetAppDescription" alt="" coords="196,461,351,488"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="5,309,99,336"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription.html" title="EMCClariionDescription (ie CL&#45;01234567&#45;SPB1) describes the serial and CL of a Clariion; EMC doesn&#39;t s..." alt="" coords="179,5,368,32"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription.html" title="EMCSymmetrixDescription (ie Symm&#45;187900328&#45;03dB or Symm&#45;0328&#45;03dB) breaks out the serial and FA port ..." alt="" coords="168,56,379,83"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html" title="EMCVMAXDescription (ie VMax&#45;HK192601234&#45;12gB or VMax&#45;1234&#45;12gB) breaks out the country of manufacture..." alt="" coords="187,107,360,133"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html" title="EMCVPLEXDescription (ie VPlex&#45;07a3b&#45;A0&#45;FC00) breaks out the serial and FE/BE port from the WWPN..." alt="" coords="185,157,361,184"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription.html" title="HDSVSPDescription (ie USPV&#45;10098&#45;CL2A) breaks out the model type, serial, and FA port from the WWPN..." alt="" coords="193,208,353,235"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription.html" title="HP3ParDescription (ie 3Par&#45;1234:0:0:1) breaks out the serial, chassis, node, and port information fro..." alt="" coords="197,259,349,285"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription.html" title="HPDotHillDescription (ie P2000&#45;123456&#45;B1) breaks out a unique code and the port information from the ..." alt="" coords="189,309,357,336"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description.html" title="IBM3700Description (ie RamSan&#45;G8332&#45;FC&#45;2B) breaks out the serial and port information from the Texas ..." alt="" coords="192,360,355,387"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription.html" title="IBMSVCDescription (ie SVCe0_Node0E_Port1) breaks out the SVC number, node, and port of a WWPN; it doe..." alt="" coords="195,411,352,437"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription.html" title="NetAppDescription (ie NetApp&#45;123456&#45;iGrp1&#45;0a) breaks out the serial, IO Group, and port information f..." alt="" coords="196,461,351,488"/>
 <area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription.html" title="Descriptor for (Oracle) Pillar Data Systems&#39; Service Lifecycle Management devices. " alt="" coords="181,512,365,539"/>
-<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription.html" title="PureStorageDescription" alt="" coords="177,563,369,589"/>
+<area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription.html" title="PureStorageDescription (ie Pure&#45;0123456&#45;CT0.FC0) breaks out the serial number and port information fr..." alt="" coords="177,563,369,589"/>
 <area shape="rect" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc.html" title="test case: this matches a single item known to exist in the Demo Database " alt="" coords="148,613,399,640"/>
 </map>

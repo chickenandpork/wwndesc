@@ -14,9 +14,17 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create an instance with this.brief set to false. </para>        </briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
         <detaileddescription>
-<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="param"><parameteritem>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>wwn</parametername>
 </parameternamelist>
@@ -27,8 +35,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="13" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="13" bodyend="16"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCSymmetrixDescription_8java" startline="31" endline="37">EMCSymmetrixDescription.getDesc</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="16" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="16" bodyend="19"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCSymmetrixDescription_8java" startline="34" endline="40">EMCSymmetrixDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a52f4d3c2e88500ffbfc0a611ac75df5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -46,7 +54,15 @@
         <briefdescription>
 <para>create an instance with the given WWN. </para>        </briefdescription>
         <detaileddescription>
-<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="param"><parameteritem>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>brief</parametername>
 </parameternamelist>
@@ -64,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="18" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="18" bodyend="21"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="21" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="21" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -79,7 +95,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="46" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="46" bodyend="95"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="49" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="49" bodyend="98"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -129,15 +146,16 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="31" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="31" bodyend="37"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1aac54d649a6df7c45f2e0424649a6acdd" compoundref="EMCSymmetrixDescription_8java" startline="13" endline="16">EMCSymmetrixDescription.EMCSymmetrixDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="59" endline="94">WWNDescription.getWWNDescriptor</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="34" bodyend="40"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1aac54d649a6df7c45f2e0424649a6acdd" compoundref="EMCSymmetrixDescription_8java" startline="16" endline="19">EMCSymmetrixDescription.EMCSymmetrixDescription</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" kindref="compound">EMCSymmetrixDescription</ref> (ie Symm-187900328-03dB or Symm-0328-03dB) breaks out the serial and FA port from the WWPN. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" kindref="compound">EMCSymmetrixDescription</ref> </para><simplesectsep/><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" kindref="compound">EMCVMAXDescription</ref> </para><simplesectsep/><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" kindref="compound">EMCVPLEXDescription</ref> </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="95">
         <label>EMCSymmetrixDescription</label>
@@ -168,14 +186,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="11" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="10" bodyend="96"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="13" bodyend="99"/>
     <listofallmembers>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1aac54d649a6df7c45f2e0424649a6acdd" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>EMCSymmetrixDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a52f4d3c2e88500ffbfc0a611ac75df5b" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>EMCSymmetrixDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>getDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>toString</name></member>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>wwn</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>WWNDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCSymmetrixDescription</scope><name>WWNDesc</name></member>
     </listofallmembers>

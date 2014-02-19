@@ -2,7 +2,7 @@
 \label{classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription}\index{H\-P\-Dot\-Hill\-Description@{H\-P\-Dot\-Hill\-Description}}
 
 
-Descriptor for (Dot Hill Systems Modular Smart Array) H\-P P2000.  
+\doxyref{H\-P\-Dot\-Hill\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription} (ie P2000-\/123456-\/\-B1) breaks out a unique code and the port information from the W\-W\-P\-N of a Dot Hill Systems Modular Smart Array P2000 which H\-P resells.  
 
 
 
@@ -26,19 +26,20 @@ Collaboration diagram for H\-P\-Dot\-Hill\-Description\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf H\-P\-Dot\-Hill\-Description} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
+{\bf H\-P\-Dot\-Hill\-Description} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em return a description or alias for this W\-W\-N \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean brief, String wwn)
+static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-Descriptor for (Dot Hill Systems Modular Smart Array) H\-P P2000. 
+\doxyref{H\-P\-Dot\-Hill\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription} (ie P2000-\/123456-\/\-B1) breaks out a unique code and the port information from the W\-W\-P\-N of a Dot Hill Systems Modular Smart Array P2000 which H\-P resells. 
 
 These descriptors are fairly weak\-: I'm somewhat sure of the serial, but only two matches for the port-\/number logic. 
 
@@ -56,10 +57,15 @@ Definition at line 15 of file H\-P\-Dot\-Hill\-Description.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_ad22528e257f239b38e608c80cd4806a6}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\

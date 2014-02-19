@@ -2,6 +2,11 @@
 \label{classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription}\index{H\-D\-S\-V\-S\-P\-Description@{H\-D\-S\-V\-S\-P\-Description}}
 
 
+\doxyref{H\-D\-S\-V\-S\-P\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription} (ie U\-S\-P\-V-\/10098-\/\-C\-L2\-A) breaks out the model type, serial, and F\-A port from the W\-W\-P\-N.  
+
+
+
+
 Inheritance diagram for H\-D\-S\-V\-S\-P\-Description\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,23 +26,24 @@ Collaboration diagram for H\-D\-S\-V\-S\-P\-Description\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf H\-D\-S\-V\-S\-P\-Description} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
-{\bf H\-D\-S\-V\-S\-P\-Description} (boolean brief, String wwn)
+{\bf H\-D\-S\-V\-S\-P\-Description} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf H\-D\-S\-V\-S\-P\-Description} (boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em create an instance with the given W\-W\-N. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em return a description or alias for this W\-W\-N; if brief is set to true during the call to \doxyref{get\-Desc()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_a7e34be4d9bd11a9971c007c6231b8c01}, then a shorter description or alias will be returned \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean brief, String wwn)
+static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+\doxyref{H\-D\-S\-V\-S\-P\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription} (ie U\-S\-P\-V-\/10098-\/\-C\-L2\-A) breaks out the model type, serial, and F\-A port from the W\-W\-P\-N. 
 
-
-Definition at line 10 of file H\-D\-S\-V\-S\-P\-Description.\-java.
+Definition at line 14 of file H\-D\-S\-V\-S\-P\-Description.\-java.
 
 
 
@@ -51,10 +57,15 @@ Definition at line 10 of file H\-D\-S\-V\-S\-P\-Description.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_a3c873624b4dd44f373af3dc3e445f02c}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\
@@ -62,7 +73,7 @@ This is a convenience function to support the older constructor model
 \end{DoxyParams}
 
 
-Definition at line 13 of file H\-D\-S\-V\-S\-P\-Description.\-java.
+Definition at line 17 of file H\-D\-S\-V\-S\-P\-Description.\-java.
 
 
 
@@ -83,6 +94,11 @@ create an instance with the given W\-W\-N.
 Values given to the constructor are simply copied to internal variables for later use
 
 
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
 \begin{DoxyParams}{Parameters}
 {\em brief} & whether an abbreviated description is requested \\
 \hline
@@ -91,7 +107,7 @@ Values given to the constructor are simply copied to internal variables for late
 \end{DoxyParams}
 
 
-Definition at line 18 of file H\-D\-S\-V\-S\-P\-Description.\-java.
+Definition at line 22 of file H\-D\-S\-V\-S\-P\-Description.\-java.
 
 
 
@@ -123,7 +139,7 @@ new instance of this class, or null if the given wwn does not match this class
 \end{DoxyParams}
 
 
-Definition at line 31 of file H\-D\-S\-V\-S\-P\-Description.\-java.
+Definition at line 35 of file H\-D\-S\-V\-S\-P\-Description.\-java.
 
 
 
@@ -165,7 +181,11 @@ generated alias or nickname for the W\-W\-N
 \item[{\bf Todo}]50060e8\-: 005\-: U\-S\-P-\/\-V\-: {\tt http\-://www.\-hitachi-\/storage.\-com/content/how-\/decode-\/usp-\/v-\/wwn} 00/5\-: U\-S\-P-\/\-V\-: brionetka.\-com/linux/?p=38 breaks it up as N\-O\-O\-O\-O\-O\-O\-F\-F\-S\-S\-S\-S\-C\-P (N=5, O\-O\-O\-O\-O\-O = O\-U\-I, F\-F = Family \{01=7700/\-Lightning, 02=9900/\-Thunder\}, S\-S\-S\-S=Serial, C = Cluster, P=Port (0-\/\-F=A-\/\-Q skipping \char`\"{}\-I\char`\"{}) note article confuses N\-A\-A marker as \char`\"{}50\char`\"{} need to check against {\tt http\-://p2v.\-it/tools/wwndec/index.\-php?input=50060\-E8010277210} need to check {\tt http\-://p2v.\-it/tools/wwndec/index.\-php?input=50060e8016624800} \end{DoxyRefDesc}
 
 
-Definition at line 46 of file H\-D\-S\-V\-S\-P\-Description.\-java.
+Definition at line 50 of file H\-D\-S\-V\-S\-P\-Description.\-java.
+
+
+
+References W\-W\-N\-Desc.\-brief.
 
 
 

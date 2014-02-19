@@ -2,6 +2,11 @@
 \label{classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description}\index{I\-B\-M3700\-Description@{I\-B\-M3700\-Description}}
 
 
+\doxyref{I\-B\-M3700\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description} (ie Ram\-San-\/\-G8332-\/\-F\-C-\/2\-B) breaks out the serial and port information from the Texas Memory Systems hardware initially called Ram\-San.  
+
+
+
+
 Inheritance diagram for I\-B\-M3700\-Description\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,23 +26,24 @@ Collaboration diagram for I\-B\-M3700\-Description\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf I\-B\-M3700\-Description} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
-{\bf I\-B\-M3700\-Description} (boolean brief, String wwn)
+{\bf I\-B\-M3700\-Description} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf I\-B\-M3700\-Description} (boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em create an instance with the given W\-W\-N. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em return a description or alias for this W\-W\-N \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean brief, String wwn)
+static {\bf W\-W\-N\-Desc} {\bf get\-Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn})
 \begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\-W\-N, returns a new instance of this class loaded with the given W\-W\-N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
+\doxyref{I\-B\-M3700\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description} (ie Ram\-San-\/\-G8332-\/\-F\-C-\/2\-B) breaks out the serial and port information from the Texas Memory Systems hardware initially called Ram\-San. 
 
-
-Definition at line 10 of file I\-B\-M3700\-Description.\-java.
+Definition at line 13 of file I\-B\-M3700\-Description.\-java.
 
 
 
@@ -51,10 +57,15 @@ Definition at line 10 of file I\-B\-M3700\-Description.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_a956b2c06b0e4934236fcb08fba5807dd}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\
@@ -62,7 +73,7 @@ This is a convenience function to support the older constructor model
 \end{DoxyParams}
 
 
-Definition at line 13 of file I\-B\-M3700\-Description.\-java.
+Definition at line 16 of file I\-B\-M3700\-Description.\-java.
 
 
 
@@ -83,6 +94,11 @@ create an instance with the given W\-W\-N.
 Values given to the constructor are simply copied to internal variables for later use
 
 
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
 \begin{DoxyParams}{Parameters}
 {\em brief} & whether an abbreviated description is requested \\
 \hline
@@ -91,7 +107,7 @@ Values given to the constructor are simply copied to internal variables for late
 \end{DoxyParams}
 
 
-Definition at line 18 of file I\-B\-M3700\-Description.\-java.
+Definition at line 21 of file I\-B\-M3700\-Description.\-java.
 
 
 
@@ -123,7 +139,7 @@ new instance of this class, or null if the given wwn does not match this class
 \end{DoxyParams}
 
 
-Definition at line 31 of file I\-B\-M3700\-Description.\-java.
+Definition at line 34 of file I\-B\-M3700\-Description.\-java.
 
 
 
@@ -160,7 +176,7 @@ generated alias or nickname for the W\-W\-N
 \end{DoxyReturn}
 
 
-Definition at line 44 of file I\-B\-M3700\-Description.\-java.
+Definition at line 47 of file I\-B\-M3700\-Description.\-java.
 
 
 

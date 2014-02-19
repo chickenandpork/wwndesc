@@ -14,9 +14,17 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create an instance with this.brief set to false. </para>        </briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
         <detaileddescription>
-<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="param"><parameteritem>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>wwn</parametername>
 </parameternamelist>
@@ -27,7 +35,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="34" bodyend="37"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="37" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -41,7 +49,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="43" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="43" bodyend="49"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="46" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="46" bodyend="52"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -78,12 +86,12 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="32" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="31" bodyend="50"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="35" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="34" bodyend="53"/>
     <listofallmembers>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1a20afdb6486eb08bfa269663b13272327" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>DemoTestDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>toString</name></member>
-      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>wwn</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>WWNDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription::DemoTestDesc</scope><name>WWNDesc</name></member>
     </listofallmembers>

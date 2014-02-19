@@ -6,14 +6,8 @@
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" prot="public">org::smallfoot::wwn::WWNDescription</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1wwn">org::smallfoot::wwn</innernamespace>
     <briefdescription>
-<para>In situations where nicknames simply are not present, but we need descriptors in short-order, the &quot;--wwn=&quot; or &quot;-w&quot; ooption can be used to get a description of what the most likely Nickname would be. </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
-<para>For example, &quot;java -jar wwndesc.jar -w 5006048ACCC86A32&quot; results in &quot;Symm-182500953-05bA&quot; matching <ulink url="http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html">http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html</ulink> Note that <ndash/>briefestimate and <ndash/>nobriefestimate configure for more brief estimate/suggested nicknames</para><sect1 id="WWNDescription_8java_1Examples">
-<title>Examples</title>
-<para>java -jar vict.jar <ndash/>wwn 500610601234567</para><para>java -jar vict.jar <ndash/>briefestimate <ndash/>wwn 500610601234567</para><para>java -jar vict.jar <ndash/>nobriefestimate <ndash/>wwn 5000097301234564</para></sect1>
-<sect1 id="WWNDescription_8java_1Known">
-<title>Issues</title>
-</sect1>
     </detaileddescription>
     <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java"/>
   </compounddef>

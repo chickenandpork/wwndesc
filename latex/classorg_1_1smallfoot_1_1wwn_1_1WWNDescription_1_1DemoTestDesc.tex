@@ -26,16 +26,17 @@ Collaboration diagram for W\-W\-N\-Description.\-Demo\-Test\-Desc\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Demo\-Test\-Desc} (String wwn)
-\begin{DoxyCompactList}\small\item\em create an instance with this.\-brief set to false. \end{DoxyCompactList}\item 
+{\bf Demo\-Test\-Desc} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
 String {\bf to\-String} ()
 \begin{DoxyCompactList}\small\item\em generates a test description or alias for this test class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 test case\-: this matches a single item known to exist in the Demo Database 
 
-Definition at line 31 of file W\-W\-N\-Description.\-java.
+Definition at line 34 of file W\-W\-N\-Description.\-java.
 
 
 
@@ -49,10 +50,15 @@ Definition at line 31 of file W\-W\-N\-Description.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_a20afdb6486eb08bfa269663b13272327}
 
 
-create an instance with this.\-brief set to false. 
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
 
 This is a convenience function to support the older constructor model
 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\-lang.\-Null\-Pointer\-Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
 
 \begin{DoxyParams}{Parameters}
 {\em wwn} & the W\-W\-N to evaluate and describe \\
@@ -60,7 +66,7 @@ This is a convenience function to support the older constructor model
 \end{DoxyParams}
 
 
-Definition at line 34 of file W\-W\-N\-Description.\-java.
+Definition at line 37 of file W\-W\-N\-Description.\-java.
 
 
 
@@ -81,7 +87,7 @@ generates a test description or alias for this test class
 \end{DoxyReturn}
 
 
-Definition at line 43 of file W\-W\-N\-Description.\-java.
+Definition at line 46 of file W\-W\-N\-Description.\-java.
 
 
 
