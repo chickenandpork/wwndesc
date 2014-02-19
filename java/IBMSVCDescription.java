@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * IBMSVCDescription (ie SVCe0_Node0E_Port1) breaks out the SVC number, node, and port of a WWPN; it does not see where two nodes of a SVC are related
+ */
 public class IBMSVCDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

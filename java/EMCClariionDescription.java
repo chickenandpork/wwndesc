@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * EMCClariionDescription (ie CL-01234567-SPB1) describes the serial and CL of a Clariion; EMC doesn't seem to include any additional data in the WWPN.  @sa EMCSymmetrixDescription @sa EMCVMAXDescription @sa EMCVPLEXDescription
+ */
 public class EMCClariionDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

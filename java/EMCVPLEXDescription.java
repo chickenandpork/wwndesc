@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * EMCVPLEXDescription (ie VPlex-07a3b-A0-FC00) breaks out the serial and FE/BE port from the WWPN. @sa EMCClariionDescription @sa EMCSymmetrixDescription @sa EMCVMAXDescription
+ */
 public class EMCVPLEXDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

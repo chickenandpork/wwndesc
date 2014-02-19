@@ -8,6 +8,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * NetAppDescription (ie NetApp-123456-iGrp1-0a) breaks out the serial, IO Group, and port information from the WWPN
+ */
 public class NetAppDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

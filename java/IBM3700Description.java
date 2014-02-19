@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * IBM3700Description (ie RamSan-G8332-FC-2B) breaks out the serial and port information from the Texas Memory Systems hardware initially called RamSan
+ */
 public class IBM3700Description extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

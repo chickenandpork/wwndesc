@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * EMCSymmetrixDescription (ie Symm-187900328-03dB or Symm-0328-03dB) breaks out the serial and FA port from the WWPN. @sa EMCSymmetrixDescription @sa EMCVMAXDescription @sa EMCVPLEXDescription
+ */
 public class EMCSymmetrixDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

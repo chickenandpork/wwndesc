@@ -8,7 +8,7 @@ import java.math.BigInteger;
  */
 
 /**
- * Descriptor for (Dot Hill Systems Modular Smart Array) HP P2000
+ * HPDotHillDescription (ie P2000-123456-B1) breaks out a unique code and the port information from the WWPN of a Dot Hill Systems Modular Smart Array P2000 which HP resells.
  *
  * These descriptors are fairly weak: I'm somewhat sure of the serial, but only two matches for the port-number logic.
  */

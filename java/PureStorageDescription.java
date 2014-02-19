@@ -3,6 +3,9 @@ package org.smallfoot.wwn;
 
 import java.math.BigInteger;
 
+/**
+ * PureStorageDescription (ie Pure-0123456-CT0.FC0) breaks out the serial number and port information from the WWPN.  Although Pure re-purposes Qlogic HBAs, they have the generosity and forethought to rebadge the WWPN with their own OUI.  Thanks, Pure!
+ */
 public class PureStorageDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

@@ -7,6 +7,10 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * HDSVSPDescription (ie USPV-10098-CL2A) breaks out the model type, serial, and FA port from the WWPN
+ */
+
 public class HDSVSPDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

@@ -3,6 +3,9 @@ wwndesc
 
 WWNDesc is a tool I use to give functional usable nicknames/aliases to devices present on a SAN when a customer may not have them but needs identifiers quickly.  In some cases, these names are used as the canonical names: cases involving very large organizations where the name isn't a huge deal, but having a name is.
 
+For example:
+  you give me: 50000972081349ad
+  I give you:  VMax-HK192601234-12gB (or VMax-1234-12gB)
 
 BUILDING
 ========

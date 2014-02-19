@@ -6,6 +6,9 @@ import gnu.getopt.LongOpt;
 
 /**
  * @file
+ */
+
+/**
  * In situations where nicknames simply are not present, but we need descriptors in short-order,
  * the "--wwn=" or "-w" ooption can be used to get a description of what the most likely Nickname
  * would be.  For example, "java -jar wwndesc.jar -w 5006048ACCC86A32" results in "Symm-182500953-05bA"

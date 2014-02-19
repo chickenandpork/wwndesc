@@ -1,5 +1,10 @@
 package org.smallfoot.wwn;
 
+/** @file */
+
+/**
+ * version is used to allow a package that uses this package to be able to "ask" the jar file what version it is
+ */
 public class version
 {
     /**

@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * EMCVMAXDescription (ie VMax-HK192601234-12gB or VMax-1234-12gB) breaks out the country of manufacturer, serial and FA port from the WWPN. @sa EMCClariionDescription @sa EMCSymmetrixDescription @sa EMCVPLEXDescription
+ */
 public class EMCVMAXDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */

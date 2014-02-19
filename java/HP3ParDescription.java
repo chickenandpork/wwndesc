@@ -7,6 +7,9 @@ import java.math.BigInteger;
  * @file
  */
 
+/**
+ * HP3ParDescription (ie 3Par-1234:0:0:1) breaks out the serial, chassis, node, and port information from the WWPN
+ */
 public class HP3ParDescription extends WWNDesc
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
