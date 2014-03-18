@@ -57,11 +57,11 @@ public class EMCVMAXDescription extends WWNDesc
 
         /* our example now has 2081349AD */
         /* get the first four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */
-        BigInteger countDirPort[] = serDirPort.divideAndRemainder(new BigInteger("100000000",16));     /* countDirPort[0] = 2, countDirPort[1] = 081349AD */
+        BigInteger countDirPort[] = serDirPort.divideAndRemainder(new BigInteger("200000000",16));     /* countDirPort[0] = 2, countDirPort[1] = 081349AD */
         BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger("8000000",16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */
         if (!brief)
         {
-            switch (countDirPort[0].intValue()/2)
+            switch (countDirPort[0].intValue())
             {
             case 1: /* 0-01-0 == USA/HK19 seen on 20k VMax? */ /* 0-01-1 == USA/40k VMax? */
                 res += "HK19";
@@ -75,16 +75,22 @@ public class EMCVMAXDescription extends WWNDesc
 
             /* our example now has 081349AD - get the 4-bit model code */
             //BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger("8000000",16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */
+//System.out.println("modelDirPort[0] is "+modelDirPort[0] + " --> "+modelDirPort[0].intValue());
             switch (modelDirPort[0].intValue())
             {
-            case 0: /* 00000: 40k V-Max */
+            case 0: /* 000000: 40k V-Max */
                 res += "46";
                 break;
-            case 1: /* 00001: 20k V-Max? */
+            case 1: /* 000001: 20k V-Max? */
+            case (1+32): /* 100001: Unknown */
                 res += "26";
                 break;
-            case 24: /* 11000: V-Max SE */
+            case 24: /* 011000: V-Max SE */
                 res += "49";
+                break;
+	    /* Previously, bit #32 was reserved set to 0.  This is no longer the case */
+            case 32: /* 100000: V-Max 40k 4-engine (TMO) */
+                res += "57";
                 break;
             default:/* unknown */
                 res += "UN";
