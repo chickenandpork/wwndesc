@@ -32,7 +32,6 @@ Pure-java code to interpret and break down wellknown WWN (WWPN) patterns into de
 
 %install
 make install DESTDIR=%{buildroot}
-rm %{buildroot}/%{_datadir}/@PACKAGE@/java.class
 rm -fr %{buildroot}/%{_datadir}/@PACKAGE@/jars
 
 %clean
