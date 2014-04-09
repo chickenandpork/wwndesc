@@ -27,13 +27,15 @@ public class IBMSVCDescription extends WWNDesc
      * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
      *
      * @return new instance of this class, or null if the given wwn does not match this class
-     * @param strong is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence
+     * @param strong is used to show only those patterns we're 100% certain about: this class is a strong representation of 505076801*, but a weak representation of all 50507680* (notice that the last nibble is fuzzy, meaning we could get duplicate names)
      * @param brief is used to ask for a shorter description: a more concise nickname or alias
      * @param wwn the WWN (WWPN or WWNN, but typically WWPN) to match
      */
-    public static WWNDesc getDesc(/* ignored */ boolean strong, boolean brief, String wwn)
+    public static WWNDesc getDesc(boolean strong, boolean brief, String wwn)
     {
-        if (wwn.matches("5005076801.*"))
+        if ((strong) && (wwn.matches("5005076801.*")) )
+            return new IBMSVCDescription(brief, wwn);
+        else if (wwn.matches("500507680.*"))
             return new IBMSVCDescription(brief, wwn);
         else
             return null;

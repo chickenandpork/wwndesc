@@ -14,10 +14,9 @@ EXTRA_DIST = @PACKAGE@.spec gitdescribe
 
 
 if DO_DOXYGEN
-doc: Doxyfile htdocs/README.dox
+doc: htdocs/README.dox Doxyfile
 	$(DOXYGEN)
-	(cd htdocs && git add -A)
-	if test -n "$(DOXYMESSAGE)" ; then (cd htdocs && git commit -a -m "$(DOXYMESSAGE)" && git push); fi
+	if test -d $(<D)/.git; then (cd $(<D) && git add -A); if test -n "$(DOXYMESSAGE)" ; then (cd $(<D) && git commit -a -m "$(DOXYMESSAGE)" && git push); fi; else echo "$(<D) subdir not set as a subrepo; see http:// ..."; exit 1; fi
 
 htdocs/README.dox: README.md Makefile
 if DO_DOXYGEN_MD
