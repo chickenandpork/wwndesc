@@ -61,6 +61,19 @@ public class WWNDescription
      */
     public WWNDesc getWWNDescriptor(String val)
     {
+        return getWWNDescriptor(val,true);
+    }
+
+    /**
+     * Iterates WWNDescription decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor
+     *
+     * @return new instance of WWNDesc descendent, or null if no descendents accept responsibility to describe or provide an alias for that WWN
+     *
+     * @param val WWN to check
+     * @param provideBase whether to provide a bogus WWNDesc instance rather than a null
+     */
+    public WWNDesc getWWNDescriptor(String val, boolean provideBase)
+    {
         val = val.replaceAll(":","").toLowerCase();
         WWNDesc d = null;
 
@@ -92,8 +105,10 @@ public class WWNDescription
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
 
-        else
+        else if (provideBase)
             return new WWNDesc(val);
+        else
+            return null;
     }
 
 
