@@ -13,7 +13,7 @@ EXTRA_DIST += version.java.in
 CONFIG_CLEAN_FILES = @PACKAGE@.jar
 
 
-AM_JAVACFLAGS= -cp $(JAVAROOT):$(top_builddir)/depjars/poi-3.8-20120326.jar:$(top_builddir)/depjars/poi-ooxml-3.8-20120326.jar:$(top_builddir)/depjars/xmlbeans-2.3.0.jar:$(top_builddir)/depjars/poi-ooxml-schemas-3.8-20120326.jar:$(top_builddir)/depjars/dom4j-1.6.1.jar:$(top_builddir)/depjars/commons-io-2.3.jar:@GETOPTJAR@
+AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):$(top_builddir)/depjars/poi-3.8-20120326.jar:$(top_builddir)/depjars/poi-ooxml-3.8-20120326.jar:$(top_builddir)/depjars/xmlbeans-2.3.0.jar:$(top_builddir)/depjars/poi-ooxml-schemas-3.8-20120326.jar:$(top_builddir)/depjars/dom4j-1.6.1.jar:$(top_builddir)/depjars/commons-io-2.3.jar:@GETOPTJAR@
 
 
 BUILDTMP=$(shell date +%s)
