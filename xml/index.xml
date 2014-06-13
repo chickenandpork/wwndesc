@@ -86,6 +86,7 @@
   <compound refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" kind="class"><name>org::smallfoot::wwn::WWNDescription</name>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a48cfcc3bfbc4d22cd4ad0fb8c46aeff8" kind="variable"><name>briefWWNEstimate</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" kind="function"><name>getWWNDescriptor</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" kind="function"><name>getWWNDescriptor</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a65d03ca5cd39f6905d34f7b0aab28f42" kind="function"><name>usage</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
   </compound>

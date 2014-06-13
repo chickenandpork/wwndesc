@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">wwndesc
-   &#160;<span id="projectnumber">1.0-21</span>
+   &#160;<span id="projectnumber">1.0-33</span>
    </div>
   </td>
  </tr>
@@ -272,7 +272,7 @@ BigInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <dl class="section return"><dt>Returns</dt><dd>new instance of this class, or null if the given wwn does not match this class </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">strong</td><td>is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence </td></tr>
+    <tr><td class="paramname">strong</td><td>is used to show only those patterns we're 100% certain about: this class is a strong representation of 505076801*, but a weak representation of all 50507680* (notice that the last nibble is fuzzy, meaning we could get duplicate names) </td></tr>
     <tr><td class="paramname">brief</td><td>is used to ask for a shorter description: a more concise nickname or alias </td></tr>
     <tr><td class="paramname">wwn</td><td>the WWN (WWPN or WWNN, but typically WWPN) to match </td></tr>
   </table>
@@ -283,7 +283,7 @@ BigInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 
 <p>References <a class="el" href="IBMSVCDescription_8java_source.html#l00016">IBMSVCDescription.IBMSVCDescription()</a>.</p>
 
-<p>Referenced by <a class="el" href="WWNDescription_8java_source.html#l00062">WWNDescription.getWWNDescriptor()</a>.</p>
+<p>Referenced by <a class="el" href="WWNDescription_8java_source.html#l00075">WWNDescription.getWWNDescriptor()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -321,7 +321,7 @@ Here is the call graph for this function:</div>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription.html#a7e34be4d9bd11a9971c007c6231b8c01" title="If this class matches or describes the given WWN, returns a new instance of this class loaded with th...">getDesc(boolean,boolean,String)</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>generated alias or nickname for the WWN </dd></dl>
 
-<p>Definition at line <a class="el" href="IBMSVCDescription_8java_source.html#l00049">49</a> of file <a class="el" href="IBMSVCDescription_8java_source.html">IBMSVCDescription.java</a>.</p>
+<p>Definition at line <a class="el" href="IBMSVCDescription_8java_source.html#l00051">51</a> of file <a class="el" href="IBMSVCDescription_8java_source.html">IBMSVCDescription.java</a>.</p>
 
 <p>References <a class="el" href="WWNDesc_8java_source.html#l00022">WWNDesc.brief</a>.</p>
 
@@ -336,7 +336,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>org</b></li><li class="navelem"><b>smallfoot</b></li><li class="navelem"><b>wwn</b></li><li class="navelem"><a class="el" href="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription.html">IBMSVCDescription</a></li>
-    <li class="footer">Generated on Wed Feb 19 2014 10:40:18 for wwndesc by
+    <li class="footer">Generated on Fri Jun 13 2014 00:51:36 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

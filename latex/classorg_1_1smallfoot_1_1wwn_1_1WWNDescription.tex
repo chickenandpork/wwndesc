@@ -15,6 +15,8 @@ class {\bf Demo\-Test\-Desc}
 \item 
 {\bf W\-W\-N\-Desc} {\bf get\-W\-W\-N\-Descriptor} (String val)
 \begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
+{\bf W\-W\-N\-Desc} {\bf get\-W\-W\-N\-Descriptor} (String val, boolean provide\-Base)
+\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
 void {\bf usage} (String proc)
 \begin{DoxyCompactList}\small\item\em usage messages are useful to those of us with short memories as well (hey, I just need to add swap!) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
@@ -70,11 +72,37 @@ Definition at line 62 of file W\-W\-N\-Description.\-java.
 
 
 
-References W\-W\-N\-Description.\-brief\-W\-W\-N\-Estimate, Pure\-Storage\-Description.\-get\-Desc(), Oracle\-Pillar\-Description.\-get\-Desc(), E\-M\-C\-Clariion\-Description.\-get\-Desc(), H\-P\-Dot\-Hill\-Description.\-get\-Desc(), I\-B\-M3700\-Description.\-get\-Desc(), E\-M\-C\-Symmetrix\-Description.\-get\-Desc(), E\-M\-C\-V\-M\-A\-X\-Description.\-get\-Desc(), H\-P3\-Par\-Description.\-get\-Desc(), E\-M\-C\-V\-P\-L\-E\-X\-Description.\-get\-Desc(), I\-B\-M\-S\-V\-C\-Description.\-get\-Desc(), H\-D\-S\-V\-S\-P\-Description.\-get\-Desc(), and Net\-App\-Description.\-get\-Desc().
-
-
-
 Referenced by W\-W\-N\-Description.\-main().
+
+\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}!get\-W\-W\-N\-Descriptor@{get\-W\-W\-N\-Descriptor}}
+\index{get\-W\-W\-N\-Descriptor@{get\-W\-W\-N\-Descriptor}!org::smallfoot::wwn::WWNDescription@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}}
+\subsubsection[{get\-W\-W\-N\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\-W\-N\-Desc} get\-W\-W\-N\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{String}]{val, }
+\item[{boolean}]{provide\-Base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_ad107e09f44b93a618bae90e3b32e96f8}
+
+
+Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
+
+\begin{DoxyReturn}{Returns}
+new instance of \doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\-W\-N
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & W\-W\-N to check \\
+\hline
+{\em provide\-Base} & whether to provide a bogus \doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} instance rather than a null \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file W\-W\-N\-Description.\-java.
+
+
+
+References W\-W\-N\-Description.\-brief\-W\-W\-N\-Estimate, Pure\-Storage\-Description.\-get\-Desc(), Oracle\-Pillar\-Description.\-get\-Desc(), E\-M\-C\-Clariion\-Description.\-get\-Desc(), H\-P\-Dot\-Hill\-Description.\-get\-Desc(), I\-B\-M3700\-Description.\-get\-Desc(), E\-M\-C\-Symmetrix\-Description.\-get\-Desc(), E\-M\-C\-V\-M\-A\-X\-Description.\-get\-Desc(), H\-P3\-Par\-Description.\-get\-Desc(), E\-M\-C\-V\-P\-L\-E\-X\-Description.\-get\-Desc(), I\-B\-M\-S\-V\-C\-Description.\-get\-Desc(), H\-D\-S\-V\-S\-P\-Description.\-get\-Desc(), and Net\-App\-Description.\-get\-Desc().
 
 
 
@@ -82,7 +110,7 @@ Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404_cgraph}
+\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_ad107e09f44b93a618bae90e3b32e96f8_cgraph}
 \end{center}
 \end{figure}
 
@@ -109,7 +137,7 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 \end{DoxyParams}
 
 
-Definition at line 131 of file W\-W\-N\-Description.\-java.
+Definition at line 146 of file W\-W\-N\-Description.\-java.
 
 
 
@@ -121,7 +149,7 @@ Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75988cf84fc6ee7a2ebff36e363021aa_cgraph}
+\includegraphics[width=220pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75988cf84fc6ee7a2ebff36e363021aa_cgraph}
 \end{center}
 \end{figure}
 
@@ -144,7 +172,7 @@ usage messages are useful to those of us with short memories as well (hey, I jus
 \end{DoxyParams}
 
 
-Definition at line 105 of file W\-W\-N\-Description.\-java.
+Definition at line 120 of file W\-W\-N\-Description.\-java.
 
 
 

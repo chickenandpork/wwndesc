@@ -18,7 +18,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="31" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="31" bodyend="-1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" compoundref="WWNDescription_8java" startline="75" endline="112">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +46,45 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="62" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="62" bodyend="97"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="62" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="62" bodyend="65"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="146" endline="211">WWNDescription.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>WWNDesc getWWNDescriptor</definition>
+        <argsstring>(String val, boolean provideBase)</argsstring>
+        <name>getWWNDescriptor</name>
+        <param>
+          <type>String</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>provideBase</declname>
+        </param>
+        <briefdescription>
+<para>Iterates <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" kindref="compound">WWNDescription</ref> decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new instance of <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref> descendent, or null if no descendents accept responsibility to describe or provide an alias for that WWN</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WWN to check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>provideBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to provide a bogus <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref> instance rather than a null </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="75" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="75" bodyend="112"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a48cfcc3bfbc4d22cd4ad0fb8c46aeff8" compoundref="WWNDescription_8java" startline="31">WWNDescription.briefWWNEstimate</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="PureStorageDescription_8java" startline="25" endline="33">PureStorageDescription.getDesc</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="OraclePillarDescription_8java" startline="29" endline="35">OraclePillarDescription.getDesc</references>
@@ -57,10 +95,9 @@
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVMAXDescription_8java" startline="34" endline="40">EMCVMAXDescription.getDesc</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HP3ParDescription_8java" startline="34" endline="40">HP3ParDescription.getDesc</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVPLEXDescription_8java" startline="34" endline="40">EMCVPLEXDescription.getDesc</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="40">IBMSVCDescription.getDesc</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="42">IBMSVCDescription.getDesc</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HDSVSPDescription_8java" startline="35" endline="41">HDSVSPDescription.getDesc</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="NetAppDescription_8java" startline="35" endline="41">NetAppDescription.getDesc</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="131" endline="196">WWNDescription.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a65d03ca5cd39f6905d34f7b0aab28f42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -85,7 +122,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="105" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="105" bodyend="115"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="120" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="120" bodyend="130"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -113,8 +150,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="131" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="131" bodyend="196"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</references>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="146" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="146" bodyend="211"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="65">WWNDescription.getWWNDescriptor</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -127,10 +164,11 @@
 <title>Issues</title>
 </sect1>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="30" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="29" bodyend="197"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" line="30" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDescription.java" bodystart="29" bodyend="212"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a48cfcc3bfbc4d22cd4ad0fb8c46aeff8" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription</scope><name>briefWWNEstimate</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription</scope><name>getWWNDescriptor</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription</scope><name>getWWNDescriptor</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription</scope><name>main</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a65d03ca5cd39f6905d34f7b0aab28f42" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDescription</scope><name>usage</name></member>
     </listofallmembers>

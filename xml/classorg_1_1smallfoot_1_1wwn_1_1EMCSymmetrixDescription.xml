@@ -148,7 +148,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="34" bodyend="40"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1aac54d649a6df7c45f2e0424649a6acdd" compoundref="EMCSymmetrixDescription_8java" startline="16" endline="19">EMCSymmetrixDescription.EMCSymmetrixDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" compoundref="WWNDescription_8java" startline="75" endline="112">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

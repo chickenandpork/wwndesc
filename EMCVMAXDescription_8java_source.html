@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">wwndesc
-   &#160;<span id="projectnumber">1.0-21</span>
+   &#160;<span id="projectnumber">1.0-33</span>
    </div>
   </td>
  </tr>
@@ -126,11 +126,11 @@ $(document).ready(function(){initNavTree('EMCVMAXDescription_8java_source.html',
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* our example now has 2081349AD */</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">/* get the first four of the serial: 4 bits: {reserved/0} {A}{B} {reserved/0} */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        BigInteger countDirPort[] = serDirPort.divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;100000000&quot;</span>,16));     <span class="comment">/* countDirPort[0] = 2, countDirPort[1] = 081349AD */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        BigInteger countDirPort[] = serDirPort.divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;200000000&quot;</span>,16));     <span class="comment">/* countDirPort[0] = 2, countDirPort[1] = 081349AD */</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;8000000&quot;</span>,16));     <span class="comment">/* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">brief</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">switch</span> (countDirPort[0].intValue()/2)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">switch</span> (countDirPort[0].intValue())</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">case</span> 1: <span class="comment">/* 0-01-0 == USA/HK19 seen on 20k VMax? */</span> <span class="comment">/* 0-01-1 == USA/40k VMax? */</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                res += <span class="stringliteral">&quot;HK19&quot;</span>;</div>
@@ -144,33 +144,39 @@ $(document).ready(function(){initNavTree('EMCVMAXDescription_8java_source.html',
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">/* our example now has 081349AD - get the 4-bit model code */</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment">//BigInteger modelDirPort[] = countDirPort[1].divideAndRemainder(new BigInteger(&quot;8000000&quot;,16));     /* modelDirPort[0] = 1, modelDirPort[1] = 01349AD */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">switch</span> (modelDirPort[0].intValue())</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">case</span> 0: <span class="comment">/* 00000: 40k V-Max */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                res += <span class="stringliteral">&quot;46&quot;</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">case</span> 1: <span class="comment">/* 00001: 20k V-Max? */</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                res += <span class="stringliteral">&quot;26&quot;</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">case</span> 24: <span class="comment">/* 11000: V-Max SE */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                res += <span class="stringliteral">&quot;49&quot;</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">default</span>:<span class="comment">/* unknown */</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                res += <span class="stringliteral">&quot;UN&quot;</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">/* our example now has 081349AD - get the 5-digit serial number ending */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        BigInteger serialDirPort[] = modelDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;400&quot;</span>,16));     <span class="comment">/* serialDirPort[0] = 004d2, serialDirPort[1] = 1AD */</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">/* our example now has 1AD - get the 4-bit Processor code */</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        BigInteger procDirPort[] = serialDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;40&quot;</span>,16));     <span class="comment">/* procDirPort[0] = 6, procDirPort[1] = 2D */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//System.out.println(&quot;modelDirPort[0] is &quot;+modelDirPort[0] + &quot; --&gt; &quot;+modelDirPort[0].intValue());</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">switch</span> (modelDirPort[0].intValue())</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">case</span> 0: <span class="comment">/* 000000: 40k V-Max */</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                res += <span class="stringliteral">&quot;46&quot;</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">case</span> 1: <span class="comment">/* 000001: 20k V-Max? */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">case</span> (1+32): <span class="comment">/* 100001: Unknown */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                res += <span class="stringliteral">&quot;26&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">case</span> 24: <span class="comment">/* 011000: V-Max SE */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                res += <span class="stringliteral">&quot;49&quot;</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">/* Previously, bit #32 was reserved set to 0.  This is no longer the case */</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">case</span> 32: <span class="comment">/* 100000: V-Max 40k 4-engine (TMO) */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                res += <span class="stringliteral">&quot;57&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">default</span>:<span class="comment">/* unknown */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                res += <span class="stringliteral">&quot;UN&quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">/* our example now has 2D - get the 4-bit Director code */</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        BigInteger dirDirPort[] = procDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;4&quot;</span>,16));     <span class="comment">/* dirDirPort[0] = C, dirDirPort[1] = %01 */</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;%0&quot;</span>+(<a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">brief</a>?4:5)+<span class="stringliteral">&quot;d-%02d%c%c&quot;</span>,serialDirPort[0].intValue(),dirDirPort[0].intValue()+1,procDirPort[0].intValue()+<span class="charliteral">&#39;a&#39;</span>,dirDirPort[1].intValue()+<span class="charliteral">&#39;A&#39;</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">/* our example now has 081349AD - get the 5-digit serial number ending */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        BigInteger serialDirPort[] = modelDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;400&quot;</span>,16));     <span class="comment">/* serialDirPort[0] = 004d2, serialDirPort[1] = 1AD */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">/* our example now has 1AD - get the 4-bit Processor code */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        BigInteger procDirPort[] = serialDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;40&quot;</span>,16));     <span class="comment">/* procDirPort[0] = 6, procDirPort[1] = 2D */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">/* our example now has 2D - get the 4-bit Director code */</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        BigInteger dirDirPort[] = procDirPort[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;4&quot;</span>,16));     <span class="comment">/* dirDirPort[0] = C, dirDirPort[1] = %01 */</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;%0&quot;</span>+(<a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#adbebed411e8c47d43338efa3edaa13f8">brief</a>?4:5)+<span class="stringliteral">&quot;d-%02d%c%c&quot;</span>,serialDirPort[0].intValue(),dirDirPort[0].intValue()+1,procDirPort[0].intValue()+<span class="charliteral">&#39;a&#39;</span>,dirDirPort[1].intValue()+<span class="charliteral">&#39;A&#39;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_html_a348ba3a7bc4a038e1ff8479ac5d43a37"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html#a348ba3a7bc4a038e1ff8479ac5d43a37">org.smallfoot.wwn.EMCVMAXDescription.EMCVMAXDescription</a></div><div class="ttdeci">EMCVMAXDescription(boolean brief, String wwn)</div><div class="ttdoc">create an instance with the given WWN. </div><div class="ttdef"><b>Definition:</b> <a href="EMCVMAXDescription_8java_source.html#l00021">EMCVMAXDescription.java:21</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_html_ad764133658fc6c5afec948ebd1873bb0"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html#ad764133658fc6c5afec948ebd1873bb0">org.smallfoot.wwn.EMCVMAXDescription.EMCVMAXDescription</a></div><div class="ttdeci">EMCVMAXDescription(String wwn)</div><div class="ttdoc">create an instance with brief set to false. </div><div class="ttdef"><b>Definition:</b> <a href="EMCVMAXDescription_8java_source.html#l00016">EMCVMAXDescription.java:16</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_html_a7e34be4d9bd11a9971c007c6231b8c01"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">org.smallfoot.wwn.EMCVMAXDescription.getDesc</a></div><div class="ttdeci">static WWNDesc getDesc(boolean strong, boolean brief, String wwn)</div><div class="ttdoc">If this class matches or describes the given WWN, returns a new instance of this class loaded with th...</div><div class="ttdef"><b>Definition:</b> <a href="EMCVMAXDescription_8java_source.html#l00034">EMCVMAXDescription.java:34</a></div></div>
@@ -185,7 +191,7 @@ $(document).ready(function(){initNavTree('EMCVMAXDescription_8java_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="EMCVMAXDescription_8java.html">EMCVMAXDescription.java</a></li>
-    <li class="footer">Generated on Wed Feb 19 2014 10:40:18 for wwndesc by
+    <li class="footer">Generated on Fri Jun 13 2014 00:51:36 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

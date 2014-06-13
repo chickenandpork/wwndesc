@@ -36,7 +36,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="16" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="16" bodyend="19"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="40">IBMSVCDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="42">IBMSVCDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a063df7534db1b95a74bfe2e5e84c1331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -95,7 +95,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="49" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="49" bodyend="64"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="51" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="51" bodyend="66"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
       </memberdef>
       </sectiondef>
@@ -126,7 +126,7 @@
 <parametername>strong</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is ignored: this class is a strong representation, not a weak one based on empirical matching, hence can always be used with confidence </para></parameterdescription>
+<para>is used to show only those patterns we&apos;re 100% certain about: this class is a strong representation of 505076801*, but a weak representation of all 50507680* (notice that the last nibble is fuzzy, meaning we could get duplicate names) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -146,9 +146,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="34" bodyend="40"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="34" bodyend="42"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a57a4e0da6d730a8b79fa3deabf6e59dd" compoundref="IBMSVCDescription_8java" startline="16" endline="19">IBMSVCDescription.IBMSVCDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" compoundref="WWNDescription_8java" startline="75" endline="112">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -185,7 +185,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="13" bodyend="65"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="13" bodyend="67"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>getDesc</name></member>

@@ -95,7 +95,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" line="49" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" bodystart="49" bodyend="103"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" line="49" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" bodystart="49" bodyend="109"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
       </memberdef>
       </sectiondef>
@@ -148,7 +148,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" bodystart="34" bodyend="40"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1ad764133658fc6c5afec948ebd1873bb0" compoundref="EMCVMAXDescription_8java" startline="16" endline="19">EMCVMAXDescription.EMCVMAXDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" compoundref="WWNDescription_8java" startline="75" endline="112">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -186,7 +186,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" bodystart="13" bodyend="104"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCVMAXDescription.java" bodystart="13" bodyend="110"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::EMCVMAXDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1ad764133658fc6c5afec948ebd1873bb0" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCVMAXDescription</scope><name>EMCVMAXDescription</name></member>

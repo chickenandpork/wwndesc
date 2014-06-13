@@ -148,7 +148,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="25" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="25" bodyend="33"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" compoundref="PureStorageDescription_8java" startline="12" endline="15">PureStorageDescription.PureStorageDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a44589ea01f3c2e5a8fbe84cb249ec404" compoundref="WWNDescription_8java" startline="62" endline="97">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" compoundref="WWNDescription_8java" startline="75" endline="112">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
