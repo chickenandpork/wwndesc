@@ -186,7 +186,7 @@ public class WWNDescription
              */
             case 'V':	// print the version and quit
             {
-                System.out.println(g.consistentVersion("@VERSION@-$Revision: 631 $")+"\n");
+                System.out.println(g.consistentVersion("@VERSION@-@BUILDID@"));
                 return;
             }
 
