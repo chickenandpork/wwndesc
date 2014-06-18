@@ -222,6 +222,28 @@ AT_CLEANUP()
 
 
 
+AT_SETUP(Non-Target Descriptions)
+dnl      -----------------------
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 20:11:00:15:60:12:34:56], 0, [null
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 20:11:00:15:60:12:34:56], 0, [null
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch -w 20:11:00:15:60:12:34:56], 0, [Cisco-001560-123456:17
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:15:60:12:34:56], 0, [Cisco-123456:17
+],[])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:21:5a:12:34:56], 0, [Cisco-123456:17
+],[])
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(Unique Port Descriptions)
 dnl      ------------------------
 
@@ -229,6 +251,12 @@ AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:1
 FC0
 FC1
 FC0
+], [])
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch -w 20:00:00:15:60:12:34:56 -w 2:000:001560:123456 -p 2:000:001560:123456 -p 2:011:001560:123456], 0, [Cisco-001560-123456:0
+Cisco-001560-123456:0
+000
+011
 ], [])
 
 AT_CLEANUP()

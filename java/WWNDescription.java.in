@@ -93,29 +93,32 @@ public class WWNDescription
         val = val.replaceAll(":","").toLowerCase();
         WWNDesc d = null;
 
-        if (null != (d = EMCSymmetrixDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        if (null != (d = EMCSymmetrixDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = EMCClariionDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = EMCClariionDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = EMCVMAXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = EMCVMAXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = EMCVPLEXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = EMCVPLEXDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = PureStorageDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = PureStorageDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = NetAppDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = NetAppDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = HDSVSPDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = HDSVSPDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = IBM3700Description.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = IBM3700Description.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = HP3ParDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = HP3ParDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = OraclePillarDescription.getDesc(/* strong*/ false, briefWWNEstimate, val)))
+        else if (null != (d = OraclePillarDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
+            return d;
+
+        else if (null != (d = CiscoSwitchDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
@@ -137,12 +140,14 @@ public class WWNDescription
     {
         System.out.println("Usage: "+proc+" -V|--version|-H|--help");
 
-        System.out.println("     : "+proc+" [--briefestimate] [--wwn|-w <WWN> [--wwn|-w <WWN> [--wwn|-w <WWN>]]]");
+        System.out.println("     : "+proc+" [--briefestimate] [--device[=switch|initiator|target] [--wwn|-w <WWN> [--port|-p <WWN>] [--wwn|-w <WWN> [--wwn|-w <WWN>]]]");
         System.out.println("   ie: "+proc+" -w 2100000b08123450");
         System.out.println("   ie: "+proc+" --wwn 2100000b08123450");
         System.out.println("   ie: "+proc+" --briefestimate -w 2100000b08123450");
         System.out.println("   ie: "+proc+" -w 21:00:00:0b:08:12:34:50");
         System.out.println("   ie: "+proc+" -w 21:00:000b08:123450");
+        System.out.println("   ie: "+proc+" -p 21:00:00:0b:08:12:34:50");
+        System.out.println("   ie: "+proc+" --device=switch --port 21:00:000b08:123450");
     }
 
 
@@ -162,6 +167,7 @@ public class WWNDescription
     public static void main(String args[])
     {
         WWNDescription m = new WWNDescription();
+	int role = DevRole.TARGETbit;
 
         java.util.Vector<LongOpt> options = new java.util.Vector();
 
@@ -169,8 +175,9 @@ public class WWNDescription
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
         options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
 
-        options.add(new LongOpt("wwn", LongOpt.REQUIRED_ARGUMENT, null, 'w'));
+        options.add(new LongOpt("device", LongOpt.OPTIONAL_ARGUMENT, null, 'd'));
         options.add(new LongOpt("port", LongOpt.REQUIRED_ARGUMENT, null, 'p'));
+        options.add(new LongOpt("wwn", LongOpt.REQUIRED_ARGUMENT, null, 'w'));
         options.add(new LongOpt("briefestimate", LongOpt.NO_ARGUMENT, null, 0x1000));
         options.add(new LongOpt("nobriefestimate", LongOpt.NO_ARGUMENT, null, 0x1001));
 
@@ -187,12 +194,26 @@ public class WWNDescription
             case 0x1001: /* switch to verbose WWNDescs */
                 m.briefWWNEstimate = false;
                 break;
+
+            case 'd': /* set a device type */
+            {
+                if (null == g.getOptarg()) role = DevRole.TARGETbit;
+
+                else if (g.getOptarg().toLowerCase().startsWith("targ")) role = DevRole.TARGETbit;
+                else if (g.getOptarg().equalsIgnoreCase("storage")) role = DevRole.TARGETbit;
+                else if (g.getOptarg().equalsIgnoreCase("server")) role = DevRole.INITIATORbit;
+                else if (g.getOptarg().toLowerCase().startsWith("init")) role = DevRole.TARGETbit;
+                else if (g.getOptarg().equalsIgnoreCase("server")) role = DevRole.INITIATORbit;
+                else if (g.getOptarg().equalsIgnoreCase("switch")) role = DevRole.SWITCHbit;
+            }
+            break;
+
             case 'p': /* inspect a WWPN's unique port */
             {
                 WWNDesc wwn;
                 if ((null == g.getOptarg()) || (16 != g.getOptarg().replaceAll(":","").length()))
                     System.out.println("no result: parameter "+g.getOptarg()+" needs to be a 16-digit hexadecimal");
-                else if (null == (wwn = m.getWWNDescriptor(g.getOptarg())))
+                else if (null == (wwn = m.getWWNDescriptor(g.getOptarg(),true,role)))
                     System.out.println("no result: WWN "+g.getOptarg()+" has no descriptor");
                 else System.out.println(wwn.descPort());
             }
@@ -203,7 +224,7 @@ public class WWNDescription
                 WWNDesc wwn;
                 if ((null == g.getOptarg()) || (16 != g.getOptarg().replaceAll(":","").length()))
                     System.out.println("no result: parameter "+g.getOptarg()+" needs to be a 16-digit hexadecimal");
-                else if (null == (wwn = m.getWWNDescriptor(g.getOptarg())))
+                else if (null == (wwn = m.getWWNDescriptor(g.getOptarg(),true,role)))
                     System.out.println("no result: WWN "+g.getOptarg()+" has no descriptor");
                 else System.out.println(wwn.toString());
             }
