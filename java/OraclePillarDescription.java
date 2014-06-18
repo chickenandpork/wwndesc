@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * Descriptor for (Oracle) Pillar Data Systems' Service Lifecycle Management devices
  */
-public class OraclePillarDescription extends WWNDesc
+public class OraclePillarDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public OraclePillarDescription(String wwn)
@@ -28,7 +28,17 @@ public class OraclePillarDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
-        if (wwn.matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("2[12][0-9a-fA-F][0-9a-fA-F]000b08.*"))
             return new OraclePillarDescription(wwn);
         else
             return null;

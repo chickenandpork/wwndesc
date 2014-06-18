@@ -1,4 +1,5 @@
-nodist_java_JAVA  = EMCClariionDescription.java EMCSymmetrixDescription.java EMCVMAXDescription.java EMCVPLEXDescription.java
+nodist_java_JAVA  = DevRole.java
+nodist_java_JAVA += EMCClariionDescription.java EMCSymmetrixDescription.java EMCVMAXDescription.java EMCVPLEXDescription.java
 nodist_java_JAVA += HDSVSPDescription.java IBM3700Description.java IBMSVCDescription.java
 nodist_java_JAVA += HP3ParDescription.java HPDotHillDescription.java
 nodist_java_JAVA += NetAppDescription.java OraclePillarDescription.java

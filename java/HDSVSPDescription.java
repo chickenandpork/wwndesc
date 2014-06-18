@@ -11,7 +11,7 @@ import java.math.BigInteger;
  * HDSVSPDescription (ie USPV-10098-CL2A) breaks out the model type, serial, and FA port from the WWPN
  */
 
-public class HDSVSPDescription extends WWNDesc
+public class HDSVSPDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public HDSVSPDescription(String wwn)
@@ -34,7 +34,17 @@ public class HDSVSPDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, boolean brief, String wwn)
     {
-        if (wwn.matches("50060e8.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("50060e8.*"))
             return new HDSVSPDescription(brief, wwn);
         else
             return null;

@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * IBM3700Description (ie RamSan-G8332-FC-2B) breaks out the serial and port information from the Texas Memory Systems hardware initially called RamSan
  */
-public class IBM3700Description extends WWNDesc
+public class IBM3700Description extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public IBM3700Description(String wwn)
@@ -33,7 +33,17 @@ public class IBM3700Description extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
-        if (wwn.matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("2[0-9a-f]0[0-9a-f]0020c2.*"))
             return new IBM3700Description(brief, wwn);
         else
             return null;

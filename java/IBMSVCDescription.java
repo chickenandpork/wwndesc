@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * IBMSVCDescription (ie SVCe0_Node0E_Port1) breaks out the SVC number, node, and port of a WWPN; it does not see where two nodes of a SVC are related
  */
-public class IBMSVCDescription extends WWNDesc
+public class IBMSVCDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public IBMSVCDescription(String wwn)
@@ -33,7 +33,17 @@ public class IBMSVCDescription extends WWNDesc
      */
     public static WWNDesc getDesc(boolean strong, boolean brief, String wwn)
     {
-        if ((strong) && (wwn.matches("5005076801.*")) )
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if ((strong) && (wwn.matches("5005076801.*")) )
             return new IBMSVCDescription(brief, wwn);
         else if (wwn.matches("500507680.*"))
             return new IBMSVCDescription(brief, wwn);

@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * EMCSymmetrixDescription (ie Symm-187900328-03dB or Symm-0328-03dB) breaks out the serial and FA port from the WWPN. @sa EMCSymmetrixDescription @sa EMCVMAXDescription @sa EMCVPLEXDescription
  */
-public class EMCSymmetrixDescription extends WWNDesc
+public class EMCSymmetrixDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public EMCSymmetrixDescription(String wwn)
@@ -33,7 +33,17 @@ public class EMCSymmetrixDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, boolean brief, String wwn)
     {
-        if (wwn.matches("5006048.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("5006048.*"))
             return new EMCSymmetrixDescription(brief, wwn);
         else
             return null;

@@ -12,7 +12,7 @@ import java.math.BigInteger;
  *
  * These descriptors are fairly weak: I'm somewhat sure of the serial, but only two matches for the port-number logic.
  */
-public class HPDotHillDescription extends WWNDesc
+public class HPDotHillDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public HPDotHillDescription(String wwn)
@@ -30,7 +30,17 @@ public class HPDotHillDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
-        if (wwn.matches("2[0-9a-f][0-9a-f][0-9a-f]00c0ff.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("2[0-9a-f][0-9a-f][0-9a-f]00c0ff.*"))
             return new HPDotHillDescription(wwn);
         else
             return null;

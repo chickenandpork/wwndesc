@@ -74,6 +74,22 @@ public class WWNDescription
      */
     public WWNDesc getWWNDescriptor(String val, boolean provideBase)
     {
+        return getWWNDescriptor(val, provideBase, DevRole.TARGETbit);
+    }
+    /**
+     * @copydoc #getWWNDescriptor(String, boolean)
+     *
+     * @param role DevRole to check for
+     */
+    public WWNDesc getWWNDescriptor(String val, boolean provideBase, DevRole role)
+    {
+        return getWWNDescriptor(val, provideBase, role.value);
+    }
+    /**
+     * @copydoc #getWWNDescriptor(String, boolean, DevRole)
+     */
+    public WWNDesc getWWNDescriptor(String val, boolean provideBase, int role)
+    {
         val = val.replaceAll(":","").toLowerCase();
         WWNDesc d = null;
 

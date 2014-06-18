@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * HP3ParDescription (ie 3Par-1234:0:0:1) breaks out the serial, chassis, node, and port information from the WWPN
  */
-public class HP3ParDescription extends WWNDesc
+public class HP3ParDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public HP3ParDescription(String wwn)
@@ -33,7 +33,17 @@ public class HP3ParDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
-        if (wwn.matches("2[0-9a-f][0-9a-f][0-9a-f]0002ac.*"))        /* 50002AC000020C3A */
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("2[0-9a-f][0-9a-f][0-9a-f]0002ac.*"))        /* 50002AC000020C3A */
             return new HP3ParDescription(brief, wwn);
         else
             return null;

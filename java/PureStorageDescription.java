@@ -6,7 +6,7 @@ import java.math.BigInteger;
 /**
  * PureStorageDescription (ie Pure-0123456-CT0.FC0) breaks out the serial number and port information from the WWPN.  Although Pure re-purposes Qlogic HBAs, they have the generosity and forethought to rebadge the WWPN with their own OUI.  Thanks, Pure!
  */
-public class PureStorageDescription extends WWNDesc
+public class PureStorageDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public PureStorageDescription(String wwn)
@@ -24,7 +24,17 @@ public class PureStorageDescription extends WWNDesc
      */
     public static WWNDesc getDesc(boolean strong, boolean brief, String wwn)
     {
-        if (strong)
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (strong)
             return null;
         else if (wwn.matches("^524a937.*"))
             return new PureStorageDescription(brief, wwn);

@@ -11,7 +11,7 @@ import java.math.BigInteger;
 /**
  * NetAppDescription (ie NetApp-123456-iGrp1-0a) breaks out the serial, IO Group, and port information from the WWPN
  */
-public class NetAppDescription extends WWNDesc
+public class NetAppDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public NetAppDescription(String wwn)
@@ -34,7 +34,17 @@ public class NetAppDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, boolean brief, String wwn)
     {
-        if (wwn.matches("500a098.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("500a098.*"))
             return new NetAppDescription(brief, wwn);
         else
             return null;

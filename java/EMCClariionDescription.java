@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * EMCClariionDescription (ie CL-01234567-SPB1) describes the serial and CL of a Clariion; EMC doesn't seem to include any additional data in the WWPN.  @sa EMCSymmetrixDescription @sa EMCVMAXDescription @sa EMCVPLEXDescription
  */
-public class EMCClariionDescription extends WWNDesc
+public class EMCClariionDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public EMCClariionDescription(String wwn)
@@ -28,7 +28,17 @@ public class EMCClariionDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, /* ignored */ boolean brief, String wwn)
     {
-        if (wwn.matches("5006016.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+	if (!isA(role))
+	    return null;
+	else if (wwn.matches("5006016.*"))
             return new EMCClariionDescription(wwn);
         else
             return null;

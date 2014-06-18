@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * EMCVPLEXDescription (ie VPlex-07a3b-A0-FC00) breaks out the serial and FE/BE port from the WWPN. @sa EMCClariionDescription @sa EMCSymmetrixDescription @sa EMCVMAXDescription
  */
-public class EMCVPLEXDescription extends WWNDesc
+public class EMCVPLEXDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public EMCVPLEXDescription(String wwn)
@@ -33,7 +33,17 @@ public class EMCVPLEXDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, boolean brief, String wwn)
     {
-        if (wwn.matches("50001442.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("50001442.*"))
             return new EMCVPLEXDescription(brief, wwn);
         else
             return null;

@@ -10,7 +10,7 @@ import java.math.BigInteger;
 /**
  * EMCVMAXDescription (ie VMax-HK192601234-12gB or VMax-1234-12gB) breaks out the country of manufacturer, serial and FA port from the WWPN. @sa EMCClariionDescription @sa EMCSymmetrixDescription @sa EMCVPLEXDescription
  */
-public class EMCVMAXDescription extends WWNDesc
+public class EMCVMAXDescription extends WWNDesc.WWNDescTarget
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
     public EMCVMAXDescription(String wwn)
@@ -33,7 +33,17 @@ public class EMCVMAXDescription extends WWNDesc
      */
     public static WWNDesc getDesc(/* ignored */ boolean strong, boolean brief, String wwn)
     {
-        if (wwn.matches("5000097.*"))
+        return getDesc(strong, brief, wwn, DevRole.max()-1);
+    }
+    /**
+     * @copydoc #getDesc(boolean, boolean, String)
+     * @param role Role (Initiator/Switch/Target) to check for
+     */
+    public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
+    {
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("5000097.*"))
             return new EMCVMAXDescription(brief, wwn);
         else
             return null;
