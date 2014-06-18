@@ -63,9 +63,19 @@ public class WWNDesc
     /**
      * describe the WWN: produce a short (shorter if this.brief = true) description suitable for use as an alias for this WWN
      * 
-     * @return the alias for the WWN constructed form the WWN bit fields
+     * @return the alias for the WWN constructed from the WWN bit fields
      */
     public String toString()
+    {
+        return null;
+    }
+
+    /**
+     * describe the WWPN's unique port label/index
+     * 
+     * @return the unique name for the port WWPN
+     */
+    public String descPort()
     {
         return null;
     }

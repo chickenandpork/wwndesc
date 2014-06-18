@@ -71,4 +71,15 @@ public class PureStorageDescription extends WWNDesc.WWNDescTarget
         else
             return res + String.format("Pure-%07x-CT%d.FC%d",serPort[0].intValue(),serPort[1].intValue()/16,serPort[1].intValue() % 16);
     }
+
+    /**
+     * describe the WWPN's unique port label/index
+     *
+     * @return the unique name for the port WWPN
+     */
+    public String descPort()
+    {
+        BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("10",16));
+	return String.format("FC%d",serPort[1].intValue() % 16);
+    }
 }

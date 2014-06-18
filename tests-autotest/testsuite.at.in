@@ -218,7 +218,18 @@ Pure-4609dd6-CT0.FC3
 Pure-4609dd6-CT1.FC3
 ], [])
 
+AT_CLEANUP()
 
+
+
+AT_SETUP(Unique Port Descriptions)
+dnl      ------------------------
+
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:14:00 -p 52:4a:93:7d:74:f1:14:00 -p 52:4a:93:7d:74:f1:14:01 -p 52:4a:93:7d:74:f1:14:10], 0, [Pure-d74f114-CT0.FC0
+FC0
+FC1
+FC0
+], [])
 
 AT_CLEANUP()
 

@@ -170,6 +170,7 @@ public class WWNDescription
         options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
 
         options.add(new LongOpt("wwn", LongOpt.REQUIRED_ARGUMENT, null, 'w'));
+        options.add(new LongOpt("port", LongOpt.REQUIRED_ARGUMENT, null, 'p'));
         options.add(new LongOpt("briefestimate", LongOpt.NO_ARGUMENT, null, 0x1000));
         options.add(new LongOpt("nobriefestimate", LongOpt.NO_ARGUMENT, null, 0x1001));
 
@@ -186,6 +187,17 @@ public class WWNDescription
             case 0x1001: /* switch to verbose WWNDescs */
                 m.briefWWNEstimate = false;
                 break;
+            case 'p': /* inspect a WWPN's unique port */
+            {
+                WWNDesc wwn;
+                if ((null == g.getOptarg()) || (16 != g.getOptarg().replaceAll(":","").length()))
+                    System.out.println("no result: parameter "+g.getOptarg()+" needs to be a 16-digit hexadecimal");
+                else if (null == (wwn = m.getWWNDescriptor(g.getOptarg())))
+                    System.out.println("no result: WWN "+g.getOptarg()+" has no descriptor");
+                else System.out.println(wwn.descPort());
+            }
+            break;
+
             case 'w': /* inspect a WWN */
             {
                 WWNDesc wwn;
