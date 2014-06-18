@@ -1,6 +1,5 @@
-%!PS-Adobe-2.0
-%%Creator: Graphviz version 2.14.1 (Fri Nov  9 08:19:38 GMT 2007)
-%%For: (allan.clark) Allan Clark
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.36.0 (20140111.2315)
 %%Title: WWNDescription.DemoTestDesc
 %%Pages: (atend)
 %%BoundingBox: (atend)
@@ -62,6 +61,7 @@ cleartomark
 /unfilled { } bind def
 /rounded { } bind def
 /diagonals { } bind def
+/tapered { } bind def
 
 % hooks for setting color 
 /nodecolor { sethsbcolor } bind def
@@ -88,17 +88,15 @@ cleartomark
 	scalefont setfont
 } def
 
-% draw aligned label in bounding box aligned to current point
-/alignedtext {			% width adj text
+% draw text fitted to its expected width
+/alignedtext {			% width text
 	/text exch def
-	/adj exch def
 	/width exch def
 	gsave
 		width 0 gt {
-			text stringwidth pop adj mul 0 rmoveto
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
 		} if
-		[] 0 setdash
-		text show
 	grestore
 } def
 
@@ -181,121 +179,201 @@ def
 %%EndSetup
 setupLatin1
 %%Page: 1 1
-%%PageBoundingBox: 36 36 232 198
+%%PageBoundingBox: 36 36 258 198
 %%PageOrientation: Portrait
 0 0 1 beginpage
 gsave
-36 36 232 198 boxprim clip newpath
+36 36 222 162 boxprim clip newpath
 1 1 set_scale 0 rotate 40 40 translate
 % Node1
 gsave
-0.000 0.000 0.749 nodecolor
-newpath 0 0 moveto
-0 21 lineto
-189 21 lineto
-189 0 lineto
+0 0 0.74902 nodecolor
+newpath 51.65 1 moveto
+51.65 19 lineto
+214.35 19 lineto
+214.35 1 lineto
 closepath fill
 1 setlinewidth
 filled
-0.000 0.000 0.000 nodecolor
-newpath 0 0 moveto
-0 21 lineto
-189 21 lineto
-189 0 lineto
+0 0 0 nodecolor
+newpath 51.65 1 moveto
+51.65 19 lineto
+214.35 19 lineto
+214.35 1 lineto
 closepath stroke
-0.000 0.000 0.000 nodecolor
-10.00 /Helvetica set_font
-94 7 moveto 173 -0.5 (WWNDescription.DemoTestDesc) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+59.65 7 moveto 146.69 (WWNDescription.DemoTestDesc) alignedtext
 grestore
 % Node2
 gsave
-[ /Rect [ 59 61 129 81 ]
+[ /Rect [ 100.56 58.5 165 77.5 ]
   /Border [ 0 0 0 ]
   /Action << /Subtype /URI /URI ($classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html) >>
   /Subtype /Link
 /ANN pdfmark
-0.000 0.000 1.000 nodecolor
-newpath 59 60 moveto
-59 81 lineto
-129 81 lineto
-129 60 lineto
+0 0 1 nodecolor
+newpath 100.56 59 moveto
+100.56 77 lineto
+165.44 77 lineto
+165.44 59 lineto
 closepath fill
 1 setlinewidth
 filled
-0.000 0.000 0.000 nodecolor
-newpath 59 60 moveto
-59 81 lineto
-129 81 lineto
-129 60 lineto
+0 0 0 nodecolor
+newpath 100.56 59 moveto
+100.56 77 lineto
+165.44 77 lineto
+165.44 59 lineto
 closepath stroke
-0.000 0.000 0.000 nodecolor
-10.00 /Helvetica set_font
-94 67 moveto 54 -0.5 (WWNDesc) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+108.56 65 moveto 48.88 (WWNDesc) alignedtext
 grestore
 % Node2->Node1
 gsave
 1 setlinewidth
 solid
-0.667 0.776 0.439 edgecolor
-newpath 94 50 moveto
-94 40 94 29 94 21 curveto
+0.66667 0.77647 0.43922 edgecolor
+newpath 133 48.65 moveto
+133 38.74 133 27 133 19.3 curveto
 stroke
-0.667 0.776 0.439 edgecolor
-newpath 90.5001 50 moveto
-94 60 lineto
-97.5001 50 lineto
+0.66667 0.77647 0.43922 edgecolor
+newpath 129.5 48.74 moveto
+133 58.74 lineto
+136.5 48.74 lineto
 closepath fill
 1 setlinewidth
 solid
-0.667 0.776 0.439 edgecolor
-newpath 90.5001 50 moveto
-94 60 lineto
-97.5001 50 lineto
+0.66667 0.77647 0.43922 edgecolor
+newpath 129.5 48.74 moveto
+133 58.74 lineto
+136.5 48.74 lineto
 closepath stroke
 grestore
 % Node3
 gsave
-0.000 0.000 1.000 nodecolor
-newpath 58 132 moveto
-58 153 lineto
-130 153 lineto
-130 132 lineto
+[ /Rect [ -.17 129.5 54 148.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classorg_1_1smallfoot_1_1wwn_1_1DevRole.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath -.17 130 moveto
+-.17 148 lineto
+54.17 148 lineto
+54.17 130 lineto
 closepath fill
 1 setlinewidth
 filled
-0.000 0.000 0.749 nodecolor
-newpath 58 132 moveto
-58 153 lineto
-130 153 lineto
-130 132 lineto
+0 0 0 nodecolor
+newpath -.17 130 moveto
+-.17 148 lineto
+54.17 148 lineto
+54.17 130 lineto
 closepath stroke
-0.000 0.000 0.000 nodecolor
-10.00 /Helvetica set_font
-94 139 moveto 56 -0.5 (BigInteger) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+7.83 136 moveto 38.35 (DevRole) alignedtext
 grestore
 % Node3->Node2
 gsave
 1 setlinewidth
 dashed
-0.776 0.753 0.804 edgecolor
-newpath 94 122 moveto
-94 108 94 92 94 81 curveto
+0.77647 0.75294 0.80392 edgecolor
+newpath 48.07 124.28 moveto
+69.69 110.21 102.6 88.79 120.44 77.18 curveto
 stroke
-0.776 0.753 0.804 edgecolor
-newpath 90.5001 122 moveto
-94 132 lineto
-97.5001 122 lineto
+0.77647 0.75294 0.80392 edgecolor
+newpath 46.05 121.43 moveto
+39.58 129.81 lineto
+49.87 127.29 lineto
 closepath fill
 1 setlinewidth
 solid
-0.776 0.753 0.804 edgecolor
-newpath 90.5001 122 moveto
-94 132 lineto
-97.5001 122 lineto
+0.77647 0.75294 0.80392 edgecolor
+newpath 46.05 121.43 moveto
+39.58 129.81 lineto
+49.87 127.29 lineto
 closepath stroke
-0.000 0.000 0.000 edgecolor
-10.00 /Helvetica set_font
-107 104 moveto 26 -0.5 ( wwn) alignedtext
+0 0 0 edgecolor
+10 /Helvetica set_font
+90 98 moveto 19.45 ( role) alignedtext
+grestore
+% Node3->Node3
+gsave
+1 setlinewidth
+dashed
+0.77647 0.75294 0.80392 edgecolor
+newpath 64.51 145.14 moveto
+69.04 144.03 72 141.98 72 139 curveto
+72 134.1 64.02 131.73 54.24 131.88 curveto
+stroke
+0.77647 0.75294 0.80392 edgecolor
+newpath 63.86 141.69 moveto
+54.24 146.12 lineto
+64.53 148.66 lineto
+closepath fill
+1 setlinewidth
+solid
+0.77647 0.75294 0.80392 edgecolor
+newpath 63.86 141.69 moveto
+54.24 146.12 lineto
+64.53 148.66 lineto
+closepath stroke
+0 0 0 edgecolor
+10 /Helvetica set_font
+75.05 146 moveto 42.42 ( TARGET) alignedtext
+0 0 0 edgecolor
+10 /Helvetica set_font
+76.55 136 moveto 39.44 (SWITCH) alignedtext
+0 0 0 edgecolor
+10 /Helvetica set_font
+72 126 moveto 48.53 (INITIATOR) alignedtext
+grestore
+% Node4
+gsave
+0 0 1 nodecolor
+newpath 138.21 130 moveto
+138.21 148 lineto
+199.79 148 lineto
+199.79 130 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0.74902 nodecolor
+newpath 138.21 130 moveto
+138.21 148 lineto
+199.79 148 lineto
+199.79 130 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+146.21 136 moveto 45.59 (BigInteger) alignedtext
+grestore
+% Node4->Node2
+gsave
+1 setlinewidth
+dashed
+0.77647 0.75294 0.80392 edgecolor
+newpath 160 120.76 moveto
+152.74 106.83 142.84 87.86 137.27 77.18 curveto
+stroke
+0.77647 0.75294 0.80392 edgecolor
+newpath 157 122.57 moveto
+164.73 129.81 lineto
+163.21 119.33 lineto
+closepath fill
+1 setlinewidth
+solid
+0.77647 0.75294 0.80392 edgecolor
+newpath 157 122.57 moveto
+164.73 129.81 lineto
+163.21 119.33 lineto
+closepath stroke
+0 0 0 edgecolor
+10 /Helvetica set_font
+153 98 moveto 22.78 ( wwn) alignedtext
 grestore
 endpage
 showpage
@@ -304,7 +382,7 @@ grestore
 %%EndPage: 1
 %%Trailer
 %%Pages: 1
-%%BoundingBox: 36 36 232 198
+%%BoundingBox: 36 36 258 198
 end
 restore
 %%EOF

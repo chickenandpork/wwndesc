@@ -1,0 +1,150 @@
+\section{Dev\+Role Class Reference}
+\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole}\index{Dev\+Role@{Dev\+Role}}
+
+
+This class seeks to provide simple bitfield type-\/checking of a device in a fabric so that I can use type-\/specific actions in a dependent project.  
+
+
+
+
+Collaboration diagram for Dev\+Role\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classorg_1_1smallfoot_1_1wwn_1_1DevRole__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean {\bf is\+A} ({\bf Dev\+Role} proto)
+\begin{DoxyCompactList}\small\item\em return true if the device is an instance of the other. \end{DoxyCompactList}\item 
+boolean {\bf is\+A} (int proto)
+\begin{DoxyCompactList}\small\item\em return true if the device is an instance of the other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bf max} ()\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_ab06e4bb9d371d0fbcbe849c78bd73efa}
+
+\begin{DoxyCompactList}\small\item\em report highest left-\/shift bit value ever created; some\+Device.\+value == (some\+Device.\+value \& (\doxyref{max()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1DevRole_ab06e4bb9d371d0fbcbe849c78bd73efa}-\/1)) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+final int {\bf value}\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_a899c1b74df7f8fda2fcd2c85d9185da8}
+
+\begin{DoxyCompactList}\small\item\em what bit-\/field is this constant? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final {\bf Dev\+Role} {\bf I\+N\+I\+T\+I\+A\+T\+O\+R} = new {\bf Dev\+Role}()\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_aa09bf98a27728964ba0d491642dc9228}
+
+\begin{DoxyCompactList}\small\item\em a device that initiates a storage request\+: a server, or a Storage Virtualizer port that talks to backing storage \end{DoxyCompactList}\item 
+static final {\bf Dev\+Role} {\bf S\+W\+I\+T\+C\+H} = new {\bf Dev\+Role}()\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_a44998908031f20570c26aba20dd63ff7}
+
+\begin{DoxyCompactList}\small\item\em a device that routes/passes traffic\+: Switch, N\+P\+V device/back-\/of-\/rack, F\+C\+R \end{DoxyCompactList}\item 
+static final {\bf Dev\+Role} {\bf T\+A\+R\+G\+E\+T} = new {\bf Dev\+Role}()\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_a5b493793990c957d316989fa9b702162}
+
+\begin{DoxyCompactList}\small\item\em a device that offers storage via $>$1 L\+U\+Ns ; contrast a T\+A\+P\+E offers only one L\+U\+N \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Dev\+Role} ()\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_a784be77e90b57f53853956f01abbda3e}
+
+\begin{DoxyCompactList}\small\item\em create a new constant, but private to stop extensions or descendents \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bf max} = 1\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_ae1e1dde676c120fa6d10f3bb2c14059e}
+
+\begin{DoxyCompactList}\small\item\em global singleton to keep track of the max \doxyref{Dev\+Role.\+value}{p.}{classorg_1_1smallfoot_1_1wwn_1_1DevRole_a899c1b74df7f8fda2fcd2c85d9185da8} so far \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class seeks to provide simple bitfield type-\/checking of a device in a fabric so that I can use type-\/specific actions in a dependent project. 
+
+By using this class to lift the assumption that all known devices are Targets, I can create additional possible matches that can be additionally checked when asked for more than default target types. This lets me later package the logic of subparts of a device (W\+W\+N\+N and W\+W\+P\+N) into the device logic itself, packaging up in a single place and avoiding needless diuplication without significantly stressing this model
+
+\begin{DoxySeeAlso}{See also}
+{\tt http\+://www.\+javaworld.\+com/article/2076970/core-\/java/create-\/enumerated-\/constants-\/in-\/java.\+html} 
+\end{DoxySeeAlso}
+
+
+Definition at line 18 of file Dev\+Role.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+Dev\+Role@{org\+::smallfoot\+::wwn\+::\+Dev\+Role}!is\+A@{is\+A}}
+\index{is\+A@{is\+A}!org\+::smallfoot\+::wwn\+::\+Dev\+Role@{org\+::smallfoot\+::wwn\+::\+Dev\+Role}}
+\subsubsection[{is\+A}]{\setlength{\rightskip}{0pt plus 5cm}boolean is\+A (
+\begin{DoxyParamCaption}
+\item[{{\bf Dev\+Role}}]{proto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_ad460a270e92162af2969d22e82ca275d}
+
+
+return true if the device is an instance of the other. 
+
+For example\+: if (the\+Tape\+Device.\+is\+A(\+T\+A\+P\+E)) \{...\}
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto} & device to compare to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether device is an instance 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file Dev\+Role.\+java.
+
+
+
+References Dev\+Role.\+is\+A(), and Dev\+Role.\+value.
+
+
+
+Referenced by Dev\+Role.\+is\+A().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=74pt]{classorg_1_1smallfoot_1_1wwn_1_1DevRole_ad460a270e92162af2969d22e82ca275d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::wwn\+::\+Dev\+Role@{org\+::smallfoot\+::wwn\+::\+Dev\+Role}!is\+A@{is\+A}}
+\index{is\+A@{is\+A}!org\+::smallfoot\+::wwn\+::\+Dev\+Role@{org\+::smallfoot\+::wwn\+::\+Dev\+Role}}
+\subsubsection[{is\+A}]{\setlength{\rightskip}{0pt plus 5cm}boolean is\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{proto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1DevRole_a56fabf6439f9ed8b9d818ad1260bbcdd}
+
+
+return true if the device is an instance of the other. 
+
+For example\+: if (the\+Tape\+Device.\+is\+A(\+T\+A\+P\+E)) \{...\}
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto} & device to compare to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether device is an instance 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Dev\+Role.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/{\bf Dev\+Role.\+java}\end{DoxyCompactItemize}

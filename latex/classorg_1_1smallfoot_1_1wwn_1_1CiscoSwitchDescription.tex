@@ -1,0 +1,256 @@
+\section{Cisco\+Switch\+Description Class Reference}
+\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription}\index{Cisco\+Switch\+Description@{Cisco\+Switch\+Description}}
+
+
+\doxyref{Cisco\+Switch\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription} (ie Cisco-\/001560-\/0123456\+:0) breaks out the uniqueness number and port index from the W\+W\+P\+N.  
+
+
+
+
+Inheritance diagram for Cisco\+Switch\+Description\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cisco\+Switch\+Description\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cisco\+Switch\+Description} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf Cisco\+Switch\+Description} (boolean {\bf brief}, String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with the given W\+W\+N. \end{DoxyCompactList}\item 
+String {\bf desc\+Port} ()
+\begin{DoxyCompactList}\small\item\em describe the W\+W\+P\+N's unique port label/index \end{DoxyCompactList}\item 
+String {\bf to\+String} ()
+\begin{DoxyCompactList}\small\item\em return a description or alias for this W\+W\+N; if brief is set to true during the call to \doxyref{get\+Desc()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a7e34be4d9bd11a9971c007c6231b8c01}, then a shorter description or alias will be returned \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf W\+W\+N\+Desc} {\bf get\+Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\+W\+N, returns a new instance of this class loaded with the given W\+W\+N. \end{DoxyCompactList}\item 
+static {\bf W\+W\+N\+Desc} {\bf get\+Desc} (boolean strong, boolean {\bf brief}, String {\bf wwn}, int {\bf role})
+\begin{DoxyCompactList}\small\item\em If this class matches or describes the given W\+W\+N, returns a new instance of this class loaded with the given W\+W\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\doxyref{Cisco\+Switch\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription} (ie Cisco-\/001560-\/0123456\+:0) breaks out the uniqueness number and port index from the W\+W\+P\+N. 
+
+There may be difficulty here in determining whether a device is a switch or a N\+P\+I\+V bladecenter for servers; it's not obvious from the W\+W\+P\+Ns 
+
+Definition at line 9 of file Cisco\+Switch\+Description.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}!Cisco\+Switch\+Description@{Cisco\+Switch\+Description}}
+\index{Cisco\+Switch\+Description@{Cisco\+Switch\+Description}!org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}}
+\subsubsection[{Cisco\+Switch\+Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cisco\+Switch\+Description} (
+\begin{DoxyParamCaption}
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a1fac2dbf30b578d02b025e6a05e13519}
+
+
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
+
+This is a convenience function to support the older constructor model
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+lang.\+Null\+Pointer\+Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em wwn} & the W\+W\+N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Cisco\+Switch\+Description.\+java.
+
+
+
+Referenced by Cisco\+Switch\+Description.\+get\+Desc().
+
+\index{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}!Cisco\+Switch\+Description@{Cisco\+Switch\+Description}}
+\index{Cisco\+Switch\+Description@{Cisco\+Switch\+Description}!org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}}
+\subsubsection[{Cisco\+Switch\+Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cisco\+Switch\+Description} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{brief, }
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a7ed45b2ac43a2956f77d6ac6f244d7c5}
+
+
+create an instance with the given W\+W\+N. 
+
+Values given to the constructor are simply copied to internal variables for later use
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+lang.\+Null\+Pointer\+Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em brief} & whether an abbreviated description is requested \\
+\hline
+{\em wwn} & the W\+W\+N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Cisco\+Switch\+Description.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}!desc\+Port@{desc\+Port}}
+\index{desc\+Port@{desc\+Port}!org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}}
+\subsubsection[{desc\+Port}]{\setlength{\rightskip}{0pt plus 5cm}String desc\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_abdd14eb1a2cbfc118c63f2354578467f}
+
+
+describe the W\+W\+P\+N's unique port label/index 
+
+\begin{DoxyReturn}{Returns}
+the unique name for the port W\+W\+P\+N 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file Cisco\+Switch\+Description.\+java.
+
+
+
+References W\+W\+N\+Desc.\+wwn.
+
+\index{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}!get\+Desc@{get\+Desc}}
+\index{get\+Desc@{get\+Desc}!org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}}
+\subsubsection[{get\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf W\+W\+N\+Desc} get\+Desc (
+\begin{DoxyParamCaption}
+\item[{boolean}]{strong, }
+\item[{boolean}]{brief, }
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a7e34be4d9bd11a9971c007c6231b8c01}
+
+
+If this class matches or describes the given W\+W\+N, returns a new instance of this class loaded with the given W\+W\+N. 
+
+\begin{DoxyReturn}{Returns}
+new instance of this class, or null if the given wwn does not match this class 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em strong} & used to restrict matching to strong-\/matches only. This is a weak-\/confidence description, so will return null for strong-\/only matching \\
+\hline
+{\em brief} & is used to ask for a shorter description\+: a more concise nickname or alias \\
+\hline
+{\em wwn} & the W\+W\+N (W\+W\+P\+N or W\+W\+N\+N, but typically W\+W\+P\+N) to match \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Cisco\+Switch\+Description.\+java.
+
+
+
+References Dev\+Role.\+max.
+
+
+
+Referenced by W\+W\+N\+Description.\+get\+W\+W\+N\+Descriptor().
+
+\index{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}!get\+Desc@{get\+Desc}}
+\index{get\+Desc@{get\+Desc}!org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}}
+\subsubsection[{get\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf W\+W\+N\+Desc} get\+Desc (
+\begin{DoxyParamCaption}
+\item[{boolean}]{strong, }
+\item[{boolean}]{brief, }
+\item[{String}]{wwn, }
+\item[{int}]{role}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a37ac294533314b3b7b3a5f3404ee43d6}
+
+
+If this class matches or describes the given W\+W\+N, returns a new instance of this class loaded with the given W\+W\+N. 
+
+\begin{DoxyReturn}{Returns}
+new instance of this class, or null if the given wwn does not match this class 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em strong} & used to restrict matching to strong-\/matches only. This is a weak-\/confidence description, so will return null for strong-\/only matching \\
+\hline
+{\em brief} & is used to ask for a shorter description\+: a more concise nickname or alias \\
+\hline
+{\em wwn} & the W\+W\+N (W\+W\+P\+N or W\+W\+N\+N, but typically W\+W\+P\+N) to match \\
+\hline
+{\em role} & Role (Initiator/\+Switch/\+Target) to check for \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Cisco\+Switch\+Description.\+java.
+
+
+
+References Cisco\+Switch\+Description.\+Cisco\+Switch\+Description(), and W\+W\+N\+Desc.\+W\+W\+N\+Desc\+Switch.\+is\+A().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a37ac294533314b3b7b3a5f3404ee43d6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description@{org\+::smallfoot\+::wwn\+::\+Cisco\+Switch\+Description}}
+\subsubsection[{to\+String}]{\setlength{\rightskip}{0pt plus 5cm}String to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_ad146fa8579a5f8a876c4688cc5a68520}
+
+
+return a description or alias for this W\+W\+N; if brief is set to true during the call to \doxyref{get\+Desc()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a7e34be4d9bd11a9971c007c6231b8c01}, then a shorter description or alias will be returned 
+
+\begin{DoxySeeAlso}{See also}
+\doxyref{get\+Desc(boolean,boolean,\+String)}{p.}{classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_a7e34be4d9bd11a9971c007c6231b8c01}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+generated alias or nickname for the W\+W\+N 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file Cisco\+Switch\+Description.\+java.
+
+
+
+References W\+W\+N\+Desc.\+brief, and W\+W\+N\+Desc.\+wwn.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/Cisco\+Switch\+Description.\+java\end{DoxyCompactItemize}

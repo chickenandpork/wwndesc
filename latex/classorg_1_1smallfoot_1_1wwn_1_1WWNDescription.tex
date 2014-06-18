@@ -1,5 +1,5 @@
-\section{W\-W\-N\-Description Class Reference}
-\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription}\index{W\-W\-N\-Description@{W\-W\-N\-Description}}
+\section{W\+W\+N\+Description Class Reference}
+\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription}\index{W\+W\+N\+Description@{W\+W\+N\+Description}}
 
 
 In situations where nicknames simply are not present, but we need descriptors in short-\/order, the \char`\"{}-\/-\/wwn=\char`\"{} or \char`\"{}-\/w\char`\"{} ooption can be used to get a description of what the most likely Nickname would be.  
@@ -8,15 +8,19 @@ In situations where nicknames simply are not present, but we need descriptors in
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-class {\bf Demo\-Test\-Desc}
-\begin{DoxyCompactList}\small\item\em test case\-: this matches a single item known to exist in the Demo Database \end{DoxyCompactList}\end{DoxyCompactItemize}
+class {\bf Demo\+Test\+Desc}
+\begin{DoxyCompactList}\small\item\em test case\+: this matches a single item known to exist in the Demo Database \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf W\-W\-N\-Desc} {\bf get\-W\-W\-N\-Descriptor} (String val)
-\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
-{\bf W\-W\-N\-Desc} {\bf get\-W\-W\-N\-Descriptor} (String val, boolean provide\-Base)
-\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
+{\bf W\+W\+N\+Desc} {\bf get\+W\+W\+N\+Descriptor} (String val)
+\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
+{\bf W\+W\+N\+Desc} {\bf get\+W\+W\+N\+Descriptor} (String val, boolean provide\+Base)
+\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
+{\bf W\+W\+N\+Desc} {\bf get\+W\+W\+N\+Descriptor} (String val, boolean provide\+Base, {\bf Dev\+Role} role)
+\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
+{\bf W\+W\+N\+Desc} {\bf get\+W\+W\+N\+Descriptor} (String val, boolean provide\+Base, int role)
+\begin{DoxyCompactList}\small\item\em Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. \end{DoxyCompactList}\item 
 void {\bf usage} (String proc)
 \begin{DoxyCompactList}\small\item\em usage messages are useful to those of us with short memories as well (hey, I just need to add swap!) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
@@ -27,96 +31,184 @@ static void {\bf main} (String args[$\,$])
 \subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-boolean {\bf brief\-W\-W\-N\-Estimate} = false
-\begin{DoxyCompactList}\small\item\em setting to \char`\"{}true\char`\"{} via the \char`\"{}-\/-\/briefestimate\char`\"{} commandline causes all descriptions later requested in \doxyref{get\-W\-W\-N\-Descriptor(\-String)}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404} to be \char`\"{}brief\char`\"{} (more concise) \end{DoxyCompactList}\end{DoxyCompactItemize}
+boolean {\bf brief\+W\+W\+N\+Estimate} = false
+\begin{DoxyCompactList}\small\item\em setting to \char`\"{}true\char`\"{} via the \char`\"{}-\/-\/briefestimate\char`\"{} commandline causes all descriptions later requested in \doxyref{get\+W\+W\+N\+Descriptor(\+String)}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404} to be \char`\"{}brief\char`\"{} (more concise) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 In situations where nicknames simply are not present, but we need descriptors in short-\/order, the \char`\"{}-\/-\/wwn=\char`\"{} or \char`\"{}-\/w\char`\"{} ooption can be used to get a description of what the most likely Nickname would be. 
 
-For example, \char`\"{}java -\/jar wwndesc.\-jar -\/w 5006048\-A\-C\-C\-C86\-A32\char`\"{} results in \char`\"{}\-Symm-\/182500953-\/05b\-A\char`\"{} matching {\tt http\-://www.\-emcstorageinfo.\-com/2007/08/how-\/to-\/decode-\/symmetrix-\/world-\/wide.\-html} Note that --briefestimate and --nobriefestimate configure for more brief estimate/suggested nicknames\subsection{Examples}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_Examples}
-java -\/jar vict.\-jar --wwn 500610601234567
+For example, \char`\"{}java -\/jar wwndesc.\+jar -\/w 5006048\+A\+C\+C\+C86\+A32\char`\"{} results in \char`\"{}\+Symm-\/182500953-\/05b\+A\char`\"{} matching {\tt http\+://www.\+emcstorageinfo.\+com/2007/08/how-\/to-\/decode-\/symmetrix-\/world-\/wide.\+html} Note that --briefestimate and --nobriefestimate configure for more brief estimate/suggested nicknames\subsection{Examples}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_Examples}
+java -\/jar vict.\+jar --wwn 500610601234567
 
-java -\/jar vict.\-jar --briefestimate --wwn 500610601234567
+java -\/jar vict.\+jar --briefestimate --wwn 500610601234567
 
-java -\/jar vict.\-jar --nobriefestimate --wwn 5000097301234564\subsection{Issues}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_Known}
+java -\/jar vict.\+jar --nobriefestimate --wwn 5000097301234564\subsection{Issues}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_Known}
 
 
-Definition at line 29 of file W\-W\-N\-Description.\-java.
+Definition at line 29 of file W\+W\+N\+Description.\+java.
 
 
 
 \subsection{Member Function Documentation}
-\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}!get\-W\-W\-N\-Descriptor@{get\-W\-W\-N\-Descriptor}}
-\index{get\-W\-W\-N\-Descriptor@{get\-W\-W\-N\-Descriptor}!org::smallfoot::wwn::WWNDescription@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}}
-\subsubsection[{get\-W\-W\-N\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\-W\-N\-Desc} get\-W\-W\-N\-Descriptor (
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}}
+\index{get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
+\subsubsection[{get\+W\+W\+N\+Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc} get\+W\+W\+N\+Descriptor (
 \begin{DoxyParamCaption}
 \item[{String}]{val}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404}
 
 
-Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
+Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
 
 \begin{DoxyReturn}{Returns}
-new instance of \doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\-W\-N
+new instance of \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\+W\+N
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
-{\em val} & W\-W\-N to check \\
+{\em val} & W\+W\+N to check \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 62 of file W\-W\-N\-Description.\-java.
+Definition at line 62 of file W\+W\+N\+Description.\+java.
 
 
 
-Referenced by W\-W\-N\-Description.\-main().
+Referenced by W\+W\+N\+Description.\+get\+W\+W\+N\+Descriptor(), and W\+W\+N\+Description.\+main().
 
-\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}!get\-W\-W\-N\-Descriptor@{get\-W\-W\-N\-Descriptor}}
-\index{get\-W\-W\-N\-Descriptor@{get\-W\-W\-N\-Descriptor}!org::smallfoot::wwn::WWNDescription@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}}
-\subsubsection[{get\-W\-W\-N\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\-W\-N\-Desc} get\-W\-W\-N\-Descriptor (
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}}
+\index{get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
+\subsubsection[{get\+W\+W\+N\+Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc} get\+W\+W\+N\+Descriptor (
 \begin{DoxyParamCaption}
 \item[{String}]{val, }
-\item[{boolean}]{provide\-Base}
+\item[{boolean}]{provide\+Base}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_ad107e09f44b93a618bae90e3b32e96f8}
 
 
-Iterates \doxyref{W\-W\-N\-Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
+Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
 
 \begin{DoxyReturn}{Returns}
-new instance of \doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\-W\-N
+new instance of \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\+W\+N
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
-{\em val} & W\-W\-N to check \\
+{\em val} & W\+W\+N to check \\
 \hline
-{\em provide\-Base} & whether to provide a bogus \doxyref{W\-W\-N\-Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} instance rather than a null \\
+{\em provide\+Base} & whether to provide a bogus \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} instance rather than a null \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 75 of file W\-W\-N\-Description.\-java.
+Definition at line 75 of file W\+W\+N\+Description.\+java.
 
 
 
-References W\-W\-N\-Description.\-brief\-W\-W\-N\-Estimate, Pure\-Storage\-Description.\-get\-Desc(), Oracle\-Pillar\-Description.\-get\-Desc(), E\-M\-C\-Clariion\-Description.\-get\-Desc(), H\-P\-Dot\-Hill\-Description.\-get\-Desc(), I\-B\-M3700\-Description.\-get\-Desc(), E\-M\-C\-Symmetrix\-Description.\-get\-Desc(), E\-M\-C\-V\-M\-A\-X\-Description.\-get\-Desc(), H\-P3\-Par\-Description.\-get\-Desc(), E\-M\-C\-V\-P\-L\-E\-X\-Description.\-get\-Desc(), I\-B\-M\-S\-V\-C\-Description.\-get\-Desc(), H\-D\-S\-V\-S\-P\-Description.\-get\-Desc(), and Net\-App\-Description.\-get\-Desc().
+References W\+W\+N\+Description.\+get\+W\+W\+N\+Descriptor().
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_ad107e09f44b93a618bae90e3b32e96f8_cgraph}
+\includegraphics[width=284pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_ad107e09f44b93a618bae90e3b32e96f8_cgraph}
 \end{center}
 \end{figure}
 
 
-\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}!main@{main}}
-\index{main@{main}!org::smallfoot::wwn::WWNDescription@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}}
+\index{get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
+\subsubsection[{get\+W\+W\+N\+Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc} get\+W\+W\+N\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{String}]{val, }
+\item[{boolean}]{provide\+Base, }
+\item[{{\bf Dev\+Role}}]{role}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75059cc51be3b90691caaad2ea2b96c6}
+
+
+Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
+
+\begin{DoxyReturn}{Returns}
+new instance of \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\+W\+N
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & W\+W\+N to check \\
+\hline
+{\em provide\+Base} & whether to provide a bogus \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} instance rather than a null\\
+\hline
+{\em role} & \doxyref{Dev\+Role}{p.}{classorg_1_1smallfoot_1_1wwn_1_1DevRole} to check for \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file W\+W\+N\+Description.\+java.
+
+
+
+References W\+W\+N\+Description.\+get\+W\+W\+N\+Descriptor(), and Dev\+Role.\+value.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75059cc51be3b90691caaad2ea2b96c6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}}
+\index{get\+W\+W\+N\+Descriptor@{get\+W\+W\+N\+Descriptor}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
+\subsubsection[{get\+W\+W\+N\+Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc} get\+W\+W\+N\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{String}]{val, }
+\item[{boolean}]{provide\+Base, }
+\item[{int}]{role}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a096d21a419b9a081abec2e2fcaf6eb5d}
+
+
+Iterates \doxyref{W\+W\+N\+Description}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription} decendents looking for which will accept responsibility, and if so, returns the instance it generates as a descriptor. 
+
+\begin{DoxyReturn}{Returns}
+new instance of \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} descendent, or null if no descendents accept responsibility to describe or provide an alias for that W\+W\+N
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & W\+W\+N to check \\
+\hline
+{\em provide\+Base} & whether to provide a bogus \doxyref{W\+W\+N\+Desc}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc} instance rather than a null\\
+\hline
+{\em role} & \doxyref{Dev\+Role}{p.}{classorg_1_1smallfoot_1_1wwn_1_1DevRole} to check for \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file W\+W\+N\+Description.\+java.
+
+
+
+References Pure\+Storage\+Description.\+get\+Desc(), Cisco\+Switch\+Description.\+get\+Desc(), E\+M\+C\+Clariion\+Description.\+get\+Desc(), Oracle\+Pillar\+Description.\+get\+Desc(), H\+P\+Dot\+Hill\+Description.\+get\+Desc(), I\+B\+M\+S\+V\+C\+Description.\+get\+Desc(), E\+M\+C\+V\+P\+L\+E\+X\+Description.\+get\+Desc(), I\+B\+M3700\+Description.\+get\+Desc(), E\+M\+C\+V\+M\+A\+X\+Description.\+get\+Desc(), H\+P3\+Par\+Description.\+get\+Desc(), E\+M\+C\+Symmetrix\+Description.\+get\+Desc(), Net\+App\+Description.\+get\+Desc(), and H\+D\+S\+V\+S\+P\+Description.\+get\+Desc().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a096d21a419b9a081abec2e2fcaf6eb5d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!main@{main}}
+\index{main@{main}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
 \subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void main (
 \begin{DoxyParamCaption}
 \item[{String}]{args[$\,$]}
@@ -126,36 +218,36 @@ Here is the call graph for this function\-:\nopagebreak
 
 Main function, as you can tell. 
 
-this function merely parses the command-\/line to dispatch actions to the meat of the meal above. I'm using an actual Get\-Opt because, yes, I'm a U\-N\-I\-X/\-C hack, re-\/using 3-\/decades-\/old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-\/document what the tool's doing.
+this function merely parses the command-\/line to dispatch actions to the meat of the meal above. I'm using an actual Get\+Opt because, yes, I'm a U\+N\+I\+X/\+C hack, re-\/using 3-\/decades-\/old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-\/document what the tool's doing.
 
 No real intelligence herein except the parse-\/and-\/redirect action.
 
 
 \begin{DoxyParams}{Parameters}
-{\em args} & commandline arguments passed in by the J\-R\-E \\
+{\em args} & commandline arguments passed in by the J\+R\+E \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 146 of file W\-W\-N\-Description.\-java.
+Definition at line 167 of file W\+W\+N\+Description.\+java.
 
 
 
-References W\-W\-N\-Description.\-get\-W\-W\-N\-Descriptor().
+References W\+W\+N\+Description.\+brief\+W\+W\+N\+Estimate, W\+W\+N\+Desc.\+desc\+Port(), W\+W\+N\+Description.\+get\+W\+W\+N\+Descriptor(), W\+W\+N\+Desc.\+to\+String(), and W\+W\+N\+Description.\+usage().
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=220pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75988cf84fc6ee7a2ebff36e363021aa_cgraph}
+\includegraphics[width=308pt]{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75988cf84fc6ee7a2ebff36e363021aa_cgraph}
 \end{center}
 \end{figure}
 
 
-\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}!usage@{usage}}
-\index{usage@{usage}!org::smallfoot::wwn::WWNDescription@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!usage@{usage}}
+\index{usage@{usage}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
 \subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void usage (
 \begin{DoxyParamCaption}
 \item[{String}]{proc}
@@ -172,31 +264,35 @@ usage messages are useful to those of us with short memories as well (hey, I jus
 \end{DoxyParams}
 
 
-Definition at line 120 of file W\-W\-N\-Description.\-java.
+Definition at line 139 of file W\+W\+N\+Description.\+java.
+
+
+
+Referenced by W\+W\+N\+Description.\+main().
 
 
 
 \subsection{Field Documentation}
-\index{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}!brief\-W\-W\-N\-Estimate@{brief\-W\-W\-N\-Estimate}}
-\index{brief\-W\-W\-N\-Estimate@{brief\-W\-W\-N\-Estimate}!org::smallfoot::wwn::WWNDescription@{org\-::smallfoot\-::wwn\-::\-W\-W\-N\-Description}}
-\subsubsection[{brief\-W\-W\-N\-Estimate}]{\setlength{\rightskip}{0pt plus 5cm}boolean brief\-W\-W\-N\-Estimate = false}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a48cfcc3bfbc4d22cd4ad0fb8c46aeff8}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}!brief\+W\+W\+N\+Estimate@{brief\+W\+W\+N\+Estimate}}
+\index{brief\+W\+W\+N\+Estimate@{brief\+W\+W\+N\+Estimate}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Description}}
+\subsubsection[{brief\+W\+W\+N\+Estimate}]{\setlength{\rightskip}{0pt plus 5cm}boolean brief\+W\+W\+N\+Estimate = false}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a48cfcc3bfbc4d22cd4ad0fb8c46aeff8}
 
 
-setting to \char`\"{}true\char`\"{} via the \char`\"{}-\/-\/briefestimate\char`\"{} commandline causes all descriptions later requested in \doxyref{get\-W\-W\-N\-Descriptor(\-String)}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404} to be \char`\"{}brief\char`\"{} (more concise) 
+setting to \char`\"{}true\char`\"{} via the \char`\"{}-\/-\/briefestimate\char`\"{} commandline causes all descriptions later requested in \doxyref{get\+W\+W\+N\+Descriptor(\+String)}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a44589ea01f3c2e5a8fbe84cb249ec404} to be \char`\"{}brief\char`\"{} (more concise) 
 
-\begin{DoxySeeAlso}{See Also}
-\doxyref{W\-W\-N\-Desc\-::to\-String()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_ad146fa8579a5f8a876c4688cc5a68520} 
+\begin{DoxySeeAlso}{See also}
+\doxyref{W\+W\+N\+Desc\+::to\+String()}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_ad146fa8579a5f8a876c4688cc5a68520} 
 \end{DoxySeeAlso}
 
 
-Definition at line 31 of file W\-W\-N\-Description.\-java.
+Definition at line 31 of file W\+W\+N\+Description.\+java.
 
 
 
-Referenced by W\-W\-N\-Description.\-get\-W\-W\-N\-Descriptor().
+Referenced by W\+W\+N\+Description.\+main().
 
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-java/{\bf W\-W\-N\-Description.\-java}\end{DoxyCompactItemize}
+java/{\bf W\+W\+N\+Description.\+java}\end{DoxyCompactItemize}

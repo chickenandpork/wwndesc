@@ -1,0 +1,4 @@
+<map id="WWNDesc.WWNDescSwitch" name="WWNDesc.WWNDescSwitch">
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html" title="CiscoSwitchDescription (ie Cisco&#45;001560&#45;0123456:0) breaks out the uniqueness number and port index fr..." alt="" coords="21,155,181,181"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="58,6,144,31"/>
+</map>

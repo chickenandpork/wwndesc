@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::DevRole</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a899c1b74df7f8fda2fcd2c85d9185da8" prot="public" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>what bit-field is this constant? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="20" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ad460a270e92162af2969d22e82ca275d" compoundref="DevRole_8java" startline="37" endline="37">DevRole.isA</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75059cc51be3b90691caaad2ea2b96c6" compoundref="WWNDescription_8java" startline="84" endline="87">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>global singleton to keep track of the max <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a899c1b74df7f8fda2fcd2c85d9185da8" kindref="member">DevRole.value</ref> so far </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="21" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoSwitchDescription_8java" startline="25" endline="28">CiscoSwitchDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCClariionDescription_8java" startline="29" endline="32">EMCClariionDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCSymmetrixDescription_8java" startline="34" endline="37">EMCSymmetrixDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVMAXDescription_8java" startline="34" endline="37">EMCVMAXDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVPLEXDescription_8java" startline="34" endline="37">EMCVPLEXDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HDSVSPDescription_8java" startline="35" endline="38">HDSVSPDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HP3ParDescription_8java" startline="34" endline="37">HP3ParDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HPDotHillDescription_8java" startline="31" endline="34">HPDotHillDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBM3700Description_8java" startline="34" endline="37">IBM3700Description.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="37">IBMSVCDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="NetAppDescription_8java" startline="35" endline="38">NetAppDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="OraclePillarDescription_8java" startline="29" endline="32">OraclePillarDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="PureStorageDescription_8java" startline="25" endline="28">PureStorageDescription.getDesc</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref></type>
+        <definition>final DevRole INITIATOR</definition>
+        <argsstring></argsstring>
+        <name>INITIATOR</name>
+        <initializer>= new <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref>()</initializer>
+        <briefdescription>
+<para>a device that initiates a storage request: a server, or a Storage Virtualizer port that talks to backing storage </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="51" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a64f89dd4a81c8d4d4bad3ab396c53ddb" compoundref="WWNDesc_8java" startline="85">WWNDesc.WWNDescInitiator.WWNDescInitiator</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref></type>
+        <definition>final DevRole SWITCH</definition>
+        <argsstring></argsstring>
+        <name>SWITCH</name>
+        <initializer>= new <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref>()</initializer>
+        <briefdescription>
+<para>a device that routes/passes traffic: Switch, NPV device/back-of-rack, FCR </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="53" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a2e9d7b44477f5ca43f315dcf26d1fa55" compoundref="WWNDesc_8java" startline="92">WWNDesc.WWNDescSwitch.WWNDescSwitch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a5b493793990c957d316989fa9b702162" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref></type>
+        <definition>final DevRole TARGET</definition>
+        <argsstring></argsstring>
+        <name>TARGET</name>
+        <initializer>= new <ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref>()</initializer>
+        <briefdescription>
+<para>a device that offers storage via &gt;1 LUNs ; contrast a TAPE offers only one LUN </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="49" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="49" bodyend="48"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" compoundref="WWNDesc_8java" startline="45" endline="45">WWNDesc.WWNDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a01442752a1408c8166fca29e90f0fa7c" compoundref="WWNDesc_8java" startline="99">WWNDesc.WWNDescTarget.WWNDescTarget</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a3bf372d48ecb1b42644e8c2a78593f66" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int INITIATORbit</definition>
+        <argsstring></argsstring>
+        <name>INITIATORbit</name>
+        <initializer>= INITIATOR.value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="52" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a32605c4c5347d7dfed33be5e3583dba0" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int SWITCHbit</definition>
+        <argsstring></argsstring>
+        <name>SWITCHbit</name>
+        <initializer>= SWITCH.value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="54" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a23975a59d29f86803a4d8216ddb75f42" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int TARGETbit</definition>
+        <argsstring></argsstring>
+        <name>TARGETbit</name>
+        <initializer>= TARGET.value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="50" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a784be77e90b57f53853956f01abbda3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DevRole</definition>
+        <argsstring>()</argsstring>
+        <name>DevRole</name>
+        <briefdescription>
+<para>create a new constant, but private to stop extensions or descendents </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="24" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="24" bodyend="28"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" compoundref="DevRole_8java" startline="48">DevRole.max</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ad460a270e92162af2969d22e82ca275d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean isA</definition>
+        <argsstring>(DevRole proto)</argsstring>
+        <name>isA</name>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kindref="compound">DevRole</ref></type>
+          <declname>proto</declname>
+        </param>
+        <briefdescription>
+<para>return true if the device is an instance of the other. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example: if (theTapeDevice.isA(TAPE)) {...}</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device to compare to</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether device is an instance </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="37" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="37" bodyend="37"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ad460a270e92162af2969d22e82ca275d" compoundref="DevRole_8java" startline="37" endline="37">DevRole.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a899c1b74df7f8fda2fcd2c85d9185da8" compoundref="DevRole_8java" startline="20">DevRole.value</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ad460a270e92162af2969d22e82ca275d" compoundref="DevRole_8java" startline="37" endline="37">DevRole.isA</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a56fabf6439f9ed8b9d818ad1260bbcdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean isA</definition>
+        <argsstring>(int proto)</argsstring>
+        <name>isA</name>
+        <param>
+          <type>int</type>
+          <declname>proto</declname>
+        </param>
+        <briefdescription>
+<para>return true if the device is an instance of the other. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example: if (theTapeDevice.isA(TAPE)) {...}</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device to compare to</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether device is an instance </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="46" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int max</definition>
+        <argsstring>()</argsstring>
+        <name>max</name>
+        <briefdescription>
+<para>report highest left-shift bit value ever created; someDevice.value == (someDevice.value &amp; (<ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" kindref="member">max()</ref>-1)) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="48" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="48" bodyend="-1"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" compoundref="DevRole_8java" startline="48">DevRole.max</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a784be77e90b57f53853956f01abbda3e" compoundref="DevRole_8java" startline="24" endline="28">DevRole.DevRole</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" compoundref="DevRole_8java" startline="48">DevRole.max</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class seeks to provide simple bitfield type-checking of a device in a fabric so that I can use type-specific actions in a dependent project. </para>    </briefdescription>
+    <detaileddescription>
+<para>By using this class to lift the assumption that all known devices are Targets, I can create additional possible matches that can be additionally checked when asked for more than default target types. This lets me later package the logic of subparts of a device (WWNN and WWPN) into the device logic itself, packaging up in a single place and avoiding needless diuplication without significantly stressing this model</para><para><simplesect kind="see"><para><ulink url="http://www.javaworld.com/article/2076970/core-java/create-enumerated-constants-in-java.html">http://www.javaworld.com/article/2076970/core-java/create-enumerated-constants-in-java.html</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="183">
+        <label>DevRole</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>TARGET</edgelabel>
+          <edgelabel>SWITCH</edgelabel>
+          <edgelabel>INITIATOR</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="18" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a784be77e90b57f53853956f01abbda3e" prot="private" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>DevRole</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>INITIATOR</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a3bf372d48ecb1b42644e8c2a78593f66" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>INITIATORbit</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ad460a270e92162af2969d22e82ca275d" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>isA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a56fabf6439f9ed8b9d818ad1260bbcdd" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>isA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" prot="private" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>max</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>max</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>SWITCH</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a32605c4c5347d7dfed33be5e3583dba0" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>SWITCHbit</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a5b493793990c957d316989fa9b702162" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>TARGET</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a23975a59d29f86803a4d8216ddb75f42" prot="package" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>TARGETbit</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a899c1b74df7f8fda2fcd2c85d9185da8" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

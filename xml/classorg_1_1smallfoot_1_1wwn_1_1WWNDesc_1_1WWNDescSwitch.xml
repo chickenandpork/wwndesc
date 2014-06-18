@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" prot="public" virt="non-virtual">CiscoSwitchDescription</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a2e9d7b44477f5ca43f315dcf26d1fa55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WWNDescSwitch</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>WWNDescSwitch</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>create a new Switch device without brief naming capability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="92" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="92" bodyend="-1"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="53">DevRole.SWITCH</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1aae944684c83002cfaae951cbfff7505d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WWNDescSwitch</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>WWNDescSwitch</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>create a new Switch device with given brief capability </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="93" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="93" bodyend="92"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="53">DevRole.SWITCH</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean isA</definition>
+        <argsstring>(int role)</argsstring>
+        <name>isA</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>lightweight method to check for membership in this role </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="94" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="94" bodyend="93"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoSwitchDescription_8java" startline="33" endline="45">CiscoSwitchDescription.getDesc</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>simple pass-thru class to define internal value for a Switch in an idempotent way </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="312">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="313">
+        <label>CiscoSwitchDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription"/>
+        <childnode refid="311" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>WWNDesc.WWNDescSwitch</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
+        <childnode refid="312" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="317">
+        <label>BigInteger</label>
+      </node>
+      <node id="315">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="316" relation="usage">
+          <edgelabel>role</edgelabel>
+        </childnode>
+        <childnode refid="317" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="314">
+        <label>WWNDesc.WWNDescSwitch</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>DevRole</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
+        <childnode refid="316" relation="usage">
+          <edgelabel>TARGET</edgelabel>
+          <edgelabel>SWITCH</edgelabel>
+          <edgelabel>INITIATOR</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="91" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="91" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>descPort</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>isA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a10728549ec6d505df7b3c9828f707676" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>role</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a0e1e77fdaa76d37292879be33dd23dcb" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a2e9d7b44477f5ca43f315dcf26d1fa55" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>WWNDescSwitch</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1aae944684c83002cfaae951cbfff7505d" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>WWNDescSwitch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

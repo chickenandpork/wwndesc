@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription" kind="class" prot="public">
     <compoundname>org::smallfoot::wwn::IBMSVCDescription</compoundname>
-    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget" prot="public" virt="non-virtual">WWNDesc.WWNDescTarget</basecompoundref>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a57a4e0da6d730a8b79fa3deabf6e59dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -36,7 +36,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="16" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="16" bodyend="19"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="42">IBMSVCDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="IBMSVCDescription_8java" startline="42" endline="52">IBMSVCDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a063df7534db1b95a74bfe2e5e84c1331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -95,8 +95,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="51" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="51" bodyend="66"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="61" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="61" bodyend="76"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -146,9 +147,70 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="34" bodyend="42"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="34" bodyend="37"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="131">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(boolean strong, boolean brief, String wwn, int role)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>boolean</type>
+          <declname>strong</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new instance of this class, or null if the given wwn does not match this class </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strong</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to show only those patterns we&apos;re 100% certain about: this class is a strong representation of 505076801*, but a weak representation of all 50507680* (notice that the last nibble is fuzzy, meaning we could get duplicate names) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to ask for a shorter description: a more concise nickname or alias </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN (WWPN or WWNN, but typically WWPN) to match </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role (Initiator/Switch/Target) to check for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="42" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="42" bodyend="52"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a57a4e0da6d730a8b79fa3deabf6e59dd" compoundref="IBMSVCDescription_8java" startline="16" endline="19">IBMSVCDescription.IBMSVCDescription</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1ad107e09f44b93a618bae90e3b32e96f8" compoundref="WWNDescription_8java" startline="75" endline="112">WWNDescription.getWWNDescriptor</referencedby>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -156,45 +218,76 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="131">
+      <node id="250">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="130">
+      <node id="249">
+        <label>WWNDesc.WWNDescTarget</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
+        <childnode refid="250" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="248">
         <label>IBMSVCDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription"/>
-        <childnode refid="131" relation="public-inheritance">
+        <childnode refid="249" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="134">
+      <node id="255">
         <label>BigInteger</label>
       </node>
-      <node id="133">
+      <node id="253">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="134" relation="usage">
+        <childnode refid="254" relation="usage">
+          <edgelabel>role</edgelabel>
+        </childnode>
+        <childnode refid="255" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="132">
+      <node id="252">
+        <label>WWNDesc.WWNDescTarget</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="251">
         <label>IBMSVCDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription"/>
-        <childnode refid="133" relation="public-inheritance">
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>DevRole</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
+        <childnode refid="254" relation="usage">
+          <edgelabel>TARGET</edgelabel>
+          <edgelabel>SWITCH</edgelabel>
+          <edgelabel>INITIATOR</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="13" bodyend="67"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="13" bodyend="77"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>descPort</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>getDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a57a4e0da6d730a8b79fa3deabf6e59dd" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>IBMSVCDescription</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a063df7534db1b95a74bfe2e5e84c1331" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>IBMSVCDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>isA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a10728549ec6d505df7b3c9828f707676" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>role</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>toString</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>wwn</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>WWNDesc</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a0e1e77fdaa76d37292879be33dd23dcb" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a01442752a1408c8166fca29e90f0fa7c" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>WWNDescTarget</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a2ce2a4aa1713c0f1184774f236fe50e5" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBMSVCDescription</scope><name>WWNDescTarget</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

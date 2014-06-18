@@ -1,5 +1,9 @@
 var dir_93c6ba7fb77bae0709fae89c9c13b44a =
 [
+    [ "CiscoSwitchDescription.java", "CiscoSwitchDescription_8java_source.html", null ],
+    [ "DevRole.java", "DevRole_8java.html", [
+      [ "DevRole", "classorg_1_1smallfoot_1_1wwn_1_1DevRole.html", "classorg_1_1smallfoot_1_1wwn_1_1DevRole" ]
+    ] ],
     [ "EMCClariionDescription.java", "EMCClariionDescription_8java.html", [
       [ "EMCClariionDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription" ]
     ] ],
@@ -38,7 +42,10 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
       [ "version", "classorg_1_1smallfoot_1_1wwn_1_1version.html", "classorg_1_1smallfoot_1_1wwn_1_1version" ]
     ] ],
     [ "WWNDesc.java", "WWNDesc_8java.html", [
-      [ "WWNDesc", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" ]
+      [ "WWNDesc", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" ],
+      [ "WWNDescInitiator", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator" ],
+      [ "WWNDescSwitch", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" ],
+      [ "WWNDescTarget", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget" ]
     ] ],
     [ "WWNDescription.java", "WWNDescription_8java.html", [
       [ "DemoTestDesc", "classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc.html", "classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc" ],

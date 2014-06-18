@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="WWNDesc_8java" kind="file">
     <compoundname>WWNDesc.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public">org::smallfoot::wwn::WWNDesc</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator" prot="public">org::smallfoot::wwn::WWNDesc::WWNDescInitiator</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" prot="public">org::smallfoot::wwn::WWNDesc::WWNDescSwitch</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget" prot="public">org::smallfoot::wwn::WWNDesc::WWNDescTarget</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1wwn">org::smallfoot::wwn</innernamespace>
     <briefdescription>
 <para>WWNDesc is the basic abstract ancestor: every descriptor is a descendent class extending this one, adding logic to the toString() function&apos;s output. </para>    </briefdescription>

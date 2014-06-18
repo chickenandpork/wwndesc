@@ -3,6 +3,8 @@ var annotated =
     [ "org", null, [
       [ "smallfoot", null, [
         [ "wwn", null, [
+          [ "CiscoSwitchDescription", "classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" ],
+          [ "DevRole", "classorg_1_1smallfoot_1_1wwn_1_1DevRole.html", "classorg_1_1smallfoot_1_1wwn_1_1DevRole" ],
           [ "EMCClariionDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription" ],
           [ "EMCSymmetrixDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" ],
           [ "EMCVMAXDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" ],
