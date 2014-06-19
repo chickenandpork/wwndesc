@@ -4,12 +4,12 @@ package org.smallfoot.wwn;
 import java.math.BigInteger;
 
 /**
- * CiscoSwitchDescription (ie Cisco-001560-0123456:0) breaks out the uniqueness number and port index from the WWPN.  There may be difficulty here in determining whether a device is a switch or a NPIV bladecenter for servers; it's not obvious from the WWPNs
+ * AIXLPARServerDescription (ie LPAR-012345:0) breaks out the uniqueness number and port index from the WWPN.  There may be difficulty here in determining whether a device is a switch or a NPIV bladecenter for servers; it's not obvious from the WWPNs
  */
-public class CiscoSwitchDescription extends WWNDesc.WWNDescSwitch
+public class AIXLPARServerDescription extends WWNDesc.WWNDescInitiator
 {
     /** @copydoc WWNDesc#WWNDesc(String) */
-    public CiscoSwitchDescription(String wwn)
+    public AIXLPARServerDescription(String wwn)
     {
         super(wwn);
     }
@@ -36,20 +36,14 @@ public class CiscoSwitchDescription extends WWNDesc.WWNDescSwitch
             return null;
         else if (strong)
             return null;
-        else if (wwn.matches("2[0-9a-f]{3}000dec[0-9a-f]{6}"))
-            return new CiscoSwitchDescription(brief, wwn);
-        else if (wwn.matches("2[0-9a-f]{3}001560[0-9a-f]{6}"))
-            return new CiscoSwitchDescription(brief, wwn);
-        else if (wwn.matches("2[0-9a-f]{3}00215a[0-9a-f]{6}"))
-            return new CiscoSwitchDescription(brief, wwn);
-        else if (wwn.matches("2[0-9a-f]{3}547fee[0-9a-f]{6}"))
-            return new CiscoSwitchDescription(brief, wwn);
+        else if (wwn.matches("c05076[0-9a-f]{10}"))
+            return new AIXLPARServerDescription(brief, wwn);
         else
             return null;
     }
 
     /** @copydoc WWNDesc#WWNDesc(boolean,String) */
-    public CiscoSwitchDescription(boolean brief, String wwn)
+    public AIXLPARServerDescription(boolean brief, String wwn)
     {
         super(brief, wwn);
     }
@@ -65,19 +59,16 @@ public class CiscoSwitchDescription extends WWNDesc.WWNDescSwitch
         String res = super.toString();
         if (null == res) res = "";
 
-        /* for example start with 20:13:00:15:60:12:34:56 or 2:013:001560:123456 broken apart */
+        /* for example start with c050760123450010 or c05076:012345:0010 broken apart -- I've noticed that the LPAs in a given frame, perhaps by convention only, have consistent 12 digits (including OUI) and differing last 16 bits that almost appear to be odd/even split amongst fabrics */
 
-        BigInteger portOuiSer[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
+        BigInteger ouiSerPort[] = wwn.divideAndRemainder(new BigInteger("10000",16));
 
-        /* our example now has portOuiSer = { [2:013:001560],[123456] } */
-        BigInteger portOui[] = portOuiSer[0].divideAndRemainder(new BigInteger("1000000",16));
+        /* our example now has ouiSerPort = { [c05076:012345],[0010] } */
+        BigInteger ouiSer[] = ouiSerPort[0].divideAndRemainder(new BigInteger("1000000",16));
 
-        /* our example now has portOui = { [2:013], [001560] } */
+        /* our example now has ouiSer = { [c05076], [012345] } */
 
-        if (brief)
-            return res + String.format("Cisco-%06x:%d",portOuiSer[1].intValue(),portOui[0].intValue() % (1 << 12) );
-        else
-            return res + String.format("Cisco-%06x-%06x:%d",portOui[1].intValue(),portOuiSer[1].intValue(),portOui[0].intValue() % (1 << 12) );
+        return res + String.format("LPAR-%06x:%04x",ouiSer[1].intValue(),ouiSerPort[1].intValue() );
     }
 
     /**
@@ -87,7 +78,7 @@ public class CiscoSwitchDescription extends WWNDesc.WWNDescSwitch
      */
     public String descPort()
     {
-        BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("1000000000000",16));
-	return String.format("%03x",serPort[0].intValue() % (1 << 12));
+        BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("10000",16));
+	return String.format("%04x",serPort[1].intValue());
     }
 }

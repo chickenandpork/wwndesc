@@ -120,6 +120,8 @@ public class WWNDescription
 
         else if (null != (d = CiscoSwitchDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
+        else if (null != (d = AIXLPARServerDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
+            return d;
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
