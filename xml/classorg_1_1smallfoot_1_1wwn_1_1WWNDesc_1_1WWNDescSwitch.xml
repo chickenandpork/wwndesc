@@ -4,6 +4,7 @@
     <compoundname>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" prot="public" virt="non-virtual">CiscoSwitchDescription</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription" prot="public" virt="non-virtual">CiscoUCSServerDescription</derivedcompoundref>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a2e9d7b44477f5ca43f315dcf26d1fa55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -63,7 +64,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="94" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="94" bodyend="93"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoSwitchDescription_8java" startline="33" endline="45">CiscoSwitchDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoSwitchDescription_8java" startline="33" endline="49">CiscoSwitchDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoUCSServerDescription_8java" startline="40" endline="52">CiscoUCSServerDescription.getDesc</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -71,47 +73,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="312">
+      <node id="351">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="313">
+      <node id="352">
         <label>CiscoSwitchDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription"/>
-        <childnode refid="311" relation="public-inheritance">
+        <childnode refid="350" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="311">
+      <node id="350">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="312" relation="public-inheritance">
+        <childnode refid="351" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>CiscoUCSServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
+        <childnode refid="350" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="317">
+      <node id="357">
         <label>BigInteger</label>
       </node>
-      <node id="315">
+      <node id="355">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="316" relation="usage">
+        <childnode refid="356" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="317" relation="usage">
+        <childnode refid="357" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="314">
+      <node id="354">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="355" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="316">
+      <node id="356">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="316" relation="usage">
+        <childnode refid="356" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

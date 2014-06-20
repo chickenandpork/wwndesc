@@ -149,7 +149,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" line="34" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMSVCDescription.java" bodystart="34" bodyend="37"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="131">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="135">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
@@ -218,53 +218,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="250">
+      <node id="286">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="249">
+      <node id="285">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="250" relation="public-inheritance">
+        <childnode refid="286" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="248">
+      <node id="284">
         <label>IBMSVCDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription"/>
-        <childnode refid="249" relation="public-inheritance">
+        <childnode refid="285" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="255">
+      <node id="291">
         <label>BigInteger</label>
       </node>
-      <node id="253">
+      <node id="289">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="254" relation="usage">
+        <childnode refid="290" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="255" relation="usage">
+        <childnode refid="291" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="252">
+      <node id="288">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="253" relation="public-inheritance">
+        <childnode refid="289" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="251">
+      <node id="287">
         <label>IBMSVCDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription"/>
-        <childnode refid="252" relation="public-inheritance">
+        <childnode refid="288" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="254">
+      <node id="290">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="254" relation="usage">
+        <childnode refid="290" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

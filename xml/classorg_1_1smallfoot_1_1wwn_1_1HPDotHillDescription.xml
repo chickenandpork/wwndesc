@@ -103,7 +103,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/HPDotHillDescription.java" line="31" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HPDotHillDescription.java" bodystart="31" bodyend="34"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="131">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="135">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
@@ -172,53 +172,53 @@
     <detaileddescription>
 <para>These descriptors are fairly weak: I&apos;m somewhat sure of the serial, but only two matches for the port-number logic. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="234">
+      <node id="270">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="232">
+      <node id="268">
         <label>HPDotHillDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription"/>
-        <childnode refid="233" relation="public-inheritance">
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="233">
+      <node id="269">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="234" relation="public-inheritance">
+        <childnode refid="270" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="239">
+      <node id="275">
         <label>BigInteger</label>
       </node>
-      <node id="237">
+      <node id="273">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="238" relation="usage">
+        <childnode refid="274" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="239" relation="usage">
+        <childnode refid="275" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="235">
+      <node id="271">
         <label>HPDotHillDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription"/>
-        <childnode refid="236" relation="public-inheritance">
+        <childnode refid="272" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="236">
+      <node id="272">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="237" relation="public-inheritance">
+        <childnode refid="273" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="238">
+      <node id="274">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="238" relation="usage">
+        <childnode refid="274" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

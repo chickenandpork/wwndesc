@@ -103,7 +103,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="29" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="29" bodyend="32"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="131">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="135">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
@@ -175,53 +175,53 @@
 <simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" kindref="compound">EMCVPLEXDescription</ref> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="186">
+      <node id="222">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="184">
+      <node id="220">
         <label>EMCClariionDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription"/>
-        <childnode refid="185" relation="public-inheritance">
+        <childnode refid="221" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="185">
+      <node id="221">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="186" relation="public-inheritance">
+        <childnode refid="222" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="191">
+      <node id="227">
         <label>BigInteger</label>
       </node>
-      <node id="189">
+      <node id="225">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="190" relation="usage">
+        <childnode refid="226" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="191" relation="usage">
+        <childnode refid="227" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="187">
+      <node id="223">
         <label>EMCClariionDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription"/>
-        <childnode refid="188" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="188">
+      <node id="224">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="189" relation="public-inheritance">
+        <childnode refid="225" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="190">
+      <node id="226">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="190" relation="usage">
+        <childnode refid="226" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

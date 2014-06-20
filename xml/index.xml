@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.7">
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription" kind="class"><name>org::smallfoot::wwn::AIXLPARServerDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1af69777e7fc1d12fa8237b01fe4c1a3e7" kind="function"><name>AIXLPARServerDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a747cf5729d27404f49fa478314315d8f" kind="function"><name>AIXLPARServerDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" kind="function"><name>descPort</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kind="function"><name>getDesc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" kind="function"><name>getDesc</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" kind="class"><name>org::smallfoot::wwn::CiscoSwitchDescription</name>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a1fac2dbf30b578d02b025e6a05e13519" kind="function"><name>CiscoSwitchDescription</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7ed45b2ac43a2956f77d6ac6f244d7c5" kind="function"><name>CiscoSwitchDescription</name></member>
@@ -7,6 +15,14 @@
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kind="function"><name>getDesc</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription" kind="class"><name>org::smallfoot::wwn::CiscoUCSServerDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" kind="function"><name>CiscoUCSServerDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a3aa3fbb92bb7c321eee528e194756f04" kind="function"><name>CiscoUCSServerDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" kind="function"><name>descPort</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kind="function"><name>getDesc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" kind="function"><name>getDesc</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc" kind="class"><name>org::smallfoot::wwn::WWNDescription::DemoTestDesc</name>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc_1a20afdb6486eb08bfa269663b13272327" kind="function"><name>DemoTestDesc</name></member>
@@ -153,7 +169,11 @@
   </compound>
   <compound refid="README_8dox" kind="file"><name>README.dox</name>
   </compound>
+  <compound refid="AIXLPARServerDescription_8java" kind="file"><name>AIXLPARServerDescription.java</name>
+  </compound>
   <compound refid="CiscoSwitchDescription_8java" kind="file"><name>CiscoSwitchDescription.java</name>
+  </compound>
+  <compound refid="CiscoUCSServerDescription_8java" kind="file"><name>CiscoUCSServerDescription.java</name>
   </compound>
   <compound refid="DevRole_8java" kind="file"><name>DevRole.java</name>
   </compound>

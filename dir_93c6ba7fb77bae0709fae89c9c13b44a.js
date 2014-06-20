@@ -1,6 +1,8 @@
 var dir_93c6ba7fb77bae0709fae89c9c13b44a =
 [
+    [ "AIXLPARServerDescription.java", "AIXLPARServerDescription_8java_source.html", null ],
     [ "CiscoSwitchDescription.java", "CiscoSwitchDescription_8java_source.html", null ],
+    [ "CiscoUCSServerDescription.java", "CiscoUCSServerDescription_8java_source.html", null ],
     [ "DevRole.java", "DevRole_8java.html", [
       [ "DevRole", "classorg_1_1smallfoot_1_1wwn_1_1DevRole.html", "classorg_1_1smallfoot_1_1wwn_1_1DevRole" ]
     ] ],

@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::CiscoUCSServerDescription</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" prot="public" virt="non-virtual">WWNDesc.WWNDescSwitch</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CiscoUCSServerDescription</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>CiscoUCSServerDescription</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="19" bodyend="22"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoUCSServerDescription_8java" startline="40" endline="52">CiscoUCSServerDescription.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a3aa3fbb92bb7c321eee528e194756f04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CiscoUCSServerDescription</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>CiscoUCSServerDescription</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>create an instance with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether an abbreviated description is requested </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="55" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String descPort</definition>
+        <argsstring>()</argsstring>
+        <name>descPort</name>
+        <briefdescription>
+<para>describe the WWPN&apos;s unique port label/index </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the unique name for the port WWPN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="88" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="88" bodyend="92"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+<para>return a description or alias for this WWN; if brief is set to true during the call to <ref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kindref="member">getDesc()</ref>, then a shorter description or alias will be returned </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kindref="member">getDesc(boolean,boolean,String)</ref></para></simplesect>
+<simplesect kind="return"><para>generated alias or nickname for the WWN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="66" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="66" bodyend="81"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(boolean strong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>boolean</type>
+          <declname>strong</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new instance of this class, or null if the given wwn does not match this class </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strong</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to restrict matching to strong-matches only. This is a weak-confidence description, so will return null for strong-only matching </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to ask for a shorter description: a more concise nickname or alias </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN (WWPN or WWNN, but typically WWPN) to match </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="32" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="32" bodyend="35"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="135">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(boolean strong, boolean brief, String wwn, int role)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>boolean</type>
+          <declname>strong</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new instance of this class, or null if the given wwn does not match this class </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strong</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to restrict matching to strong-matches only. This is a weak-confidence description, so will return null for strong-only matching </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to ask for a shorter description: a more concise nickname or alias </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN (WWPN or WWNN, but typically WWPN) to match </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role (Initiator/Switch/Target) to check for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="40" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="40" bodyend="52"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" compoundref="CiscoUCSServerDescription_8java" startline="19" endline="22">CiscoUCSServerDescription.CiscoUCSServerDescription</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="94" endline="93">WWNDesc.WWNDescSwitch.isA</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription" kindref="compound">CiscoUCSServerDescription</ref> (ie CiscoUCS-012-123:0) breaks out the uniqueness number and port index from the WWPN of a UCS-served physical host. </para>    </briefdescription>
+    <detaileddescription>
+<para>I do tend to see 20000025b5hhhfnnn such that: <itemizedlist>
+<listitem>
+<para>hhh is a three-digit host index </para></listitem>
+<listitem>
+<para>f is either 0 or 1 based on fabric A or B </para></listitem>
+<listitem>
+<para>nnn is a three-digit server index </para></listitem>
+</itemizedlist>
+</para><para>The thing to remember about UCS is that the WWPN are entirely user-defined, are are UUIDs, so this is merely a convention. It might fall apart on the next user! </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="206">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="205">
+        <label>WWNDesc.WWNDescSwitch</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
+        <childnode refid="206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>CiscoUCSServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="211">
+        <label>BigInteger</label>
+      </node>
+      <node id="209">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="210" relation="usage">
+          <edgelabel>role</edgelabel>
+        </childnode>
+        <childnode refid="211" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="208">
+        <label>WWNDesc.WWNDescSwitch</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
+        <childnode refid="209" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>CiscoUCSServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>DevRole</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
+        <childnode refid="210" relation="usage">
+          <edgelabel>TARGET</edgelabel>
+          <edgelabel>SWITCH</edgelabel>
+          <edgelabel>INITIATOR</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="17" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="16" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>CiscoUCSServerDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a3aa3fbb92bb7c321eee528e194756f04" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>CiscoUCSServerDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>descPort</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>isA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a10728549ec6d505df7b3c9828f707676" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>role</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a0e1e77fdaa76d37292879be33dd23dcb" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a2e9d7b44477f5ca43f315dcf26d1fa55" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>WWNDescSwitch</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1aae944684c83002cfaae951cbfff7505d" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>WWNDescSwitch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

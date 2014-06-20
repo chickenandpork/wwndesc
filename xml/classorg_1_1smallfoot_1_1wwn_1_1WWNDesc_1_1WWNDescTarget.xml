@@ -93,113 +93,113 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="331">
+      <node id="371">
         <label>PureStorageDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="321">
+      <node id="361">
         <label>EMCSymmetrixDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="327">
+      <node id="367">
         <label>IBM3700Description</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="319">
+      <node id="359">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="325">
+      <node id="365">
         <label>HP3ParDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="330">
+      <node id="370">
         <label>OraclePillarDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="324">
+      <node id="364">
         <label>HDSVSPDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="329">
+      <node id="369">
         <label>NetAppDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="326">
+      <node id="366">
         <label>HPDotHillDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="322">
+      <node id="362">
         <label>EMCVMAXDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="320">
+      <node id="360">
         <label>EMCClariionDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="318">
+      <node id="358">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="319" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="323">
+      <node id="363">
         <label>EMCVPLEXDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="328">
+      <node id="368">
         <label>IBMSVCDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="358" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="335">
+      <node id="375">
         <label>BigInteger</label>
       </node>
-      <node id="333">
+      <node id="373">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="334" relation="usage">
+        <childnode refid="374" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="335" relation="usage">
+        <childnode refid="375" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="332">
+      <node id="372">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="333" relation="public-inheritance">
+        <childnode refid="373" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="334">
+      <node id="374">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="334" relation="usage">
+        <childnode refid="374" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

@@ -33,7 +33,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="21" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="AIXLPARServerDescription_8java" startline="25" endline="28">AIXLPARServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoSwitchDescription_8java" startline="25" endline="28">CiscoSwitchDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoUCSServerDescription_8java" startline="32" endline="35">CiscoUCSServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCClariionDescription_8java" startline="29" endline="32">EMCClariionDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCSymmetrixDescription_8java" startline="34" endline="37">EMCSymmetrixDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVMAXDescription_8java" startline="34" endline="37">EMCVMAXDescription.getDesc</referencedby>
@@ -237,10 +239,10 @@
 <para>By using this class to lift the assumption that all known devices are Targets, I can create additional possible matches that can be additionally checked when asked for more than default target types. This lets me later package the logic of subparts of a device (WWNN and WWPN) into the device logic itself, packaging up in a single place and avoiding needless diuplication without significantly stressing this model</para><para><simplesect kind="see"><para><ulink url="http://www.javaworld.com/article/2076970/core-java/create-enumerated-constants-in-java.html">http://www.javaworld.com/article/2076970/core-java/create-enumerated-constants-in-java.html</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="183">
+      <node id="219">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="183" relation="usage">
+        <childnode refid="219" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

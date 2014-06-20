@@ -2,7 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir">
     <compoundname>java</compoundname>
+    <innerfile refid="AIXLPARServerDescription_8java">AIXLPARServerDescription.java</innerfile>
     <innerfile refid="CiscoSwitchDescription_8java">CiscoSwitchDescription.java</innerfile>
+    <innerfile refid="CiscoUCSServerDescription_8java">CiscoUCSServerDescription.java</innerfile>
     <innerfile refid="DevRole_8java">DevRole.java</innerfile>
     <innerfile refid="EMCClariionDescription_8java">EMCClariionDescription.java</innerfile>
     <innerfile refid="EMCSymmetrixDescription_8java">EMCSymmetrixDescription.java</innerfile>

@@ -57,41 +57,41 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="177">
+      <node id="213">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="176">
+      <node id="212">
         <label>WWNDescription.DemoTestDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc"/>
-        <childnode refid="177" relation="public-inheritance">
+        <childnode refid="213" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="181">
+      <node id="217">
         <label>BigInteger</label>
       </node>
-      <node id="179">
+      <node id="215">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="180" relation="usage">
+        <childnode refid="216" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="181" relation="usage">
+        <childnode refid="217" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="178">
+      <node id="214">
         <label>WWNDescription.DemoTestDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc"/>
-        <childnode refid="179" relation="public-inheritance">
+        <childnode refid="215" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="180">
+      <node id="216">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="180" relation="usage">
+        <childnode refid="216" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

@@ -3,9 +3,12 @@ var hierarchy =
     [ "DevRole", "classorg_1_1smallfoot_1_1wwn_1_1DevRole.html", null ],
     [ "version", "classorg_1_1smallfoot_1_1wwn_1_1version.html", null ],
     [ "WWNDesc", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html", [
-      [ "WWNDesc.WWNDescInitiator", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator.html", null ],
+      [ "WWNDesc.WWNDescInitiator", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator.html", [
+        [ "AIXLPARServerDescription", "classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription.html", null ]
+      ] ],
       [ "WWNDesc.WWNDescSwitch", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch.html", [
-        [ "CiscoSwitchDescription", "classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html", null ]
+        [ "CiscoSwitchDescription", "classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html", null ],
+        [ "CiscoUCSServerDescription", "classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html", null ]
       ] ],
       [ "WWNDesc.WWNDescTarget", "classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget.html", [
         [ "EMCClariionDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription.html", null ],

@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription" kind="class" prot="public">
+    <compoundname>org::smallfoot::wwn::AIXLPARServerDescription</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator" prot="public" virt="non-virtual">WWNDesc.WWNDescInitiator</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1af69777e7fc1d12fa8237b01fe4c1a3e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AIXLPARServerDescription</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>AIXLPARServerDescription</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="12" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="12" bodyend="15"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="AIXLPARServerDescription_8java" startline="33" endline="43">AIXLPARServerDescription.getDesc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a747cf5729d27404f49fa478314315d8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AIXLPARServerDescription</definition>
+        <argsstring>(boolean brief, String wwn)</argsstring>
+        <name>AIXLPARServerDescription</name>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>create an instance with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether an abbreviated description is requested </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="46" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String descPort</definition>
+        <argsstring>()</argsstring>
+        <name>descPort</name>
+        <briefdescription>
+<para>describe the WWPN&apos;s unique port label/index </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the unique name for the port WWPN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="79" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="79" bodyend="83"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+<para>return a description or alias for this WWN; if brief is set to true during the call to <ref refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kindref="member">getDesc()</ref>, then a shorter description or alias will be returned </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kindref="member">getDesc(boolean,boolean,String)</ref></para></simplesect>
+<simplesect kind="return"><para>generated alias or nickname for the WWN </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="57" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="57" bodyend="72"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(boolean strong, boolean brief, String wwn)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>boolean</type>
+          <declname>strong</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+<para>If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new instance of this class, or null if the given wwn does not match this class </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strong</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to restrict matching to strong-matches only. This is a weak-confidence description, so will return null for strong-only matching </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to ask for a shorter description: a more concise nickname or alias </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN (WWPN or WWNN, but typically WWPN) to match </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="25" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="25" bodyend="28"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="135">WWNDescription.getWWNDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
+        <definition>static WWNDesc getDesc</definition>
+        <argsstring>(boolean strong, boolean brief, String wwn, int role)</argsstring>
+        <name>getDesc</name>
+        <param>
+          <type>boolean</type>
+          <declname>strong</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>brief</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new instance of this class, or null if the given wwn does not match this class </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strong</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to restrict matching to strong-matches only. This is a weak-confidence description, so will return null for strong-only matching </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to ask for a shorter description: a more concise nickname or alias </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN (WWPN or WWNN, but typically WWPN) to match </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role (Initiator/Switch/Target) to check for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="33" bodyend="43"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1af69777e7fc1d12fa8237b01fe4c1a3e7" compoundref="AIXLPARServerDescription_8java" startline="12" endline="15">AIXLPARServerDescription.AIXLPARServerDescription</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="87" endline="86">WWNDesc.WWNDescInitiator.isA</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription" kindref="compound">AIXLPARServerDescription</ref> (ie LPAR-012345:0) breaks out the uniqueness number and port index from the WWPN. </para>    </briefdescription>
+    <detaileddescription>
+<para>There may be difficulty here in determining whether a device is a switch or a NPIV bladecenter for servers; it&apos;s not obvious from the WWPNs </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="189">
+        <label>WWNDesc.WWNDescInitiator</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+      </node>
+      <node id="188">
+        <label>AIXLPARServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="195">
+        <label>BigInteger</label>
+      </node>
+      <node id="192">
+        <label>WWNDesc.WWNDescInitiator</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>WWNDesc</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
+        <childnode refid="194" relation="usage">
+          <edgelabel>role</edgelabel>
+        </childnode>
+        <childnode refid="195" relation="usage">
+          <edgelabel>wwn</edgelabel>
+        </childnode>
+      </node>
+      <node id="191">
+        <label>AIXLPARServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>DevRole</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
+        <childnode refid="194" relation="usage">
+          <edgelabel>TARGET</edgelabel>
+          <edgelabel>SWITCH</edgelabel>
+          <edgelabel>INITIATOR</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="10" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="9" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1af69777e7fc1d12fa8237b01fe4c1a3e7" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>AIXLPARServerDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a747cf5729d27404f49fa478314315d8f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>AIXLPARServerDescription</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>brief</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>descPort</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>getDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a6530bfb83544e64d2c13e7f32784eff2" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>isA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a10728549ec6d505df7b3c9828f707676" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>role</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>toString</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>wwn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a0e1e77fdaa76d37292879be33dd23dcb" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>WWNDesc</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a64f89dd4a81c8d4d4bad3ab396c53ddb" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>WWNDescInitiator</name></member>
+      <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a7cfdd403295940b5f432280437e4b9f3" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::AIXLPARServerDescription</scope><name>WWNDescInitiator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
