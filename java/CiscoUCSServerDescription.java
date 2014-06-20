@@ -73,7 +73,7 @@ public class CiscoUCSServerDescription extends WWNDesc.WWNDescSwitch
         BigInteger portOuiSerInd[] = wwn.divideAndRemainder(new BigInteger("1000000",16));
 
         /* our example now has portOuiSerInd = { [2000:0025b5],[123456] } */
-        BigInteger serInd[] = portOuiSerInd[0].divideAndRemainder(new BigInteger("1000",16));
+        BigInteger serInd[] = portOuiSerInd[1].divideAndRemainder(new BigInteger("1000",16));
 
         /* our example now has serInd = { [123], [456] } */
 

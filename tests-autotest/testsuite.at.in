@@ -240,6 +240,9 @@ AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --brie
 AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:21:5a:12:34:56], 0, [Cisco-123456:17
 ],[])
 
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:00:00:25:b5:12:34:56], 0, [CiscoUCS-123:456
+],[])
+
 AT_CLEANUP()
 
 
