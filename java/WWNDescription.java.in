@@ -124,6 +124,8 @@ public class WWNDescription
             return d;
         else if (null != (d = AIXLPARServerDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
+        else if (null != (d = HPVirtualServerDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
+            return d;
 
         else if (val.toLowerCase().equalsIgnoreCase("200100110d123400"))
             return new DemoTestDesc(val);
@@ -179,7 +181,7 @@ public class WWNDescription
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
         options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
 
-        options.add(new LongOpt("device", LongOpt.OPTIONAL_ARGUMENT, null, 'd'));
+        options.add(new LongOpt("device", LongOpt.REQUIRED_ARGUMENT, null, 'd'));
         options.add(new LongOpt("port", LongOpt.REQUIRED_ARGUMENT, null, 'p'));
         options.add(new LongOpt("wwn", LongOpt.REQUIRED_ARGUMENT, null, 'w'));
         options.add(new LongOpt("briefestimate", LongOpt.NO_ARGUMENT, null, 0x1000));
