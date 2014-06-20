@@ -120,6 +120,8 @@ public class WWNDescription
 
         else if (null != (d = CiscoSwitchDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
+        else if (null != (d = CiscoUCSServerDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
+            return d;
         else if (null != (d = AIXLPARServerDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
 
