@@ -45,7 +45,7 @@ public class CiscoUCSServerDescription extends WWNDesc.WWNDescSwitch
             return null;
         else if (wwn.matches("20000025b5[0-9a-f]{6}"))
             return new CiscoUCSServerDescription(brief, wwn);
-        else if (wwn.matches("2[0-9a-f]{3}0026a6[0-9a-f]{6}"))
+        else if (wwn.matches("2[0-9a-f]{3}002a6a[0-9a-f]{6}"))
             return new CiscoSwitchDescription(brief, wwn);
         else
             return null;
