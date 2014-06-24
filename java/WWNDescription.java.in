@@ -107,15 +107,15 @@ public class WWNDescription
             return d;
         else if (null != (d = HDSVSPDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
-        else if (null != (d = IBM3700Description.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
-            return d;
-        else if (null != (d = IBMSVCDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
+        else if (null != (d = IBMDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
         else if (null != (d = HP3ParDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
         else if (null != (d = HPDotHillDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
         else if (null != (d = OraclePillarDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
+            return d;
+        else if (null != (d = SymbiosDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))
             return d;
 
         else if (null != (d = CiscoSwitchDescription.getDesc(/* strong*/ false, briefWWNEstimate, val, role)))

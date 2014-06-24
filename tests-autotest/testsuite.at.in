@@ -151,6 +151,10 @@ AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 50:00:09:73:00:0f:a
 VMax-1003-05eA
 ],[])
 
+AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 20:24:00:A0:B8:12:34:56 --briefestimate -w 20:24:00:A0:B8:12:34:56], 0, [DS3400-123456-ctrlA-FC1
+DS3400-123456:A:1
+],[])
+
 
 AT_CLEANUP()
 

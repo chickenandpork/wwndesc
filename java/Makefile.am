@@ -1,10 +1,12 @@
 nodist_java_JAVA  = DevRole.java
 nodist_java_JAVA += AIXLPARServerDescription.java CiscoSwitchDescription.java CiscoUCSServerDescription.java
 nodist_java_JAVA += EMCClariionDescription.java EMCSymmetrixDescription.java EMCVMAXDescription.java EMCVPLEXDescription.java
-nodist_java_JAVA += HDSVSPDescription.java IBM3700Description.java IBMSVCDescription.java
+nodist_java_JAVA += HDSVSPDescription.java IBMDescription.java IBM3700Description.java IBM500507630Description.java IBMSVCDescription.java
 nodist_java_JAVA += HP3ParDescription.java HPDotHillDescription.java HPVirtualServerDescription.java
 nodist_java_JAVA += NetAppDescription.java OraclePillarDescription.java
-nodist_java_JAVA += PureStorageDescription.java WWNDesc.java WWNDescription.java
+nodist_java_JAVA += PureStorageDescription.java
+nodist_java_JAVA += SymbiosDescription.java
+nodist_java_JAVA += WWNDesc.java WWNDescription.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
