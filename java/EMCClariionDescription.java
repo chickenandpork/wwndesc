@@ -9,6 +9,10 @@ import java.math.BigInteger;
 
 /**
  * EMCClariionDescription (ie CL-01234567-SPB1) describes the serial and CL of a Clariion; EMC doesn't seem to include any additional data in the WWPN.  @sa EMCSymmetrixDescription @sa EMCVMAXDescription @sa EMCVPLEXDescription
+ *
+ * 00:60:48 Symmetrix DMX
+ * 00:00:97 Symmetrix VMAX
+ * 00:60:16 CLariion/VNX
  */
 public class EMCClariionDescription extends WWNDesc.WWNDescTarget
 {
