@@ -176,6 +176,16 @@ public class WWNDescription
 	int role = DevRole.TARGETbit;
 
         java.util.Vector<LongOpt> options = new java.util.Vector();
+        /**
+         * Always always ALWAYS provide a quick reference and a version output
+         *
+         * @cmdopt -H|--help Show a simple help screen as a reminder of options which are understood by the application
+         * @cmdopt @code java -jar @PACKAGE@.jar --help @endcode
+         *
+         * @cmdopt -V|--version Show the current release version for reference
+         * @cmdopt @code java -jar @PACKAGE@.jar --version
+         *  @VERSION@-@BUILDID@ @endcode
+         */
 
         /* Always always ALWAYS provide a quick reference and a version output */
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
@@ -194,6 +204,10 @@ public class WWNDescription
         {
             switch(c)
             {
+            /**
+	     * @cmdopt --briefestimate change to shorter, more brief estimates or descriptions
+	     * @cmdopt --nobriefestimate change to longer, more detailed estimates (default)
+	     */
             case 0x1000: /* switch to brief WWNDescs */
                 m.briefWWNEstimate = true;
                 break;
@@ -201,6 +215,10 @@ public class WWNDescription
                 m.briefWWNEstimate = false;
                 break;
 
+            /**
+	     * @cmdopt -d|--device(=) used mainly in testing, this option allows setting a device type
+	     * @cmdopt { init(iator) | server | storage | switch | targ(et) }
+	     */
             case 'd': /* set a device type */
             {
                 if (null == g.getOptarg()) role = DevRole.TARGETbit;
@@ -209,11 +227,13 @@ public class WWNDescription
                 else if (g.getOptarg().equalsIgnoreCase("storage")) role = DevRole.TARGETbit;
                 else if (g.getOptarg().equalsIgnoreCase("server")) role = DevRole.INITIATORbit;
                 else if (g.getOptarg().toLowerCase().startsWith("init")) role = DevRole.TARGETbit;
-                else if (g.getOptarg().equalsIgnoreCase("server")) role = DevRole.INITIATORbit;
                 else if (g.getOptarg().equalsIgnoreCase("switch")) role = DevRole.SWITCHbit;
             }
             break;
 
+            /**
+	     * @cmdopt -p|--port used mainly in testing, this option shows the port-uniqueness of a device (which can be leveraged for de-duping an alias)
+	     */
             case 'p': /* inspect a WWPN's unique port */
             {
                 WWNDesc wwn;
@@ -225,6 +245,13 @@ public class WWNDescription
             }
             break;
 
+            /**
+	     * @cmdopt -w|--wwn query for a description of a WWPN
+	     * @cmdopt @code java -jar @PACKAGE@.jar --wwn 5000097201234567
+	     * VMax-HK194618641-10fD @endcode
+	     * @cmdopt @code java -jar @PACKAGE@.jar --briefestimate --wwn 5000097201234567
+	     * VMax-18641-10fD @endcode
+	     */
             case 'w': /* inspect a WWN */
             {
                 WWNDesc wwn;
