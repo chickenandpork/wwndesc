@@ -194,7 +194,7 @@ Definition at line 91 of file W\+W\+N\+Description.\+java.
 
 
 
-References Pure\+Storage\+Description.\+get\+Desc(), Cisco\+Switch\+Description.\+get\+Desc(), A\+I\+X\+L\+P\+A\+R\+Server\+Description.\+get\+Desc(), E\+M\+C\+Clariion\+Description.\+get\+Desc(), Oracle\+Pillar\+Description.\+get\+Desc(), H\+P\+Dot\+Hill\+Description.\+get\+Desc(), Cisco\+U\+C\+S\+Server\+Description.\+get\+Desc(), I\+B\+M\+S\+V\+C\+Description.\+get\+Desc(), I\+B\+M3700\+Description.\+get\+Desc(), E\+M\+C\+Symmetrix\+Description.\+get\+Desc(), E\+M\+C\+V\+P\+L\+E\+X\+Description.\+get\+Desc(), H\+P3\+Par\+Description.\+get\+Desc(), E\+M\+C\+V\+M\+A\+X\+Description.\+get\+Desc(), Net\+App\+Description.\+get\+Desc(), and H\+D\+S\+V\+S\+P\+Description.\+get\+Desc().
+References Pure\+Storage\+Description.\+get\+Desc(), Cisco\+Switch\+Description.\+get\+Desc(), A\+I\+X\+L\+P\+A\+R\+Server\+Description.\+get\+Desc(), Oracle\+Pillar\+Description.\+get\+Desc(), H\+P\+Dot\+Hill\+Description.\+get\+Desc(), Cisco\+U\+C\+S\+Server\+Description.\+get\+Desc(), E\+M\+C\+Clariion\+Description.\+get\+Desc(), E\+M\+C\+V\+P\+L\+E\+X\+Description.\+get\+Desc(), H\+P3\+Par\+Description.\+get\+Desc(), E\+M\+C\+Symmetrix\+Description.\+get\+Desc(), E\+M\+C\+V\+M\+A\+X\+Description.\+get\+Desc(), Net\+App\+Description.\+get\+Desc(), H\+D\+S\+V\+S\+P\+Description.\+get\+Desc(), I\+B\+M\+Description.\+get\+Desc(), Symbios\+Description.\+get\+Desc(), and H\+P\+Virtual\+Server\+Description.\+get\+Desc().
 
 
 
@@ -227,9 +227,64 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 {\em args} & commandline arguments passed in by the J\+R\+E \\
 \hline
 \end{DoxyParams}
+Always always A\+L\+W\+A\+Y\+S provide a quick reference and a version output
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+H$\vert$--help Show a simple help screen as a reminder of options which are understood by the application \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+java -jar wwndesc.jar --help 
+\end{DoxyCode}
+\end{DoxyRefDesc}
 
 
-Definition at line 171 of file W\+W\+N\+Description.\+java.
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+V$\vert$--version Show the current release version for reference \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+java -jar wwndesc.jar --version
+1.0-52 
+\end{DoxyCode}
+ \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]--briefestimate change to shorter, more brief estimates or descriptions \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]--nobriefestimate change to longer, more detailed estimates (default) \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/d$\vert$--device(=) used mainly in testing, this option allows setting a device type \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]\{ init(iator) $\vert$ server $\vert$ storage $\vert$ switch $\vert$ targ(et) \} \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/p$\vert$--port used mainly in testing, this option shows the port-\/uniqueness of a device (which can be leveraged for de-\/duping an alias) \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/w$\vert$--wwn query for a description of a W\+W\+P\+N \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+ java -jar wwndesc.jar --wwn 5000097201234567
+VMax-HK194618641-10fD 
+\end{DoxyCode}
+ \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+ java -jar wwndesc.jar --briefestimate --wwn 5000097201234567
+VMax-18641-10fD 
+\end{DoxyCode}
+ \end{DoxyRefDesc}
+
+
+Definition at line 173 of file W\+W\+N\+Description.\+java.
 
 
 
@@ -264,7 +319,7 @@ usage messages are useful to those of us with short memories as well (hey, I jus
 \end{DoxyParams}
 
 
-Definition at line 143 of file W\+W\+N\+Description.\+java.
+Definition at line 145 of file W\+W\+N\+Description.\+java.
 
 
 

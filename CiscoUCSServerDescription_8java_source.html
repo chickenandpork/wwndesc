@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">wwndesc
-   &#160;<span id="projectnumber">1.0-45</span>
+   &#160;<span id="projectnumber">1.0-52</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> null;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wwn.matches(<span class="stringliteral">&quot;20000025b5[0-9a-f]{6}&quot;</span>))</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html#a26fce525d94491e9f2b8ab4ec5b2f4a6">CiscoUCSServerDescription</a>(brief, wwn);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wwn.matches(<span class="stringliteral">&quot;2[0-9a-f]{3}0026a6[0-9a-f]{6}&quot;</span>))</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wwn.matches(<span class="stringliteral">&quot;2[0-9a-f]{3}002a6a[0-9a-f]{6}&quot;</span>))</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html">CiscoSwitchDescription</a>(brief, wwn);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> null;</div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        BigInteger portOuiSerInd[] = <a class="code" href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea">wwn</a>.divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;1000000&quot;</span>,16));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">/* our example now has portOuiSerInd = { [2000:0025b5],[123456] } */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        BigInteger serInd[] = portOuiSerInd[0].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;1000&quot;</span>,16));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        BigInteger serInd[] = portOuiSerInd[1].divideAndRemainder(<span class="keyword">new</span> BigInteger(<span class="stringliteral">&quot;1000&quot;</span>,16));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">/* our example now has serInd = { [123], [456] } */</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><b>CiscoUCSServerDescription.java</b></li>
-    <li class="footer">Generated on Fri Jun 20 2014 08:12:42 for wwndesc by
+    <li class="footer">Generated on Mon Jul 14 2014 02:34:18 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

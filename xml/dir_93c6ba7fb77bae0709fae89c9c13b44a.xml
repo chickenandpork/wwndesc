@@ -13,11 +13,15 @@
     <innerfile refid="HDSVSPDescription_8java">HDSVSPDescription.java</innerfile>
     <innerfile refid="HP3ParDescription_8java">HP3ParDescription.java</innerfile>
     <innerfile refid="HPDotHillDescription_8java">HPDotHillDescription.java</innerfile>
+    <innerfile refid="HPVirtualServerDescription_8java">HPVirtualServerDescription.java</innerfile>
     <innerfile refid="IBM3700Description_8java">IBM3700Description.java</innerfile>
+    <innerfile refid="IBM500507630Description_8java">IBM500507630Description.java</innerfile>
+    <innerfile refid="IBMDescription_8java">IBMDescription.java</innerfile>
     <innerfile refid="IBMSVCDescription_8java">IBMSVCDescription.java</innerfile>
     <innerfile refid="NetAppDescription_8java">NetAppDescription.java</innerfile>
     <innerfile refid="OraclePillarDescription_8java">OraclePillarDescription.java</innerfile>
     <innerfile refid="PureStorageDescription_8java">PureStorageDescription.java</innerfile>
+    <innerfile refid="SymbiosDescription_8java">SymbiosDescription.java</innerfile>
     <innerfile refid="version_8java">version.java</innerfile>
     <innerfile refid="WWNDesc_8java">WWNDesc.java</innerfile>
     <innerfile refid="WWNDescription_8java">WWNDescription.java</innerfile>

@@ -28,6 +28,7 @@
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCVMAXDescription_8java" startline="59" endline="119">EMCVMAXDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="HDSVSPDescription_8java" startline="60" endline="120">HDSVSPDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="NetAppDescription_8java" startline="60" endline="123">NetAppDescription.toString</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="SymbiosDescription_8java" startline="61" endline="90">SymbiosDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="IBMSVCDescription_8java" startline="61" endline="76">IBMSVCDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="CiscoSwitchDescription_8java" startline="63" endline="81">CiscoSwitchDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" compoundref="WWNDesc_8java" startline="45" endline="45">WWNDesc.WWNDesc</referencedby>
@@ -65,19 +66,23 @@
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1abdd14eb1a2cbfc118c63f2354578467f" compoundref="CiscoSwitchDescription_8java" startline="88" endline="92">CiscoSwitchDescription.descPort</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="CiscoUCSServerDescription_8java" startline="66" endline="81">CiscoUCSServerDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" compoundref="CiscoUCSServerDescription_8java" startline="88" endline="92">CiscoUCSServerDescription.descPort</referencedby>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCClariionDescription_8java" startline="52" endline="81">EMCClariionDescription.toString</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCClariionDescription_8java" startline="56" endline="85">EMCClariionDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCSymmetrixDescription_8java" startline="59" endline="108">EMCSymmetrixDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCVMAXDescription_8java" startline="59" endline="119">EMCVMAXDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCVPLEXDescription_8java" startline="59" endline="104">EMCVPLEXDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="HDSVSPDescription_8java" startline="60" endline="120">HDSVSPDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="HP3ParDescription_8java" startline="57" endline="73">HP3ParDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="HPDotHillDescription_8java" startline="54" endline="69">HPDotHillDescription.toString</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="HPVirtualServerDescription_8java" startline="85" endline="100">HPVirtualServerDescription.toString</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" compoundref="HPVirtualServerDescription_8java" startline="107" endline="111">HPVirtualServerDescription.descPort</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="IBM3700Description_8java" startline="57" endline="75">IBM3700Description.toString</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="IBM500507630Description_8java" startline="66" endline="84">IBM500507630Description.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="IBMSVCDescription_8java" startline="61" endline="76">IBMSVCDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="NetAppDescription_8java" startline="60" endline="123">NetAppDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="OraclePillarDescription_8java" startline="52" endline="71">OraclePillarDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="PureStorageDescription_8java" startline="57" endline="73">PureStorageDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1abdd14eb1a2cbfc118c63f2354578467f" compoundref="PureStorageDescription_8java" startline="80" endline="84">PureStorageDescription.descPort</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="SymbiosDescription_8java" startline="61" endline="90">SymbiosDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ade15e20276ee2abd521abb251e61c297" compoundref="WWNDesc_8java" startline="33" endline="36">WWNDesc.WWNDesc</referencedby>
       </memberdef>
       </sectiondef>
@@ -233,7 +238,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="78" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="78" bodyend="81"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="171" endline="264">WWNDescription.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="173" endline="293">WWNDescription.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -248,7 +253,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="68" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="68" bodyend="71"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="171" endline="264">WWNDescription.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="173" endline="293">WWNDescription.main</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -256,143 +261,167 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="336">
+      <node id="411">
         <label>PureStorageDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="326">
+      <node id="393">
+        <label>HPVirtualServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="399">
         <label>EMCSymmetrixDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="319">
+      <node id="391">
         <label>WWNDesc.WWNDescInitiator</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="332">
+      <node id="405">
         <label>IBM3700Description</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="318">
+      <node id="390">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="322">
+      <node id="395">
         <label>CiscoSwitchDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription"/>
-        <childnode refid="321" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="330">
+      <node id="403">
         <label>HP3ParDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="335">
+      <node id="410">
         <label>OraclePillarDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="329">
+      <node id="402">
         <label>HDSVSPDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="334">
+      <node id="409">
         <label>NetAppDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="331">
+      <node id="404">
         <label>HPDotHillDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="327">
+      <node id="412">
+        <label>SymbiosDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="400">
         <label>EMCVMAXDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="321">
+      <node id="394">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="337">
+      <node id="413">
         <label>WWNDescription.DemoTestDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="325">
+      <node id="398">
         <label>EMCClariionDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="324">
+      <node id="397">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="320">
+      <node id="392">
         <label>AIXLPARServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
-        <childnode refid="319" relation="public-inheritance">
+        <childnode refid="391" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="328">
+      <node id="401">
         <label>EMCVPLEXDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="323">
+      <node id="396">
         <label>CiscoUCSServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
-        <childnode refid="321" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="333">
+      <node id="408">
         <label>IBMSVCDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription"/>
-        <childnode refid="324" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>IBM500507630Description</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>IBMDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMDescription"/>
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="340">
+      <node id="416">
         <label>BigInteger</label>
       </node>
-      <node id="338">
+      <node id="414">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="339" relation="usage">
+        <childnode refid="415" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="340" relation="usage">
+        <childnode refid="416" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="339">
+      <node id="415">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="339" relation="usage">
+        <childnode refid="415" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

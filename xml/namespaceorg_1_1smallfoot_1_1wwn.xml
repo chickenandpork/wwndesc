@@ -13,11 +13,15 @@
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" prot="public">org::smallfoot::wwn::HDSVSPDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription" prot="public">org::smallfoot::wwn::HP3ParDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription" prot="public">org::smallfoot::wwn::HPDotHillDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription" prot="public">org::smallfoot::wwn::HPVirtualServerDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description" prot="public">org::smallfoot::wwn::IBM3700Description</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description" prot="public">org::smallfoot::wwn::IBM500507630Description</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBMDescription" prot="public">org::smallfoot::wwn::IBMDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription" prot="public">org::smallfoot::wwn::IBMSVCDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription" prot="public">org::smallfoot::wwn::NetAppDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" prot="public">org::smallfoot::wwn::OraclePillarDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription" prot="public">org::smallfoot::wwn::PureStorageDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription" prot="public">org::smallfoot::wwn::SymbiosDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1version" prot="public">org::smallfoot::wwn::version</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public">org::smallfoot::wwn::WWNDesc</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" prot="public">org::smallfoot::wwn::WWNDescription</innerclass>

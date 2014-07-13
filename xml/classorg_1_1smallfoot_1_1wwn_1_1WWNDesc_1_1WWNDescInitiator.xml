@@ -4,6 +4,7 @@
     <compoundname>org::smallfoot::wwn::WWNDesc::WWNDescInitiator</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription" prot="public" virt="non-virtual">AIXLPARServerDescription</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription" prot="public" virt="non-virtual">HPVirtualServerDescription</derivedcompoundref>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a64f89dd4a81c8d4d4bad3ab396c53ddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -64,6 +65,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="87" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="87" bodyend="86"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="AIXLPARServerDescription_8java" startline="33" endline="43">AIXLPARServerDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="HPVirtualServerDescription_8java" startline="60" endline="71">HPVirtualServerDescription.getDesc</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -71,47 +73,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="341">
-        <label>WWNDesc.WWNDescInitiator</label>
-        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="342" relation="public-inheritance">
+      <node id="420">
+        <label>HPVirtualServerDescription</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription"/>
+        <childnode refid="417" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="342">
+      <node id="417">
+        <label>WWNDesc.WWNDescInitiator</label>
+        <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="418">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="343">
+      <node id="419">
         <label>AIXLPARServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
-        <childnode refid="341" relation="public-inheritance">
+        <childnode refid="417" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="347">
+      <node id="424">
         <label>BigInteger</label>
       </node>
-      <node id="344">
+      <node id="421">
         <label>WWNDesc.WWNDescInitiator</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="345" relation="public-inheritance">
+        <childnode refid="422" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="345">
+      <node id="422">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="346" relation="usage">
+        <childnode refid="423" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="347" relation="usage">
+        <childnode refid="424" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="346">
+      <node id="423">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="346" relation="usage">
+        <childnode refid="423" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

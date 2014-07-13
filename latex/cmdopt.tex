@@ -1,0 +1,46 @@
+
+\begin{DoxyRefList}
+\item[\label{cmdopt__cmdopt000001}%
+Global \doxyref{W\+W\+N\+Description.main}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_a75988cf84fc6ee7a2ebff36e363021aa} (String args\mbox{[}\mbox{]})]-\/\+H$\vert$--help Show a simple help screen as a reminder of options which are understood by the application 
+
+
+\begin{DoxyCode}
+java -jar wwndesc.jar --help 
+\end{DoxyCode}
+
+
+-\/\+V$\vert$--version Show the current release version for reference 
+
+
+\begin{DoxyCode}
+java -jar wwndesc.jar --version
+1.0-52 
+\end{DoxyCode}
+ 
+
+--briefestimate change to shorter, more brief estimates or descriptions 
+
+--nobriefestimate change to longer, more detailed estimates (default) 
+
+-\/d$\vert$--device(=) used mainly in testing, this option allows setting a device type 
+
+\{ init(iator) $\vert$ server $\vert$ storage $\vert$ switch $\vert$ targ(et) \} 
+
+-\/p$\vert$--port used mainly in testing, this option shows the port-\/uniqueness of a device (which can be leveraged for de-\/duping an alias) 
+
+-\/w$\vert$--wwn query for a description of a W\+W\+P\+N 
+
+
+\begin{DoxyCode}
+ java -jar wwndesc.jar --wwn 5000097201234567
+VMax-HK194618641-10fD 
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyCode}
+ java -jar wwndesc.jar --briefestimate --wwn 5000097201234567
+VMax-18641-10fD 
+\end{DoxyCode}
+ 
+\end{DoxyRefList}

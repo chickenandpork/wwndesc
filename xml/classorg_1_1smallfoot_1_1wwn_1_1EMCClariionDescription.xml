@@ -35,8 +35,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="16" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="16" bodyend="19"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="EMCClariionDescription_8java" startline="37" endline="45">EMCClariionDescription.getDesc</referencedby>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="20" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="20" bodyend="23"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="EMCClariionDescription_8java" startline="41" endline="49">EMCClariionDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -50,7 +50,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="52" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="52" bodyend="81"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="56" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="56" bodyend="85"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       </sectiondef>
@@ -101,9 +101,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="29" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="29" bodyend="32"/>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="33" bodyend="36"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="135">WWNDescription.getWWNDescriptor</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="137">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kindref="compound">WWNDesc</ref></type>
@@ -162,8 +162,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="37" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="37" bodyend="45"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a6bc5999432db0b6ceae07085b17901f2" compoundref="EMCClariionDescription_8java" startline="16" endline="19">EMCClariionDescription.EMCClariionDescription</references>
+        <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="41" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="41" bodyend="49"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a6bc5999432db0b6ceae07085b17901f2" compoundref="EMCClariionDescription_8java" startline="20" endline="23">EMCClariionDescription.EMCClariionDescription</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
       </sectiondef>
@@ -172,63 +172,63 @@
     <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" kindref="compound">EMCSymmetrixDescription</ref> </para></simplesect>
 <simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" kindref="compound">EMCVMAXDescription</ref> </para></simplesect>
-<simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" kindref="compound">EMCVPLEXDescription</ref> </para></simplesect>
-</para>    </detaileddescription>
+<simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" kindref="compound">EMCVPLEXDescription</ref></para></simplesect>
+00:60:48 Symmetrix DMX 00:00:97 Symmetrix VMAX 00:60:16 CLariion/VNX </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="222">
+      <node id="262">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="220">
+      <node id="260">
         <label>EMCClariionDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription"/>
-        <childnode refid="221" relation="public-inheritance">
+        <childnode refid="261" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="221">
+      <node id="261">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="222" relation="public-inheritance">
+        <childnode refid="262" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="227">
+      <node id="267">
         <label>BigInteger</label>
       </node>
-      <node id="225">
+      <node id="265">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="226" relation="usage">
+        <childnode refid="266" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="227" relation="usage">
+        <childnode refid="267" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="223">
+      <node id="263">
         <label>EMCClariionDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription"/>
-        <childnode refid="224" relation="public-inheritance">
+        <childnode refid="264" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="224">
+      <node id="264">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="225" relation="public-inheritance">
+        <childnode refid="265" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="226">
+      <node id="266">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="226" relation="usage">
+        <childnode refid="266" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="13" bodyend="82"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" line="18" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCClariionDescription.java" bodystart="17" bodyend="86"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::EMCClariionDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::EMCClariionDescription</scope><name>descPort</name></member>

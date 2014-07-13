@@ -4,6 +4,7 @@ var NAVTREE =
     [ "JavaDoc API Markup for wwndesc", "index.html", null ],
     [ "README", "md_htdocs_README.html", null ],
     [ "Todo List", "todo.html", null ],
+    [ "Commandline Options", "cmdopt.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],

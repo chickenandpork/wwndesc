@@ -1,0 +1,4 @@
+<map id="HPVirtualServerDescription" name="HPVirtualServerDescription">
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator.html" title="simple pass&#45;thru class to define internal value for a Initiator in an idempotent way ..." alt="" coords="4,81,203,106"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="61,6,147,31"/>
+</map>

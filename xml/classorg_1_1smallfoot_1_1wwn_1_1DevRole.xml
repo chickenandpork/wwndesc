@@ -36,18 +36,22 @@
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="AIXLPARServerDescription_8java" startline="25" endline="28">AIXLPARServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoSwitchDescription_8java" startline="25" endline="28">CiscoSwitchDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoUCSServerDescription_8java" startline="32" endline="35">CiscoUCSServerDescription.getDesc</referencedby>
-        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCClariionDescription_8java" startline="29" endline="32">EMCClariionDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCClariionDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCClariionDescription_8java" startline="33" endline="36">EMCClariionDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCSymmetrixDescription_8java" startline="34" endline="37">EMCSymmetrixDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVMAXDescription_8java" startline="34" endline="37">EMCVMAXDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="EMCVPLEXDescription_8java" startline="34" endline="37">EMCVPLEXDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HDSVSPDescription_8java" startline="35" endline="38">HDSVSPDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HP3ParDescription_8java" startline="34" endline="37">HP3ParDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HPDotHillDescription_8java" startline="31" endline="34">HPDotHillDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="HPVirtualServerDescription_8java" startline="52" endline="55">HPVirtualServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM3700Description_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBM3700Description_8java" startline="34" endline="37">IBM3700Description.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBM500507630Description_8java" startline="43" endline="46">IBM500507630Description.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMDescription_8java" startline="36" endline="39">IBMDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBMSVCDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="IBMSVCDescription_8java" startline="34" endline="37">IBMSVCDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="NetAppDescription_8java" startline="35" endline="38">NetAppDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="OraclePillarDescription_8java" startline="29" endline="32">OraclePillarDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="PureStorageDescription_8java" startline="25" endline="28">PureStorageDescription.getDesc</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="SymbiosDescription_8java" startline="36" endline="39">SymbiosDescription.getDesc</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -239,10 +243,10 @@
 <para>By using this class to lift the assumption that all known devices are Targets, I can create additional possible matches that can be additionally checked when asked for more than default target types. This lets me later package the logic of subparts of a device (WWNN and WWPN) into the device logic itself, packaging up in a single place and avoiding needless diuplication without significantly stressing this model</para><para><simplesect kind="see"><para><ulink url="http://www.javaworld.com/article/2076970/core-java/create-enumerated-constants-in-java.html">http://www.javaworld.com/article/2076970/core-java/create-enumerated-constants-in-java.html</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="219">
+      <node id="259">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="219" relation="usage">
+        <childnode refid="259" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>
