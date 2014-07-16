@@ -1,13 +1,13 @@
-nodist_java_JAVA  = DevRole.java
-nodist_java_JAVA += AIXLPARServerDescription.java CiscoSwitchDescription.java CiscoUCSServerDescription.java
-nodist_java_JAVA += EMCClariionDescription.java EMCSymmetrixDescription.java EMCVMAXDescription.java EMCVPLEXDescription.java
-nodist_java_JAVA += HDSVSPDescription.java IBMDescription.java IBM3700Description.java IBM500507630Description.java IBMSVCDescription.java
-nodist_java_JAVA += HP3ParDescription.java HPDotHillDescription.java HPVirtualServerDescription.java
-nodist_java_JAVA += NetAppDescription.java OraclePillarDescription.java
-nodist_java_JAVA += PureStorageDescription.java
-nodist_java_JAVA += SymbiosDescription.java
-nodist_java_JAVA += WWNDesc.java WWNDescription.java
-nodist_java_JAVA += version.java
+nodist_java_JAVA  = $(srcdir)/DevRole.java
+nodist_java_JAVA += $(srcdir)/AIXLPARServerDescription.java $(srcdir)/CiscoSwitchDescription.java $(srcdir)/CiscoUCSServerDescription.java
+nodist_java_JAVA += $(srcdir)/EMCClariionDescription.java $(srcdir)/EMCSymmetrixDescription.java $(srcdir)/EMCVMAXDescription.java $(srcdir)/EMCVPLEXDescription.java
+nodist_java_JAVA += $(srcdir)/HDSVSPDescription.java $(srcdir)/IBMDescription.java $(srcdir)/IBM3700Description.java $(srcdir)/IBM500507630Description.java $(srcdir)/IBMSVCDescription.java
+nodist_java_JAVA += $(srcdir)/HP3ParDescription.java $(srcdir)/HPDotHillDescription.java $(srcdir)/HPVirtualServerDescription.java
+nodist_java_JAVA += $(srcdir)/NetAppDescription.java $(srcdir)/OraclePillarDescription.java
+nodist_java_JAVA += $(srcdir)/PureStorageDescription.java
+nodist_java_JAVA += $(srcdir)/SymbiosDescription.java
+nodist_java_JAVA += $(srcdir)/WWNDesc.java $(srcdir)/WWNDescription.java
+nodist_java_JAVA += $(srcdir)/version.java
 javadir = $(pkgdir)
 
 nodist_java_DATA = @PACKAGE@.jar
