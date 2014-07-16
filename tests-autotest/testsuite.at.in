@@ -276,7 +276,7 @@ dnl      --------------
 AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -V], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
 ], [])
 
-AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --version], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --version|cut -f 1-3], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
 ], [])
 
 AT_CLEANUP()
