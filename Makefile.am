@@ -52,6 +52,7 @@ endif DO_GITFORMATTING
 
 if HAVE_RPMBUILD
 srpm: distcheck
+	@mkdir -p $$(rpm --eval '%{_srcrpmdir}')
 	@RPMBUILD@ -ts $(PACKAGE)-$(VERSION).tar.bz2
 if DO_SUDOPOSTMOVE
 	mv $$(rpm --eval '%{_srcrpmdir}')/@PACKAGE@-$$(rpm --qf '%{VERSION}\n' -q --specfile @PACKAGE@.spec |head -1)-$$(rpm --qf '%{RELEASE}\n' -q --specfile @PACKAGE@.spec |head -1).src.rpm @SUDOPOSTMOVE@
