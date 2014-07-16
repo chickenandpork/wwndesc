@@ -45,7 +45,7 @@ public class SymbiosDescription extends WWNDesc.WWNDescTarget
     {
         if (!isA(role))
             return null;
-        else if (wwn.matches("20[23][4-7]00a0b8[0-9a-f]{6}"))
+        else if (wwn.matches("20[1-4][4-7]00a0b8[0-9a-f]{6}"))
             return new SymbiosDescription(brief, wwn);
         else
             return null;
@@ -77,8 +77,8 @@ public class SymbiosDescription extends WWNDesc.WWNDescTarget
          * 29 -> WWPN C1-0b
          */
 
-        int controller = (dirPort[0].intValue() / 0x010) % 2;
-        int port = (dirPort[0].intValue() % 2);
+        int port = (dirPort[0].intValue() / 0x010) % 2;
+        int controller = (dirPort[0].intValue() % 2);
 
         char SP = 'A';
         SP += controller;

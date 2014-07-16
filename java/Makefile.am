@@ -36,4 +36,5 @@ javaroot.stamp: $(nodist_java_JAVA)
 
 clean-local:
 	CLASSES=`for i in $(nodist_java_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
+	rm -fr bld javaroot.stamp WWNDescription.java version.java
 
