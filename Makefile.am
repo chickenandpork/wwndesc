@@ -51,6 +51,12 @@ endif DO_GITFORMATTING
 
 
 if HAVE_RPMBUILD
+srpm: distcheck
+        @RPMBUILD@ -ts $(PACKAGE)-$(VERSION).tar.bz2
+if DO_SUDOPOSTMOVE
+        mv $$(rpm --eval '%{_srcrpmdir}')/@PACKAGE@-$$(rpm --qf '%{VERSION}\n' -q --specfile @PACKAGE@.spec |head -1)-$$(rpm --qf '%{RELEASE}\n' -q --specfile @PACKAGE@.spec |head -1).src.rpm @SUDOPOSTMOVE@
+endif   DO_SUDOPOSTMOVE
+
 if DO_GITFORMATTING
 re-dist-bzip2: gitdescribe
 	rm -f @PACKAGE@.spec $(PACKAGE)-$(VERSION).tar.bz2
