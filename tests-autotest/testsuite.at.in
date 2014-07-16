@@ -16,7 +16,7 @@ AT_DATA([janreinmuth.txt],[50060e80164c344a
 50060e80164c3435
 ])
 
-AT_CHECK([cat janreinmuth.txt|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w ], 0, [HDS-VSP-85044-CL5L
+AT_CHECK([cat janreinmuth.txt|xargs -L1 java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w ], 0, [HDS-VSP-85044-CL5L
 HDS-VSP-85044-CL7H
 HDS-VSP-85044-CL3M
 HDS-VSP-85044-CL7L
@@ -29,32 +29,32 @@ HDS-VSP-85044-CL4F
 ],[])
 
 dnl example from http://pic.dhe.ibm.com/infocenter/storwize/v3700_ic/index.jsp
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 21080020C2078332], 0, [RamSan-G8332-FC-2B
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 21080020C2078332], 0, [RamSan-G8332-FC-2B
 ],[])
 
 dnl example from http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 50060482B82F9654], 0, [Symm-182500953-05bA
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 50060482B82F9654], 0, [Symm-182500953-05bA
 ],[])
 
 dnl example from http://www.emcstorageinfo.com/2007/08/how-to-decode-symmetrix-world-wide.html
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 5006048ACCC86A32], 0, [Symm-187900328-03dB
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 5006048ACCC86A32], 0, [Symm-187900328-03dB
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 500507680140cc82 -w 500507680110c4e1], 0, [SVCcc_Node82_Port4
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 500507680140cc82 -w 500507680110c4e1], 0, [SVCcc_Node82_Port4
 SVCc4_NodeE1_Port1
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 5006016b01234567 -w 50000972081349AD], 0, [CL-01234567-SPB3
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 5006016b01234567 -w 50000972081349AD], 0, [CL-01234567-SPB3
 VMax-HK192601234-12gB
 ],[])
 
 dnl example from http://www.hitachi-storage.com/content/how-decode-usp-v-wwn
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 50060e8005277210 -w 50060e800561c010 -w 50060e8006d18140], 0, [USPV-10098-CL2A
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --briefestimate -w 50060e8005277210 -w 50060e800561c010 -w 50060e8006d18140], 0, [USPV-10098-CL2A
 USPV-25024-CL2A
 VSP-53633-CL5A
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 21:00:00:0b:08:04:3b:c0 -w 22:00:00:0b:08:04:3b:c0 -w 21:00:00:0b:08:04:4d:b0 -w 22:00:00:0b:08:04:4d:b0], 0, [Axiom-043BC-c0p0
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 21:00:00:0b:08:04:3b:c0 -w 22:00:00:0b:08:04:3b:c0 -w 21:00:00:0b:08:04:4d:b0 -w 22:00:00:0b:08:04:4d:b0], 0, [Axiom-043BC-c0p0
 Axiom-043BC-c1p0
 Axiom-044DB-c0p0
 Axiom-044DB-c1p0
@@ -69,15 +69,15 @@ dnl A    1  217000C0FFD75198
 dnl B    0  207800C0FFD75198
 dnl B    1  217800C0FFD75198
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 21:70:00:c0:ff:01:23:45 -w 25:70:00:c0:ff:01:23:45], 0, [P2000-012345-A2
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 21:70:00:c0:ff:01:23:45 -w 25:70:00:c0:ff:01:23:45], 0, [P2000-012345-A2
 P2000-012345-B2
 ], [])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 50:0a:09:81:98:3d:73:3b -w 50:0a:09:82:98:3d:73:3b], 0, [NetApp-3d733b-iGrp1-0a
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 50:0a:09:81:98:3d:73:3b -w 50:0a:09:82:98:3d:73:3b], 0, [NetApp-3d733b-iGrp1-0a
 NetApp-3d733b-iGrp1-0b
 ], [])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 50:0a:09:81:98:3d:73:3b -w 50:0a:09:82:98:3d:73:3b], 0, [NetApp-733b-SP1a
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --briefestimate -w 50:0a:09:81:98:3d:73:3b -w 50:0a:09:82:98:3d:73:3b], 0, [NetApp-733b-SP1a
 NetApp-733b-SP1b
 ], [])
 
@@ -103,7 +103,7 @@ AT_DATA([missing.txt],[50060482B82F9654
 500014429010c131
 ])
 
-AT_CHECK([cat missing.txt|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w ], 0, [Symm-182500953-05bA
+AT_CHECK([cat missing.txt|xargs -L1 java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w ], 0, [Symm-182500953-05bA
 Symm-187900328-03dB
 SVC45_Node67_Port2
 SVC01_Node10_Port4
@@ -125,7 +125,7 @@ VPlex-010c1-B1-FC03
 VPlex-010c1-B3-FC01
 ],[])
 
-AT_CHECK([cat missing.txt|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w ], 0, [Symm-0953-05bA
+AT_CHECK([cat missing.txt|xargs -L1 java -jar $abs_builddir/../convjars/@PACKAGE@.jar --briefestimate -w ], 0, [Symm-0953-05bA
 Symm-0328-03dB
 SVC45_N67_P2
 SVC01_N10_P4
@@ -147,11 +147,11 @@ VPlex-010c1-EB-BE13
 VPlex-010c1-EB-LO31
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 50:00:09:73:00:0f:ad:10 --briefestimate -w 50:00:09:73:00:0f:ad:10], 0, [VMax-HK195701003-05eA
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 50:00:09:73:00:0f:ad:10 --briefestimate -w 50:00:09:73:00:0f:ad:10], 0, [VMax-HK195701003-05eA
 VMax-1003-05eA
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 20:24:00:A0:B8:12:34:56 --briefestimate -w 20:24:00:A0:B8:12:34:56], 0, [DS3400-123456-ctrlA-FC1
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 20:24:00:A0:B8:12:34:56 --briefestimate -w 20:24:00:A0:B8:12:34:56], 0, [DS3400-123456-ctrlA-FC1
 DS3400-123456:A:1
 ],[])
 
@@ -163,10 +163,10 @@ AT_CLEANUP()
 AT_SETUP(@PACKAGE@ Estimation Pure Storage)
 dnl      -------------------------------
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:14:00], 0, [Pure-d74f114-CT0.FC0
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:14:00], 0, [Pure-d74f114-CT0.FC0
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 52:4a:93:7d:74:f1:14:00], 0, [Pure-d74f114:0:0
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --briefestimate -w 52:4a:93:7d:74:f1:14:00], 0, [Pure-d74f114:0:0
 ],[])
 
 dnl example from Shayne Williams
@@ -196,7 +196,7 @@ AT_DATA([shayne.williams], [52:4a:93:7d:74:f1:14:00
 52:4a:93:74:60:9d:d6:13
 ])
 
-AT_CHECK([cat shayne.williams|xargs -L1 java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w ], 0, [Pure-d74f114-CT0.FC0
+AT_CHECK([cat shayne.williams|xargs -L1 java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w ], 0, [Pure-d74f114-CT0.FC0
 Pure-d74f114-CT1.FC0
 Pure-d74f114-CT0.FC1
 Pure-d74f114-CT1.FC1
@@ -229,22 +229,22 @@ AT_CLEANUP()
 AT_SETUP(Non-Target Descriptions)
 dnl      -----------------------
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 20:11:00:15:60:12:34:56], 0, [null
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 20:11:00:15:60:12:34:56], 0, [null
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --briefestimate -w 20:11:00:15:60:12:34:56], 0, [null
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --briefestimate -w 20:11:00:15:60:12:34:56], 0, [null
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch -w 20:11:00:15:60:12:34:56], 0, [Cisco-001560-123456:17
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --device=switch -w 20:11:00:15:60:12:34:56], 0, [Cisco-001560-123456:17
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:15:60:12:34:56], 0, [Cisco-123456:17
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:15:60:12:34:56], 0, [Cisco-123456:17
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:21:5a:12:34:56], 0, [Cisco-123456:17
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:11:00:21:5a:12:34:56], 0, [Cisco-123456:17
 ],[])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:00:00:25:b5:12:34:56], 0, [CiscoUCS-123:456
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --device=switch --briefestimate -w 20:00:00:25:b5:12:34:56], 0, [CiscoUCS-123:456
 ],[])
 
 AT_CLEANUP()
@@ -254,13 +254,13 @@ AT_CLEANUP()
 AT_SETUP(Unique Port Descriptions)
 dnl      ------------------------
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:14:00 -p 52:4a:93:7d:74:f1:14:00 -p 52:4a:93:7d:74:f1:14:01 -p 52:4a:93:7d:74:f1:14:10], 0, [Pure-d74f114-CT0.FC0
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 52:4a:93:7d:74:f1:14:00 -p 52:4a:93:7d:74:f1:14:00 -p 52:4a:93:7d:74:f1:14:01 -p 52:4a:93:7d:74:f1:14:10], 0, [Pure-d74f114-CT0.FC0
 FC0
 FC1
 FC0
 ], [])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --device=switch -w 20:00:00:15:60:12:34:56 -w 2:000:001560:123456 -p 2:000:001560:123456 -p 2:011:001560:123456], 0, [Cisco-001560-123456:0
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --device=switch -w 20:00:00:15:60:12:34:56 -w 2:000:001560:123456 -p 2:000:001560:123456 -p 2:011:001560:123456], 0, [Cisco-001560-123456:0
 Cisco-001560-123456:0
 000
 011
@@ -273,10 +273,10 @@ AT_CLEANUP()
 AT_SETUP(Version Output)
 dnl      --------------
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar -V], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -V], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
 ], [])
 
-AT_CHECK([java -jar $abs_srcdir/../convjars/@PACKAGE@.jar --version], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --version], 0, [@PACKAGE@ version @VERSION@-@BUILDID@ (latest: "2012-12-03 1.0")
 ], [])
 
 AT_CLEANUP()
