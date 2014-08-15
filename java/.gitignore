@@ -11,4 +11,4 @@ Makefile
 *.war
 *.ear
 javaroot.stamp
-classnodist_pkgdata.stamp
+classjava.stamp
