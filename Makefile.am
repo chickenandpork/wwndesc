@@ -15,7 +15,7 @@ EXTRA_DIST = @PACKAGE@.spec gitdescribe
 
 
 if DO_DOXYGEN
-doc: htdocs/README.dox Doxyfile
+doc: htdocs/README.dox Doxyfile htdocs/@PACKAGE@.jar
 	$(DOXYGEN)
 	if test -d $(<D)/.git; then (cd $(<D) && git add -A); if test -n "$(DOXYMESSAGE)" ; then (cd $(<D) && git commit -a -m "$(DOXYMESSAGE)" && git push); fi; else echo "$(<D) subdir not set as a subrepo; see http:// ..."; exit 1; fi
 
@@ -26,6 +26,9 @@ else
 	awk 'BEGIN { print "/** @file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } /@PACKAGE@$$/ {next} /^=+$$/ {next} { printf " * %s\n",$$0; } END {print " */" }' $< > $@
 endif DO_DOXYGEN_MD_FALSE
 endif
+
+htdocs/@PACKAGE@.jar: convjars/@PACKAGE@.jar
+	cp $< $@
 
 
 if DO_ASTYLE
