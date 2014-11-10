@@ -10,11 +10,11 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArchitectures: noarch
 #underscores for versions?  how is that possibly logical/consistent/better?
 %if 0%{?suse_version}
-BuildRequires: java-1_6_0-devel
+BuildRequires: java-1_6_0-openjdk-devel
 %endif
 # the rest of the world
 %if 0%{?fedora_version} || 0%{?centos_version} || %{_vendor} == redhat
-BuildRequires: java-1.6.0-devel
+BuildRequires: java-1.6.0-openjdk-devel
 %endif
 #dammit, I hate the debug packages -- they even makes no sense in a non-executable payload
 %define debug_package %nil
