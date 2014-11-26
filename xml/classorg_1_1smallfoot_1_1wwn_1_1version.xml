@@ -16,7 +16,7 @@
         <briefdescription>
 <para>returns the version of the class; used to cause the build-time-detected version and buildid to be available by consumers of the generated wwndesc.jar file </para>        </briefdescription>
         <detaileddescription>
-<para>for example: java -cp wwndesc.jar <ref refid="classorg_1_1smallfoot_1_1wwn_1_1version" kindref="compound">org.smallfoot.wwn.version</ref> 1.0.63</para><para><parameterlist kind="param"><parameteritem>
+<para>for example: java -cp wwndesc.jar <ref refid="classorg_1_1smallfoot_1_1wwn_1_1version" kindref="compound">org.smallfoot.wwn.version</ref> 1.0.69</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>arg</parametername>
 </parameternamelist>
