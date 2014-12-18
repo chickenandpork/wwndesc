@@ -209,7 +209,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/SymbiosDescription.java" line="44" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/SymbiosDescription.java" bodystart="44" bodyend="52"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription_1a8ba296bf58fe0cd7f5b2ce1cf795d1aa" compoundref="SymbiosDescription_8java" startline="18" endline="21">SymbiosDescription.SymbiosDescription</references>
       </memberdef>
       </sectiondef>
@@ -218,53 +218,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="382">
+      <node id="400">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="380">
+      <node id="398">
         <label>SymbiosDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription"/>
-        <childnode refid="381" relation="public-inheritance">
+        <childnode refid="399" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="381">
+      <node id="399">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="382" relation="public-inheritance">
+        <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="387">
+      <node id="405">
         <label>BigInteger</label>
       </node>
-      <node id="385">
+      <node id="403">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="386" relation="usage">
+        <childnode refid="404" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="387" relation="usage">
+        <childnode refid="405" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="383">
+      <node id="401">
         <label>SymbiosDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1SymbiosDescription"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="402" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="384">
+      <node id="402">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="385" relation="public-inheritance">
+        <childnode refid="403" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="386">
+      <node id="404">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="386" relation="usage">
+        <childnode refid="404" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

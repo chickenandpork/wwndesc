@@ -10,6 +10,7 @@
     <innerfile refid="EMCSymmetrixDescription_8java">EMCSymmetrixDescription.java</innerfile>
     <innerfile refid="EMCVMAXDescription_8java">EMCVMAXDescription.java</innerfile>
     <innerfile refid="EMCVPLEXDescription_8java">EMCVPLEXDescription.java</innerfile>
+    <innerfile refid="HDSModularDescription_8java">HDSModularDescription.java</innerfile>
     <innerfile refid="HDSVSPDescription_8java">HDSVSPDescription.java</innerfile>
     <innerfile refid="HP3ParDescription_8java">HP3ParDescription.java</innerfile>
     <innerfile refid="HPDotHillDescription_8java">HPDotHillDescription.java</innerfile>

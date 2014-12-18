@@ -26,25 +26,120 @@ Collaboration diagram for W\+W\+N\+Desc.\+W\+W\+N\+Desc\+Target\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf W\+W\+N\+Desc\+Target} (String {\bf wwn})\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_a01442752a1408c8166fca29e90f0fa7c}
-
-\begin{DoxyCompactList}\small\item\em create a new Target device without brief naming capability \end{DoxyCompactList}\item 
-{\bf W\+W\+N\+Desc\+Target} (boolean {\bf brief}, String {\bf wwn})\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_a2ce2a4aa1713c0f1184774f236fe50e5}
-
-\begin{DoxyCompactList}\small\item\em create a new Target device with given brief capability \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf W\+W\+N\+Desc\+Target} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf W\+W\+N\+Desc\+Target} (boolean {\bf brief}, String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with the given W\+W\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static boolean {\bf is\+A} (int {\bf role})\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_a6530bfb83544e64d2c13e7f32784eff2}
-
-\begin{DoxyCompactList}\small\item\em lightweight method to check for membership in this role \end{DoxyCompactList}\end{DoxyCompactItemize}
+static boolean {\bf is\+A} (int {\bf role})
+\begin{DoxyCompactList}\small\item\em convenience function to use bit-\/masks to check for membership in this role \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 simple pass-\/thru class to define internal value for a Target in an idempotent way 
 
-Definition at line 98 of file W\+W\+N\+Desc.\+java.
+Definition at line 139 of file W\+W\+N\+Desc.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target}!W\+W\+N\+Desc\+Target@{W\+W\+N\+Desc\+Target}}
+\index{W\+W\+N\+Desc\+Target@{W\+W\+N\+Desc\+Target}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target}}
+\subsubsection[{W\+W\+N\+Desc\+Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc\+Target} (
+\begin{DoxyParamCaption}
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_a01442752a1408c8166fca29e90f0fa7c}
+
+
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
+
+This is a convenience function to support the older constructor model
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+lang.\+Null\+Pointer\+Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em wwn} & the W\+W\+N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+$<$ create a new Target device without brief naming capability 
+
+Definition at line 142 of file W\+W\+N\+Desc.\+java.
+
+
+
+References Dev\+Role.\+T\+A\+R\+G\+E\+T.
+
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target}!W\+W\+N\+Desc\+Target@{W\+W\+N\+Desc\+Target}}
+\index{W\+W\+N\+Desc\+Target@{W\+W\+N\+Desc\+Target}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target}}
+\subsubsection[{W\+W\+N\+Desc\+Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc\+Target} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{brief, }
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_a2ce2a4aa1713c0f1184774f236fe50e5}
+
+
+create an instance with the given W\+W\+N. 
+
+Values given to the constructor are simply copied to internal variables for later use
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+lang.\+Null\+Pointer\+Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em brief} & whether an abbreviated description is requested \\
+\hline
+{\em wwn} & the W\+W\+N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+$<$ create a new Target device with given brief capability 
+
+Definition at line 147 of file W\+W\+N\+Desc.\+java.
+
+
+
+References Dev\+Role.\+T\+A\+R\+G\+E\+T.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target}!is\+A@{is\+A}}
+\index{is\+A@{is\+A}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Target}}
+\subsubsection[{is\+A}]{\setlength{\rightskip}{0pt plus 5cm}static boolean is\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{role}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_a6530bfb83544e64d2c13e7f32784eff2}
+
+
+convenience function to use bit-\/masks to check for membership in this role 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role} & the role to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given role includes Switch 
+\end{DoxyReturn}
+$<$ lightweight method to check for membership in this role 
+
+Definition at line 158 of file W\+W\+N\+Desc.\+java.
+
+
+
+Referenced by Pure\+Storage\+Description.\+get\+Desc(), Oracle\+Pillar\+Description.\+get\+Desc(), H\+P\+Dot\+Hill\+Description.\+get\+Desc(), E\+M\+C\+Clariion\+Description.\+get\+Desc(), E\+M\+C\+Symmetrix\+Description.\+get\+Desc(), E\+M\+C\+V\+P\+L\+E\+X\+Description.\+get\+Desc(), I\+B\+M3700\+Description.\+get\+Desc(), E\+M\+C\+V\+M\+A\+X\+Description.\+get\+Desc(), I\+B\+M\+S\+V\+C\+Description.\+get\+Desc(), H\+P3\+Par\+Description.\+get\+Desc(), H\+D\+S\+V\+S\+P\+Description.\+get\+Desc(), Net\+App\+Description.\+get\+Desc(), I\+B\+M\+Description.\+get\+Desc(), Symbios\+Description.\+get\+Desc(), H\+D\+S\+Modular\+Description.\+get\+Desc(), and I\+B\+M500507630\+Description.\+get\+Desc().
 
 
 

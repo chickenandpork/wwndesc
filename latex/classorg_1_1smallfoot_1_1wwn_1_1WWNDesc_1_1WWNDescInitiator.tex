@@ -26,25 +26,120 @@ Collaboration diagram for W\+W\+N\+Desc.\+W\+W\+N\+Desc\+Initiator\+:\nopagebrea
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf W\+W\+N\+Desc\+Initiator} (String {\bf wwn})\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_a64f89dd4a81c8d4d4bad3ab396c53ddb}
-
-\begin{DoxyCompactList}\small\item\em create a new Initiator device without brief naming capability \end{DoxyCompactList}\item 
-{\bf W\+W\+N\+Desc\+Initiator} (boolean {\bf brief}, String {\bf wwn})\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_a7cfdd403295940b5f432280437e4b9f3}
-
-\begin{DoxyCompactList}\small\item\em create a new Initiator device with given brief capability \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf W\+W\+N\+Desc\+Initiator} (String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. \end{DoxyCompactList}\item 
+{\bf W\+W\+N\+Desc\+Initiator} (boolean {\bf brief}, String {\bf wwn})
+\begin{DoxyCompactList}\small\item\em create an instance with the given W\+W\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static boolean {\bf is\+A} (int {\bf role})\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_a6530bfb83544e64d2c13e7f32784eff2}
-
-\begin{DoxyCompactList}\small\item\em lightweight method to check for membership in this role \end{DoxyCompactList}\end{DoxyCompactItemize}
+static boolean {\bf is\+A} (int {\bf role})
+\begin{DoxyCompactList}\small\item\em convenience function to use bit-\/masks to check for membership in this role \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 simple pass-\/thru class to define internal value for a Initiator in an idempotent way 
 
-Definition at line 84 of file W\+W\+N\+Desc.\+java.
+Definition at line 87 of file W\+W\+N\+Desc.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator}!W\+W\+N\+Desc\+Initiator@{W\+W\+N\+Desc\+Initiator}}
+\index{W\+W\+N\+Desc\+Initiator@{W\+W\+N\+Desc\+Initiator}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator}}
+\subsubsection[{W\+W\+N\+Desc\+Initiator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc\+Initiator} (
+\begin{DoxyParamCaption}
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_a64f89dd4a81c8d4d4bad3ab396c53ddb}
+
+
+create an instance with \doxyref{brief}{p.}{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_adbebed411e8c47d43338efa3edaa13f8} set to false. 
+
+This is a convenience function to support the older constructor model
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+lang.\+Null\+Pointer\+Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em wwn} & the W\+W\+N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+$<$ create a new Initiator device without brief naming capability 
+
+Definition at line 90 of file W\+W\+N\+Desc.\+java.
+
+
+
+References Dev\+Role.\+I\+N\+I\+T\+I\+A\+T\+O\+R.
+
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator}!W\+W\+N\+Desc\+Initiator@{W\+W\+N\+Desc\+Initiator}}
+\index{W\+W\+N\+Desc\+Initiator@{W\+W\+N\+Desc\+Initiator}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator}}
+\subsubsection[{W\+W\+N\+Desc\+Initiator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf W\+W\+N\+Desc\+Initiator} (
+\begin{DoxyParamCaption}
+\item[{boolean}]{brief, }
+\item[{String}]{wwn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_a7cfdd403295940b5f432280437e4b9f3}
+
+
+create an instance with the given W\+W\+N. 
+
+Values given to the constructor are simply copied to internal variables for later use
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+lang.\+Null\+Pointer\+Exception} & if the given wwn is null\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em brief} & whether an abbreviated description is requested \\
+\hline
+{\em wwn} & the W\+W\+N to evaluate and describe \\
+\hline
+\end{DoxyParams}
+$<$ create a new Initiator device with given brief capability 
+
+Definition at line 95 of file W\+W\+N\+Desc.\+java.
+
+
+
+References Dev\+Role.\+I\+N\+I\+T\+I\+A\+T\+O\+R.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator}!is\+A@{is\+A}}
+\index{is\+A@{is\+A}!org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator@{org\+::smallfoot\+::wwn\+::\+W\+W\+N\+Desc\+::\+W\+W\+N\+Desc\+Initiator}}
+\subsubsection[{is\+A}]{\setlength{\rightskip}{0pt plus 5cm}static boolean is\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{role}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_a6530bfb83544e64d2c13e7f32784eff2}
+
+
+convenience function to use bit-\/masks to check for membership in this role 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role} & the role to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given role includes Initiator 
+\end{DoxyReturn}
+$<$ lightweight method to check for membership in this role 
+
+Definition at line 106 of file W\+W\+N\+Desc.\+java.
+
+
+
+Referenced by A\+I\+X\+L\+P\+A\+R\+Server\+Description.\+get\+Desc(), and H\+P\+Virtual\+Server\+Description.\+get\+Desc().
 
 
 

@@ -1,4 +1,4 @@
 <map id="getDesc" name="getDesc">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget.html#a6530bfb83544e64d2c13e7f32784eff2" title="lightweight method to check for membership in this role " alt="" coords="125,5,326,43"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget.html#a6530bfb83544e64d2c13e7f32784eff2" title="convenience function to use bit&#45;masks to check for membership in this role " alt="" coords="125,5,326,43"/>
 <area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1NetAppDescription.html#ac528ef64391ea541bcb573fa7dd983a0" title="create an instance with brief set to false. " alt="" coords="159,67,292,93"/>
 </map>

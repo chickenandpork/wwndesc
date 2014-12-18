@@ -16,13 +16,29 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create a new Switch device without brief naming capability </para>        </briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="92" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="92" bodyend="-1"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="53">DevRole.SWITCH</references>
+<para>&lt; create a new Switch device without brief naming capability </para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="116" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="116" bodyend="119"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="67">DevRole.SWITCH</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1aae944684c83002cfaae951cbfff7505d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -38,13 +54,36 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create a new Switch device with given brief capability </para>        </briefdescription>
+<para>create an instance with the given WWN. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether an abbreviated description is requested </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="93" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="93" bodyend="92"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="53">DevRole.SWITCH</references>
+<para>&lt; create a new Switch device with given brief capability </para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="121" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="121" bodyend="124"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="67">DevRole.SWITCH</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -58,12 +97,21 @@
           <declname>role</declname>
         </param>
         <briefdescription>
-<para>lightweight method to check for membership in this role </para>        </briefdescription>
+<para>convenience function to use bit-masks to check for membership in this role </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the role to check</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the given role includes Switch </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="94" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="94" bodyend="93"/>
+<para>&lt; lightweight method to check for membership in this role </para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="132" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="132" bodyend="135"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoSwitchDescription_8java" startline="33" endline="49">CiscoSwitchDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoUCSServerDescription_8java" startline="40" endline="52">CiscoUCSServerDescription.getDesc</referencedby>
       </memberdef>
@@ -73,60 +121,60 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="428">
+      <node id="447">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="429">
+      <node id="448">
         <label>CiscoSwitchDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription"/>
-        <childnode refid="427" relation="public-inheritance">
+        <childnode refid="446" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="427">
+      <node id="446">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="428" relation="public-inheritance">
+        <childnode refid="447" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="430">
+      <node id="449">
         <label>CiscoUCSServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
-        <childnode refid="427" relation="public-inheritance">
+        <childnode refid="446" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="434">
+      <node id="453">
         <label>BigInteger</label>
       </node>
-      <node id="432">
+      <node id="451">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="433" relation="usage">
+        <childnode refid="452" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="434" relation="usage">
+        <childnode refid="453" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="431">
+      <node id="450">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="432" relation="public-inheritance">
+        <childnode refid="451" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="433">
+      <node id="452">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="433" relation="usage">
+        <childnode refid="452" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="91" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="91" bodyend="95"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="114" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="113" bodyend="136"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>descPort</name></member>

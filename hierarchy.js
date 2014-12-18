@@ -16,6 +16,7 @@ var hierarchy =
         [ "EMCSymmetrixDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription.html", null ],
         [ "EMCVMAXDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html", null ],
         [ "EMCVPLEXDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html", null ],
+        [ "HDSModularDescription", "classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription.html", null ],
         [ "HDSVSPDescription", "classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription.html", null ],
         [ "HP3ParDescription", "classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription.html", null ],
         [ "HPDotHillDescription", "classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription.html", null ],

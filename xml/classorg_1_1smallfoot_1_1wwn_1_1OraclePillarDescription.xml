@@ -163,7 +163,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="37" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="37" bodyend="45"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a18e4afcfc6772a559d0e3ad342315eaa" compoundref="OraclePillarDescription_8java" startline="16" endline="19">OraclePillarDescription.OraclePillarDescription</references>
       </memberdef>
       </sectiondef>
@@ -172,53 +172,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="366">
+      <node id="384">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="364">
+      <node id="382">
         <label>OraclePillarDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription"/>
-        <childnode refid="365" relation="public-inheritance">
+        <childnode refid="383" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="365">
+      <node id="383">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="366" relation="public-inheritance">
+        <childnode refid="384" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="371">
+      <node id="389">
         <label>BigInteger</label>
       </node>
-      <node id="369">
+      <node id="387">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="370" relation="usage">
+        <childnode refid="388" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="371" relation="usage">
+        <childnode refid="389" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="367">
+      <node id="385">
         <label>OraclePillarDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription"/>
-        <childnode refid="368" relation="public-inheritance">
+        <childnode refid="386" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="368">
+      <node id="386">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="369" relation="public-inheritance">
+        <childnode refid="387" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="370">
+      <node id="388">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="370" relation="usage">
+        <childnode refid="388" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

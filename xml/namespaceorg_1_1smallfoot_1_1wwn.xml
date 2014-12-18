@@ -10,6 +10,7 @@
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" prot="public">org::smallfoot::wwn::EMCSymmetrixDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" prot="public">org::smallfoot::wwn::EMCVMAXDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" prot="public">org::smallfoot::wwn::EMCVPLEXDescription</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription" prot="public">org::smallfoot::wwn::HDSModularDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" prot="public">org::smallfoot::wwn::HDSVSPDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription" prot="public">org::smallfoot::wwn::HP3ParDescription</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription" prot="public">org::smallfoot::wwn::HPDotHillDescription</innerclass>

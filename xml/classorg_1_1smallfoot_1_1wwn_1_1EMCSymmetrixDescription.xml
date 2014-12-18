@@ -210,7 +210,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" line="42" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/EMCSymmetrixDescription.java" bodystart="42" bodyend="50"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1aac54d649a6df7c45f2e0424649a6acdd" compoundref="EMCSymmetrixDescription_8java" startline="16" endline="19">EMCSymmetrixDescription.EMCSymmetrixDescription</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -221,53 +221,53 @@
 <simplesect kind="see"><para><ref refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" kindref="compound">EMCVPLEXDescription</ref> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="268">
+      <node id="278">
         <label>EMCSymmetrixDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription"/>
-        <childnode refid="269" relation="public-inheritance">
+        <childnode refid="279" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="270">
+      <node id="280">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="269">
+      <node id="279">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="270" relation="public-inheritance">
+        <childnode refid="280" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="275">
+      <node id="285">
         <label>BigInteger</label>
       </node>
-      <node id="271">
+      <node id="281">
         <label>EMCSymmetrixDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription"/>
-        <childnode refid="272" relation="public-inheritance">
+        <childnode refid="282" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="273">
+      <node id="283">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="274" relation="usage">
+        <childnode refid="284" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="275" relation="usage">
+        <childnode refid="285" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="272">
+      <node id="282">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="273" relation="public-inheritance">
+        <childnode refid="283" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="274">
+      <node id="284">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="274" relation="usage">
+        <childnode refid="284" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="HDSModularDescription_8java" kind="file">
+    <compoundname>HDSModularDescription.java</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription" prot="public">org::smallfoot::wwn::HDSModularDescription</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1wwn">org::smallfoot::wwn</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/wwndesc/java/HDSModularDescription.java"/>
+  </compounddef>
+</doxygen>

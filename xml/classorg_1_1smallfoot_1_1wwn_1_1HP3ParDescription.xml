@@ -208,7 +208,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/HP3ParDescription.java" line="42" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HP3ParDescription.java" bodystart="42" bodyend="50"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription_1a8113b7e0db585cec11c121463692764e" compoundref="HP3ParDescription_8java" startline="16" endline="19">HP3ParDescription.HP3ParDescription</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -216,53 +216,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="302">
+      <node id="320">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="300">
+      <node id="318">
         <label>HP3ParDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription"/>
-        <childnode refid="301" relation="public-inheritance">
+        <childnode refid="319" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="301">
+      <node id="319">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="302" relation="public-inheritance">
+        <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="307">
+      <node id="325">
         <label>BigInteger</label>
       </node>
-      <node id="305">
+      <node id="323">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="306" relation="usage">
+        <childnode refid="324" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="307" relation="usage">
+        <childnode refid="325" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="303">
+      <node id="321">
         <label>HP3ParDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription"/>
-        <childnode refid="304" relation="public-inheritance">
+        <childnode refid="322" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="304">
+      <node id="322">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="305" relation="public-inheritance">
+        <childnode refid="323" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="306">
+      <node id="324">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="306" relation="usage">
+        <childnode refid="324" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

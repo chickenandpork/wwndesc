@@ -225,7 +225,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="33" bodyend="49"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a1fac2dbf30b578d02b025e6a05e13519" compoundref="CiscoSwitchDescription_8java" startline="12" endline="15">CiscoSwitchDescription.CiscoSwitchDescription</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="94" endline="93">WWNDesc.WWNDescSwitch.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="132" endline="135">WWNDesc.WWNDescSwitch.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -233,53 +233,53 @@
     <detaileddescription>
 <para>There may be difficulty here in determining whether a device is a switch or a NPIV bladecenter for servers; it&apos;s not obvious from the WWPNs </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="238">
+      <node id="248">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="236">
+      <node id="246">
         <label>CiscoSwitchDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription"/>
-        <childnode refid="237" relation="public-inheritance">
+        <childnode refid="247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="237">
+      <node id="247">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="238" relation="public-inheritance">
+        <childnode refid="248" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="243">
+      <node id="253">
         <label>BigInteger</label>
       </node>
-      <node id="241">
+      <node id="251">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="242" relation="usage">
+        <childnode refid="252" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="243" relation="usage">
+        <childnode refid="253" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="239">
+      <node id="249">
         <label>CiscoSwitchDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription"/>
-        <childnode refid="240" relation="public-inheritance">
+        <childnode refid="250" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="240">
+      <node id="250">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="241" relation="public-inheritance">
+        <childnode refid="251" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="242">
+      <node id="252">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="242" relation="usage">
+        <childnode refid="252" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

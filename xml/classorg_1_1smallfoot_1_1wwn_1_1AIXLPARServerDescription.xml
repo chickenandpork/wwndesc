@@ -224,7 +224,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/AIXLPARServerDescription.java" bodystart="33" bodyend="43"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1af69777e7fc1d12fa8237b01fe4c1a3e7" compoundref="AIXLPARServerDescription_8java" startline="12" endline="15">AIXLPARServerDescription.AIXLPARServerDescription</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="87" endline="86">WWNDesc.WWNDescInitiator.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="106" endline="109">WWNDesc.WWNDescInitiator.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -232,53 +232,53 @@
     <detaileddescription>
 <para>There may be difficulty here in determining whether a device is a switch or a NPIV bladecenter for servers; it&apos;s not obvious from the WWPNs </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="229">
+      <node id="239">
         <label>WWNDesc.WWNDescInitiator</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="230" relation="public-inheritance">
+        <childnode refid="240" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="230">
+      <node id="240">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="228">
+      <node id="238">
         <label>AIXLPARServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
-        <childnode refid="229" relation="public-inheritance">
+        <childnode refid="239" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="235">
+      <node id="245">
         <label>BigInteger</label>
       </node>
-      <node id="232">
+      <node id="242">
         <label>WWNDesc.WWNDescInitiator</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="233" relation="public-inheritance">
+        <childnode refid="243" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="233">
+      <node id="243">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="234" relation="usage">
+        <childnode refid="244" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="235" relation="usage">
+        <childnode refid="245" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="231">
+      <node id="241">
         <label>AIXLPARServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
-        <childnode refid="232" relation="public-inheritance">
+        <childnode refid="242" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="234">
+      <node id="244">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="234" relation="usage">
+        <childnode refid="244" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

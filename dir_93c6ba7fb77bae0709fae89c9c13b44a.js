@@ -18,6 +18,9 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     [ "EMCVPLEXDescription.java", "EMCVPLEXDescription_8java.html", [
       [ "EMCVPLEXDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" ]
     ] ],
+    [ "HDSModularDescription.java", "HDSModularDescription_8java.html", [
+      [ "HDSModularDescription", "classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription" ]
+    ] ],
     [ "HDSVSPDescription.java", "HDSVSPDescription_8java.html", [
       [ "HDSVSPDescription", "classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" ]
     ] ],

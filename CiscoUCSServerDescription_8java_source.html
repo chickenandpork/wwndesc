@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">wwndesc
-   &#160;<span id="projectnumber">1.0-70</span>
+   &#160;<span id="projectnumber">1.0-72</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">/* our example now has serInd = { [123], [456] } */</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;CiscoUCS-%03x:%03x&quot;</span>,serInd[0].intValue(),serInd[1].intValue());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> res + String.format(<span class="stringliteral">&quot;CiscoUCS-%03x:%03x&quot;</span>,serInd[0].intValue(),serInd[1].intValue());</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    /**</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> String.format(<span class="stringliteral">&quot;%03x&quot;</span>,serPort[1].intValue());</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch.html">org.smallfoot.wwn.WWNDesc.WWNDescSwitch</a></div><div class="ttdoc">simple pass-thru class to define internal value for a Switch in an idempotent way ...</div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00091">WWNDesc.java:91</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch.html">org.smallfoot.wwn.WWNDesc.WWNDescSwitch</a></div><div class="ttdoc">simple pass-thru class to define internal value for a Switch in an idempotent way ...</div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00113">WWNDesc.java:113</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_html_abdd14eb1a2cbfc118c63f2354578467f"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html#abdd14eb1a2cbfc118c63f2354578467f">org.smallfoot.wwn.CiscoUCSServerDescription.descPort</a></div><div class="ttdeci">String descPort()</div><div class="ttdoc">describe the WWPN&#39;s unique port label/index </div><div class="ttdef"><b>Definition:</b> <a href="CiscoUCSServerDescription_8java_source.html#l00088">CiscoUCSServerDescription.java:88</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_html_a7e34be4d9bd11a9971c007c6231b8c01"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html#a7e34be4d9bd11a9971c007c6231b8c01">org.smallfoot.wwn.CiscoUCSServerDescription.getDesc</a></div><div class="ttdeci">static WWNDesc getDesc(boolean strong, boolean brief, String wwn)</div><div class="ttdoc">If this class matches or describes the given WWN, returns a new instance of this class loaded with th...</div><div class="ttdef"><b>Definition:</b> <a href="CiscoUCSServerDescription_8java_source.html#l00032">CiscoUCSServerDescription.java:32</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html">org.smallfoot.wwn.CiscoSwitchDescription</a></div><div class="ttdoc">CiscoSwitchDescription (ie Cisco-001560-0123456:0) breaks out the uniqueness number and port index fr...</div><div class="ttdef"><b>Definition:</b> <a href="CiscoSwitchDescription_8java_source.html#l00009">CiscoSwitchDescription.java:9</a></div></div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1DevRole.html">org.smallfoot.wwn.DevRole</a></div><div class="ttdoc">This class seeks to provide simple bitfield type-checking of a device in a fabric so that I can use t...</div><div class="ttdef"><b>Definition:</b> <a href="DevRole_8java_source.html#l00018">DevRole.java:18</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html">org.smallfoot.wwn.WWNDesc</a></div><div class="ttdoc">WWNDesc is the basic generic class from which each vendor-specific pattern is built upon; similar to ...</div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00019">WWNDesc.java:19</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html">org.smallfoot.wwn.CiscoUCSServerDescription</a></div><div class="ttdoc">CiscoUCSServerDescription (ie CiscoUCS-012-123:0) breaks out the uniqueness number and port index fro...</div><div class="ttdef"><b>Definition:</b> <a href="CiscoUCSServerDescription_8java_source.html#l00016">CiscoUCSServerDescription.java:16</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_html_a6530bfb83544e64d2c13e7f32784eff2"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch.html#a6530bfb83544e64d2c13e7f32784eff2">org.smallfoot.wwn.WWNDesc.WWNDescSwitch.isA</a></div><div class="ttdeci">static boolean isA(int role)</div><div class="ttdoc">lightweight method to check for membership in this role </div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00094">WWNDesc.java:94</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_html_a6530bfb83544e64d2c13e7f32784eff2"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch.html#a6530bfb83544e64d2c13e7f32784eff2">org.smallfoot.wwn.WWNDesc.WWNDescSwitch.isA</a></div><div class="ttdeci">static boolean isA(int role)</div><div class="ttdoc">convenience function to use bit-masks to check for membership in this role </div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00132">WWNDesc.java:132</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_html_aa6eeb40b2983b06aec48b79024fdecea"><div class="ttname"><a href="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html#aa6eeb40b2983b06aec48b79024fdecea">org.smallfoot.wwn.WWNDesc.wwn</a></div><div class="ttdeci">BigInteger wwn</div><div class="ttdoc">the WWN that the instance tried to describe </div><div class="ttdef"><b>Definition:</b> <a href="WWNDesc_8java_source.html#l00021">WWNDesc.java:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('CiscoUCSServerDescription_8java_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><b>CiscoUCSServerDescription.java</b></li>
-    <li class="footer">Generated on Fri Dec 5 2014 11:31:39 for wwndesc by
+    <li class="footer">Generated on Thu Dec 18 2014 11:46:05 for wwndesc by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

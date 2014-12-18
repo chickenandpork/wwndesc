@@ -224,7 +224,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="40" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="40" bodyend="52"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" compoundref="CiscoUCSServerDescription_8java" startline="19" endline="22">CiscoUCSServerDescription.CiscoUCSServerDescription</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="94" endline="93">WWNDesc.WWNDescSwitch.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="132" endline="135">WWNDesc.WWNDescSwitch.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -240,53 +240,53 @@
 </itemizedlist>
 </para><para>The thing to remember about UCS is that the WWPN are entirely user-defined, are are UUIDs, so this is merely a convention. It might fall apart on the next user! </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="246">
+      <node id="256">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="245">
+      <node id="255">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="246" relation="public-inheritance">
+        <childnode refid="256" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="244">
+      <node id="254">
         <label>CiscoUCSServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
-        <childnode refid="245" relation="public-inheritance">
+        <childnode refid="255" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="251">
+      <node id="261">
         <label>BigInteger</label>
       </node>
-      <node id="249">
+      <node id="259">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="250" relation="usage">
+        <childnode refid="260" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="251" relation="usage">
+        <childnode refid="261" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="248">
+      <node id="258">
         <label>WWNDesc.WWNDescSwitch</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch"/>
-        <childnode refid="249" relation="public-inheritance">
+        <childnode refid="259" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="247">
+      <node id="257">
         <label>CiscoUCSServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription"/>
-        <childnode refid="248" relation="public-inheritance">
+        <childnode refid="258" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="250">
+      <node id="260">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="250" relation="usage">
+        <childnode refid="260" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

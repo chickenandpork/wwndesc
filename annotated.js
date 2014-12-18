@@ -11,6 +11,7 @@ var annotated =
           [ "EMCSymmetrixDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription" ],
           [ "EMCVMAXDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCVMAXDescription" ],
           [ "EMCVPLEXDescription", "classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription" ],
+          [ "HDSModularDescription", "classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription" ],
           [ "HDSVSPDescription", "classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" ],
           [ "HP3ParDescription", "classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1HP3ParDescription" ],
           [ "HPDotHillDescription", "classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription.html", "classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription" ],

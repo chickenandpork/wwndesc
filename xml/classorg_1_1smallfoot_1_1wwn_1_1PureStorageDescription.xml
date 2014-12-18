@@ -224,7 +224,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/PureStorageDescription.java" bodystart="33" bodyend="43"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1a72a5ef8310289be76088199c473b607a" compoundref="PureStorageDescription_8java" startline="12" endline="15">PureStorageDescription.PureStorageDescription</references>
       </memberdef>
       </sectiondef>
@@ -233,53 +233,53 @@
     <detaileddescription>
 <para>Although Pure re-purposes Qlogic HBAs, they have the generosity and forethought to rebadge the WWPN with their own OUI. Thanks, Pure! </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="372">
+      <node id="390">
         <label>PureStorageDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription"/>
-        <childnode refid="373" relation="public-inheritance">
+        <childnode refid="391" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="374">
+      <node id="392">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="373">
+      <node id="391">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="374" relation="public-inheritance">
+        <childnode refid="392" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="375">
+      <node id="393">
         <label>PureStorageDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription"/>
-        <childnode refid="376" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="379">
+      <node id="397">
         <label>BigInteger</label>
       </node>
-      <node id="377">
+      <node id="395">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="378" relation="usage">
+        <childnode refid="396" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="379" relation="usage">
+        <childnode refid="397" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="376">
+      <node id="394">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="377" relation="public-inheritance">
+        <childnode refid="395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="378">
+      <node id="396">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="378" relation="usage">
+        <childnode refid="396" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

@@ -207,7 +207,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="51" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="51" bodyend="59"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1a8014b2980daf6b71d8ef97c225edd966" compoundref="IBM500507630Description_8java" startline="25" endline="28">IBM500507630Description.IBM500507630Description</references>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -226,53 +226,53 @@
 <simplesect kind="see"><para><ulink url="http://linuxvm.org/present/SHARE100/S9333NFa.pdf">http://linuxvm.org/present/SHARE100/S9333NFa.pdf</ulink> seems to imply that 50050763004029a0 is actually a tape ID within a IBM 3590(E) tape library </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="334">
+      <node id="352">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="333">
+      <node id="351">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="334" relation="public-inheritance">
+        <childnode refid="352" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="332">
+      <node id="350">
         <label>IBM500507630Description</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description"/>
-        <childnode refid="333" relation="public-inheritance">
+        <childnode refid="351" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="339">
+      <node id="357">
         <label>BigInteger</label>
       </node>
-      <node id="337">
+      <node id="355">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="338" relation="usage">
+        <childnode refid="356" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="339" relation="usage">
+        <childnode refid="357" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="336">
+      <node id="354">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="337" relation="public-inheritance">
+        <childnode refid="355" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="335">
+      <node id="353">
         <label>IBM500507630Description</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description"/>
-        <childnode refid="336" relation="public-inheritance">
+        <childnode refid="354" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="338">
+      <node id="356">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="338" relation="usage">
+        <childnode refid="356" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>

@@ -69,6 +69,13 @@
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kind="function"><name>getDesc</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1a37ac294533314b3b7b3a5f3404ee43d6" kind="function"><name>getDesc</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription" kind="class"><name>org::smallfoot::wwn::HDSModularDescription</name>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription_1a5b43034e7fabb16aafcb67ed72120b95" kind="function"><name>HDSModularDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription_1a0bf452e1d0eeea72ddda058f434dca3d" kind="function"><name>HDSModularDescription</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription_1ad146fa8579a5f8a876c4688cc5a68520" kind="function"><name>toString</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription_1a7e34be4d9bd11a9971c007c6231b8c01" kind="function"><name>getDesc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSModularDescription_1a37ac294533314b3b7b3a5f3404ee43d6" kind="function"><name>getDesc</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" kind="class"><name>org::smallfoot::wwn::HDSVSPDescription</name>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a3c873624b4dd44f373af3dc3e445f02c" kind="function"><name>HDSVSPDescription</name></member>
     <member refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1af2cd2d4fa950688e68f7bcda4b35e9d1" kind="function"><name>HDSVSPDescription</name></member>
@@ -213,6 +220,8 @@
   <compound refid="EMCVMAXDescription_8java" kind="file"><name>EMCVMAXDescription.java</name>
   </compound>
   <compound refid="EMCVPLEXDescription_8java" kind="file"><name>EMCVPLEXDescription.java</name>
+  </compound>
+  <compound refid="HDSModularDescription_8java" kind="file"><name>HDSModularDescription.java</name>
   </compound>
   <compound refid="HDSVSPDescription_8java" kind="file"><name>HDSVSPDescription.java</name>
   </compound>

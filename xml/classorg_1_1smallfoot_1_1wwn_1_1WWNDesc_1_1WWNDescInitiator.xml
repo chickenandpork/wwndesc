@@ -16,13 +16,29 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create a new Initiator device without brief naming capability </para>        </briefdescription>
+<para>create an instance with <ref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" kindref="member">brief</ref> set to false. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>This is a convenience function to support the older constructor model</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="85" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="85" bodyend="-1"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" compoundref="DevRole_8java" startline="51">DevRole.INITIATOR</references>
+<para>&lt; create a new Initiator device without brief naming capability </para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="90" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="90" bodyend="93"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" compoundref="DevRole_8java" startline="65">DevRole.INITIATOR</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a7cfdd403295940b5f432280437e4b9f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -38,13 +54,36 @@
           <declname>wwn</declname>
         </param>
         <briefdescription>
-<para>create a new Initiator device with given brief capability </para>        </briefdescription>
+<para>create an instance with the given WWN. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Values given to the constructor are simply copied to internal variables for later use</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the given wwn is null</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brief</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether an abbreviated description is requested </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the WWN to evaluate and describe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="86" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="86" bodyend="85"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" compoundref="DevRole_8java" startline="51">DevRole.INITIATOR</references>
+<para>&lt; create a new Initiator device with given brief capability </para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="95" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="95" bodyend="98"/>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" compoundref="DevRole_8java" startline="65">DevRole.INITIATOR</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -58,12 +97,21 @@
           <declname>role</declname>
         </param>
         <briefdescription>
-<para>lightweight method to check for membership in this role </para>        </briefdescription>
+<para>convenience function to use bit-masks to check for membership in this role </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the role to check</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the given role includes Initiator </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="87" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="87" bodyend="86"/>
+<para>&lt; lightweight method to check for membership in this role </para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="106" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="106" bodyend="109"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="AIXLPARServerDescription_8java" startline="33" endline="43">AIXLPARServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="HPVirtualServerDescription_8java" startline="60" endline="71">HPVirtualServerDescription.getDesc</referencedby>
       </memberdef>
@@ -73,60 +121,60 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="420">
+      <node id="439">
         <label>HPVirtualServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription"/>
-        <childnode refid="417" relation="public-inheritance">
+        <childnode refid="436" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="417">
+      <node id="436">
         <label>WWNDesc.WWNDescInitiator</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="418" relation="public-inheritance">
+        <childnode refid="437" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="418">
+      <node id="437">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="419">
+      <node id="438">
         <label>AIXLPARServerDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription"/>
-        <childnode refid="417" relation="public-inheritance">
+        <childnode refid="436" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="424">
+      <node id="443">
         <label>BigInteger</label>
       </node>
-      <node id="421">
+      <node id="440">
         <label>WWNDesc.WWNDescInitiator</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator"/>
-        <childnode refid="422" relation="public-inheritance">
+        <childnode refid="441" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="422">
+      <node id="441">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="423" relation="usage">
+        <childnode refid="442" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="424" relation="usage">
+        <childnode refid="443" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="423">
+      <node id="442">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="423" relation="usage">
+        <childnode refid="442" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="84" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="84" bodyend="88"/>
+    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="88" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="87" bodyend="110"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescInitiator</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescInitiator</scope><name>descPort</name></member>

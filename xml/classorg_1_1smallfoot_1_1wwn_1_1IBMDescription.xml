@@ -205,7 +205,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/wwndesc/java/IBMDescription.java" line="44" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBMDescription.java" bodystart="44" bodyend="62"/>
-        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="101" endline="100">WWNDesc.WWNDescTarget.isA</references>
+        <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -214,53 +214,53 @@
 <para><simplesect kind="see"><para><ulink url="http://aussiestorageblog.files.wordpress.com/2013/01/ibm-storage-systems-wwpn-determination-version-6-6.pdf">http://aussiestorageblog.files.wordpress.com/2013/01/ibm-storage-systems-wwpn-determination-version-6-6.pdf</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="342">
+      <node id="360">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
       </node>
-      <node id="341">
+      <node id="359">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="342" relation="public-inheritance">
+        <childnode refid="360" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="340">
+      <node id="358">
         <label>IBMDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMDescription"/>
-        <childnode refid="341" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="347">
+      <node id="365">
         <label>BigInteger</label>
       </node>
-      <node id="345">
+      <node id="363">
         <label>WWNDesc</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc"/>
-        <childnode refid="346" relation="usage">
+        <childnode refid="364" relation="usage">
           <edgelabel>role</edgelabel>
         </childnode>
-        <childnode refid="347" relation="usage">
+        <childnode refid="365" relation="usage">
           <edgelabel>wwn</edgelabel>
         </childnode>
       </node>
-      <node id="344">
+      <node id="362">
         <label>WWNDesc.WWNDescTarget</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget"/>
-        <childnode refid="345" relation="public-inheritance">
+        <childnode refid="363" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="343">
+      <node id="361">
         <label>IBMDescription</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1IBMDescription"/>
-        <childnode refid="344" relation="public-inheritance">
+        <childnode refid="362" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="346">
+      <node id="364">
         <label>DevRole</label>
         <link refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole"/>
-        <childnode refid="346" relation="usage">
+        <childnode refid="364" relation="usage">
           <edgelabel>TARGET</edgelabel>
           <edgelabel>SWITCH</edgelabel>
           <edgelabel>INITIATOR</edgelabel>
