@@ -44,7 +44,9 @@ public class HDSVSPDescription extends WWNDesc.WWNDescTarget
     {
         if (!isA(role))
             return null;
-        else if (wwn.matches("50060e8.*"))
+        else if (wwn.startsWith("50060e8010"))
+            return new HDSModularDescription(brief, wwn);
+        else if (wwn.startsWith("50060e8"))
             return new HDSVSPDescription(brief, wwn);
         else
             return null;
@@ -66,9 +68,12 @@ public class HDSVSPDescription extends WWNDesc.WWNDescTarget
         /**
          * @todo 50060e8:
          *        005: USP-V: http://www.hitachi-storage.com/content/how-decode-usp-v-wwn
-         *        00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOFFSSSSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping "I") note article confuses NAA marker as "50"
+         *        00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOF FFSS SSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping "I") note article confuses NAA marker as "50"
          *        need to check against http://p2v.it/tools/wwndec/index.php?input=50060E8010277210
          *        need to check http://p2v.it/tools/wwndec/index.php?input=50060e8016624800
+	 *
+	 * NOTE that https://tuf.hds.com/wiki/pub/Main/Lunstat/lsu0011.pdf agrees with this class logic
+	 *   - 50060E80034E3901 gives 9970 with serial 20025 
          */
         /* for example start with 50060e8005123442 on http://www.hitachi-storage.com/content/how-decode-usp-v-wwn */
         BigInteger serDirPort = wwn.remainder(new BigInteger("1000000000",16));
@@ -85,7 +90,7 @@ public class HDSVSPDescription extends WWNDesc.WWNDescTarget
         case 0x02: /* 002: 9900 */
             res += "9900-";
             break;
-        case 0x03: /* 003: 9900V */
+        case 0x03: /* 003: 9900V : HDS-9970 / HDS-9980 AKA HP-XP128 or HP-XP1024 */
             res += "9900V-";
             break;
         case 0x04: /* 004, 014: USP */
@@ -101,6 +106,9 @@ public class HDSVSPDescription extends WWNDesc.WWNDescTarget
             /* unknown but seen at AdCenter: 50060e8015345800 is serial 78936 port CL1A */
             /* 016: unknown but seen at ChampionSG Proj-712 */
             res += "VSP-";
+            break;
+        case 0x10: /* 010: DF700/DF800/SA/DF850 */
+            res += "HUSV-";
             break;
         case 0x13: /* Jan reinmuth: HUS VM */
             res += "HUSV-";

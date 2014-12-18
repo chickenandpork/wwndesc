@@ -14,7 +14,7 @@ JAVAROOT = bld
 	@echo "Manifest-Version: 1.0" > $(@D)/.workdir/MANIFEST.MF
 	@echo "Created-By: @PACKAGE@-@VERSION@" >> $(@D)/.workdir/MANIFEST.MF
 	echo "Main-Class: org.smallfoot.wwn.WWNDescription"  >> $(@D)/.workdir/MANIFEST.MF
-	for i in $^ ; do ABS=`cd $$(dirname $$i) && pwd -P`/`basename $$i`; echo "unpacking $${ABS}"; (cd $(@D)/.workdir  && jar xf $${ABS}) ; done
+	for i in $^ ; do ABS=`cd $$(dirname $$i) && pwd -P`/`basename $$i`; (cd $(@D)/.workdir  && jar xf $${ABS}) ; done
 	find $(@D)/.workdir '(' -name \*.java -o -name COPYING.LIB -o -name \*.html -o -name README -o -name Makefile -o -name ChangeLog -o -name GetoptDemo.class -o -name LANGUAGES -o -name \*.xml ')' -exec rm {} \;
 	(cd $(@D)/.workdir && jar cm MANIFEST.MF gnu org) > $@
 	rm -fr $(@D)/.workdir

@@ -1,7 +1,8 @@
 nodist_java_JAVA  = $(srcdir)/DevRole.java
 nodist_java_JAVA += $(srcdir)/AIXLPARServerDescription.java $(srcdir)/CiscoSwitchDescription.java $(srcdir)/CiscoUCSServerDescription.java
 nodist_java_JAVA += $(srcdir)/EMCClariionDescription.java $(srcdir)/EMCSymmetrixDescription.java $(srcdir)/EMCVMAXDescription.java $(srcdir)/EMCVPLEXDescription.java
-nodist_java_JAVA += $(srcdir)/HDSVSPDescription.java $(srcdir)/IBMDescription.java $(srcdir)/IBM3700Description.java $(srcdir)/IBM500507630Description.java $(srcdir)/IBMSVCDescription.java
+nodist_java_JAVA += $(srcdir)/HDSModularDescription.java $(srcdir)/HDSVSPDescription.java
+nodist_java_JAVA += $(srcdir)/IBMDescription.java $(srcdir)/IBM3700Description.java $(srcdir)/IBM500507630Description.java $(srcdir)/IBMSVCDescription.java
 nodist_java_JAVA += $(srcdir)/HP3ParDescription.java $(srcdir)/HPDotHillDescription.java $(srcdir)/HPVirtualServerDescription.java
 nodist_java_JAVA += $(srcdir)/NetAppDescription.java $(srcdir)/OraclePillarDescription.java
 nodist_java_JAVA += $(srcdir)/PureStorageDescription.java

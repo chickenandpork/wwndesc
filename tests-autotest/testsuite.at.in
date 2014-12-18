@@ -3,6 +3,16 @@ AT_INIT()
 AT_SETUP(@PACKAGE@ Nickname Estimation)
 dnl      ---------------------------
 
+dnl example from HDS KA15062
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 50060e8010139320], 0, [HDS-DF850MH-10178-CTL0-PortA
+],[])
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar --briefestimate -w 50060e8010139320], 0, [DF850MH-10178-0A
+],[])
+
+dnl example from https://tuf.hds.com/wiki/pub/Main/Lunstat/lsu0011.pdf
+AT_CHECK([java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w 50060E80034E3901], 0, [HDS-9900V-20025-CL1B
+],[])
+
 dnl example from Jan Reinmuth
 AT_DATA([janreinmuth.txt],[50060e80164c344a
 50060e80164c3467
@@ -14,6 +24,7 @@ AT_DATA([janreinmuth.txt],[50060e80164c344a
 50060e80164c3414
 50060e80164c3472
 50060e80164c3435
+50060e8010139320
 ])
 
 AT_CHECK([cat janreinmuth.txt|xargs -L1 java -jar $abs_builddir/../convjars/@PACKAGE@.jar -w ], 0, [HDS-VSP-85044-CL5L
@@ -26,6 +37,7 @@ HDS-VSP-85044-CL6M
 HDS-VSP-85044-CL2E
 HDS-VSP-85044-CL8C
 HDS-VSP-85044-CL4F
+HDS-DF850MH-10178-CTL0-PortA
 ],[])
 
 dnl example from http://pic.dhe.ibm.com/infocenter/storwize/v3700_ic/index.jsp

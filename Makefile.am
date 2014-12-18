@@ -32,7 +32,30 @@ htdocs/@PACKAGE@.jar: convjars/@PACKAGE@.jar
 
 
 if DO_ASTYLE
-formatting: java/EMCClariionDescription.java java/EMCSymmetrixDescription.java java/EMCVMAXDescription.java java/EMCVPLEXDescription.java java/HDSVSPDescription.java java/HP3ParDescription.java java/HPDotHillDescription.java java/IBM3700Description.java java/IBMSVCDescription.java java/NetAppDescription.java java/OraclePillarDescription.java java/PureStorageDescription.java java/WWNDesc.java java/WWNDescription.java.in java/version.java
+formatting: java/AIXLPARServerDescription.java \
+	java/CiscoSwitchDescription.java \
+	java/CiscoUCSServerDescription.java \
+	java/DevRole.java \
+	java/EMCClariionDescription.java \
+	java/EMCSymmetrixDescription.java \
+	java/EMCVMAXDescription.java \
+	java/EMCVPLEXDescription.java \
+	java/HDSModularDescription.java \
+	java/HDSVSPDescription.java \
+	java/HP3ParDescription.java \
+	java/HPDotHillDescription.java \
+	java/HPVirtualServerDescription.java \
+	java/IBM3700Description.java \
+	java/IBM500507630Description.java \
+	java/IBMDescription.java \
+	java/IBMSVCDescription.java \
+	java/NetAppDescription.java \
+	java/OraclePillarDescription.java \
+	java/PureStorageDescription.java \
+	java/SymbiosDescription.java \
+	java/WWNDesc.java \
+	java/WWNDescription.java.in \
+	java/version.java.in
 if DO_GITFORMATTING
 	@git ls-files --other --exclude-standard --directory || { echo "###################### unignored local files: git add, git commit ?"; }
 	@git diff --exit-code || { echo "###################### unstaged changes: git commit -a"; exit 1; }
