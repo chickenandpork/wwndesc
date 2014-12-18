@@ -23,7 +23,7 @@ public class HDSVSPDescription extends WWNDesc.WWNDescTarget
     {
         super(brief, wwn);
     }
-    
+
     /**
      * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
      *
@@ -71,10 +71,10 @@ public class HDSVSPDescription extends WWNDesc.WWNDescTarget
          *        00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOF FFSS SSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping "I") note article confuses NAA marker as "50"
          *        need to check against http://p2v.it/tools/wwndec/index.php?input=50060E8010277210
          *        need to check http://p2v.it/tools/wwndec/index.php?input=50060e8016624800
-	 *
-	 * NOTE that https://tuf.hds.com/wiki/pub/Main/Lunstat/lsu0011.pdf agrees with this class logic
-	 *   - 50060E80034E3901 gives 9970 with serial 20025 
-         */
+        *
+         * NOTE that https://tuf.hds.com/wiki/pub/Main/Lunstat/lsu0011.pdf agrees with this class logic
+         *   - 50060E80034E3901 gives 9970 with serial 20025
+               */
         /* for example start with 50060e8005123442 on http://www.hitachi-storage.com/content/how-decode-usp-v-wwn */
         BigInteger serDirPort = wwn.remainder(new BigInteger("1000000000",16));
 

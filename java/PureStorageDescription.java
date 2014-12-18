@@ -80,6 +80,6 @@ public class PureStorageDescription extends WWNDesc.WWNDescTarget
     public String descPort()
     {
         BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("10",16));
-	return String.format("FC%d",serPort[1].intValue() % 16);
+        return String.format("FC%d",serPort[1].intValue() % 16);
     }
 }

@@ -14,7 +14,7 @@ import java.math.BigInteger;
  * <li>2105 ESS or Shark	5005076300c0xxxx 5005076300yyxxxx</li>
  * <li>2107 DS8000       	500507630zFFxxxx 500507630zyyyxxx</li>
  * </ul>
- * 
+ *
  * @see http://aussiestorageblog.files.wordpress.com/2013/01/ibm-storage-systems-wwpn-determination-version-6-6.pdf
  * @see http://www-03.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/TD105450
  * @see http://linuxvm.org/present/SHARE100/S9333NFa.pdf seems to imply that 50050763004029a0 is actually a tape ID within a IBM 3590(E) tape library
@@ -31,7 +31,7 @@ public class IBM500507630Description extends WWNDesc.WWNDescTarget
     {
         super(brief, wwn);
     }
-    
+
     /**
      * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
      *

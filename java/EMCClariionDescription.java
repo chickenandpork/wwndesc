@@ -21,7 +21,7 @@ public class EMCClariionDescription extends WWNDesc.WWNDescTarget
     {
         super(wwn);
     }
-    
+
     /**
      * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
      *
@@ -40,9 +40,9 @@ public class EMCClariionDescription extends WWNDesc.WWNDescTarget
      */
     public static WWNDesc getDesc (boolean strong, boolean brief, String wwn, int role)
     {
-	if (!isA(role))
-	    return null;
-	else if (wwn.matches("5006016.*"))
+        if (!isA(role))
+            return null;
+        else if (wwn.matches("5006016.*"))
             return new EMCClariionDescription(wwn);
         else
             return null;

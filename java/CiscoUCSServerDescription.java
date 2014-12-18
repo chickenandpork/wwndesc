@@ -77,7 +77,7 @@ public class CiscoUCSServerDescription extends WWNDesc.WWNDescSwitch
 
         /* our example now has serInd = { [123], [456] } */
 
-            return res + String.format("CiscoUCS-%03x:%03x",serInd[0].intValue(),serInd[1].intValue());
+        return res + String.format("CiscoUCS-%03x:%03x",serInd[0].intValue(),serInd[1].intValue());
     }
 
     /**
@@ -88,6 +88,6 @@ public class CiscoUCSServerDescription extends WWNDesc.WWNDescSwitch
     public String descPort()
     {
         BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("1000",16));
-	return String.format("%03x",serPort[1].intValue());
+        return String.format("%03x",serPort[1].intValue());
     }
 }

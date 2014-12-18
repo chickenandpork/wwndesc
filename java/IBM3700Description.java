@@ -22,7 +22,7 @@ public class IBM3700Description extends WWNDesc.WWNDescTarget
     {
         super(brief, wwn);
     }
-    
+
     /**
      * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
      *

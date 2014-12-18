@@ -25,9 +25,9 @@ public class WWNDesc
 
     /**
      * create an instance with @ref brief set to false.  This is a convenience function to support the older constructor model
-     * 
+     *
      * @throw java.lang.NullPointerException if the given wwn is null
-     * 
+     *
      * @param wwn the WWN to evaluate and describe
      */
     public WWNDesc(String wwn)
@@ -36,25 +36,28 @@ public class WWNDesc
     }
     /**
      * create an instance with the given WWN.  Values given to the constructor are simply copied to internal variables for later use
-     * 
+     *
      * @throw java.lang.NullPointerException if the given wwn is null
-     * 
+     *
      * @param brief whether an abbreviated description is requested
      * @param wwn the WWN to evaluate and describe
      */
-    public WWNDesc(boolean brief, String wwn) { this (brief, wwn, DevRole.TARGET); }
+    public WWNDesc(boolean brief, String wwn)
+    {
+        this (brief, wwn, DevRole.TARGET);
+    }
     /**
      * create an instance with the given WWN.  Values given to the constructor are simply copied to internal variables for later use
-     * 
+     *
      * @throw java.lang.NullPointerException if the given wwn is null
-     * 
+     *
      * @param brief whether an abbreviated description is requested
      * @param wwn the WWN to evaluate and describe
      * @param role the device role to assign
      */
     public WWNDesc(boolean brief, String wwn, DevRole role)
     {
-	if (null == wwn) throw new java.lang.NullPointerException("wwn value must not be null");
+        if (null == wwn) throw new java.lang.NullPointerException("wwn value must not be null");
 
         this.wwn = new BigInteger(wwn.replaceAll(":",""),16);
         this.brief = brief;
@@ -62,7 +65,7 @@ public class WWNDesc
     }
     /**
      * describe the WWN: produce a short (shorter if this.brief = true) description suitable for use as an alias for this WWN
-     * 
+     *
      * @return the alias for the WWN constructed from the WWN bit fields
      */
     public String toString()
@@ -72,7 +75,7 @@ public class WWNDesc
 
     /**
      * describe the WWPN's unique port label/index
-     * 
+     *
      * @return the unique name for the port WWPN
      */
     public String descPort()
@@ -81,23 +84,80 @@ public class WWNDesc
     }
 
     /** simple pass-thru class to define internal value for a Initiator in an idempotent way */
-    public static class WWNDescInitiator extends WWNDesc {
-        public WWNDescInitiator(String wwn) { super(false, wwn, DevRole.INITIATOR); }		/**< create a new Initiator device without brief naming capability */
-        public WWNDescInitiator(boolean brief, String wwn) { super(brief, wwn, DevRole.INITIATOR); }		/**< create a new Initiator device with given brief capability */
-	public static boolean isA(int role) { return ( 0 < (role & DevRole.INITIATORbit) ); }		/**< lightweight method to check for membership in this role */
+    public static class WWNDescInitiator extends WWNDesc
+    {
+        /** @copydoc WWNDesc#WWNDesc(String) */
+        public WWNDescInitiator(String wwn)
+        {
+            super(false, wwn, DevRole.INITIATOR);    /**< create a new Initiator device without brief naming capability */
+        }
+        /** @copydoc WWNDesc#WWNDesc(boolean,String) */
+        public WWNDescInitiator(boolean brief, String wwn)
+        {
+            super(brief, wwn, DevRole.INITIATOR);    /**< create a new Initiator device with given brief capability */
+        }
+        /**
+         * convenience function to use bit-masks to check for membership in this role
+         *
+         * @param role the role to check
+         *
+         * @return true if the given role includes Initiator
+         */
+        public static boolean isA(int role)
+        {
+            return ( 0 < (role & DevRole.INITIATORbit) );    /**< lightweight method to check for membership in this role */
+        }
     }
 
     /** simple pass-thru class to define internal value for a Switch in an idempotent way */
-    public static class WWNDescSwitch extends WWNDesc {
-        public WWNDescSwitch(String wwn) { super(false, wwn, DevRole.SWITCH); }		/**< create a new Switch device without brief naming capability */
-        public WWNDescSwitch(boolean brief, String wwn) { super(brief, wwn, DevRole.SWITCH); }		/**< create a new Switch device with given brief capability */
-	public static boolean isA(int role) { return ( 0 < (role & DevRole.SWITCHbit) ); }		/**< lightweight method to check for membership in this role */
+    public static class WWNDescSwitch extends WWNDesc
+    {
+        /** @copydoc WWNDesc#WWNDesc(String) */
+        public WWNDescSwitch(String wwn)
+        {
+            super(false, wwn, DevRole.SWITCH);    /**< create a new Switch device without brief naming capability */
+        }
+        /** @copydoc WWNDesc#WWNDesc(boolean,String) */
+        public WWNDescSwitch(boolean brief, String wwn)
+        {
+            super(brief, wwn, DevRole.SWITCH);    /**< create a new Switch device with given brief capability */
+        }
+        /**
+         * convenience function to use bit-masks to check for membership in this role
+         *
+         * @param role the role to check
+         *
+         * @return true if the given role includes Switch
+         */
+        public static boolean isA(int role)
+        {
+            return ( 0 < (role & DevRole.SWITCHbit) );    /**< lightweight method to check for membership in this role */
+        }
     }
 
     /** simple pass-thru class to define internal value for a Target in an idempotent way */
-    public static class WWNDescTarget extends WWNDesc {
-        public WWNDescTarget(String wwn) { super(false, wwn, DevRole.TARGET); }		/**< create a new Target device without brief naming capability */
-        public WWNDescTarget(boolean brief, String wwn) { super(brief, wwn, DevRole.TARGET); }		/**< create a new Target device with given brief capability */
-	public static boolean isA(int role) { return ( 0 < (role & DevRole.TARGETbit) ); }		/**< lightweight method to check for membership in this role */
+    public static class WWNDescTarget extends WWNDesc
+    {
+        /** @copydoc WWNDesc#WWNDesc(String) */
+        public WWNDescTarget(String wwn)
+        {
+            super(false, wwn, DevRole.TARGET);    /**< create a new Target device without brief naming capability */
+        }
+        /** @copydoc WWNDesc#WWNDesc(boolean,String) */
+        public WWNDescTarget(boolean brief, String wwn)
+        {
+            super(brief, wwn, DevRole.TARGET);    /**< create a new Target device with given brief capability */
+        }
+        /**
+         * convenience function to use bit-masks to check for membership in this role
+         *
+         * @param role the role to check
+         *
+         * @return true if the given role includes Switch
+         */
+        public static boolean isA(int role)
+        {
+            return ( 0 < (role & DevRole.TARGETbit) );    /**< lightweight method to check for membership in this role */
+        }
     }
 }

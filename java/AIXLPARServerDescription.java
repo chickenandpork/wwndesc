@@ -79,6 +79,6 @@ public class AIXLPARServerDescription extends WWNDesc.WWNDescInitiator
     public String descPort()
     {
         BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("10000",16));
-	return String.format("%04x",serPort[1].intValue());
+        return String.format("%04x",serPort[1].intValue());
     }
 }

@@ -33,16 +33,16 @@ public class WWNDescription
     /** test case: this matches a single item known to exist in the Demo Database */
     public class DemoTestDesc extends WWNDesc
     {
-	/** @copydoc WWNDesc#WWNDesc(String) */
+        /** @copydoc WWNDesc#WWNDesc(String) */
         public DemoTestDesc(String wwn)
         {
             super(wwn);
         }
-	/**
-         * generates a test description or alias for this test class
-	 *
-	 * @returns "TestDevice" always
-         */
+        /**
+             * generates a test description or alias for this test class
+         *
+         * @returns "TestDevice" always
+             */
         public String toString()
         {
             String res = super.toString();
@@ -173,7 +173,7 @@ public class WWNDescription
     public static void main(String args[])
     {
         WWNDescription m = new WWNDescription();
-	int role = DevRole.TARGETbit;
+        int role = DevRole.TARGETbit;
 
         java.util.Vector<LongOpt> options = new java.util.Vector();
         /**
@@ -205,9 +205,9 @@ public class WWNDescription
             switch(c)
             {
             /**
-	     * @cmdopt --briefestimate change to shorter, more brief estimates or descriptions
-	     * @cmdopt --nobriefestimate change to longer, more detailed estimates (default)
-	     */
+            * @cmdopt --briefestimate change to shorter, more brief estimates or descriptions
+            * @cmdopt --nobriefestimate change to longer, more detailed estimates (default)
+            */
             case 0x1000: /* switch to brief WWNDescs */
                 m.briefWWNEstimate = true;
                 break;
@@ -216,9 +216,9 @@ public class WWNDescription
                 break;
 
             /**
-	     * @cmdopt -d|--device(=) used mainly in testing, this option allows setting a device type
-	     * @cmdopt { init(iator) | server | storage | switch | targ(et) }
-	     */
+            * @cmdopt -d|--device(=) used mainly in testing, this option allows setting a device type
+            * @cmdopt { init(iator) | server | storage | switch | targ(et) }
+            */
             case 'd': /* set a device type */
             {
                 if (null == g.getOptarg()) role = DevRole.TARGETbit;
@@ -232,8 +232,8 @@ public class WWNDescription
             break;
 
             /**
-	     * @cmdopt -p|--port used mainly in testing, this option shows the port-uniqueness of a device (which can be leveraged for de-duping an alias)
-	     */
+            * @cmdopt -p|--port used mainly in testing, this option shows the port-uniqueness of a device (which can be leveraged for de-duping an alias)
+            */
             case 'p': /* inspect a WWPN's unique port */
             {
                 WWNDesc wwn;
@@ -246,12 +246,12 @@ public class WWNDescription
             break;
 
             /**
-	     * @cmdopt -w|--wwn query for a description of a WWPN
-	     * @cmdopt @code java -jar @PACKAGE@.jar --wwn 5000097201234567
-	     * VMax-HK194618641-10fD @endcode
-	     * @cmdopt @code java -jar @PACKAGE@.jar --briefestimate --wwn 5000097201234567
-	     * VMax-18641-10fD @endcode
-	     */
+            * @cmdopt -w|--wwn query for a description of a WWPN
+            * @cmdopt @code java -jar @PACKAGE@.jar --wwn 5000097201234567
+            * VMax-HK194618641-10fD @endcode
+            * @cmdopt @code java -jar @PACKAGE@.jar --briefestimate --wwn 5000097201234567
+            * VMax-18641-10fD @endcode
+            */
             case 'w': /* inspect a WWN */
             {
                 WWNDesc wwn;
@@ -274,9 +274,9 @@ public class WWNDescription
 
             default:
             case '?':
-                // during build, this is just a dump of options; in shipping, this falls-thru to usage.
-                //System.out.println("option \""+c+"\" selected");
-                //System.out.println("long index = "+g.getLongind());
+            // during build, this is just a dump of options; in shipping, this falls-thru to usage.
+            //System.out.println("option \""+c+"\" selected");
+            //System.out.println("long index = "+g.getLongind());
 
             case 'H':
                 m.usage(g.progname());

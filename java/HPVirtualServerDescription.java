@@ -15,7 +15,7 @@ import java.math.BigInteger;
  * http://h20000.www2.hp.com/bc/docs/support/SupportManual/c03314921/c03314921.pdf.
 
  * http://h20000.www2.hp.com/bc/docs/support/SupportManual/c02494590/c02494590.pdf.
- *     50:01:43:80:02:A3:00:00 - 50:01:43:80:02:A4:FF:FF VCEM 
+ *     50:01:43:80:02:A3:00:00 - 50:01:43:80:02:A4:FF:FF VCEM
  *     50:06:0B:00:00:C2:62:00 - 50:06:0B:00:00:C3:61:FF HP Pre-defined (64 blocks of 1024 IDs: ie C2:62:00 - C2:65:FF
  *
  * http://www.filibeto.org/unix/hp-ux/lib/os/vpar/6.0/vpars-6.0-npiv-4AA3-8665ENW.pdf
@@ -96,7 +96,7 @@ public class HPVirtualServerDescription extends WWNDesc.WWNDescInitiator
 
         /* our example now has portOui = { [2:013], [00110a] } */
 
-            return res + String.format("HPVC-%06x:%03x",portOuiSer[1].intValue(),portOui[0].intValue() % (1 << 12) );
+        return res + String.format("HPVC-%06x:%03x",portOuiSer[1].intValue(),portOui[0].intValue() % (1 << 12) );
     }
 
     /**
@@ -107,6 +107,6 @@ public class HPVirtualServerDescription extends WWNDesc.WWNDescInitiator
     public String descPort()
     {
         BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("1000000000000",16));
-	return String.format("%03x",serPort[0].intValue() % (1 << 12));
+        return String.format("%03x",serPort[0].intValue() % (1 << 12));
     }
 }

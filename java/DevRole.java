@@ -19,12 +19,12 @@ public final class DevRole
 {
     public final int value;		/**< what bit-field is this constant? */
     private static int max = 1;	/**< global singleton to keep track of the max DevRole.value so far */
-   
+
     /** create a new constant, but private to stop extensions or descendents */
     private DevRole()
     {
         this.value = max;
-	max <<= 1;
+        max <<= 1;
     }
 
     /**
@@ -34,7 +34,10 @@ public final class DevRole
      *
      * @return whether device is an instance
      */
-    public boolean isA(DevRole proto) { return isA (proto.value); }
+    public boolean isA(DevRole proto)
+    {
+        return isA (proto.value);
+    }
 
     /**
      * return true if the device is an instance of the other.  For example: if (theTapeDevice.isA(TAPE)) {...}
@@ -43,9 +46,20 @@ public final class DevRole
      *
      * @return whether device is an instance
      */
-    public boolean isA(int proto) { return (0 < (value & proto)); }
+    public boolean isA(int proto)
+    {
+        return (0 < (value & proto));
+    }
 
-    public static int max() { return max; }			/**< report highest left-shift bit value ever created; someDevice.value == (someDevice.value & (max()-1)) */
+    /**
+     * convenience accessor for this.max
+     *
+     * @return DevRole#max
+     */
+    public static int max()
+    {
+        return max;    /**< report highest left-shift bit value ever created; someDevice.value == (someDevice.value & (max()-1)) */
+    }
     public static final DevRole TARGET = new DevRole();		/**< a device that offers storage via >1 LUNs ; contrast a TAPE offers only one LUN */
     static final int TARGETbit = TARGET.value;
     public static final DevRole INITIATOR = new DevRole();	/**< a device that initiates a storage request: a server, or a Storage Virtualizer port that talks to backing storage */

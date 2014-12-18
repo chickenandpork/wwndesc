@@ -24,7 +24,7 @@ public class IBMDescription extends WWNDesc.WWNDescTarget
     {
         super(brief, wwn);
     }
-    
+
     /**
      * If this class matches or describes the given WWN, returns a new instance of this class loaded with the given WWN.
      *
@@ -52,8 +52,8 @@ public class IBMDescription extends WWNDesc.WWNDescTarget
         if (wwn.matches("5005076801.*"))
             return new IBMSVCDescription(brief, wwn);
 
-	/* the not-yet-done ones */
-	/* DS3000/DS4000/DS5000 */
+        /* the not-yet-done ones */
+        /* DS3000/DS4000/DS5000 */
         //if (wwn.matches("20[0-9a-f]{2}00a0b8[0-9a-f]{6}"))
         //    return new IBMDescription(brief, wwn);
 

@@ -98,7 +98,7 @@ public class EMCVMAXDescription extends WWNDesc.WWNDescTarget
             case 24: /* 011000: V-Max SE */
                 res += "49";
                 break;
-	    /* Previously, bit #32 was reserved set to 0.  This is no longer the case */
+            /* Previously, bit #32 was reserved set to 0.  This is no longer the case */
             case 32: /* 100000: V-Max 40k 4-engine (TMO) */
                 res += "57";
                 break;

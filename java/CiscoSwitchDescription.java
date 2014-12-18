@@ -88,6 +88,6 @@ public class CiscoSwitchDescription extends WWNDesc.WWNDescSwitch
     public String descPort()
     {
         BigInteger serPort[] = wwn.divideAndRemainder(new BigInteger("1000000000000",16));
-	return String.format("%03x",serPort[0].intValue() % (1 << 12));
+        return String.format("%03x",serPort[0].intValue() % (1 << 12));
     }
 }
