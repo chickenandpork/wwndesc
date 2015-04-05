@@ -31,6 +31,20 @@ poi-bin-3.8-20120326.tar.gz:
 	touch $@
 
 
+if FETCH_GETOPTJAR
+
+JARS += getopt.jar
+
+# getopt.jar includes both org.smallfoot.getopt and gnu.getopt
+
+getopt.jar:
+	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
+	test -f $@ || wget -O $@ http://chickenandpork.github.io/wwndesc/$(@F) || curl -Lo $@ http://chickenandpork.github.io/wwndesc/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+endif
+
+# catch that case of downloading content, the website claims it's sending content, but it's really sending a "hi, the content is over here, behind this ad..." webpage
+
 
 check-local: $(JARS)
 	for i in $<; do jar tf $$i >/dev/null || exit 1; done

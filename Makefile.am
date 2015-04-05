@@ -20,6 +20,7 @@ doc: htdocs/README.dox Doxyfile htdocs/@PACKAGE@.jar
 	if test -d $(<D)/.git; then (cd $(<D) && git add -A); if test -n "$(DOXYMESSAGE)" ; then (cd $(<D) && git commit -a -m "$(DOXYMESSAGE)" && git push); fi; else echo "$(<D) subdir not set as a subrepo; see http:// ..."; exit 1; fi
 
 htdocs/README.dox: README.md Makefile
+	@mkdir -p $(@D)
 if DO_DOXYGEN_MD
 	awk 'BEGIN { print "@file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } { printf "%s\n",$$0; } END {print "" }' $< > $@
 else

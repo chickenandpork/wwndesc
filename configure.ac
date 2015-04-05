@@ -138,10 +138,11 @@ AC_ARG_WITH(getoptplus,
 ],
 [
 AC_MSG_CHECKING([for getopt.jar])
-    WITH_GETOPTJAR=$((locate getopt.jar) | grep -v .workdir | head -1) ;
+    WITH_GETOPTJAR=$((locate getopt.jar; echo $(pwd)/depjars/getopt.jar) | grep -v .workdir | head -1) ;
 AC_MSG_RESULT([${WITH_GETOPTJAR}])
 ])
 AM_CONDITIONAL(DO_GETOPTJAR, test "$WITH_GETOPTJAR" != no)
+AM_CONDITIONAL(FETCH_GETOPTJAR, test "x$WITH_GETOPTJAR" = "x${PWD}/depjars/getopt.jar")
 AC_SUBST([GETOPTJAR], ${WITH_GETOPTJAR})
 
 
