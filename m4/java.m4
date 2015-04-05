@@ -92,6 +92,9 @@ AC_DEFUN([SVN_FIND_JDK],
     dnl This *must* be fully expanded, or we'll have problems later in find.
     JNI_INCLUDEDIR="$JDK/include"
     JDK_SUITABLE=yes
+  elif test -f /System/Library/Frameworks/JavaVM.framework/Headers/jni.h; then
+    JNI_INCLUDEDIR="/System/Library/Frameworks/JavaVM.framework/Headers/jni.h"
+    JDK_SUITABLE=yes
   else
     AC_MSG_WARN([no JNI header files found.])
     if test "$os_arch" = "Darwin"; then
