@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1DevRole" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::DevRole</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a899c1b74df7f8fda2fcd2c85d9185da8" prot="public" static="no" mutable="no">
@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="20" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="20" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="20" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="20" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ad460a270e92162af2969d22e82ca275d" compoundref="DevRole_8java" startline="37" endline="40">DevRole.isA</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75059cc51be3b90691caaad2ea2b96c6" compoundref="WWNDescription_8java" startline="84" endline="87">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="21" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="21" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="21" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="21" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="AIXLPARServerDescription_8java" startline="25" endline="28">AIXLPARServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoSwitchDescription_8java" startline="25" endline="28">CiscoSwitchDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a7e34be4d9bd11a9971c007c6231b8c01" compoundref="CiscoUCSServerDescription_8java" startline="32" endline="35">CiscoUCSServerDescription.getDesc</referencedby>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="65" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="65" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="65" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="65" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a64f89dd4a81c8d4d4bad3ab396c53ddb" compoundref="WWNDesc_8java" startline="90" endline="93">WWNDesc.WWNDescInitiator.WWNDescInitiator</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" prot="public" static="yes" mutable="no">
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="67" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="67" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="67" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="67" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a2e9d7b44477f5ca43f315dcf26d1fa55" compoundref="WWNDesc_8java" startline="116" endline="119">WWNDesc.WWNDescSwitch.WWNDescSwitch</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a5b493793990c957d316989fa9b702162" prot="public" static="yes" mutable="no">
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="63" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="63" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="63" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="63" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" compoundref="WWNDesc_8java" startline="45" endline="48">WWNDesc.WWNDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a01442752a1408c8166fca29e90f0fa7c" compoundref="WWNDesc_8java" startline="142" endline="145">WWNDesc.WWNDescTarget.WWNDescTarget</referencedby>
       </memberdef>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="66" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="66" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="66" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a32605c4c5347d7dfed33be5e3583dba0" prot="package" static="yes" mutable="no">
         <type>final int</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="68" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="68" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="68" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a23975a59d29f86803a4d8216ddb75f42" prot="package" static="yes" mutable="no">
         <type>final int</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="64" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="64" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="64" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="64" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="24" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="24" bodyend="28"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="24" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="24" bodyend="28"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" compoundref="DevRole_8java" startline="59" endline="62">DevRole.max</references>
       </memberdef>
       </sectiondef>
@@ -188,7 +188,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="37" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="37" bodyend="40"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="37" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="37" bodyend="40"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a899c1b74df7f8fda2fcd2c85d9185da8" compoundref="DevRole_8java" startline="20">DevRole.value</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a56fabf6439f9ed8b9d818ad1260bbcdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -215,7 +215,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="49" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="49" bodyend="52"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="49" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="49" bodyend="52"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -231,7 +231,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; report highest left-shift bit value ever created; someDevice.value == (someDevice.value &amp; (<ref refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ab06e4bb9d371d0fbcbe849c78bd73efa" kindref="member">max()</ref>-1)) </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="59" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="59" bodyend="62"/>
+        <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="59" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="59" bodyend="62"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a784be77e90b57f53853956f01abbda3e" compoundref="DevRole_8java" startline="24" endline="28">DevRole.DevRole</referencedby>
       </memberdef>
       </sectiondef>
@@ -251,7 +251,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/DevRole.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/DevRole.java" bodystart="18" bodyend="69"/>
+    <location file="/Users/allanc/src/wwndesc/java/DevRole.java" line="19" column="1" bodyfile="/Users/allanc/src/wwndesc/java/DevRole.java" bodystart="18" bodyend="69"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a784be77e90b57f53853956f01abbda3e" prot="private" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>DevRole</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::DevRole</scope><name>INITIATOR</name></member>

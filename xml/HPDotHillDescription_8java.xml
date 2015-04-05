@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="HPDotHillDescription_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="HPDotHillDescription_8java" kind="file" language="Java">
     <compoundname>HPDotHillDescription.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HPDotHillDescription" prot="public">org::smallfoot::wwn::HPDotHillDescription</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1wwn">org::smallfoot::wwn</innernamespace>
@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/HPDotHillDescription.java"/>
+    <location file="/Users/allanc/src/wwndesc/java/HPDotHillDescription.java"/>
   </compounddef>
 </doxygen>

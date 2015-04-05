@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="WWNDescription_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="WWNDescription_8java" kind="file" language="Java">
     <compoundname>WWNDescription.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1_1DemoTestDesc" prot="public">org::smallfoot::wwn::WWNDescription::DemoTestDesc</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription" prot="public">org::smallfoot::wwn::WWNDescription</innerclass>
@@ -9,6 +9,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDescription.java"/>
+    <location file="/Users/allanc/src/wwndesc/java/WWNDescription.java"/>
   </compounddef>
 </doxygen>

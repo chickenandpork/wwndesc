@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" prot="public" virt="non-virtual">CiscoSwitchDescription</derivedcompoundref>
@@ -37,7 +37,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; create a new Switch device without brief naming capability </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="116" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="116" bodyend="119"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="116" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="116" bodyend="119"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="67">DevRole.SWITCH</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1aae944684c83002cfaae951cbfff7505d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -82,7 +82,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; create a new Switch device with given brief capability </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="121" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="121" bodyend="124"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="121" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="121" bodyend="124"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a44998908031f20570c26aba20dd63ff7" compoundref="DevRole_8java" startline="67">DevRole.SWITCH</references>
       </memberdef>
       </sectiondef>
@@ -111,7 +111,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; lightweight method to check for membership in this role </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="132" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="132" bodyend="135"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="132" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="132" bodyend="135"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoSwitchDescription_8java" startline="33" endline="49">CiscoSwitchDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoUCSServerDescription_8java" startline="40" endline="52">CiscoUCSServerDescription.getDesc</referencedby>
       </memberdef>
@@ -174,7 +174,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="114" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="113" bodyend="136"/>
+    <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="114" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="113" bodyend="136"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescSwitch</scope><name>descPort</name></member>

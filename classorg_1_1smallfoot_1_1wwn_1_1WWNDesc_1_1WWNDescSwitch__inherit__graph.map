@@ -1,5 +1,5 @@
 <map id="WWNDesc.WWNDescSwitch" name="WWNDesc.WWNDescSwitch">
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html" title="CiscoSwitchDescription (ie Cisco&#45;001560&#45;0123456:0) breaks out the uniqueness number and port index fr..." alt="" coords="5,155,165,181"/>
-<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html" title="CiscoUCSServerDescription (ie CiscoUCS&#45;012&#45;123:0) breaks out the uniqueness number and port index fro..." alt="" coords="190,155,377,181"/>
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="141,6,227,31"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription.html" title="CiscoSwitchDescription (ie Cisco&#45;001560&#45;0123456:0) breaks out the uniqueness number and port index fr..." alt="" coords="5,155,167,181"/>
+<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription.html" title="CiscoUCSServerDescription (ie CiscoUCS&#45;012&#45;123:0) breaks out the uniqueness number and port index fro..." alt="" coords="191,155,381,181"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="143,5,229,32"/>
 </map>

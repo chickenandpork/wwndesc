@@ -1,5 +1,5 @@
 <map id="WWNDesc.WWNDescInitiator" name="WWNDesc.WWNDescInitiator">
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription.html" title="AIXLPARServerDescription (ie LPAR&#45;012345:0) breaks out the uniqueness number and port index from the ..." alt="" coords="5,155,187,181"/>
-<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription.html" title="HPVirtualServerDescription (ie HP&#45;123456:010) breaks out the uniqueness number and port index from th..." alt="" coords="211,155,393,181"/>
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="155,6,241,31"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription.html" title="AIXLPARServerDescription (ie LPAR&#45;012345:0) breaks out the uniqueness number and port index from the ..." alt="" coords="5,155,189,181"/>
+<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription.html" title="HPVirtualServerDescription (ie HP&#45;123456:010) breaks out the uniqueness number and port index from th..." alt="" coords="213,155,397,181"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="158,5,245,32"/>
 </map>

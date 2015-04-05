@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="IBM500507630Description_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="IBM500507630Description_8java" kind="file" language="Java">
     <compoundname>IBM500507630Description.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description" prot="public">org::smallfoot::wwn::IBM500507630Description</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1wwn">org::smallfoot::wwn</innernamespace>
@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java"/>
+    <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java"/>
   </compounddef>
 </doxygen>

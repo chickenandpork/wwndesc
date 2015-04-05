@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::OraclePillarDescription</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget" prot="public" virt="non-virtual">WWNDesc.WWNDescTarget</basecompoundref>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="16" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="16" bodyend="19"/>
+        <location file="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" line="16" column="1" bodyfile="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" bodystart="16" bodyend="19"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="OraclePillarDescription_8java" startline="37" endline="45">OraclePillarDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -50,7 +50,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="52" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="52" bodyend="71"/>
+        <location file="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" line="52" column="1" bodyfile="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" bodystart="52" bodyend="71"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       </sectiondef>
@@ -101,7 +101,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="29" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="29" bodyend="32"/>
+        <location file="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" line="29" column="1" bodyfile="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" bodystart="29" bodyend="32"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="137">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
@@ -162,7 +162,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="37" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="37" bodyend="45"/>
+        <location file="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" line="37" column="1" bodyfile="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" bodystart="37" bodyend="45"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1OraclePillarDescription_1a18e4afcfc6772a559d0e3ad342315eaa" compoundref="OraclePillarDescription_8java" startline="16" endline="19">OraclePillarDescription.OraclePillarDescription</references>
       </memberdef>
@@ -225,7 +225,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" line="14" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/OraclePillarDescription.java" bodystart="13" bodyend="72"/>
+    <location file="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" line="14" column="1" bodyfile="/Users/allanc/src/wwndesc/java/OraclePillarDescription.java" bodystart="13" bodyend="72"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::OraclePillarDescription</scope><name>descPort</name></member>

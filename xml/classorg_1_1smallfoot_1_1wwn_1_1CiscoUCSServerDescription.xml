@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::CiscoUCSServerDescription</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" prot="public" virt="non-virtual">WWNDesc.WWNDescSwitch</basecompoundref>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="19" bodyend="22"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="19" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="19" bodyend="22"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoUCSServerDescription_8java" startline="40" endline="52">CiscoUCSServerDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a3aa3fbb92bb7c321eee528e194756f04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -80,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="55" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="55" bodyend="58"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="55" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="55" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -94,7 +94,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="88" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="88" bodyend="92"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="88" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="88" bodyend="92"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -110,7 +110,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="66" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="66" bodyend="81"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="66" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="66" bodyend="81"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       </sectiondef>
@@ -161,7 +161,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="32" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="32" bodyend="35"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="32" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="32" bodyend="35"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="137">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
@@ -222,7 +222,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="40" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="40" bodyend="52"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="40" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="40" bodyend="52"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" compoundref="CiscoUCSServerDescription_8java" startline="19" endline="22">CiscoUCSServerDescription.CiscoUCSServerDescription</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="132" endline="135">WWNDesc.WWNDescSwitch.isA</references>
       </memberdef>
@@ -293,7 +293,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" line="17" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="16" bodyend="93"/>
+    <location file="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" line="17" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoUCSServerDescription.java" bodystart="16" bodyend="93"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoUCSServerDescription_1a26fce525d94491e9f2b8ab4ec5b2f4a6" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoUCSServerDescription</scope><name>CiscoUCSServerDescription</name></member>

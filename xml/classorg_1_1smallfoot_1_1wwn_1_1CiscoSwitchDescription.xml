@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::CiscoSwitchDescription</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" prot="public" virt="non-virtual">WWNDesc.WWNDescSwitch</basecompoundref>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="12" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="12" bodyend="15"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="12" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="12" bodyend="15"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="CiscoSwitchDescription_8java" startline="33" endline="49">CiscoSwitchDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a7ed45b2ac43a2956f77d6ac6f244d7c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -80,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="52" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="52" bodyend="55"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="52" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -94,7 +94,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="88" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="88" bodyend="92"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="88" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="88" bodyend="92"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -110,7 +110,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="63" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="63" bodyend="81"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="63" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="63" bodyend="81"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
@@ -162,7 +162,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="25" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="25" bodyend="28"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="25" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="25" bodyend="28"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="137">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="33" bodyend="49"/>
+        <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="33" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="33" bodyend="49"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a1fac2dbf30b578d02b025e6a05e13519" compoundref="CiscoSwitchDescription_8java" startline="12" endline="15">CiscoSwitchDescription.CiscoSwitchDescription</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="132" endline="135">WWNDesc.WWNDescSwitch.isA</references>
       </memberdef>
@@ -286,7 +286,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" line="10" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="9" bodyend="93"/>
+    <location file="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" line="10" column="1" bodyfile="/Users/allanc/src/wwndesc/java/CiscoSwitchDescription.java" bodystart="9" bodyend="93"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoSwitchDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1a1fac2dbf30b578d02b025e6a05e13519" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::CiscoSwitchDescription</scope><name>CiscoSwitchDescription</name></member>

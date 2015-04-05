@@ -1,4 +1,4 @@
 <map id="WWNDescription.DemoTestDesc" name="WWNDescription.DemoTestDesc">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="139,107,225,133"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1DevRole.html" title="This class seeks to provide simple bitfield type&#45;checking of a device in a fabric so that I can use t..." alt="" coords="5,13,77,38"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="143,112,229,139"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1DevRole.html" title="This class seeks to provide simple bitfield type&#45;checking of a device in a fabric so that I can use t..." alt="" coords="5,14,79,41"/>
 </map>

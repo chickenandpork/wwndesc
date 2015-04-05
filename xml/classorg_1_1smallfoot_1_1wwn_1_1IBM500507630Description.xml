@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::IBM500507630Description</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget" prot="public" virt="non-virtual">WWNDesc.WWNDescTarget</basecompoundref>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="25" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="25" bodyend="28"/>
+        <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" line="25" column="1" bodyfile="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" bodystart="25" bodyend="28"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="IBM500507630Description_8java" startline="51" endline="59">IBM500507630Description.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1aa5e53c65debc2810cfdf4f0ee7825987" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -80,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="30" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="30" bodyend="33"/>
+        <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" line="30" column="1" bodyfile="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -94,7 +94,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="66" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="66" bodyend="84"/>
+        <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" line="66" column="1" bodyfile="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" bodystart="66" bodyend="84"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       </sectiondef>
@@ -145,7 +145,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="43" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="43" bodyend="46"/>
+        <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" line="43" column="1" bodyfile="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" bodystart="43" bodyend="46"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1a37ac294533314b3b7b3a5f3404ee43d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -205,7 +205,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="51" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="51" bodyend="59"/>
+        <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" line="51" column="1" bodyfile="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" bodystart="51" bodyend="59"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1IBM500507630Description_1a8014b2980daf6b71d8ef97c225edd966" compoundref="IBM500507630Description_8java" startline="25" endline="28">IBM500507630Description.IBM500507630Description</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
@@ -279,7 +279,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" line="23" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/IBM500507630Description.java" bodystart="22" bodyend="85"/>
+    <location file="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" line="23" column="1" bodyfile="/Users/allanc/src/wwndesc/java/IBM500507630Description.java" bodystart="22" bodyend="85"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::IBM500507630Description</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::IBM500507630Description</scope><name>descPort</name></member>

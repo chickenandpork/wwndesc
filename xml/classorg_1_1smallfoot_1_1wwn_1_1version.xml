@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1version" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1version" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::version</compoundname>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1version_1ae4faf7ff4190d227357ef851490d7757" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -16,7 +16,7 @@
         <briefdescription>
 <para>returns the version of the class; used to cause the build-time-detected version and buildid to be available by consumers of the generated wwndesc.jar file </para>        </briefdescription>
         <detaileddescription>
-<para>for example: java -cp wwndesc.jar <ref refid="classorg_1_1smallfoot_1_1wwn_1_1version" kindref="compound">org.smallfoot.wwn.version</ref> 1.0.72</para><para><parameterlist kind="param"><parameteritem>
+<para>for example: java -cp wwndesc.jar <ref refid="classorg_1_1smallfoot_1_1wwn_1_1version" kindref="compound">org.smallfoot.wwn.version</ref> 1.0.73</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>arg</parametername>
 </parameternamelist>
@@ -27,14 +27,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/version.java" line="19" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/version.java" bodystart="19" bodyend="22"/>
+        <location file="/Users/allanc/src/wwndesc/java/version.java" line="19" column="1" bodyfile="/Users/allanc/src/wwndesc/java/version.java" bodystart="19" bodyend="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>version is used to allow a package that uses this package to be able to &quot;ask&quot; the jar file what version it is </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/version.java" line="9" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/version.java" bodystart="8" bodyend="23"/>
+    <location file="/Users/allanc/src/wwndesc/java/version.java" line="9" column="1" bodyfile="/Users/allanc/src/wwndesc/java/version.java" bodystart="8" bodyend="23"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1version_1ae4faf7ff4190d227357ef851490d7757" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::version</scope><name>main</name></member>
     </listofallmembers>

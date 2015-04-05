@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::HDSVSPDescription</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget" prot="public" virt="non-virtual">WWNDesc.WWNDescTarget</basecompoundref>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="17" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="17" bodyend="20"/>
+        <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" line="17" column="1" bodyfile="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" bodystart="17" bodyend="20"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="HDSVSPDescription_8java" startline="43" endline="53">HDSVSPDescription.getDesc</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1af2cd2d4fa950688e68f7bcda4b35e9d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -80,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="22" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="22" bodyend="25"/>
+        <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" line="22" column="1" bodyfile="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" bodystart="22" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -97,7 +97,7 @@
 <para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>50060e8: 005: USP-V: <ulink url="http://www.hitachi-storage.com/content/how-decode-usp-v-wwn">http://www.hitachi-storage.com/content/how-decode-usp-v-wwn</ulink> 00/5: USP-V: brionetka.com/linux/?p=38 breaks it up as NOOOOOOF FFSS SSCP (N=5, OOOOOO = OUI, FF = Family {01=7700/Lightning, 02=9900/Thunder}, SSSS=Serial, C = Cluster, P=Port (0-F=A-Q skipping &quot;I&quot;) note article confuses NAA marker as &quot;50&quot; need to check against <ulink url="http://p2v.it/tools/wwndec/index.php?input=50060E8010277210">http://p2v.it/tools/wwndec/index.php?input=50060E8010277210</ulink> need to check <ulink url="http://p2v.it/tools/wwndec/index.php?input=50060e8016624800">http://p2v.it/tools/wwndec/index.php?input=50060e8016624800</ulink></para></xrefdescription></xrefsect></para><para>NOTE that <ulink url="https://tuf.hds.com/wiki/pub/Main/Lunstat/lsu0011.pdf">https://tuf.hds.com/wiki/pub/Main/Lunstat/lsu0011.pdf</ulink> agrees with this class logic<itemizedlist>
 <listitem><para>50060E80034E3901 gives 9970 with serial 20025</para></listitem></itemizedlist>
 </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="62" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="62" bodyend="128"/>
+        <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" line="62" column="1" bodyfile="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" bodystart="62" bodyend="128"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
@@ -149,7 +149,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="35" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="35" bodyend="38"/>
+        <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" line="35" column="1" bodyfile="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" bodystart="35" bodyend="38"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1ae1e1dde676c120fa6d10f3bb2c14059e" compoundref="DevRole_8java" startline="21">DevRole.max</references>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a096d21a419b9a081abec2e2fcaf6eb5d" compoundref="WWNDescription_8java" startline="91" endline="137">WWNDescription.getWWNDescriptor</referencedby>
       </memberdef>
@@ -210,7 +210,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="43" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="43" bodyend="53"/>
+        <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" line="43" column="1" bodyfile="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" bodystart="43" bodyend="53"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription_1a3c873624b4dd44f373af3dc3e445f02c" compoundref="HDSVSPDescription_8java" startline="17" endline="20">HDSVSPDescription.HDSVSPDescription</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget_1a6530bfb83544e64d2c13e7f32784eff2" compoundref="WWNDesc_8java" startline="158" endline="161">WWNDesc.WWNDescTarget.isA</references>
       </memberdef>
@@ -273,7 +273,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" line="15" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java" bodystart="14" bodyend="129"/>
+    <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" line="15" column="1" bodyfile="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java" bodystart="14" bodyend="129"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::HDSVSPDescription</scope><name>descPort</name></member>

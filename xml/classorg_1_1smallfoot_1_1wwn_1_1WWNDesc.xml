@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::WWNDesc</compoundname>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator" prot="public" virt="non-virtual">WWNDesc.WWNDescInitiator</derivedcompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescSwitch" prot="public" virt="non-virtual">WWNDesc.WWNDescSwitch</derivedcompoundref>
@@ -21,7 +21,7 @@
 <para>. the class may choose to ignore this value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="22" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="22" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="22" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="22" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1PureStorageDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="PureStorageDescription_8java" startline="57" endline="73">PureStorageDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCSymmetrixDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCSymmetrixDescription_8java" startline="59" endline="108">EMCSymmetrixDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1EMCVPLEXDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="EMCVPLEXDescription_8java" startline="59" endline="104">EMCVPLEXDescription.toString</referencedby>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="24" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="24" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="24" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="24" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a0e1e77fdaa76d37292879be33dd23dcb" compoundref="WWNDesc_8java" startline="58" endline="65">WWNDesc.WWNDesc</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" prot="protected" static="no" mutable="no">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="21" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="21" bodyend="-1"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="21" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="21" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="AIXLPARServerDescription_8java" startline="57" endline="72">AIXLPARServerDescription.toString</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1abdd14eb1a2cbfc118c63f2354578467f" compoundref="AIXLPARServerDescription_8java" startline="79" endline="83">AIXLPARServerDescription.descPort</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1CiscoSwitchDescription_1ad146fa8579a5f8a876c4688cc5a68520" compoundref="CiscoSwitchDescription_8java" startline="63" endline="81">CiscoSwitchDescription.toString</referencedby>
@@ -120,7 +120,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="33" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="33" bodyend="36"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="33" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="33" bodyend="36"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a2493316b54bd042475e268e01c2d33af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -165,7 +165,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="45" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="45" bodyend="48"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="45" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="45" bodyend="48"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1a5b493793990c957d316989fa9b702162" compoundref="DevRole_8java" startline="63">DevRole.TARGET</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1aa6eeb40b2983b06aec48b79024fdecea" compoundref="WWNDesc_8java" startline="21">WWNDesc.wwn</references>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="58" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="58" bodyend="65"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="58" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="58" bodyend="65"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" compoundref="WWNDesc_8java" startline="22">WWNDesc.brief</references>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1a10728549ec6d505df7b3c9828f707676" compoundref="WWNDesc_8java" startline="24">WWNDesc.role</references>
       </memberdef>
@@ -239,7 +239,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="81" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="81" bodyend="84"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="81" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="81" bodyend="84"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="173" endline="293">WWNDescription.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1ad146fa8579a5f8a876c4688cc5a68520" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -254,7 +254,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="71" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="71" bodyend="74"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="71" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="71" bodyend="74"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDescription_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="WWNDescription_8java" startline="173" endline="293">WWNDescription.main</referencedby>
       </memberdef>
       </sectiondef>
@@ -436,7 +436,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="20" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="19" bodyend="163"/>
+    <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="20" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="19" bodyend="163"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc</scope><name>descPort</name></member>

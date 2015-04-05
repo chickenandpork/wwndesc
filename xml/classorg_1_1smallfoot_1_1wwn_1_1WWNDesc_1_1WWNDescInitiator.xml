@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::wwn::WWNDesc::WWNDescInitiator</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc" prot="public" virt="non-virtual">WWNDesc</basecompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription" prot="public" virt="non-virtual">AIXLPARServerDescription</derivedcompoundref>
@@ -37,7 +37,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; create a new Initiator device without brief naming capability </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="90" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="90" bodyend="93"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="90" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="90" bodyend="93"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" compoundref="DevRole_8java" startline="65">DevRole.INITIATOR</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescInitiator_1a7cfdd403295940b5f432280437e4b9f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -82,7 +82,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; create a new Initiator device with given brief capability </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="95" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="95" bodyend="98"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="95" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="95" bodyend="98"/>
         <references refid="classorg_1_1smallfoot_1_1wwn_1_1DevRole_1aa09bf98a27728964ba0d491642dc9228" compoundref="DevRole_8java" startline="65">DevRole.INITIATOR</references>
       </memberdef>
       </sectiondef>
@@ -111,7 +111,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>&lt; lightweight method to check for membership in this role </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="106" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="106" bodyend="109"/>
+        <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="106" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="106" bodyend="109"/>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1AIXLPARServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="AIXLPARServerDescription_8java" startline="33" endline="43">AIXLPARServerDescription.getDesc</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1wwn_1_1HPVirtualServerDescription_1a37ac294533314b3b7b3a5f3404ee43d6" compoundref="HPVirtualServerDescription_8java" startline="60" endline="71">HPVirtualServerDescription.getDesc</referencedby>
       </memberdef>
@@ -174,7 +174,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" line="88" column="1" bodyfile="/Users/allan.clark/src/wwndesc/java/WWNDesc.java" bodystart="87" bodyend="110"/>
+    <location file="/Users/allanc/src/wwndesc/java/WWNDesc.java" line="88" column="1" bodyfile="/Users/allanc/src/wwndesc/java/WWNDesc.java" bodystart="87" bodyend="110"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1adbebed411e8c47d43338efa3edaa13f8" prot="protected" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescInitiator</scope><name>brief</name></member>
       <member refid="classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1abdd14eb1a2cbfc118c63f2354578467f" prot="public" virt="non-virtual"><scope>org::smallfoot::wwn::WWNDesc::WWNDescInitiator</scope><name>descPort</name></member>

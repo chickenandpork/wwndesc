@@ -1,4 +1,4 @@
 <map id="HDSModularDescription" name="HDSModularDescription">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget.html" title="simple pass&#45;thru class to define internal value for a Target in an idempotent way ..." alt="" coords="5,81,197,106"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="58,6,144,31"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc_1_1WWNDescTarget.html" title="simple pass&#45;thru class to define internal value for a Target in an idempotent way ..." alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html" title="WWNDesc is the basic generic class from which each vendor&#45;specific pattern is built upon; similar to ..." alt="" coords="59,5,146,32"/>
 </map>

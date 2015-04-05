@@ -1,6 +1,5 @@
-%!PS-Adobe-2.0
-%%Creator: Graphviz version 2.14.1 (Fri Nov  9 08:19:38 GMT 2007)
-%%For: (allan.clark) Allan Clark
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.38.0 (20140413.2041)
 %%Title: WWNDescription.DemoTestDesc
 %%Pages: (atend)
 %%BoundingBox: (atend)
@@ -62,6 +61,7 @@ cleartomark
 /unfilled { } bind def
 /rounded { } bind def
 /diagonals { } bind def
+/tapered { } bind def
 
 % hooks for setting color 
 /nodecolor { sethsbcolor } bind def
@@ -88,17 +88,15 @@ cleartomark
 	scalefont setfont
 } def
 
-% draw aligned label in bounding box aligned to current point
-/alignedtext {			% width adj text
+% draw text fitted to its expected width
+/alignedtext {			% width text
 	/text exch def
-	/adj exch def
 	/width exch def
 	gsave
 		width 0 gt {
-			text stringwidth pop adj mul 0 rmoveto
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
 		} if
-		[] 0 setdash
-		text show
 	grestore
 } def
 
@@ -181,76 +179,76 @@ def
 %%EndSetup
 setupLatin1
 %%Page: 1 1
-%%PageBoundingBox: 36 36 232 124
+%%PageBoundingBox: 36 36 208 120
 %%PageOrientation: Portrait
 0 0 1 beginpage
 gsave
-36 36 232 124 boxprim clip newpath
+36 36 172 84 boxprim clip newpath
 1 1 set_scale 0 rotate 40 40 translate
 % Node1
 gsave
-0.000 0.000 0.749 nodecolor
-newpath 0 0 moveto
-0 21 lineto
-189 21 lineto
-189 0 lineto
+0 0 0.74902 nodecolor
+newpath 0 .5 moveto
+0 19.5 lineto
+164 19.5 lineto
+164 .5 lineto
 closepath fill
 1 setlinewidth
 filled
-0.000 0.000 0.000 nodecolor
-newpath 0 0 moveto
-0 21 lineto
-189 21 lineto
-189 0 lineto
+0 0 0 nodecolor
+newpath 0 .5 moveto
+0 19.5 lineto
+164 19.5 lineto
+164 .5 lineto
 closepath stroke
-0.000 0.000 0.000 nodecolor
-10.00 /Helvetica set_font
-94 7 moveto 173 -0.5 (WWNDescription.DemoTestDesc) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 7.5 moveto 148 (WWNDescription.DemoTestDesc) alignedtext
 grestore
 % Node2
 gsave
-[ /Rect [ 59 59 129 79 ]
+[ /Rect [ 49.5 56 114.5 76 ]
   /Border [ 0 0 0 ]
   /Action << /Subtype /URI /URI ($classorg_1_1smallfoot_1_1wwn_1_1WWNDesc.html) >>
   /Subtype /Link
 /ANN pdfmark
-0.000 0.000 1.000 nodecolor
-newpath 59 58 moveto
-59 79 lineto
-129 79 lineto
-129 58 lineto
+0 0 1 nodecolor
+newpath 49.5 56.5 moveto
+49.5 75.5 lineto
+114.5 75.5 lineto
+114.5 56.5 lineto
 closepath fill
 1 setlinewidth
 filled
-0.000 0.000 0.000 nodecolor
-newpath 59 58 moveto
-59 79 lineto
-129 79 lineto
-129 58 lineto
+0 0 0 nodecolor
+newpath 49.5 56.5 moveto
+49.5 75.5 lineto
+114.5 75.5 lineto
+114.5 56.5 lineto
 closepath stroke
-0.000 0.000 0.000 nodecolor
-10.00 /Helvetica set_font
-94 65 moveto 54 -0.5 (WWNDesc) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+57.5 63.5 moveto 49 (WWNDesc) alignedtext
 grestore
 % Node2->Node1
 gsave
 1 setlinewidth
 solid
-0.667 0.776 0.439 edgecolor
-newpath 94 48 moveto
-94 38 94 28 94 21 curveto
+0.66667 0.77647 0.43922 edgecolor
+newpath 82 45.8 moveto
+82 36.91 82 26.78 82 19.75 curveto
 stroke
-0.667 0.776 0.439 edgecolor
-newpath 90.5001 48 moveto
-94 58 lineto
-97.5001 48 lineto
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.5 46.08 moveto
+82 56.08 lineto
+85.5 46.08 lineto
 closepath fill
 1 setlinewidth
 solid
-0.667 0.776 0.439 edgecolor
-newpath 90.5001 48 moveto
-94 58 lineto
-97.5001 48 lineto
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.5 46.08 moveto
+82 56.08 lineto
+85.5 46.08 lineto
 closepath stroke
 grestore
 endpage
@@ -260,7 +258,7 @@ grestore
 %%EndPage: 1
 %%Trailer
 %%Pages: 1
-%%BoundingBox: 36 36 232 124
+%%BoundingBox: 36 36 208 120
 end
 restore
 %%EOF

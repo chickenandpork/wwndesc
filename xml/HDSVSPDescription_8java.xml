@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="HDSVSPDescription_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="HDSVSPDescription_8java" kind="file" language="Java">
     <compoundname>HDSVSPDescription.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1wwn_1_1HDSVSPDescription" prot="public">org::smallfoot::wwn::HDSVSPDescription</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1wwn">org::smallfoot::wwn</innernamespace>
@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/wwndesc/java/HDSVSPDescription.java"/>
+    <location file="/Users/allanc/src/wwndesc/java/HDSVSPDescription.java"/>
   </compounddef>
 </doxygen>
