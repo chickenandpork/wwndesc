@@ -43,8 +43,6 @@ getopt.jar:
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 endif
 
-# catch that case of downloading content, the website claims it's sending content, but it's really sending a "hi, the content is over here, behind this ad..." webpage
-
 
 check-local: $(JARS)
 	for i in $<; do jar tf $$i >/dev/null || exit 1; done
