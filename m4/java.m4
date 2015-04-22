@@ -98,7 +98,7 @@ AC_DEFUN([SVN_FIND_JDK],
   else
     AC_MSG_WARN([no JNI header files found.])
     if test "$os_arch" = "Darwin"; then
-      AC_MSG_WARN([You may need to install the latest Java Development package from <a href="http://connect.apple.com/.">http://connect.apple.com/.</a>  Apple no longer includes the JNI header files by default on Java updates.])
+      AC_MSG_WARN([You may need to install the latest Java Development package from <a href="http://connect.apple.com/.">http://connect.apple.com/.</a>  Apple no longer includes the JNI header files by default on Java updates.  see also https://support.apple.com/kb/DL1572 ])
     elif test "$os_arch" = "Linux"; then
       AC_MSG_WARN([If you are using the openjdk RPM, you may need to install the -devel RPM.])
     fi
